@@ -100,7 +100,7 @@ const Navabar = () => {
             >
               <span> My Resume </span>
               <span className="rounded-full bg-white h-7 w-7 flex item-center justify-center">
-                <i className="ri-arrow-right-up-line text-[20px] font-semibold text-slate-900 group-hover:text-indigo-500 -mt-[1px]  ease-in-out duration-300"></i>
+                <i className="ri-arrow-right-up-line text-[20px] font-semibold text-slate-900 group-hover:text-indigo-500 -mt-[1px]  ease-in-out duration-300" />
               </span>
             </Link>
           </li>
