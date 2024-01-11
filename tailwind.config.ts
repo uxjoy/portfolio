@@ -15,6 +15,10 @@ const config: Config = {
       },
     },
 
+    fontSize: {
+      "7xl": "5rem",
+    },
+
     fontWeight: {
       light: "300",
       normal: "400",
