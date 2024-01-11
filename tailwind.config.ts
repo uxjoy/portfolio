@@ -16,7 +16,12 @@ const config: Config = {
     },
 
     fontWeight: {
+      light: "300",
+      normal: "400",
       medium: "450",
+      semibold: "600",
+      bold: "700",
+      bolder: "900",
     },
   },
   plugins: [],
