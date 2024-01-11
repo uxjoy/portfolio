@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Navabar from "@/components/Navabar";
 
 export default function Home() {
@@ -5,9 +6,7 @@ export default function Home() {
     <main className="wrapper">
       <Navabar />
 
-      <div className="container mx-auto py-10">
-        <h1> Sohanur Rahman Joy </h1>
-      </div>
+      <Contact />
     </main>
   );
 }
