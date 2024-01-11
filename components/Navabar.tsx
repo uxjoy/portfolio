@@ -108,7 +108,7 @@ const Navabar = () => {
 export default Navabar;
 
 // Navbar menu items
-const menuItem = [
+export const menuItem = [
   {
     name: "Dribbble",
     url: "https://dribbble.com/joy210",
