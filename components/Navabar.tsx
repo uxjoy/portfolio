@@ -73,41 +73,33 @@ const Navabar = () => {
 
       <div className="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul className="font-medium flex flex-col items-center p-4 md:p-0 mt-4 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0">
-          <li>
+          {menuItem.map(({ name, url }, i) => {
+            return (
+              <li
+                key={i}
+                className="transform translate-y-0 hover:-translate-y-0.5 ease-in-out duration-200"
+              >
+                <Link
+                  href={url}
+                  className="flex items-center justify-center py-2 px-3 text-slate-600 hover:text-indigo-500 "
+                >
+                  <span className="menu-name"> {name} </span>
+
+                  <i className="ri-arrow-right-up-line text-[20px]" />
+                </Link>
+              </li>
+            );
+          })}
+
+          {/* Resume Button */}
+          <li className="transform translate-y-0 hover:-translate-y-0.5 ease-in-out duration-200">
             <Link
               href="#"
-              className="block py-2 px-3 text-slate-600"
-              aria-current="page"
-            >
-              Dribbble
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#"
-              className="block py-2 px-3 text-slate-600"
-              aria-current="page"
-            >
-              Behance
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#"
-              className="block py-2 px-3 text-slate-600"
-              aria-current="page"
-            >
-              Linkedin
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#"
-              className="py-2.5 pl-[18px] pr-[10px] ml-2 font-normal bg-slate-900 text-white rounded-full flex items-center space-x-3 hover:bg-indigo-500 ease-in-out duration-300"
+              className="group py-2.5 pl-[18px] pr-[10px] ml-2 font-normal bg-slate-900 text-white rounded-full flex items-center space-x-3 hover:bg-indigo-500 ease-in-out duration-300"
             >
               <span> My Resume </span>
               <span className="rounded-full bg-white h-7 w-7 flex item-center justify-center">
-                <i className="ri-arrow-right-up-line text-[20px] text-slate-900"></i>
+                <i className="ri-arrow-right-up-line text-[20px] font-semibold text-slate-900 group-hover:text-indigo-500 -mt-[1px]  ease-in-out duration-300"></i>
               </span>
             </Link>
           </li>
@@ -118,3 +110,19 @@ const Navabar = () => {
 };
 
 export default Navabar;
+
+// Navbar menu items
+const menuItem = [
+  {
+    name: "Dribbble",
+    url: "https://dribbble.com/joy210",
+  },
+  {
+    name: "Behance",
+    url: "https://dribbble.com/joy210",
+  },
+  {
+    name: "Linkedin",
+    url: "https://dribbble.com/joy210",
+  },
+];
