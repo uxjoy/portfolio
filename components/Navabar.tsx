@@ -95,7 +95,7 @@ const Navabar = () => {
             })}
 
             {/* Resume Button */}
-            <li className="transform translate-y-0 hover:-translate-y-0.5 ease-in-out duration-200">
+            <li>
               <ButtonLink name="My Resume" url="#" isIcon={true} />
             </li>
           </ul>
