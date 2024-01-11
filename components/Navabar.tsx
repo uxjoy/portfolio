@@ -81,6 +81,7 @@ const Navabar = () => {
               >
                 <Link
                   href={url}
+                  target="_blank"
                   className="flex items-center justify-center py-2 px-3 text-slate-600 hover:text-indigo-500 "
                 >
                   <span className="menu-name"> {name} </span>
@@ -119,10 +120,10 @@ const menuItem = [
   },
   {
     name: "Behance",
-    url: "https://dribbble.com/joy210",
+    url: "https://www.behance.net/_joy",
   },
   {
     name: "Linkedin",
-    url: "https://dribbble.com/joy210",
+    url: "https://www.linkedin.com/in/sohanoor",
   },
 ];
