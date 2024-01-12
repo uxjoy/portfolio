@@ -128,7 +128,7 @@ const HeroBanner = () => {
       />
       {/* Circle BG Shape */}
 
-      <div className="mouse-pointer absolute top-40 left-1/2 z-10 pl-44 pt-3">
+      <div className="mouse-pointer absolute top-40 left-1/2 z-10 pl-44 pt-2">
         <MousePointer
           fill="#F43F5E"
           textColor="text-white"
