@@ -45,6 +45,7 @@ const config: Config = {
       padding: {
         "120": "120px",
         "100": "100px",
+        "46": "11.5rem",
       },
     },
   },
