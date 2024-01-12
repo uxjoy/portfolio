@@ -14,14 +14,28 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
 
+      container: {
+        screens: {
+          mobile: "600px",
+          tablet: "900px",
+          desktop: "1300px",
+        },
+      },
+
       fontSize: {
         "7xl": "5rem",
+        "8xl": "5.5rem",
         "264": "264px",
         "32": "32px",
       },
 
       fontWeight: {
         medium: "450",
+        semi: "520",
+      },
+
+      lineHeight: {
+        normal: "1.6",
       },
 
       space: {
