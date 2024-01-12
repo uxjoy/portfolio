@@ -124,6 +124,7 @@ const HeroBanner = () => {
         alt="BG Circle Shape"
         width={500}
         height={500}
+        priority={false}
       />
       {/* Circle BG Shape */}
 

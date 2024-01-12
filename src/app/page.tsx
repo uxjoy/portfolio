@@ -1,5 +1,6 @@
 import Contact from "../../components/Contact";
 import HeroBanner from "../../components/HeroBanner";
+import Marquee from "../../components/Marquee";
 import Navabar from "../../components/Navabar";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Navabar />
 
       <HeroBanner />
+      <Marquee />
 
       <Contact />
     </main>
