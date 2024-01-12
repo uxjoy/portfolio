@@ -3,7 +3,7 @@ import ButtonLink from "./Button";
 
 const Navabar = () => {
   return (
-    <div className="navbar-wrapper px-8 py-6 border-b">
+    <div className="navbar-wrapper px-8 py-6 bg-slate-100">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link
           href={"/"}
