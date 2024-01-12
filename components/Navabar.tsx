@@ -1,6 +1,25 @@
 import Link from "next/link";
 import ButtonLink from "./Button";
 
+// Navbar menu items
+const resumeURL =
+  "https://drive.google.com/file/d/1W2_HCbalyu-ygi-HOvcWk49JHq2B7eVV/view?usp=sharing";
+
+export const menuItem = [
+  {
+    name: "Dribbble",
+    url: "https://dribbble.com/joy210",
+  },
+  {
+    name: "Behance",
+    url: "https://www.behance.net/_joy",
+  },
+  {
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/sohanoor",
+  },
+];
+
 const Navabar = () => {
   return (
     <div className="navbar-wrapper px-8 py-6 bg-slate-100">
@@ -96,7 +115,7 @@ const Navabar = () => {
 
             {/* Resume Button */}
             <li>
-              <ButtonLink name="My Resume" url="#" isIcon={true} />
+              <ButtonLink name="My Resume" url={resumeURL} isIcon={true} />
             </li>
           </ul>
         </div>
@@ -106,19 +125,3 @@ const Navabar = () => {
 };
 
 export default Navabar;
-
-// Navbar menu items
-export const menuItem = [
-  {
-    name: "Dribbble",
-    url: "https://dribbble.com/joy210",
-  },
-  {
-    name: "Behance",
-    url: "https://www.behance.net/_joy",
-  },
-  {
-    name: "Linkedin",
-    url: "https://www.linkedin.com/in/sohanoor",
-  },
-];
