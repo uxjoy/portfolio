@@ -5,8 +5,8 @@ import MousePointer from "./MousePointer";
 const HeroBanner = () => {
   return (
     <div className="bg-slate-100 pt-24 pb-32 relative">
-      <div className="container mx-auto space-y-10">
-        <div className="relative z-10">
+      <div className="container mx-auto">
+        <div className="relative space-y-10 z-10">
           <div className="text-8xl font-bold text-slate-300 leading-tight space-y-0.5">
             <h1 className="flex items-center pl-28 space-x-6">
               <span> Hi 👋, I’m </span>
