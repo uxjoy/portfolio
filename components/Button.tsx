@@ -12,6 +12,7 @@ const ButtonLink: FC<ButtonProps> = ({ url, name, isIcon, isLarge }) => {
   return (
     <Link
       href={url}
+      target="_blank"
       className={`group ml-2 font-normal bg-slate-900 text-white rounded-full inline-flex items-center hover:bg-indigo-500 ease-in-out duration-300 transform translate-y-0 hover:-translate-y-1
 
 
