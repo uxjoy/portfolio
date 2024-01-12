@@ -24,6 +24,7 @@ const config: Config = {
 
       fontSize: {
         "7xl": "5rem",
+        "9xl": "7.5rem",
         "8xl": "5.5rem",
         "264": "264px",
         "32": "32px",
