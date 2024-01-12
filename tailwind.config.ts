@@ -51,8 +51,8 @@ const config: Config = {
 
       // Animation
       animation: {
-        marquee: "marquee 25s linear infinite",
-        marquee2: "marquee2 25s linear infinite",
+        marquee: "marquee 30s linear infinite",
+        marquee2: "marquee2 30s linear infinite",
         mousePointer: "mousePointer 2s ease-in-out infinite",
       },
 
