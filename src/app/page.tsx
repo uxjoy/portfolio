@@ -12,7 +12,7 @@ export default function Home() {
       <HeroBanner />
       <Marquee />
 
-      <SelectedWork />
+      {/* <SelectedWork /> */}
 
       <Contact />
     </main>
