@@ -53,6 +53,7 @@ const config: Config = {
       animation: {
         marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
+        mousePointer: "mousePointer 2s ease-in-out infinite",
       },
 
       keyframes: {
@@ -63,6 +64,11 @@ const config: Config = {
         marquee2: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
+        },
+        mousePointer: {
+          "0%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(10px)" },
+          "100%": { transform: "translateY(0px)" },
         },
       },
     },

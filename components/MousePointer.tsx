@@ -26,7 +26,7 @@ const MousePointer: FC<MousePointerProps> = ({
   // };
 
   return (
-    <div className="w-8 h-8 flex items-center justify-center relative animate-bounce">
+    <div className="w-8 h-8 flex items-center justify-center relative animate-mousePointer">
       <svg
         width="20"
         height="20"
