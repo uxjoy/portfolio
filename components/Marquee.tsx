@@ -58,4 +58,25 @@ const marqueeItems = [
   {
     text: "user-research",
   },
+  {
+    text: "Human-Centered Design",
+  },
+  {
+    text: "Design Thinking",
+  },
+  {
+    text: "Interaction Design",
+  },
+  {
+    text: "User Interface Enhancement",
+  },
+  {
+    text: "Visual Design Expertise",
+  },
+  {
+    text: "Usability Enhancement",
+  },
+  {
+    text: "Product Design Solutions",
+  },
 ];
