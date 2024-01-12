@@ -1,4 +1,5 @@
 import Contact from "../../components/Contact";
+import GlobalWork from "../../components/GlobalWork";
 import HeroBanner from "../../components/HeroBanner";
 import Marquee from "../../components/Marquee";
 import Navabar from "../../components/Navabar";
@@ -13,6 +14,8 @@ export default function Home() {
       <Marquee />
 
       <SelectedWork />
+
+      <GlobalWork />
 
       <Contact />
     </main>
