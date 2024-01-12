@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const HeroBanner = () => {
   return (
-    <div className="bg-slate-100 pt-20 pb-32">
+    <div className="bg-slate-100 pt-24 pb-32">
       <div className="container mx-auto space-y-10">
         <div className="text-8xl font-bold text-slate-300 leading-tight space-y-0.5">
           <h1 className="flex items-center pl-28 space-x-6">
