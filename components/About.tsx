@@ -139,7 +139,7 @@ const About = () => {
 export default About;
 
 // Highlighted Text
-const highlightedText = (text: string) => {
+export const highlightedText = (text: string) => {
   return <span className="text-white"> {text} </span>;
 };
 

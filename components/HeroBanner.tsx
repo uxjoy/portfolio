@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import MousePointer from "./MousePointer";
 
+const whatsappLink = "https://wa.me/01922176983";
+
 const HeroBanner = () => {
   return (
     <div className="bg-slate-100 pt-24 pb-32 relative">
@@ -61,7 +63,7 @@ const HeroBanner = () => {
 
               <div className="flex gap-10">
                 <Link
-                  href={"/"}
+                  href={whatsappLink}
                   target="_blank"
                   className="flex items-center gap-4 transform translate-y-0 hover:-translate-y-2 ease-in-out duration-300 group"
                 >

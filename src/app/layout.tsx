@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 
+// Import Swiper styles
+import "swiper/css";
+
 const font = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

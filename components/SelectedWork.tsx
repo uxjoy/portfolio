@@ -7,25 +7,25 @@ const projectList = [
     url: "https://dribbble.com/joy210",
     title: "ShareTrip Redesign",
     tag: "Website & Mobile Design",
-    imageURL: "/assets/case_study.png",
+    imageURL: "/assets/explore2.jpg",
   },
   {
     url: "https://dribbble.com/joy210",
     title: "Spotify Redesign",
     tag: "Mobile Design",
-    imageURL: "/assets/case_study.png",
+    imageURL: "/assets/explore6.png",
   },
   {
     url: "https://dribbble.com/joy210",
     title: "Level Up Sports Recovery",
     tag: "Website Design",
-    imageURL: "/assets/case_study.png",
+    imageURL: "/assets/explore7.png",
   },
   {
     url: "https://dribbble.com/joy210",
     title: "Crypto Curency App Design",
     tag: "Mobile Design",
-    imageURL: "/assets/case_study.png",
+    imageURL: "/assets/explore3.jpg",
   },
 ];
 

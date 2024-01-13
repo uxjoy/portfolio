@@ -33,7 +33,7 @@ const Marquee = () => {
 export default Marquee;
 
 // Marquee Text
-const marqueeItems = [
+export const marqueeItems = [
   "ux design",
   "ui design",
   "product design",

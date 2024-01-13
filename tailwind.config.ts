@@ -24,8 +24,8 @@ const config: Config = {
 
       fontSize: {
         "7xl": "5rem",
-        "9xl": "7.5rem",
         "8xl": "5.5rem",
+        "9xl": "7.5rem",
         "264": "264px",
         "32": "32px",
       },
@@ -54,6 +54,8 @@ const config: Config = {
         marquee: "marquee 30s linear infinite",
         marquee2: "marquee2 30s linear infinite",
         mousePointer: "mousePointer 2s ease-in-out infinite",
+        slider: "slider 25s linear infinite",
+        slider2: "slider2 25s linear infinite",
       },
 
       keyframes: {
@@ -65,6 +67,16 @@ const config: Config = {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
         },
+
+        slider: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        slider2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+
         mousePointer: {
           "0%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(10px)" },

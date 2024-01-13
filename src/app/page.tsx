@@ -4,6 +4,7 @@ import GlobalWork from "../../components/GlobalWork";
 import HeroBanner from "../../components/HeroBanner";
 import Marquee from "../../components/Marquee";
 import Navabar from "../../components/Navabar";
+import RecentExploration from "../../components/RecentExploration";
 import SelectedWork from "../../components/SelectedWork";
 
 export default function Home() {
@@ -19,6 +20,8 @@ export default function Home() {
       <GlobalWork />
 
       <About />
+
+      <RecentExploration />
 
       <Contact />
     </main>
