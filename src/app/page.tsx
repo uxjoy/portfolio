@@ -1,3 +1,4 @@
+import About from "../../components/About";
 import Contact from "../../components/Contact";
 import GlobalWork from "../../components/GlobalWork";
 import HeroBanner from "../../components/HeroBanner";
@@ -16,6 +17,8 @@ export default function Home() {
       <SelectedWork />
 
       <GlobalWork />
+
+      <About />
 
       <Contact />
     </main>
