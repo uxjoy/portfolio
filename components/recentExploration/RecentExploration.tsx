@@ -1,6 +1,9 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import { highlightedText } from "../about/About";
-import { recentExploreData } from "../data/recentExploreData";
+import {
+  recentExploreData,
+  recentExploreData2,
+} from "../data/recentExploreData";
 
 const RecentExploration = () => {
   return (
@@ -14,39 +17,70 @@ const RecentExploration = () => {
       </div>
 
       <div className="space-y-8">
-        <div className="relative flex overflow-x-hidden space-x-4">
-          <div className="py-6 animate-slider whitespace-nowrap flex items-center gap-8">
+        {/* slide to right */}
+        <div className="relative flex overflow-x-hidden space-x-8">
+          <div className=" animate-imageSlider whitespace-nowrap flex items-center gap-8">
             {recentExploreData.map(({ title, imgURL }, i) => (
-              <Image
+              <div
+                className="min-w-[380px] h-[280px] rounded-xl overflow-hidden border border-slate-900"
                 key={i}
-                className="object-cover rounded-xl border border-slate-800"
-                src={imgURL}
-                alt={title}
-                width={380}
-                height={260}
-                // fill
-                priority={false}
-                quality={100}
-                loading="lazy"
-              />
+              >
+                <img
+                  src={imgURL}
+                  alt={title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             ))}
           </div>
 
-          {/* <div className="absolute top-0 py-6 animate-slider2 whitespace-nowrap  flex items-center gap-8">
-          {data.map(({ title, imgURL }, i) => (
-            <Image
-              key={i}
-              className="object-cover rounded-xl border border-slate-800"
-              src={imgURL}
-              alt={title}
-              width={380}
-              height={260}
-              priority={false}
-              quality={100}
-              loading="lazy"
-            />
-          ))}
-        </div> */}
+          <div className="absolute top-0 animate-imageSlider2 whitespace-nowrap flex items-center gap-8">
+            {recentExploreData.map(({ title, imgURL }, i) => (
+              <div
+                className="min-w-[380px] h-[280px] rounded-xl overflow-hidden border border-slate-900"
+                key={i}
+              >
+                <img
+                  src={imgURL}
+                  alt={title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* slide to left */}
+        <div className="relative flex overflow-x-hidden space-x-8">
+          <div className=" animate-slidetoright whitespace-nowrap flex items-center gap-8">
+            {recentExploreData2.map(({ title, imgURL }, i) => (
+              <div
+                className="min-w-[520px] h-[360px] rounded-xl overflow-hidden border border-slate-900"
+                key={i}
+              >
+                <img
+                  src={imgURL}
+                  alt={title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="absolute top-0 animate-slidetoright2 whitespace-nowrap flex items-center gap-8">
+            {recentExploreData2.map(({ title, imgURL }, i) => (
+              <div
+                className="min-w-[520px] h-[360px] rounded-xl overflow-hidden border border-slate-900"
+                key={i}
+              >
+                <img
+                  src={imgURL}
+                  alt={title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -15,3 +15,12 @@ export const marqueeTexts = [
   "Usability Enhancement",
   "Product Design Solutions",
 ];
+
+export const marqueeTextsBig = [
+  "ux design",
+  "ui design",
+  "product design",
+  "user-interface",
+  "app design",
+  "web design",
+];

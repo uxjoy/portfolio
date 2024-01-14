@@ -53,9 +53,17 @@ const config: Config = {
       animation: {
         marquee: "marquee 30s linear infinite",
         marquee2: "marquee2 30s linear infinite",
+
         mousePointer: "mousePointer 2s ease-in-out infinite",
-        slider: "slider 25s linear infinite",
-        slider2: "slider2 25s linear infinite",
+
+        slidtoleft: "marquee 30s linear infinite",
+        slidtoleft2: "marquee2 30s linear infinite",
+
+        slidetoright: "slidetoright 60s linear infinite",
+        slidetoright2: "slidetoright2 60s linear infinite",
+
+        imageSlider: "marquee 60s linear infinite",
+        imageSlider2: "marquee2 60s linear infinite",
       },
 
       keyframes: {
@@ -68,13 +76,13 @@ const config: Config = {
           "100%": { transform: "translateX(0%)" },
         },
 
-        slider: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
-        },
-        slider2: {
-          "0%": { transform: "translateX(100%)" },
+        slidetoright: {
           "100%": { transform: "translateX(0%)" },
+          "0%": { transform: "translateX(-100%)" },
+        },
+        slidetoright2: {
+          "100%": { transform: "translateX(100%)" },
+          "0%": { transform: "translateX(0%)" },
         },
 
         mousePointer: {
