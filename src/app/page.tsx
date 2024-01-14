@@ -1,4 +1,5 @@
 import About from "../../components/About";
+import ClientsFeedback from "../../components/clientFeedback/ClientsFeedback";
 import Contact from "../../components/Contact";
 import GlobalWork from "../../components/GlobalWork";
 import HeroBanner from "../../components/HeroBanner";
@@ -16,6 +17,8 @@ export default function Home() {
       <Marquee />
 
       <SelectedWork />
+
+      <ClientsFeedback />
 
       <GlobalWork />
 

@@ -4,6 +4,8 @@ import "./globals.css";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const font = Sora({ subsets: ["latin"] });
 
