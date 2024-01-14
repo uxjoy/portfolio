@@ -13,7 +13,7 @@ const Heading: FC<TextColorProps> = ({ bgDark, text1, text2 }) => {
         className={`bg-gradient-to-b inline-block text-transparent bg-clip-text ${
           bgDark === true
             ? "from-slate-800 to-slate-950"
-            : "from-slate-200 to-slate-100"
+            : "from-slate-200 to-white"
         }`}
       >
         {text1}
