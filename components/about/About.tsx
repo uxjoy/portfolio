@@ -1,44 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import Heading from "./Heading";
-import AdobeXD from "./svg/AdobeXD";
-import Figma from "./svg/Figma";
-import Framer from "./svg/Framer";
-import Illustrator from "./svg/Illustrator";
-import Miro from "./svg/Miro";
-import Photoshop from "./svg/Photoshop";
-import Spline from "./svg/Spline";
-
-// Working Experience Data
-const workHistoryList = [
-  {
-    designation: "Product Designer",
-    company: "ShareTrip",
-    url: "https://sharetrip.net",
-    duration: "Sep 2023 - Now",
-  },
-  {
-    designation: "UX/UI Designer",
-    company: "Lemonhive",
-    url: "https://lemonhive.com",
-    duration: "Apr 2020 - Aug 2022",
-  },
-  {
-    designation: "Product Designer",
-    company: "CreativeSoft Technology",
-    url: "https://creativesofttechnology.com",
-    duration: "May 2019 - Mar 2020",
-  },
-];
-
-// Education
-const eduHisoty = {
-  title: "Computer Science & Engineering",
-  institution: "State University of Bangladesh",
-  duration: "2015 - 2019",
-  url: "https://www.sub.ac.bd",
-};
+import Heading from "../Heading";
+import AdobeXD from "../svg/AdobeXD";
+import Figma from "../svg/Figma";
+import Framer from "../svg/Framer";
+import Illustrator from "../svg/Illustrator";
+import Miro from "../svg/Miro";
+import Photoshop from "../svg/Photoshop";
+import Spline from "../svg/Spline";
+import { educationHistory, workHistoryList } from "../data/aboutTextsData";
 
 const About = () => {
   return (
@@ -108,10 +79,10 @@ const About = () => {
             </h3>
 
             <LinkComponent
-              title={eduHisoty.title}
-              organization={eduHisoty.institution}
-              duration={eduHisoty.duration}
-              url={eduHisoty.url}
+              title={educationHistory.title}
+              organization={educationHistory.institution}
+              duration={educationHistory.duration}
+              url={educationHistory.url}
             />
           </div>
 

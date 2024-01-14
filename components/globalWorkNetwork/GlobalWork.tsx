@@ -1,17 +1,5 @@
-import MapSvg from "./mapSvg";
-
-const list = [
-  "Australia",
-  "Austria",
-  "Bangladesh",
-  "Croatia",
-  "Germany",
-  "India",
-  "London",
-  "United States",
-  "Spain",
-  "United Kingdom",
-];
+import MapSvg from "../svg/mapSvg";
+import { cityCount, destinationData } from "../data/destinationData";
 
 const GlobalWork = () => {
   return (
@@ -25,7 +13,7 @@ const GlobalWork = () => {
           <h4 className="text-lg font-semi">Global Work Network</h4>
 
           <ul className="grid grid-cols-2 text-sm text-slate-400 leading-loose font-light">
-            {list.map((cities, i) => (
+            {destinationData.map((cities, i) => (
               <li
                 key={i}
                 className="transform translate-x-0 hover:translate-x-2 ease-in-out duration-300 hover:text-indigo-400 hover:font-semi"
@@ -41,7 +29,7 @@ const GlobalWork = () => {
         <div className="text-slate-300 mx-auto text-center text-[3.5rem] font-extrabold leading-tight uppercase">
           <h2> Collaborating </h2>
           <h2>
-            Across <span className="text-slate-900"> 20+ Global </span>
+            Across <span className="text-slate-900"> {cityCount}+ Global </span>
           </h2>
           <h2 className="text-slate-900"> Destinations </h2>
         </div>

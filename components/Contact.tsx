@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ButtonLink from "./Button";
-import { menuItem } from "./Navabar";
+import { menuItem } from "./data/navbarData";
 
 const Contact = () => {
   return (

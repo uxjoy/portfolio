@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import MousePointer from "./MousePointer";
-
-const whatsappLink = "https://wa.me/01922176983";
+import MousePointer from "../MousePointer";
+import { whatsappLink } from "../data/heroBannerData";
 
 const HeroBanner = () => {
   return (

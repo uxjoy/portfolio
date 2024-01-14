@@ -5,7 +5,7 @@ import Heading from "../Heading";
 import Quote from "../svg/Quote";
 import ClientCard from "./ClientCard";
 import SwiperNavigationBtn from "./SwiperNavigationBtn";
-import { clientFeedbackList } from "./clientData";
+import { clientFeedbackList } from "../data/clientData";
 
 const ClientsFeedback = () => {
   const swiperNavigation = useSwiper();

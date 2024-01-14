@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { highlightedText } from "./About";
+import { highlightedText } from "../about/About";
+import { recentExploreData } from "../data/recentExploreData";
 
 const RecentExploration = () => {
   return (
@@ -15,7 +16,7 @@ const RecentExploration = () => {
       <div className="space-y-8">
         <div className="relative flex overflow-x-hidden space-x-4">
           <div className="py-6 animate-slider whitespace-nowrap flex items-center gap-8">
-            {data.map(({ title, imgURL }, i) => (
+            {recentExploreData.map(({ title, imgURL }, i) => (
               <Image
                 key={i}
                 className="object-cover rounded-xl border border-slate-800"
@@ -53,35 +54,3 @@ const RecentExploration = () => {
 };
 
 export default RecentExploration;
-
-// data
-const data = [
-  {
-    title: "explore",
-    imgURL: "/assets/explore1.jpg",
-  },
-  {
-    title: "explore",
-    imgURL: "/assets/explore2.jpg",
-  },
-  {
-    title: "explore",
-    imgURL: "/assets/explore3.jpg",
-  },
-  {
-    title: "explore",
-    imgURL: "/assets/explore4.jpg",
-  },
-  {
-    title: "explore",
-    imgURL: "/assets/explore5.jpg",
-  },
-  {
-    title: "explore",
-    imgURL: "/assets/explore6.png",
-  },
-  {
-    title: "explore",
-    imgURL: "/assets/explore7.png",
-  },
-];

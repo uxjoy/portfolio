@@ -1,8 +1,10 @@
+import { marqueeTexts } from "../data/marqueeTextData";
+
 const Marquee = () => {
   return (
     <div className="relative flex overflow-x-hidden text-base uppercase font-semibold space-x-4 bg-indigo-500 text-white">
       <div className="py-6 animate-marquee whitespace-nowrap flex items-center gap-4">
-        {marqueeItems.map((text, i) => {
+        {marqueeTexts.map((text, i) => {
           return (
             <span key={i} className="flex items-center gap-4">
               <span> {text} </span>
@@ -15,7 +17,7 @@ const Marquee = () => {
       </div>
 
       <div className="absolute top-0 py-6 animate-marquee2 whitespace-nowrap  flex items-center gap-4">
-        {marqueeItems.map((text, i) => {
+        {marqueeTexts.map((text, i) => {
           return (
             <span key={i} className="flex items-center gap-4">
               <span> {text} </span>
@@ -33,20 +35,3 @@ const Marquee = () => {
 export default Marquee;
 
 // Marquee Text
-export const marqueeItems = [
-  "ux design",
-  "ui design",
-  "product design",
-  "user-interface",
-  "app design",
-  "web design",
-  "prototyping",
-  "user-research",
-  "Human-Centered Design",
-  "Design Thinking",
-  "Interaction Design",
-  "User Interface Enhancement",
-  "Visual Design Expertise",
-  "Usability Enhancement",
-  "Product Design Solutions",
-];
