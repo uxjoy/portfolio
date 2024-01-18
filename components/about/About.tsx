@@ -30,7 +30,7 @@ const About = () => {
           <div className="order-first md:order-none row-span-2 w-full h-[340px] md:h-[445px] p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl relative">
             <Image
               className="w-auto h-full object-contain"
-              src={"/assets/author_lg.png"}
+              src={"/assets/author_lg.webp"}
               alt="Author Image"
               fill
             />
