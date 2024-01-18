@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { highlightedText } from "../about/About";
 import {
   recentExploreData,
@@ -22,13 +23,16 @@ const RecentExploration = () => {
           <div className=" animate-imageSlider whitespace-nowrap flex items-center gap-2 md:gap-8">
             {recentExploreData.map(({ title, imgURL }, i) => (
               <div
-                className="min-w-[148px] md:min-w-[380px] h-[100px] md:h-[280px] rounded-xl overflow-hidden border border-slate-900"
+                className="min-w-[148px] md:w-[380px] min-h-[100px] md:h-[280px] rounded-xl overflow-hidden border border-slate-900 relative"
                 key={i}
               >
-                <img
+                <Image
                   src={imgURL}
                   alt={title}
-                  className="w-full h-full object-cover"
+                  quality={100}
+                  layout="fill"
+                  objectFit="cover"
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -37,13 +41,16 @@ const RecentExploration = () => {
           <div className="absolute top-0 animate-imageSlider2 whitespace-nowrap flex items-center gap-2 md:gap-8">
             {recentExploreData.map(({ title, imgURL }, i) => (
               <div
-                className="min-w-[148px] md:min-w-[380px] h-[100px] md:h-[280px] rounded-xl overflow-hidden border border-slate-900"
+                className="min-w-[148px] md:min-w-[380px] h-[100px] md:h-[280px] rounded-xl overflow-hidden border border-slate-900 relative"
                 key={i}
               >
-                <img
+                <Image
                   src={imgURL}
                   alt={title}
-                  className="w-full h-full object-cover"
+                  quality={100}
+                  layout="fill"
+                  objectFit="cover"
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -55,13 +62,16 @@ const RecentExploration = () => {
           <div className=" animate-slidetoright whitespace-nowrap flex items-center gap-2 md:gap-8">
             {recentExploreData2.map(({ title, imgURL }, i) => (
               <div
-                className="min-w-[200px] h-[148px] md:min-w-[380px] md:h-[280px] rounded-xl overflow-hidden border border-slate-900"
+                className="min-w-[200px] h-[148px] md:min-w-[450px] md:h-[340px] rounded-xl overflow-hidden border border-slate-900 relative"
                 key={i}
               >
-                <img
+                <Image
                   src={imgURL}
                   alt={title}
-                  className="w-full h-full object-cover"
+                  quality={100}
+                  layout="fill"
+                  objectFit="cover"
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -70,13 +80,16 @@ const RecentExploration = () => {
           <div className="absolute top-0 animate-slidetoright2 whitespace-nowrap flex items-center gap-2 md:gap-8">
             {recentExploreData2.map(({ title, imgURL }, i) => (
               <div
-                className="min-w-[200px] h-[148px] md:min-w-[380px] md:h-[280px] rounded-xl overflow-hidden border border-slate-900"
+                className="min-w-[200px] h-[148px] md:min-w-[450px] md:h-[340px] rounded-xl overflow-hidden border border-slate-900 relative"
                 key={i}
               >
-                <img
+                <Image
                   src={imgURL}
                   alt={title}
-                  className="w-full h-full object-cover"
+                  quality={100}
+                  layout="fill"
+                  objectFit="cover"
+                  loading="lazy"
                 />
               </div>
             ))}

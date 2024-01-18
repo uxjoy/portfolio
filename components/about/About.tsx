@@ -1,3 +1,4 @@
+import { RiArrowRightUpLine } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
@@ -176,7 +177,7 @@ const LinkComponent: FC<LinkComponentProps> = ({
 
             <p className="text-xs flex items-center gap-0.5 group-hover:text-indigo-400 group-hover:translate-x-1 duration-300">
               <span className="group-hover:underline">{organization}</span>
-              <i className="ri-arrow-right-up-line text-base leading-none"></i>
+              <RiArrowRightUpLine size={16} />
             </p>
           </div>
 
@@ -201,7 +202,7 @@ const LinkComponent: FC<LinkComponentProps> = ({
 
           <p className="text-xs flex items-center gap-0.5 group-hover:text-indigo-400 group-hover:translate-x-1 duration-300">
             <span className="group-hover:underline">{organization}</span>
-            <i className="ri-arrow-right-up-line text-base leading-none"></i>
+            <RiArrowRightUpLine size={16} />
           </p>
         </Link>
       )}

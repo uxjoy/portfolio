@@ -22,12 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <link
           href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
           rel="stylesheet"
         />
-      </head>
+      </head> */}
       <body className={font.className}>
         {children}
         <Analytics />

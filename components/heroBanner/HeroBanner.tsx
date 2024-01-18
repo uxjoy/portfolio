@@ -1,3 +1,8 @@
+import {
+  RiArrowRightUpLine,
+  RiCalendar2Fill,
+  RiWhatsappFill,
+} from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
 import MousePointer from "../MousePointer";
@@ -13,6 +18,7 @@ const HeroBanner = () => {
           <div className="hidden md:block space-y-0.5">
             <h1 className="flex items-center pl-28 space-x-6">
               <span> Hi 👋, I’m </span>
+
               <span className="text-indigo-500"> Joy </span>
               <span>
                 <Image
@@ -96,13 +102,13 @@ const HeroBanner = () => {
                   className="flex items-center gap-4 transform translate-y-0 hover:-translate-y-2 ease-in-out duration-300 group"
                 >
                   <div className="w-12 h-12 bg-emerald-100 text-emerald-500 rounded-xl flex items-center justify-center text-2xl border border-emerald-200 group-hover:bg-emerald-500 group-hover:text-white group-hover:border-emerald-500 duration-300 ease-in-out">
-                    <i className="ri-whatsapp-fill animate-pulse"></i>
+                    <RiWhatsappFill className="animate-pulse" />
                   </div>
 
                   <div className="content text-slate-500 pt-0.5">
                     <p className="flex items-center text-emerald-500 font-semi">
                       Whatsapp
-                      <i className="ri-arrow-right-up-line text-2xl leading-none" />
+                      <RiArrowRightUpLine size={22} />
                     </p>
                     <p className="text-sm leading-normal font-light">
                       Chat Real-Time
@@ -126,13 +132,13 @@ const HeroBanner = () => {
                   className="flex items-center gap-4 transform translate-y-0 hover:-translate-y-2 ease-in-out duration-300 group"
                 >
                   <div className="w-12 h-12 bg-indigo-100 text-indigo-500 rounded-xl flex items-center justify-center text-2xl border border-indigo-200 group-hover:bg-indigo-500 group-hover:text-white group-hover:border-indigo-500 duration-300 ease-in-out">
-                    <i className="ri-calendar-fill text-xl animate-pulse"></i>
+                    <RiCalendar2Fill size={22} />
                   </div>
 
                   <div className="content text-slate-500 pt-0.5">
                     <p className="flex items-center text-indigo-500 font-semi">
                       Book a Call
-                      <i className="ri-arrow-right-up-line text-2xl leading-none" />
+                      <RiArrowRightUpLine size={22} />
                     </p>
                     <p className="text-sm leading-normal font-light">
                       Schedule a metting
