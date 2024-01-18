@@ -6,7 +6,7 @@ import HeaderCircle from "../svg/HeaderCircle";
 
 const HeroBanner = () => {
   return (
-    <div className="bg-slate-100 py-12 md:py-24 relative">
+    <div className="bg-slate-50 py-12 md:py-24 relative">
       <div className="container">
         <div className="relative space-y-4 md:space-y-8 z-10">
           {/* desktop version start */}
@@ -101,7 +101,7 @@ const HeroBanner = () => {
 
                   <div className="content text-slate-500 pt-0.5">
                     <p className="flex items-center text-emerald-500 font-semi">
-                      <span className="menu-name "> Whatsapp </span>
+                      <span> Whatsapp </span>
 
                       <i className="ri-arrow-right-up-line text-2xl leading-none" />
                     </p>

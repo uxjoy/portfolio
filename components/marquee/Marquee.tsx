@@ -6,12 +6,12 @@ const Marquee = () => {
       <div className="py-4 md:py-6 animate-marquee whitespace-nowrap flex items-center gap-4">
         {marqueeTexts.map((text, i) => {
           return (
-            <span key={i} className="flex items-center gap-4">
+            <p key={i} className="flex items-center gap-4">
               <span> {text} </span>
               <span className="text-sm">
                 <i className="ri-shining-2-fill"></i>
               </span>
-            </span>
+            </p>
           );
         })}
       </div>
@@ -19,12 +19,12 @@ const Marquee = () => {
       <div className="absolute top-0 py-6 animate-marquee2 whitespace-nowrap  flex items-center gap-4">
         {marqueeTexts.map((text, i) => {
           return (
-            <span key={i} className="flex items-center gap-4">
+            <p key={i} className="flex items-center gap-4">
               <span> {text} </span>
               <span className="text-sm">
                 <i className="ri-shining-2-fill"></i>
               </span>
-            </span>
+            </p>
           );
         })}
       </div>

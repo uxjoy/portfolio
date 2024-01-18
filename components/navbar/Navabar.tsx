@@ -19,12 +19,12 @@ const Navabar = () => {
 
   return (
     <div
-      className={`navbar-wrapper py-3 md:px-8 md:py-6 sticky top-0 bg-white md:bg-slate-100 z-50  drop-shadow-sm md:drop-shadow-none ease-in-out duration-300 ${
+      className={`navbar-wrapper py-3 md:px-8 md:py-6 sticky top-0 bg-white md:bg-slate-50 z-50  drop-shadow-sm md:drop-shadow-none ease-in-out duration-300 ${
         !top && `bg-white md:bg-white md:drop-shadow-sm`
       }`}
     >
       <div className="container flex items-center justify-between">
-        <Link href={"/"} className="w-auto flex-inline items-center">
+        <Link href={"/"}>
           <Logo className="h-10 md:h-11 px-0 w-auto" />
         </Link>
 
