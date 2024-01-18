@@ -33,9 +33,7 @@ const HeroBanner = () => {
               <span> person </span>
             </h1>
 
-            <h1 className="flex items-center space-x-5 pl-56">
-              for all design needs.
-            </h1>
+            <h1 className="pl-56">for all design needs.</h1>
           </div>
           {/* desktop version end */}
 
