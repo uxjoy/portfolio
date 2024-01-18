@@ -24,7 +24,7 @@ const Navabar = () => {
       }`}
     >
       <div className="container flex items-center justify-between">
-        <Link href={"/"}>
+        <Link href={"/"} aria-label="author-logo">
           <Logo className="h-10 md:h-11 px-0 w-auto" />
         </Link>
 

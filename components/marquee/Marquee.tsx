@@ -7,7 +7,7 @@ const Marquee = () => {
         {marqueeTexts.map((text, i) => {
           return (
             <p key={i} className="flex items-center gap-4">
-              <span> {text} </span>
+              {text}
               <span className="text-sm">
                 <i className="ri-shining-2-fill"></i>
               </span>
@@ -20,7 +20,7 @@ const Marquee = () => {
         {marqueeTexts.map((text, i) => {
           return (
             <p key={i} className="flex items-center gap-4">
-              <span> {text} </span>
+              {text}
               <span className="text-sm">
                 <i className="ri-shining-2-fill"></i>
               </span>

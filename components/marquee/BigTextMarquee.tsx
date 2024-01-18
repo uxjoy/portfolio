@@ -35,12 +35,12 @@ const BigTextMarquee = () => {
         <div className="py-4 animate-slidetoright whitespace-nowrap flex items-center gap-4 ">
           {marqueeTextsBig.map((text, i) => {
             return (
-              <span key={i} className="flex items-center gap-4">
-                <span> {text} </span>
+              <p key={i} className="flex items-center gap-4">
+                {text}
                 <span className="text-3xl">
                   <i className="ri-shining-2-fill"></i>
                 </span>
-              </span>
+              </p>
             );
           })}
         </div>
@@ -48,12 +48,12 @@ const BigTextMarquee = () => {
         <div className="absolute top-0 py-4 animate-slidetoright2 whitespace-nowrap flex items-center gap-4">
           {marqueeTextsBig.map((text, i) => {
             return (
-              <span key={i} className="flex items-center gap-4">
-                <span> {text} </span>
+              <p key={i} className="flex items-center gap-4">
+                {text}
                 <span className="text-3xl">
                   <i className="ri-shining-2-fill"></i>
                 </span>
-              </span>
+              </p>
             );
           })}
         </div>

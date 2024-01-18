@@ -32,7 +32,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, tag, imageURL }) => {
         <h2 className="text-xl md:text-2xl font-semi group-hover:text-indigo-400">
           {title}
         </h2>
-        <p className="text-sm md:text-base text-slate-500 font-light">{tag}</p>
+        <p className="text-sm md:text-base text-slate-400 font-light">{tag}</p>
       </div>
     </Link>
   );

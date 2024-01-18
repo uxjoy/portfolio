@@ -101,8 +101,7 @@ const HeroBanner = () => {
 
                   <div className="content text-slate-500 pt-0.5">
                     <p className="flex items-center text-emerald-500 font-semi">
-                      <span> Whatsapp </span>
-
+                      Whatsapp
                       <i className="ri-arrow-right-up-line text-2xl leading-none" />
                     </p>
                     <p className="text-sm leading-normal font-light">
@@ -132,8 +131,7 @@ const HeroBanner = () => {
 
                   <div className="content text-slate-500 pt-0.5">
                     <p className="flex items-center text-indigo-500 font-semi">
-                      <span className="menu-name"> Book a Call </span>
-
+                      Book a Call
                       <i className="ri-arrow-right-up-line text-2xl leading-none" />
                     </p>
                     <p className="text-sm leading-normal font-light">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cityCount, destinationData } from "../data/destinationData";
 
 const GlobalWork = () => {
@@ -23,7 +24,20 @@ const GlobalWork = () => {
 
         <div className="flex justify-center">
           {/* <MapSvg /> */}
-          <img src="/assets/Map.svg" alt="" />
+          <Image
+            className="w-full md:w-11/12 h-auto"
+            src={"/assets/Map.svg"}
+            alt="map"
+            loading="lazy"
+            // layout="fill"
+            // objectFit="contain"
+            // sizes="100vw"
+            // width={328}
+            // height={164}
+            width={0}
+            height={0}
+          />
+          {/* <img src="/assets/Map.svg" alt="map" /> */}
         </div>
 
         <div className="text-slate-300 mx-auto text-center text-[28px] md:text-[56px] font-extrabold leading-tight uppercase">
