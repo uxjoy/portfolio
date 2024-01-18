@@ -39,9 +39,7 @@ const HeroBanner = () => {
 
           {/* mobile version start */}
           <div className="visible md:hidden space-y-0.5">
-            <h1 className="">
-              <span> Hi 👋,</span>
-            </h1>
+            <h1>Hi 👋,</h1>
 
             <h1 className="text-slate-900 text-[64px]">
               <span> I&apos;m </span>
@@ -64,7 +62,7 @@ const HeroBanner = () => {
                 <span className="text-slate-900"> design </span>
               </h1>
 
-              <h1 className="flex items-center"> needs. </h1>
+              <h1> needs. </h1>
             </div>
           </div>
           {/* mobile version end */}
