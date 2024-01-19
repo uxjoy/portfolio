@@ -1,3 +1,4 @@
+import { RiShining2Fill } from "@remixicon/react";
 import { marqueeTexts } from "../data/marqueeTextData";
 
 const Marquee = () => {
@@ -8,9 +9,7 @@ const Marquee = () => {
           return (
             <p key={i} className="flex items-center gap-4">
               {text}
-              <span className="text-sm">
-                <i className="ri-shining-2-fill"></i>
-              </span>
+              <RiShining2Fill size={14} />
             </p>
           );
         })}
@@ -21,9 +20,7 @@ const Marquee = () => {
           return (
             <p key={i} className="flex items-center gap-4">
               {text}
-              <span className="text-sm">
-                <i className="ri-shining-2-fill"></i>
-              </span>
+              <RiShining2Fill size={14} />
             </p>
           );
         })}

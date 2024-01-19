@@ -6,7 +6,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import MousePointer from "../MousePointer";
-import { whatsappLink } from "../data/heroBannerData";
+import { calendlyLink, whatsappLink } from "../data/heroBannerData";
 import HeaderCircle from "../svg/HeaderCircle";
 
 const HeroBanner = () => {
@@ -127,7 +127,7 @@ const HeroBanner = () => {
                 </div>
 
                 <Link
-                  href={"/"}
+                  href={calendlyLink}
                   target="_blank"
                   className="flex items-center gap-4 transform translate-y-0 hover:-translate-y-2 ease-in-out duration-300 group"
                 >

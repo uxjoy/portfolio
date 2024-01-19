@@ -1,3 +1,4 @@
+import { RiShining2Fill } from "@remixicon/react";
 import { marqueeTextsBig } from "../data/marqueeTextData";
 
 const BigTextMarquee = () => {
@@ -7,12 +8,10 @@ const BigTextMarquee = () => {
         <div className="py-4 animate-slidtoleft whitespace-nowrap flex items-center gap-4 ">
           {marqueeTextsBig.map((text, i) => {
             return (
-              <span key={i} className="flex items-center gap-4">
-                <span> {text} </span>
-                <span className="text-3xl">
-                  <i className="ri-shining-2-fill"></i>
-                </span>
-              </span>
+              <p key={i} className="flex items-center gap-4">
+                {text}
+                <RiShining2Fill size={40} />
+              </p>
             );
           })}
         </div>
@@ -20,12 +19,10 @@ const BigTextMarquee = () => {
         <div className="absolute top-0 py-4 animate-slidtoleft2 whitespace-nowrap flex items-center gap-4">
           {marqueeTextsBig.map((text, i) => {
             return (
-              <span key={i} className="flex items-center gap-4">
-                <span> {text} </span>
-                <span className="text-3xl">
-                  <i className="ri-shining-2-fill"></i>
-                </span>
-              </span>
+              <p key={i} className="flex items-center gap-4">
+                {text}
+                <RiShining2Fill size={40} />
+              </p>
             );
           })}
         </div>
@@ -37,9 +34,7 @@ const BigTextMarquee = () => {
             return (
               <p key={i} className="flex items-center gap-4">
                 {text}
-                <span className="text-3xl">
-                  <i className="ri-shining-2-fill"></i>
-                </span>
+                <RiShining2Fill size={40} />
               </p>
             );
           })}
@@ -50,9 +45,8 @@ const BigTextMarquee = () => {
             return (
               <p key={i} className="flex items-center gap-4">
                 {text}
-                <span className="text-3xl">
-                  <i className="ri-shining-2-fill"></i>
-                </span>
+
+                <RiShining2Fill size={40} />
               </p>
             );
           })}

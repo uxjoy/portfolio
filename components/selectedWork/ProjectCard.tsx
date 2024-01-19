@@ -20,10 +20,10 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, tag, imageURL }) => {
         <Image
           className="object-cover w-full h-full group-hover:scale-110 duration-300"
           src={imageURL}
-          alt="Case Study"
+          alt={title}
           fill
           priority={false}
-          quality={100}
+          quality={80}
           loading="lazy"
         />
       </div>
