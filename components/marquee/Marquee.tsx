@@ -7,21 +7,21 @@ const Marquee = () => {
       <div className="py-4 md:py-6 animate-marquee whitespace-nowrap flex items-center gap-4">
         {marqueeTexts.map((text, i) => {
           return (
-            <p key={i} className="flex items-center gap-4">
+            <span key={i} className="flex items-center gap-4">
               {text}
               <RiShining2Fill size={14} />
-            </p>
+            </span>
           );
         })}
       </div>
 
-      <div className="absolute top-0 py-6 animate-marquee2 whitespace-nowrap  flex items-center gap-4">
+      <div className="absolute top-0 py-4 md:py-6 animate-marquee2 whitespace-nowrap  flex items-center gap-4">
         {marqueeTexts.map((text, i) => {
           return (
-            <p key={i} className="flex items-center gap-4">
+            <span key={i} className="flex items-center gap-4">
               {text}
               <RiShining2Fill size={14} />
-            </p>
+            </span>
           );
         })}
       </div>

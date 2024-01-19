@@ -8,10 +8,10 @@ const BigTextMarquee = () => {
         <div className="py-4 animate-slidtoleft whitespace-nowrap flex items-center gap-4 ">
           {marqueeTextsBig.map((text, i) => {
             return (
-              <p key={i} className="flex items-center gap-4">
+              <span key={i} className="flex items-center gap-4">
                 {text}
                 <RiShining2Fill size={40} />
-              </p>
+              </span>
             );
           })}
         </div>
@@ -19,10 +19,10 @@ const BigTextMarquee = () => {
         <div className="absolute top-0 py-4 animate-slidtoleft2 whitespace-nowrap flex items-center gap-4">
           {marqueeTextsBig.map((text, i) => {
             return (
-              <p key={i} className="flex items-center gap-4">
+              <span key={i} className="flex items-center gap-4">
                 {text}
                 <RiShining2Fill size={40} />
-              </p>
+              </span>
             );
           })}
         </div>
@@ -32,10 +32,10 @@ const BigTextMarquee = () => {
         <div className="py-4 animate-slidetoright whitespace-nowrap flex items-center gap-4 ">
           {marqueeTextsBig.map((text, i) => {
             return (
-              <p key={i} className="flex items-center gap-4">
+              <span key={i} className="flex items-center gap-4">
                 {text}
                 <RiShining2Fill size={40} />
-              </p>
+              </span>
             );
           })}
         </div>
@@ -43,11 +43,11 @@ const BigTextMarquee = () => {
         <div className="absolute top-0 py-4 animate-slidetoright2 whitespace-nowrap flex items-center gap-4">
           {marqueeTextsBig.map((text, i) => {
             return (
-              <p key={i} className="flex items-center gap-4">
+              <span key={i} className="flex items-center gap-4">
                 {text}
 
                 <RiShining2Fill size={40} />
-              </p>
+              </span>
             );
           })}
         </div>
