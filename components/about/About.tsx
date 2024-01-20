@@ -37,6 +37,7 @@ const About = () => {
               src={"/assets/author_lg.webp"}
               alt="Author Image"
               fill
+              sizes="width: 100%, height: 100%"
             />
 
             <div className="text-white absolute bottom-6 space-y-2">
