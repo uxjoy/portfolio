@@ -1,11 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { highlightedText } from "../about/About";
 import ImageSlider from "./ImageSlider";
-import { getDribbbleShots } from "./getShots";
 
-const RecentExploration = async () => {
-  const shots = await getDribbbleShots();
-
+const RecentExploration = () => {
   return (
     <div className="bg-slate-950 py-12 pb-16 md:py-120 relative space-y-8 md:space-y-20">
       <div className="container">

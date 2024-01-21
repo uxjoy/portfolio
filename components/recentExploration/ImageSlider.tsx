@@ -1,6 +1,6 @@
+import { getDribbbleShots } from "@/utils/getDribbbleShots";
 import { FC } from "react";
 import ShotsCard from "./ShotsCard";
-import { getDribbbleShots } from "./getShots";
 
 type ImageSliderProps = {
   fromLeft?: boolean;
@@ -15,6 +15,7 @@ const ImageSlider: FC<ImageSliderProps> = async ({
 }) => {
   // get dribbble shots
   const shots = await getDribbbleShots();
+  // console.log(shots);
 
   // style
   const styles: any = {
@@ -28,6 +29,7 @@ const ImageSlider: FC<ImageSliderProps> = async ({
       className="scroll relative flex w-full overflow-hidden"
       style={styles.duration}
     >
+      {/* Image slider row 1 start */}
       <div
         className={`flex items-center justify-center whitespace-nowrap ${
           fromRight === true
@@ -37,16 +39,19 @@ const ImageSlider: FC<ImageSliderProps> = async ({
             : ""
         }`}
       >
-        {shots.map((shot, i) => (
-          <ShotsCard
-            key={i}
-            title={shot.title}
-            imgURL={shot.images.two_x}
-            url={shot.html_url}
-          />
-        ))}
+        {shots &&
+          shots.map((shot) => (
+            <ShotsCard
+              key={shot.id}
+              title={shot.title}
+              imgURL={shot.images.two_x}
+              url={shot.html_url}
+            />
+          ))}
       </div>
+      {/* Image slider row 1 end */}
 
+      {/* Image slider row 2 start */}
       <div
         className={`flex items-center justify-center whitespace-nowrap ${
           fromRight === true
@@ -56,15 +61,17 @@ const ImageSlider: FC<ImageSliderProps> = async ({
             : ""
         }`}
       >
-        {shots.map((shot, i) => (
-          <ShotsCard
-            key={i}
-            title={shot.title}
-            imgURL={shot.images.two_x}
-            url={shot.html_url}
-          />
-        ))}
+        {shots &&
+          shots.map((shot) => (
+            <ShotsCard
+              key={shot.id}
+              title={shot.title}
+              imgURL={shot.images.two_x}
+              url={shot.html_url}
+            />
+          ))}
       </div>
+      {/* Image slider row 2 end */}
     </div>
   );
 };
