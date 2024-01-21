@@ -9,7 +9,13 @@ const Home = async () => {
     <main className="wrapper">
       <Navabar />
 
-      {shots && shots.map((shot: any) => <p key={shot.id}> {shot.title} </p>)}
+      {shots &&
+        shots.map((shot: any) => (
+          <p key={shot.id}>
+            {" "}
+            {shot.title} {shot.published_at}{" "}
+          </p>
+        ))}
 
       {/* <HeroBanner />
       <Marquee />
