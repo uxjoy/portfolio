@@ -99,7 +99,7 @@ h3 {
 
 /* ============== animate from right ============= */
 
-.scroll {
+/* .scroll {
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent,
@@ -107,7 +107,7 @@ h3 {
     #fff 80%,
     transparent
   );
-}
+} */
 
 .scroll .fromRight {
   animation: rightToLeft var(--time) linear infinite;
