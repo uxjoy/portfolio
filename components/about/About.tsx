@@ -19,7 +19,7 @@ const About = () => {
         <Heading text1="info." text2="about me" bgDark />
 
         <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-          <div className="w-full p-5 md:p-6bg-gray-900 border border-gray-800 rounded-2xl">
+          <div className="w-full p-5 md:p-6 bg-gray-900 border border-gray-800 rounded-2xl">
             <p className="text-slate-500 text-sm md:text-lg leading-normal mb-0">
               {highlightedText(`✨ Strong commitment to collaboration and solutions-oriented
               problem-solving ✨`)}
