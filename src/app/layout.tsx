@@ -22,12 +22,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-          rel="stylesheet"
+      <head>
+        <meta
+          property="og:title"
+          content="Product Experience Design Portfolio of Sohanur Rahman (Joy)"
         />
-      </head> */}
+        <meta
+          property="og:description"
+          content="I am Sohanur Rahman (Joy), Product Designer. I enjoy creating user-centric, delightful, and human experiences. I strive to push the world forward by creating a bridge between people and technology."
+        />
+        <meta property="og:url" content="https://uxjoy.info" />
+        <meta
+          property="og:site_name"
+          content="Product Experience Design Portfolio of Sohanur Rahman (Joy)"
+        />
+        <meta
+          name="keywords"
+          content="Sohanur Rahman (Joy), joy210, _joy, sohanoor, Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, Dhaka, Bangladesh"
+        />
+      </head>
       <body className={font.className}>
         {children}
         <Analytics />
