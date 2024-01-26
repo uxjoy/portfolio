@@ -25,7 +25,7 @@ export default function RootLayout({
       <head>
         <meta
           property="og:title"
-          content="Product Experience Design Portfolio of Sohanur Rahman (Joy)"
+          content="Explore the Creative Universe of Sohanur Rahman (Joy): UX/UI Design Portfolio"
         />
         <meta
           property="og:description"
@@ -33,10 +33,7 @@ export default function RootLayout({
         />
         <meta property="og:url" content="https://uxjoy.info" />
         <meta property="og:image" content="/assets/Meta_Image.jpg" />
-        <meta
-          property="og:site_name"
-          content="Product Experience Design Portfolio of Sohanur Rahman (Joy)"
-        />
+        <meta property="og:site_name" content="Sohanur Rahman (Joy) || UXJoy" />
         <meta
           name="keywords"
           content="Sohanur Rahman (Joy), joy210, _joy, sohanoor, Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, Dhaka, Bangladesh"
