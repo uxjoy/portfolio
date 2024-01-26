@@ -37,7 +37,7 @@ export default function RootLayout({
         <meta property="og:site_name" content="Sohanur Rahman (Joy) | UXJoy" />
         <meta
           name="keywords"
-          content="Sohanur Rahman (Joy), joy210, _joy, sohanoor, uxjoy, Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, Dhaka, Bangladesh"
+          content="Sohanur Rahman (Joy), Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, joy210, _joy, sohanoor, uxjoy, , Dhaka, Bangladesh"
         />
       </head>
       <body className={font.className}>
