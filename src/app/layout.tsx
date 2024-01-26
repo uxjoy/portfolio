@@ -25,7 +25,7 @@ export default function RootLayout({
       <head>
         <meta
           property="og:title"
-          content="Explore the Creative Universe of Sohanur Rahman (Joy): UX/UI Design Portfolio"
+          content="Explore the Creative Universe of Sohanur Rahman (Joy), UX/UI Design Portfolio"
         />
         <meta
           property="og:description"
