@@ -13,7 +13,7 @@ const font = Sora({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sohanur Rahman (Joy) | Product Designer",
   description:
-    "Crafting modern, user-friendly designs with a seamless touch, driven by an unwavering passion for my craft, I am dedicated to providing seamless, user-friendly, modern design while remaining deeply passionate about my work.",
+    "Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work.",
 };
 
 const person = {
