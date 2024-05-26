@@ -16,6 +16,24 @@ export const metadata: Metadata = {
     "Crafting modern, user-friendly designs with a seamless touch, driven by an unwavering passion for my craft, I am dedicated to providing seamless, user-friendly, modern design while remaining deeply passionate about my work.",
 };
 
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Sohanur Rahman Joy",
+  jobTitle: "Digital Product Designer",
+  url: "https://www.uxjoy.info",
+  sameAs: [
+    "https://www.linkedin.com/in/sohanoor/",
+    "https://dribbble.com/joy210",
+    "https://www.behance.net/_joy",
+    "https://github.com/Joy210",
+  ],
+  worksFor: {
+    "@type": "Organization",
+    name: "UXJoy",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -37,12 +55,29 @@ export default function RootLayout({
         <meta property="og:site_name" content="Sohanur Rahman (Joy) | UXJoy" />
         <meta
           name="keywords"
-          content="Sohanur Rahman (Joy), Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, joy210, _joy, sohanoor, uxjoy, , Dhaka, Bangladesh"
+          content="Sohanur Rahman (Joy), Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, joy210, _joy, sohanoor, uxjoy, Sohanur Rahman Joy, sohanoor, sohanur, Sohanur Rahman Joy - Product Designer, Dhaka, Bangladesh"
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
         />
       </head>
+
       <body className={font.className}>
         {children}
         <Analytics />
+
+        {/* //////////// SEO /////////////// */}
+
+        <div className="seo hidden">
+          <h1>Welcome to the Portfolio of Sohanur Rahman Joy</h1>
+          <h1>Welcome to the Portfolio of joy210</h1>
+          <h1>Welcome to the Portfolio of _joy</h1>
+          <a href="https://www.uxjoy.info/sohanur-rahman-joy"></a>
+        </div>
+
+        {/* //////////// SEO /////////////// */}
       </body>
     </html>
   );
