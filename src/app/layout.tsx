@@ -50,9 +50,11 @@ export default function RootLayout({
           property="og:description"
           content="I am Sohanur Rahman (Joy), Product Designer. I derive immense satisfaction from crafting experiences that prioritize users, infusing them with delight and a genuine human touch. My mission is to propel society forward by forging a seamless connection between individuals and technology, fostering understanding and innovation."
         /> */}
+        <meta name="next-size-adjust" />
         <meta property="og:url" content="https://www.uxjoy.info" />
         <meta property="og:image" content="/assets/Meta_Image.jpg" />
         <meta property="og:site_name" content="Sohanur Rahman (Joy) | UXJoy" />
+
         <meta
           name="keywords"
           content="Sohanur Rahman (Joy), Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, joy210, _joy, sohanoor, uxjoy, Sohanur Rahman Joy, sohanoor, sohanur, Sohanur Rahman Joy - Product Designer, Dhaka, Bangladesh"
@@ -70,11 +72,21 @@ export default function RootLayout({
 
         {/* //////////// SEO /////////////// */}
 
-        <div className="seo hidden">
+        <div className="seo social-links hidden">
           <h1>Welcome to the Portfolio of Sohanur Rahman Joy</h1>
-          <h1>Welcome to the Portfolio of joy210</h1>
-          <h1>Welcome to the Portfolio of _joy</h1>
-          <a href="https://www.uxjoy.info/sohanur-rahman-joy"></a>
+
+          <a href="https://dribbble.com/joy210" id="dribbble">
+            Dribbble: https://dribbble.com/joy210
+          </a>
+          <a href="https://www.linkedin.com/in/sohanoor/" id="linkedin">
+            LinkedIn: https://www.linkedin.com/in/sohanoor/
+          </a>
+          <a href="https://www.behance.net/_joy" id="behance">
+            Behance: https://www.behance.net/_joy
+          </a>
+          <a href="https://www.uxjoy.info" id="uxjoy">
+            Website: https://www.uxjoy.info
+          </a>
         </div>
 
         {/* //////////// SEO /////////////// */}
