@@ -18,7 +18,7 @@ const Contact = () => {
             </div>
 
             <p className="text-base md:text-32 font-semibold text-slate-900">
-              sohanoor404@gmail.com
+              sohanur.ux@gmail.com
             </p>
 
             <div className="hidden md:block">
