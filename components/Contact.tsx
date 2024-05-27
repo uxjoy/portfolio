@@ -2,6 +2,7 @@ import { RiArrowRightUpLine, RiCopyrightLine } from "@remixicon/react";
 import Link from "next/link";
 import ButtonLink from "./Button";
 import { menuItem } from "./data/navbarData";
+import { calendlyLink } from "./data/heroBannerData";
 
 const Contact = () => {
   return (
@@ -22,11 +23,16 @@ const Contact = () => {
             </p>
 
             <div className="hidden md:block">
-              <ButtonLink name="Book a Call" url="" isIcon={true} isLarge />
+              <ButtonLink
+                name="Book a Call"
+                url={calendlyLink}
+                isIcon={true}
+                isLarge
+              />
             </div>
 
             <div className="sm:hidden">
-              <ButtonLink name="Book a Call" url="" isIcon={true} />
+              <ButtonLink name="Book a Call" url={calendlyLink} isIcon={true} />
             </div>
           </div>
 
