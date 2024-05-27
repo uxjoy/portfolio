@@ -73,7 +73,9 @@ export default function RootLayout({
         {/* //////////// SEO /////////////// */}
 
         <div className="seo social-links hidden">
-          <h1>Welcome to the Portfolio of Sohanur Rahman Joy</h1>
+          <div className="h1">
+            Welcome to the Portfolio of Sohanur Rahman Joy
+          </div>
 
           <a href="https://dribbble.com/joy210" id="dribbble">
             Dribbble: https://dribbble.com/joy210

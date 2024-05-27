@@ -9,11 +9,11 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    /* --foreground-rgb: 255, 255, 255;
+  /* :root {
+    --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0; */
-  }
+    --background-end-rgb: 0, 0, 0;
+  } */
 }
 
 body {
@@ -37,28 +37,25 @@ body {
   @apply text-9xl uppercase leading-[1.0] font-extrabold;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  /* @apply leading-tight; */
-}
+  @apply leading-tight;
+} */
 
-h1 {
+.h1 {
   @apply text-8xl font-bold text-slate-300 leading-tight;
 }
 
-h2 {
+.h2 {
   @apply text-[80px];
 }
 
-h3 {
+.h3 {
   @apply text-[3.5rem];
-}
-
-h3 {
 }
 
 /* Responsive Design */
@@ -68,11 +65,11 @@ h3 {
     @apply text-5xl;
   }
 
-  h1 {
+  .h1 {
     @apply text-[2.5rem];
   }
 
-  h2 {
+  .h2 {
     @apply text-[28px];
   }
 

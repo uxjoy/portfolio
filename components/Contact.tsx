@@ -9,13 +9,13 @@ const Contact = () => {
       <div className="container relative z-10">
         <div className="inner-content space-y-10 md:space-y-120">
           <div className="content space-y-6 md:space-y-12">
-            <h2 className="text-slate-300 font-bold lh-120">
+            <div className="h2 text-slate-300 font-bold lh-120">
               Write a <span className="text-slate-900"> message, </span>
               <br />
               and <span className="text-indigo-500"> let’s discuss </span> with
               <br />
               <span className="text-slate-900">your project. </span>
-            </h2>
+            </div>
 
             <p className="text-base md:text-32 font-semibold text-slate-900">
               sohanoor404@gmail.com

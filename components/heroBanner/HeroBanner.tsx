@@ -16,7 +16,7 @@ const HeroBanner = () => {
         <div className="relative space-y-4 md:space-y-8 z-10">
           {/* desktop version start */}
           <div className="hidden md:block space-y-0.5">
-            <h1 className="flex items-center pl-28 space-x-6">
+            <div className="h1 flex items-center pl-28 space-x-6">
               <span> Hi 👋, I’m </span>
 
               <span className="text-indigo-500"> Joy </span>
@@ -30,45 +30,45 @@ const HeroBanner = () => {
                   className="rounded-full object-contain"
                 />
               </span>
-            </h1>
+            </div>
 
-            <h1 className="flex items-center space-x-5">
+            <div className="h1 flex items-center space-x-5">
               <span> oneStop</span>
               <span> ✨ </span>
               <span className="text-slate-900"> creative</span>
               <span> person </span>
-            </h1>
+            </div>
 
-            <h1 className="pl-56">for all design needs.</h1>
+            <div className="h1 pl-56">for all design needs.</div>
           </div>
           {/* desktop version end */}
 
           {/* mobile version start */}
           <div className="visible md:hidden space-y-0.5">
-            <h1>Hi 👋,</h1>
+            <div className="h1">Hi 👋,</div>
 
-            <h1 className="text-slate-900 text-[64px]">
+            <div className="h1 text-slate-900 text-[64px]">
               <span> I&apos;m </span>
               <span className="text-indigo-500"> Joy </span>
-            </h1>
+            </div>
 
             <div className="-space-y-[2.4px] m-0">
-              <h1 className="flex items-center">
+              <div className="h1 flex items-center">
                 <span> oneStop</span>
                 <span> ✨ </span>
-              </h1>
+              </div>
 
-              <h1 className="flex items-center space-x-1.5">
+              <div className="h1 flex items-center space-x-1.5">
                 <span className="text-slate-900"> creative</span>
                 <span> person </span>
-              </h1>
+              </div>
 
-              <h1 className="flex items-center space-x-1.5">
+              <div className="h1 flex items-center space-x-1.5">
                 <span> for all </span>
                 <span className="text-slate-900"> design </span>
-              </h1>
+              </div>
 
-              <h1> needs. </h1>
+              <div className="h1"> needs. </div>
             </div>
           </div>
           {/* mobile version end */}
