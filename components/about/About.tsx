@@ -54,7 +54,7 @@ const About = () => {
             <h3 className="text-base text-white font-semi flex justify-between items-center">
               <span className="uppercase">Experience</span>
               <span className="text-xs py-1 px-2.5 leading-base bg-indigo-500 rounded-full">
-                4.5+ yrs
+                5+ yrs
               </span>
             </h3>
 
