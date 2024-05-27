@@ -60,6 +60,8 @@ export default function RootLayout({
           content="Sohanur Rahman (Joy), Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, joy210, _joy, sohanoor, uxjoy, Sohanur Rahman Joy, sohanoor, sohanur, Sohanur Rahman Joy - Product Designer, Dhaka, Bangladesh"
         />
 
+        <link rel="icon" href="/favicon.svg" sizes="any" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
@@ -67,6 +69,7 @@ export default function RootLayout({
       </head>
 
       <body className={font.className}>
+        <img src="" alt="" />
         {children}
         <Analytics />
 
