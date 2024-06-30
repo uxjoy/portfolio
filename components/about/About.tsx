@@ -24,10 +24,9 @@ const About = () => {
               {highlightedText(`✨ Strong commitment to collaboration and solutions-oriented
               problem-solving ✨`)}
               Use various web design software to develop
-              {highlightedText(`customer-focused`)} websites and designs.
-              Committed to {highlightedText(`high standards`)} of web design,
-              user experience, usability and speed for multiple types of
-              end-users.
+              {highlightedText(`customer-focused`)} websites and designs. Committed to{" "}
+              {highlightedText(`high standards`)} of web design, user experience, usability and speed for multiple types
+              of end-users.
             </p>
           </div>
 
@@ -51,38 +50,30 @@ const About = () => {
           </div>
 
           <div className="w-full p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl space-y-8 md:space-y-6">
-            <h3 className="text-base text-white font-semi flex justify-between items-center">
+            <div className="text-base text-white font-semi flex justify-between items-center">
               <span className="uppercase">Experience</span>
-              <span className="text-xs py-1 px-2.5 leading-base bg-indigo-500 rounded-full">
-                5+ yrs
-              </span>
-            </h3>
+              <span className="text-xs py-1 px-2.5 leading-base bg-indigo-500 rounded-full">5+ yrs</span>
+            </div>
 
             <div className="list [&>*:first-child]:pt-0 [&>*:last-child]:pb-0  [&>*:last-child]:border-b-0">
-              {workHistoryList.map(
-                ({ designation, company, url, duration }, i) => (
-                  <>
-                    <LinkComponent
-                      className={
-                        "py-3.5 border-b border-white border-opacity-5"
-                      }
-                      key={i}
-                      title={designation}
-                      organization={company}
-                      duration={duration}
-                      url={url}
-                    />
-                  </>
-                )
-              )}
+              {workHistoryList.map(({ designation, company, url, duration }, i) => (
+                <>
+                  <LinkComponent
+                    className={"py-3.5 border-b border-white border-opacity-5"}
+                    key={i}
+                    title={designation}
+                    organization={company}
+                    duration={duration}
+                    url={url}
+                  />
+                </>
+              ))}
             </div>
           </div>
 
           {/* Eucation Card Start */}
           <div className="w-full p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl space-y-6 hidden md:block">
-            <h3 className="text-base text-white uppercase font-semi">
-              Education
-            </h3>
+            <div className="text-base text-white uppercase font-semi">Education</div>
 
             <LinkComponent
               title={educationHistory.title}
@@ -95,9 +86,7 @@ const About = () => {
           {/* ================== */}
 
           <div className="w-full p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl space-y-6 md:hidden">
-            <h3 className="text-base text-white uppercase font-semi">
-              Education
-            </h3>
+            <div className="text-base text-white uppercase font-semi">Education</div>
 
             <LinkComponent
               title={educationHistory.title}
@@ -110,9 +99,7 @@ const About = () => {
           {/* Eucation Card Start */}
 
           <div className="w-full p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl space-y-6">
-            <h3 className="text-base text-white uppercase font-semi">
-              Design Tools
-            </h3>
+            <div className="text-base text-white uppercase font-semi">Design Tools</div>
 
             <div className="flex gap-3">
               <Figma />
@@ -147,34 +134,17 @@ type LinkComponentProps = {
 };
 
 // Link Component
-const LinkComponent: FC<LinkComponentProps> = ({
-  title,
-  organization,
-  duration,
-  url,
-  className,
-  isEducation,
-}) => {
+const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, url, className, isEducation }) => {
   return (
     <>
       {isEducation ? (
         <Link
           href={url}
           target="_blank"
-          className={`block group ease-in-out ${className} ${
-            isEducation ? "space-y-3" : "space-y-1"
-          }`}
+          className={`block group ease-in-out ${className} ${isEducation ? "space-y-3" : "space-y-1"}`}
         >
-          <div
-            className={`flex ${
-              isEducation
-                ? "flex-col justify-start gap-1"
-                : "items-center justify-between"
-            }`}
-          >
-            <h4 className="text-sm text-slate-300 group-hover:text-white duration-300">
-              {title}
-            </h4>
+          <div className={`flex ${isEducation ? "flex-col justify-start gap-1" : "items-center justify-between"}`}>
+            <h4 className="text-sm text-slate-300 group-hover:text-white duration-300">{title}</h4>
 
             <p className="text-xs flex items-center gap-0.5 group-hover:text-indigo-400 group-hover:translate-x-1 duration-300">
               <span className="group-hover:underline">{organization}</span>
@@ -182,23 +152,13 @@ const LinkComponent: FC<LinkComponentProps> = ({
             </p>
           </div>
 
-          <p className="text-[10px] md:text-[11px] leading-none text-slate-400 font-light">
-            {duration}
-          </p>
+          <p className="text-[10px] md:text-[11px] leading-none text-slate-400 font-light">{duration}</p>
         </Link>
       ) : (
-        <Link
-          href={url}
-          target="_blank"
-          className={`block space-y-1 group ease-in-out ${className}`}
-        >
+        <Link href={url} target="_blank" className={`block space-y-1 group ease-in-out ${className}`}>
           <div className="flex items-center justify-between">
-            <h4 className="text-sm text-slate-300 group-hover:text-white duration-300">
-              {title}
-            </h4>
-            <span className="text-[10px] md:text-[11px] leading-none text-slate-400 font-light">
-              {duration}
-            </span>
+            <h4 className="text-sm text-slate-300 group-hover:text-white duration-300">{title}</h4>
+            <span className="text-[10px] md:text-[11px] leading-none text-slate-400 font-light">{duration}</span>
           </div>
 
           <p className="text-xs flex items-center gap-0.5 group-hover:text-indigo-400 group-hover:translate-x-1 duration-300">

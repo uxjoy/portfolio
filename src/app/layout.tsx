@@ -21,6 +21,8 @@ const person = {
   "@type": "Person",
   name: "Sohanur Rahman Joy",
   jobTitle: "Digital Product Designer",
+  description:
+    "I am a multi-disciplinary creative Digital Product Designer and solution provider, boasting nearly 5+ years of extensive experience in the creative industry",
   url: "https://www.uxjoy.info",
   sameAs: [
     "https://www.linkedin.com/in/sohanoor/",
@@ -34,11 +36,7 @@ const person = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -51,9 +49,16 @@ export default function RootLayout({
           content="I am Sohanur Rahman (Joy), Product Designer. I derive immense satisfaction from crafting experiences that prioritize users, infusing them with delight and a genuine human touch. My mission is to propel society forward by forging a seamless connection between individuals and technology, fostering understanding and innovation."
         /> */}
         <meta name="next-size-adjust" />
+        <meta property="og:title" content="sdgfsdfsd" />
+        <meta property="og:description" content="sdgfsdfsd" />
         <meta property="og:url" content="https://www.uxjoy.info" />
         <meta property="og:image" content="/assets/Meta_Image.jpg" />
         <meta property="og:site_name" content="Sohanur Rahman (Joy) | UXJoy" />
+        <meta
+          property="og:keywords"
+          content="Sohanur Rahman (Joy), Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, joy210, _joy, sohanoor, uxjoy, Sohanur Rahman Joy, sohanoor, sohanur, Sohanur Rahman Joy - Product Designer, Dhaka, Bangladesh"
+        />
+        <meta property="og:type" content="website" />
 
         <meta
           name="keywords"
@@ -62,10 +67,7 @@ export default function RootLayout({
 
         <link rel="icon" href="/favicon.svg" sizes="any" />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
       </head>
 
       <body className={font.className}>
@@ -76,9 +78,7 @@ export default function RootLayout({
         {/* //////////// SEO /////////////// */}
 
         <div className="seo social-links hidden">
-          <div className="h1">
-            Welcome to the Portfolio of Sohanur Rahman Joy
-          </div>
+          <div className="h1">Welcome to the Portfolio of Sohanur Rahman Joy</div>
 
           <a href="https://dribbble.com/joy210" id="dribbble">
             Dribbble: https://dribbble.com/joy210
