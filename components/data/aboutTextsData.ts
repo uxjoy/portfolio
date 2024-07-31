@@ -4,19 +4,19 @@ export const workHistoryList = [
     designation: "Product Designer",
     company: "ShareTrip",
     url: "https://sharetrip.net",
-    duration: "Sep 2023 - Now",
+    duration: "Jul 2023 - Now",
   },
   {
     designation: "UX/UI Designer",
     company: "Lemonhive",
     url: "https://lemonhive.com",
-    duration: "Apr 2020 - Aug 2022",
+    duration: "May 2020 - Jun 2022",
   },
   {
     designation: "Jr. Ux/UI Designer",
     company: "CreativeSoft Technology",
     url: "https://creativesofttechnology.com",
-    duration: "May 2019 - Mar 2020",
+    duration: "May 2019 - Apr 2020",
   },
 ];
 
