@@ -13,7 +13,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, tag, imageURL }) => {
   return (
     <Link
       href={url}
-      target="_blank"
+      // target="_blank"
       className="space-y-4 md:space-y-6 group ease-in-out duration-300 w-full"
     >
       <div className="relative w-full h-[380px] md:h-[560px] bg-slate-800 rounded-2xl overflow-hidden">
