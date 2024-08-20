@@ -21,7 +21,7 @@ const Navabar = () => {
   return (
     <div
       className={`navbar-wrapper py-3 md:px-8 sticky top-0 bg-white  z-50  drop-shadow-sm md:drop-shadow-none ease-in-out duration-300 ${
-        !top ? `md:drop-shadow-sm  md:py-4` : "md:bg-transaprent md:py-6"
+        !top ? `md:drop-shadow-sm  md:py-4` : "md:bg-slate-50 md:py-6"
       }`}
     >
       <div className="container flex items-center justify-between">
