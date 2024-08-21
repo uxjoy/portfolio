@@ -1,6 +1,9 @@
+"use client";
+
 import { RiCheckLine, RiCloseLine } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import Contact from "../../../../components/Contact";
 import Navabar from "../../../../components/navbar/Navabar";
 import branding from "../../../../public/assets/case-study/branding.png";
@@ -14,6 +17,8 @@ import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.jp
 
 const CaseStudyDetails = ({ params }: any) => {
   const caseStudyId = params.caseStudyId;
+
+  const [isToggle, isSetToggle] = useState(true);
 
   return (
     <>
@@ -212,7 +217,7 @@ const CaseStudyDetails = ({ params }: any) => {
         <div className="container">
           <div className="segments space-y-28">
             <div className="row flex gap-16 items-center">
-              <div className="left w-full">
+              <div className="left w-full relative">
                 <div className="relative w-full h-[380px] md:h-[472px]  2xl:h-[580px]  bg-slate-200 overflow-hidden rounded-3xl">
                   <Image
                     className="object-cover w-full h-full"
@@ -224,6 +229,21 @@ const CaseStudyDetails = ({ params }: any) => {
                     loading="lazy"
                   />
                 </div>
+
+                {/* <div className="toggle p-1 flex gap-1 bg-white absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-6 rounded-full">
+                  <button
+                    className={`py-2 px-4 rounded-full ${isToggle === true && " bg-indigo-500 text-white"}`}
+                    onClick={() => isSetToggle(isToggle === false)}
+                  >
+                    New Design
+                  </button>
+                  <button
+                    className={`py-2 px-4 rounded-full ${isToggle === true && " bg-indigo-500 text-white"}`}
+                    onClick={() => isSetToggle(isToggle === false)}
+                  >
+                    Old Design
+                  </button>
+                </div> */}
               </div>
 
               <div className="right w-full">
