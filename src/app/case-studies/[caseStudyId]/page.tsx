@@ -28,7 +28,7 @@ const CaseStudyDetails = ({ params }: any) => {
           <div className="top-content w-3/4">
             <div className="uppercase text-lg text-slate-400">case study</div>
             <h1 className="h3 capitalize font-bold text-slate-400 w-full mt-4" style={{ lineHeight: 1.3 }}>
-              <span className="text-slate-900">EBL Fund Transfer</span> redesign for mobile app
+              <span className="text-slate-900">EBL Fund Transfer</span> redesign for mobile app;
             </h1>
           </div>
         </div>
