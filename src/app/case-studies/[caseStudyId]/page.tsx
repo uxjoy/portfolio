@@ -16,14 +16,6 @@ const CaseStudyDetails = ({ params }: any) => {
 
   return (
     <>
-      {/* <Head>
-        <title>Case Study {caseStudyId}</title>
-        <meta
-          name="description"
-          content={`Case Study ${caseStudyId} description`}
-        />
-      </Head> */}
-
       <Navabar />
 
       <div className="py-12 md:py-100">
