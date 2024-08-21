@@ -5,11 +5,11 @@ import Contact from "../../../../components/Contact";
 import Navabar from "../../../../components/navbar/Navabar";
 import branding from "../../../../public/assets/case-study/branding.png";
 import imgLandscape from "../../../../public/assets/case-study/ebl-overview.jpg";
-import imgUrl_1 from "../../../../public/assets/case-study/img_1.png";
-import imgUrl_2 from "../../../../public/assets/case-study/img_2.png";
-import imgUrl_3 from "../../../../public/assets/case-study/img_3.png";
-import imgUrl_4 from "../../../../public/assets/case-study/img_4.png";
-import imgUrl_6 from "../../../../public/assets/case-study/img_6.png";
+import explanation_img_1 from "../../../../public/assets/case-study/new/img_1.jpg";
+import explanation_img_2 from "../../../../public/assets/case-study/new/img_2.jpg";
+import explanation_img_3 from "../../../../public/assets/case-study/new/img_3.jpg";
+import explanation_img_4 from "../../../../public/assets/case-study/new/img_4.jpg";
+import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.jpg";
 
 const CaseStudyDetails = ({ params }: any) => {
   const caseStudyId = params.caseStudyId;
@@ -29,7 +29,7 @@ const CaseStudyDetails = ({ params }: any) => {
         </div>
       </div>
 
-      <div className="relative w-full h-[380px] md:h-[920px] bg-white overflow-hidden">
+      <div className="relative w-full h-[380px] md:h-[920px] 2xl:h-[1080px] bg-white overflow-hidden">
         <Image
           className="object-contain h-full group-hover:scale-110 duration-300"
           src={imgLandscape}
@@ -45,30 +45,33 @@ const CaseStudyDetails = ({ params }: any) => {
         <div className="container space-y-[120px]">
           <div className="overview flex gap-8">
             <div className="space-y-2 w-full">
-              <label className="text-slate-500">Category</label>
-              <p className="font-semibold text-xl">Mobile App</p>
-            </div>
-
-            <div className="space-y-2 w-full">
               <label className="text-slate-500">Role</label>
               <p className="font-semibold text-xl">Product Designer</p>
             </div>
+
             <div className="space-y-2 w-full">
               <label className="text-slate-500">Start Date</label>
               <p className="font-semibold text-xl">02 August 2024</p>
             </div>
+
             <div className="space-y-2 w-full">
               <label className="text-slate-500">Completion Date</label>
               <p className="font-semibold text-xl">15 August 2024</p>
             </div>
+
             <div className="space-y-2 w-full">
               <label className="text-slate-500">Figma</label>
               <Link
                 href={"https://www.figma.com/design/ujYWr8iLm1RuZYI1jku0LH/EBL-%3A-Fund-Transfer?node-id=158-4817"}
-                className="font-semibold text-xl block underline underline-offset-4"
+                className="font-semibold text-xl block underline underline-offset-4 text-indigo-500 hover:underline-offset-8 ease-in-out duration-300"
               >
-                Click Here
+                Design Link
               </Link>
+            </div>
+
+            <div className="space-y-2 w-full">
+              <label className="text-slate-500">Category</label>
+              <p className="font-semibold text-xl">Mobile App</p>
             </div>
           </div>
 
@@ -204,19 +207,190 @@ const CaseStudyDetails = ({ params }: any) => {
         />
       </div>
 
-      <div className="py-12 md:py-120">
+      <div className="explanation py-12 md:py-120">
+        <div className="container">
+          <div className="segments space-y-28">
+            <div className="row flex gap-16 items-center">
+              <div className="left w-full">
+                <div className="relative w-full h-[380px] md:h-[472px]  2xl:h-[580px]  bg-slate-200 overflow-hidden rounded-3xl">
+                  <Image
+                    className="object-cover w-full h-full"
+                    src={explanation_img_1}
+                    alt={"title"}
+                    fill
+                    priority={false}
+                    quality={100}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div className="right w-full">
+                <div className="space-y-5 px-12 w-full">
+                  <div className="text-3xl font-semibold">Choose Options</div>
+
+                  <div className="content w-full text-xl font-normal text-slate-700 leading-relaxed space-y-4">
+                    <p>
+                      <span className="font-semibold text-gray-900">Fund Transfer: </span> More options visible and
+                      ensuring a consistent design throughout. This results in a clearer and more cohesive user
+                      experience.
+                    </p>
+                    <p>
+                      <span className="font-semibold text-gray-900">Transfer Mode: </span> There are three
+                      options—BEFTN, NPSB, and RTGS—but the borders made it look like six options. Additionally, the old
+                      design didn’t provide explanations for these transfer modes. The new UI resolves these issues by
+                      clearly displaying the three options and offering explanations for each mode, enhancing clarity
+                      and usability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row flex gap-16 items-center flex-row-reverse">
+              <div className="left w-full">
+                <div className="relative w-full h-[380px] md:h-[472px]  2xl:h-[580px]  bg-slate-200 overflow-hidden rounded-3xl">
+                  <Image
+                    className="object-cover w-full h-full"
+                    src={explanation_img_2}
+                    alt={"title"}
+                    fill
+                    priority={false}
+                    quality={100}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div className="right w-full">
+                <div className="space-y-5 px-12">
+                  <div className="text-3xl font-semibold">Beneficiary</div>
+
+                  <div className="content w-full text-xl font-normal text-slate-700  leading-relaxed space-y-4">
+                    <p>
+                      In the old UI, the input field for transferring funds to a new account was misleadingly styled
+                      like a search field and wasn’t listed under beneficiaries. Additionally, there was no validation
+                      to ensure the new account number was exactly 13 digits.
+                    </p>
+                    <p>
+                      In the new UI, I’ve clearly separated the options for transferring to a beneficiary and a new
+                      account, and added validation to enforce a 13-digit account number requirement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row flex gap-16 items-center">
+              <div className="left w-full">
+                <div className="relative w-full h-[380px] md:h-[472px]  2xl:h-[580px]  bg-slate-200 overflow-hidden rounded-3xl">
+                  <Image
+                    className="object-cover w-full h-full"
+                    src={explanation_img_3}
+                    alt={"title"}
+                    fill
+                    priority={false}
+                    quality={100}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div className="right w-full">
+                <div className="space-y-5 px-12 w-full">
+                  <div className="text-3xl font-semibold">Transfer Amount</div>
+
+                  <div className="content w-full text-xl font-normal text-slate-700  leading-relaxed space-y-4">
+                    <p>
+                      In the existing design, the close button in the top right corner is unnecessary. The updated
+                      design removes this button for better consistency and now includes the available balance on this
+                      screen. A hide/show button has been added for privacy, allowing users to toggle the visibility of
+                      their balance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row flex gap-16 items-center flex-row-reverse">
+              <div className="left w-full">
+                <div className="relative w-full h-[380px] md:h-[472px]  2xl:h-[580px]  bg-slate-200 overflow-hidden rounded-3xl">
+                  <Image
+                    className="object-cover w-full h-full"
+                    src={explanation_img_4}
+                    alt={"title"}
+                    fill
+                    priority={false}
+                    quality={100}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div className="right w-full">
+                <div className="space-y-5 px-12">
+                  <div className="text-3xl font-semibold">Transfer Overview</div>
+
+                  <div className="content w-full text-xl font-normal text-slate-700  leading-relaxed space-y-4">
+                    <p>
+                      In the updated design, the transfer overview has been cleaned up to enhance visual appeal and
+                      maintain consistency throughout the interface. The new design ensures a more streamlined and
+                      attractive presentation, improving the overall user experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row flex gap-16 items-center">
+              <div className="left w-full">
+                <div className="relative w-full h-[380px] md:h-[472px]  2xl:h-[580px]  bg-slate-200 overflow-hidden rounded-3xl">
+                  <Image
+                    className="object-cover w-full h-full"
+                    src={explanation_img_5}
+                    alt={"title"}
+                    fill
+                    priority={false}
+                    quality={100}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div className="right w-full">
+                <div className="space-y-5 px-12">
+                  <div className="text-3xl font-semibold">Save Beneficiary</div>
+
+                  <div className="content w-full text-xl font-normal text-slate-700  leading-relaxed space-y-4">
+                    <p>
+                      The transfer successful screen has been cleaned up with more meaningful text for clearer user
+                      guidance. Additionally, "Another Transfer" and "Go to Home" buttons are now available at the
+                      bottom of the screen, but they will not appear if the transfer was to a new account. For new
+                      account transfers, a save beneficiary modal will appear within 2-3 seconds. Once the beneficiary
+                      modal is saved or closed, the "Another Transfer" and "Go to Home" buttons will then be visible on
+                      the success screen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="design-process py-12 md:py-120 bg-slate-950 text-white">
         <div className="container space-y-[120px]">
-          <div className="design-process flex gap-40">
+          <div className="flex gap-40">
             <div className="flex-initial w-6/12 text-3xl font-semibold">Design Process</div>
 
-            <div className="w-fullfont-normal text-slate-700 space-y-8 leading-relaxed">
+            <div className="w-full font-normal space-y-10 leading-relaxed">
               <div className="pl-12 relative">
                 <span className="absolute top-0 left-0">
                   <RiCheckLine size={26} />
                 </span>
 
-                <h4 className="text-xl text-slate-900 font-medium mb-2">Research & Analysis:</h4>
-                <p>
+                <h4 className="text-xl font-medium mb-2">Research & Analysis:</h4>
+                <p className="text-gray-400 font-light text-lg">
                   I conducted a comprehensive analysis of user feedback and pain points to identify key areas for
                   improvement.
                 </p>
@@ -227,8 +401,8 @@ const CaseStudyDetails = ({ params }: any) => {
                   <RiCheckLine size={26} />
                 </span>
 
-                <h4 className="text-xl text-slate-900 font-medium mb-2">Wireframing & Prototyping:</h4>
-                <p>
+                <h4 className="text-xl font-medium mb-2">Wireframing & Prototyping:</h4>
+                <p className="text-gray-400 font-light text-lg">
                   Developed wireframes and prototypes to explore and refine design solutions, ensuring alignment with
                   user needs and preferences.
                 </p>
@@ -239,8 +413,8 @@ const CaseStudyDetails = ({ params }: any) => {
                   <RiCheckLine size={26} />
                 </span>
 
-                <h4 className="text-xl text-slate-900 font-medium mb-2">User Testing:</h4>
-                <p>
+                <h4 className="text-xl font-medium mb-2">User Testing:</h4>
+                <p className="text-gray-400 font-light text-lg">
                   Performed usability testing with a representative sample of users to gather insights and fine-tune the
                   design for optimal user satisfaction.
                 </p>
@@ -251,8 +425,8 @@ const CaseStudyDetails = ({ params }: any) => {
                   <RiCheckLine size={26} />
                 </span>
 
-                <h4 className="text-xl text-slate-900 font-medium mb-2">Final Implementation:</h4>
-                <p>
+                <h4 className="text-xl font-medium mb-2">Final Implementation:</h4>
+                <p className="text-gray-400 font-light text-lg">
                   The final design was implemented with a focus on maintaining consistency, enhancing usability, and
                   presenting a modern, appealing aesthetic.
                 </p>
@@ -260,7 +434,20 @@ const CaseStudyDetails = ({ params }: any) => {
             </div>
           </div>
 
-          <div className="images-list grid grid-cols-12 gap-8">
+          <div className="divider w-full h-[1px] bg-slate-900"></div>
+
+          <div className="flex gap-40">
+            <p className="w-full text-2xl font-light text-gray-500  leading-relaxed">
+              <span className="font-medium text-white">Outcome: </span>
+              The redesigned EBL Fund Transfer feature now offers a significantly enhanced user experience, with
+              improved navigation, clearer instructions, and better error handling. The modernized interface aligns with
+              contemporary mobile banking standards and addresses key usability issues, resulting in a more efficient
+              and user-friendly fund transfer process. This redesign not only modernized the interface but also ensured
+              it met user needs and expectations, boosting user satisfaction and reducing errors.
+            </p>
+          </div>
+
+          {/* <div className="images-list grid grid-cols-12 gap-8">
             <div className="col-span-12 relative w-full h-[380px] md:h-[760px] bg-slate-200 overflow-hidden">
               <Image
                 className="object-cover w-full h-full group-hover:scale-110 duration-300"
@@ -320,11 +507,11 @@ const CaseStudyDetails = ({ params }: any) => {
                 loading="lazy"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <div className="py-12 md:py-120 bg-slate-50">
+      {/* <div className="py-12 md:py-120 bg-slate-50">
         <div className="container space-y-[120px]">
           <div className="flex gap-40">
             <div className="flex-initial w-6/12 text-3xl font-semibold">Outcome</div>
@@ -337,7 +524,7 @@ const CaseStudyDetails = ({ params }: any) => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Contact />
     </>
