@@ -1,9 +1,8 @@
-"use client";
+// "use client";
 
 import { RiCheckLine, RiCloseLine } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import Contact from "../../../../components/Contact";
 import Navabar from "../../../../components/navbar/Navabar";
 import branding from "../../../../public/assets/case-study/branding.png";
@@ -18,7 +17,7 @@ import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.jp
 const CaseStudyDetails = ({ params }: any) => {
   const caseStudyId = params.caseStudyId;
 
-  const [isToggle, isSetToggle] = useState(true);
+  // const [isToggle, isSetToggle] = useState(true);
 
   return (
     <>
