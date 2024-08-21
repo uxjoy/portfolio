@@ -5,6 +5,7 @@ import Contact from "../../../../components/Contact";
 import Navabar from "../../../../components/navbar/Navabar";
 import branding from "../../../../public/assets/case-study/branding.png";
 import imgLandscape from "../../../../public/assets/case-study/ebl-overview.jpg";
+import img_6 from "../../../../public/assets/case-study/img_6.png";
 import explanation_img_1 from "../../../../public/assets/case-study/new/img_1.jpg";
 import explanation_img_2 from "../../../../public/assets/case-study/new/img_2.jpg";
 import explanation_img_3 from "../../../../public/assets/case-study/new/img_3.jpg";
@@ -434,7 +435,7 @@ const CaseStudyDetails = ({ params }: any) => {
             </div>
           </div>
 
-          <div className="divider w-full h-[1px] bg-slate-900"></div>
+          {/* <div className="divider w-full h-[1px] bg-slate-900"></div>
 
           <div className="flex gap-40">
             <p className="w-full text-2xl font-light text-gray-500  leading-relaxed">
@@ -445,7 +446,7 @@ const CaseStudyDetails = ({ params }: any) => {
               and user-friendly fund transfer process. This redesign not only modernized the interface but also ensured
               it met user needs and expectations, boosting user satisfaction and reducing errors.
             </p>
-          </div>
+          </div> */}
 
           {/* <div className="images-list grid grid-cols-12 gap-8">
             <div className="col-span-12 relative w-full h-[380px] md:h-[760px] bg-slate-200 overflow-hidden">
@@ -511,7 +512,19 @@ const CaseStudyDetails = ({ params }: any) => {
         </div>
       </div>
 
-      {/* <div className="py-12 md:py-120 bg-slate-50">
+      <div className="relative w-full h-[380px] md:h-[800px] bg-white overflow-hidden">
+        <Image
+          className="object-cover h-full group-hover:scale-110 duration-300"
+          src={img_6}
+          alt={"title"}
+          fill
+          priority={false}
+          quality={100}
+          loading="lazy"
+        />
+      </div>
+
+      <div className="py-12 md:py-120 bg-slate-50">
         <div className="container space-y-[120px]">
           <div className="flex gap-40">
             <div className="flex-initial w-6/12 text-3xl font-semibold">Outcome</div>
@@ -524,7 +537,7 @@ const CaseStudyDetails = ({ params }: any) => {
             </p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <Contact />
     </>
