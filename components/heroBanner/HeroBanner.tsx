@@ -1,12 +1,8 @@
-import {
-  RiArrowRightUpLine,
-  RiCalendar2Fill,
-  RiWhatsappFill,
-} from "@remixicon/react";
+import { RiArrowRightUpLine, RiCalendar2Fill, RiWhatsappFill } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
+import { calendlyLink, whatsappLink } from "../../src/utils/data/heroBannerData";
 import MousePointer from "../MousePointer";
-import { calendlyLink, whatsappLink } from "../data/heroBannerData";
 import HeaderCircle from "../svg/HeaderCircle";
 
 const HeroBanner = () => {
@@ -92,12 +88,9 @@ const HeroBanner = () => {
               </p> */}
               <p className="text-slate-600 text-sm md:text-xl font-light leading-relaxed">
                 I am a multi-disciplinary creative{" "}
-                <span className="font-semibold text-slate-800">
-                  Digital Product Designer
-                </span>{" "}
-                and solution provider, boasting nearly{" "}
-                <span className="font-semibold text-slate-800">5+ years</span>{" "}
-                of extensive experience in the creative industry.
+                <span className="font-semibold text-slate-800">Digital Product Designer</span> and solution provider,
+                boasting nearly <span className="font-semibold text-slate-800">5+ years</span> of extensive experience
+                in the creative industry.
               </p>
 
               <div className="flex flex-col md:flex-row gap-6 md:gap-10">
@@ -115,18 +108,14 @@ const HeroBanner = () => {
                       Whatsapp
                       <RiArrowRightUpLine size={22} />
                     </p>
-                    <p className="text-sm leading-normal font-light">
-                      Chat Real-Time
-                    </p>
+                    <p className="text-sm leading-normal font-light">Chat Real-Time</p>
                   </div>
                 </Link>
 
                 <div className="hidden md:block h-12">
                   <div className="flex flex-col items-center gap-1 py-0.5 h-full">
                     <span className="grow w-0.5 bg-slate-200"></span>
-                    <span className="uppercase text-[10px] font-semibold text-slate-400 leading-none">
-                      or
-                    </span>
+                    <span className="uppercase text-[10px] font-semibold text-slate-400 leading-none">or</span>
                     <span className="grow w-0.5 bg-slate-200"></span>
                   </div>
                 </div>
@@ -145,9 +134,7 @@ const HeroBanner = () => {
                       Book a Call
                       <RiArrowRightUpLine size={22} />
                     </p>
-                    <p className="text-sm leading-normal font-light">
-                      Schedule a metting
-                    </p>
+                    <p className="text-sm leading-normal font-light">Schedule a metting</p>
                   </div>
                 </Link>
               </div>
@@ -172,12 +159,7 @@ const HeroBanner = () => {
       {/* Circle BG Shape */}
 
       <div className="mouse-pointer absolute top-[164px] md:top-40 md:left-1/2 z-10 pl-48 md:pl-44 pt-2">
-        <MousePointer
-          fill="#F43F5E"
-          textColor="text-white"
-          textBgColor="bg-rose-500"
-          text="Product Designer"
-        />
+        <MousePointer fill="#F43F5E" textColor="text-white" textBgColor="bg-rose-500" text="Product Designer" />
       </div>
     </div>
   );

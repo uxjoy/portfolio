@@ -1,5 +1,5 @@
+import { projectList } from "../../src/utils/data/projectListData";
 import Heading from "../Heading";
-import { projectList } from "../data/projectListData";
 import ProjectCard from "./ProjectCard";
 
 const SelectedWork = () => {
@@ -11,13 +11,7 @@ const SelectedWork = () => {
         <div className="md:px-28 text-white">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 md:[&>*:first-child]:pt-24">
             {projectList.map(({ url, title, tag, imageURL }, i) => (
-              <ProjectCard
-                key={i}
-                url={url}
-                title={title}
-                tag={tag}
-                imageURL={imageURL}
-              />
+              <ProjectCard key={i} url={url} title={title} tag={tag} imageURL={imageURL} />
             ))}
           </div>
         </div>

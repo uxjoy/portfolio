@@ -1,8 +1,8 @@
 "use client";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { clientFeedbackList } from "../../src/utils/data/clientData";
 import Heading from "../Heading";
-import { clientFeedbackList } from "../data/clientData";
 import Quote from "../svg/Quote";
 import ClientCard from "./ClientCard";
 import SwiperNavigationBtn from "./SwiperNavigationBtn";

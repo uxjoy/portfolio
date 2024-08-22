@@ -1,10 +1,10 @@
 // Project list data
 export const projectList = [
   {
-    url: "https://sharetrip.net",
-    title: "ShareTrip Redesign",
-    tag: "Website & Mobile Design",
-    imageURL: "/assets/ShareTrip_1.jpg",
+    url: "case-studies/ebl-fund-transfer-redesign",
+    title: "EBL Fund Transfer Redesign",
+    tag: "Mobile App",
+    imageURL: "/assets/case-study/img_6.png",
   },
   {
     url: "http://petraui.com",
@@ -13,10 +13,10 @@ export const projectList = [
     imageURL: "/assets/PetraUI_1.jpg",
   },
   {
-    url: "case-studies/ebl-fund-transfer-redesign",
-    title: "EBL Fund Transfer Redesign",
-    tag: "Mobile App",
-    imageURL: "/assets/case-study/img_6.png",
+    url: "https://sharetrip.net",
+    title: "ShareTrip Redesign",
+    tag: "Website & Mobile Design",
+    imageURL: "/assets/ShareTrip_1.jpg",
   },
   // {
   //   url: "https://dribbble.com/uxjoy_",

@@ -3,8 +3,8 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { menuItem, resumeURL } from "../../src/utils/data/navbarData";
 import ButtonLink from "../Button";
-import { menuItem, resumeURL } from "../data/navbarData";
 import { Logo } from "../svg/Logo";
 
 const Navabar = () => {

@@ -20,7 +20,7 @@ const CaseStudyDetails = ({ params }: any) => {
   // const [isToggle, isSetToggle] = useState(true);
 
   return (
-    <>
+    <div>
       <Navabar />
 
       <div className="py-12 md:py-100">
@@ -559,7 +559,7 @@ const CaseStudyDetails = ({ params }: any) => {
       </div>
 
       <Contact />
-    </>
+    </div>
   );
 };
 

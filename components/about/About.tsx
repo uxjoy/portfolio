@@ -2,8 +2,8 @@ import { RiArrowRightUpLine } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+import { educationHistory, workHistoryList } from "../../src/utils/data/aboutTextsData";
 import Heading from "../Heading";
-import { educationHistory, workHistoryList } from "../data/aboutTextsData";
 import AdobeXD from "../svg/AdobeXD";
 import Figma from "../svg/Figma";
 import Framer from "../svg/Framer";
@@ -30,13 +30,15 @@ const About = () => {
             </p>
           </div>
 
-          <div className="order-first md:order-none row-span-2 w-full h-[340px] md:h-[445px] p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl relative">
+          <div className="order-first md:order-none row-span-2 w-full h-[340px] md:h-[480px] p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl relative">
             <Image
-              className="w-auto h-full object-contain"
+              className="w-full h-full object-cover"
               src={"/assets/author_lg.webp"}
               alt="Author Image"
               fill
-              sizes="width: 100%, height: 100%"
+              priority={false}
+              quality={100}
+              loading="lazy"
             />
 
             <div className="text-white absolute bottom-6 space-y-2">
@@ -55,18 +57,16 @@ const About = () => {
               <span className="text-xs py-1 px-2.5 leading-base bg-indigo-500 rounded-full">5+ yrs</span>
             </div>
 
-            <div className="list [&>*:first-child]:pt-0 [&>*:last-child]:pb-0  [&>*:last-child]:border-b-0">
+            <div className="list [&>*:first-child]:pt-0 [&>*:last-child]:pb-0  [&>*:last-child]:border-b-0 j">
               {workHistoryList.map(({ designation, company, url, duration }, i) => (
-                <>
-                  <LinkComponent
-                    className={"py-3.5 border-b border-white border-opacity-5"}
-                    key={i}
-                    title={designation}
-                    organization={company}
-                    duration={duration}
-                    url={url}
-                  />
-                </>
+                <LinkComponent
+                  className={"py-5 border-b border-white border-opacity-5"}
+                  key={i}
+                  title={designation}
+                  organization={company}
+                  duration={duration}
+                  url={url}
+                />
               ))}
             </div>
           </div>
