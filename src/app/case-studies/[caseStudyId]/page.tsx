@@ -26,10 +26,10 @@ const CaseStudyDetails = ({ params }: any) => {
   // const [isToggle, isSetToggle] = useState(true);
 
   return (
-    <div>
+    <>
       <Navabar />
 
-      <div className="py-12 md:pt-100 md:pb-16">
+      <div className="py-12 md:pt-100 md:pb-16" id="top">
         <div className="container relative space-y-6 md:space-y-2">
           <div className="top-content md:w-3/4">
             <div className="uppercase text-lg text-slate-400">case study</div>
@@ -565,8 +565,15 @@ const CaseStudyDetails = ({ params }: any) => {
         </div>
       </div>
 
+      {/* <button
+        onClick={scrollToTop}
+        className="w-12 h-12 bg-indigo-500 hover:bg-indigo-600 hover:-translate-y-1.5 ease-in-out duration-300 cursor-pointer text-white fixed right-5 bottom-5 rounded-full flex items-center justify-center"
+      >
+        <RiArrowUpLine size={24} />
+      </button> */}
+
       <Contact />
-    </div>
+    </>
   );
 };
 
