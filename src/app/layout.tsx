@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   title: "Sohanur Rahman (Joy) | Product Designer",
   description:
     "Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work.",
+  metadataBase: new URL("/assets/Meta_Image.jpg"),
 };
 
 const person = {
@@ -36,7 +37,11 @@ const person = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
@@ -67,7 +72,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <link rel="icon" href="/favicon.svg" sizes="any" />
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
+        />
       </head>
 
       <body className={font.className}>
@@ -78,7 +86,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* //////////// SEO /////////////// */}
 
         <div className="seo social-links hidden">
-          <div className="h1">Welcome to the Portfolio of Sohanur Rahman Joy</div>
+          <div className="h1">
+            Welcome to the Portfolio of Sohanur Rahman Joy
+          </div>
 
           <a href="https://dribbble.com/joy210" id="dribbble">
             Dribbble: https://dribbble.com/joy210
