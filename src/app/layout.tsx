@@ -13,7 +13,9 @@ const font = Sora({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sohanur Rahman (Joy) | Product Designer",
   description:
-    "Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work.",
+    "Delivering modern, user-friendly, and innovative design solutions with precision and passion, focused on creating user-centric experiences that prioritize functionality.",
+  // description:
+  //   "Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work.",
   metadataBase: new URL(process.env.NODE_ENV === "development" ? "http://localhost:3000/" : `https://uxjoy.info/`),
 
   openGraph: {
