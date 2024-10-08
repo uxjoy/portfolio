@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Sohanur Rahman (Joy) | Product Designer",
   description:
     "Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work.",
-  metadataBase: new URL("/assets/Meta_Image.jpg"),
+  // metadataBase: new URL("/assets/Meta_Image.jpg"),
 };
 
 const person = {
