@@ -37,6 +37,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
 
+  authors: [{ name: "Joy" }],
+
   keywords: [
     "Sohanur Rahman (Joy)",
     "Product Designer",
