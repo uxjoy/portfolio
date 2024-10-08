@@ -11,25 +11,66 @@ import "swiper/css/pagination";
 const font = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sohanur Rahman (Joy) | Sr. Product Designer",
+  title: "Sohanur Rahman (Joy) | Product Designer",
   description:
     "Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work.",
-  // keywords: "https://www.uxjoy.info",
+  metadataBase: new URL(process.env.NODE_ENV === "development" ? "http://localhost:3000/" : `https://uxjoy.info/`),
+
+  openGraph: {
+    url: "https://www.uxjoy.info",
+    siteName: "Sohanur Rahman (Joy) | Product Designer",
+    type: "website",
+    images: [
+      {
+        url: new URL(
+          process.env.NODE_ENV === "development"
+            ? "http://localhost:3000/assets/Meta_Image.jpg"
+            : `https://uxjoy.info/assets/Meta_Image.jpg`
+        ),
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+  },
+
+  keywords: [
+    "Sohanur Rahman (Joy)",
+    "Product Designer",
+    "UX Designer",
+    "User-Centered Product Designer",
+    "User Experience Designer",
+    "Human Experience Designer",
+    "Problem Solver",
+    "Researcher",
+    "AR & VR Enthusiast",
+    "joy210",
+    "_joy",
+    "sohanoor",
+    "uxjoy",
+    "Sohanur Rahman Joy",
+    "sohanoor",
+    "sohanur",
+    "Sohanur Rahman Joy - Product Designer",
+    "Dhaka",
+    "Bangladesh",
+  ],
 };
 
 const person = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Sohanur Rahman Joy",
-  jobTitle: "Digital Product Designer",
+  jobTitle: "Senior Product Designer",
   description:
     "I am a multi-disciplinary creative Digital Product Designer and solution provider, boasting nearly 5+ years of extensive experience in the creative industry",
   url: "https://www.uxjoy.info",
   sameAs: [
-    "https://www.linkedin.com/in/sohanoor/",
+    "https://www.linkedin.com/in/uxjoy",
     "https://dribbble.com/joy210",
     "https://www.behance.net/_joy",
-    "https://github.com/Joy210",
+    "https://github.com/uxjoy",
   ],
   worksFor: {
     "@type": "Organization",
@@ -42,29 +83,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <meta name="next-size-adjust" />
-        {/* <meta property="og:title" content="Sohanur Rahman (Joy) | Product Designer" />
-        <meta
-          property="og:description"
-          content="Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work."
-        /> */}
-        <meta property="og:url" content="https://www.uxjoy.info" />
-        <meta property="og:image" content="/assets/Meta_Image.jpg" />
-        <meta property="og:site_name" content="Sohanur Rahman (Joy) | Product Designer" />
-        <meta
-          property="og:keywords"
-          content="Sohanur Rahman (Joy), Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, joy210, _joy, sohanoor, uxjoy, Sohanur Rahman Joy, sohanoor, sohanur, Sohanur Rahman Joy - Product Designer, Dhaka, Bangladesh"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-
-        <meta property="og:type" content="website" />
-
-        <meta
-          name="keywords"
-          content="Sohanur Rahman (Joy), Product Designer, UX Designer, User Centered Product Designer, User Experience Designer, Human Experience Designer, Problem Solver, Researcher, AR & VR Enthusiast, joy210, _joy, sohanoor, uxjoy, Sohanur Rahman Joy, sohanoor, sohanur, Sohanur Rahman Joy - Product Designer, Dhaka, Bangladesh"
-        />
+        {/* <meta property="og:image" content="/assets/Meta_Image.jpg" /> */}
 
         <link rel="icon" href="/favicon.svg" sizes="any" />
-
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
       </head>
 
@@ -76,7 +97,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Analytics />
 
         {/* //////////// SEO /////////////// */}
-
         <div className="seo social-links hidden">
           <div className="h1">Welcome to the Portfolio of Sohanur Rahman Joy</div>
 
@@ -93,7 +113,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             Website: https://www.uxjoy.info
           </a>
         </div>
-
         {/* //////////// SEO /////////////// */}
       </body>
     </html>
