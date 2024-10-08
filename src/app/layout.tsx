@@ -83,7 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <meta name="next-size-adjust" />
-        {/* <meta property="og:image" content="/assets/Meta_Image.jpg" /> */}
+        <meta property="og:locale" content="en_US" />
 
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
