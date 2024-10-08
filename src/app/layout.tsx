@@ -54,8 +54,11 @@ export default function RootLayout({
           content="I am Sohanur Rahman (Joy), Product Designer. I derive immense satisfaction from crafting experiences that prioritize users, infusing them with delight and a genuine human touch. My mission is to propel society forward by forging a seamless connection between individuals and technology, fostering understanding and innovation."
         /> */}
         <meta name="next-size-adjust" />
-        <meta property="og:title" content="sdgfsdfsd" />
-        <meta property="og:description" content="sdgfsdfsd" />
+        <meta property="og:title" content="Sohanur Rahman (Joy) | UXJoy" />
+        <meta
+          property="og:description"
+          content="Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work."
+        />
         <meta property="og:url" content="https://www.uxjoy.info" />
         <meta property="og:image" content="/assets/Meta_Image.jpg" />
         <meta property="og:site_name" content="Sohanur Rahman (Joy) | UXJoy" />
