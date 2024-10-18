@@ -5,8 +5,9 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { menuItem, resumeURL } from "../../src/utils/data/navbarData";
 import ButtonLink from "../Button";
-import ThemeToggle from "../ThemeToggle";
+import ThemeToggle from "../ThemeSwitch";
 import { Logo } from "../svg/Logo";
+import ThemeSwitch from "../ThemeSwitch";
 
 const Navabar = () => {
   const [top, setTop] = useState(true);
@@ -59,7 +60,7 @@ const Navabar = () => {
           </div>
 
           <div className="">
-            <ThemeToggle />
+            <ThemeSwitch />
           </div>
 
           <div className="md:hidden">
