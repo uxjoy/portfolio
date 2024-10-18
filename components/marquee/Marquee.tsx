@@ -1,5 +1,5 @@
 import { RiShining2Fill } from "@remixicon/react";
-import { marqueeTexts } from "../data/marqueeTextData";
+import { marqueeTexts } from "../../src/utils/data/marqueeTextData";
 
 const Marquee = () => {
   return (

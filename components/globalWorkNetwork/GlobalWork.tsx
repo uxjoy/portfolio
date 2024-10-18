@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { cityCount, destinationData } from "../data/destinationData";
-import MapSvg from "../svg/mapSvg";
+import { cityCount, destinationData } from "../../src/utils/data/destinationData";
 
 const GlobalWork = () => {
   return (
