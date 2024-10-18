@@ -7,7 +7,7 @@ import HeaderCircle from "../svg/HeaderCircle";
 
 const HeroBanner = () => {
   return (
-    <div className="bg-slate- pt-16 pb-24 relative">
+    <div className="dark:bg-zinc-950 pt-16 pb-24 relative">
       <div className="container">
         <div className="relative space-y-4 md:space-y-8 z-10">
           {/* desktop version start */}
@@ -81,11 +81,6 @@ const HeroBanner = () => {
             </div>
 
             <div className="md:col-span-4 md:px-1 md:space-y-10 space-y-6">
-              {/* <p className="text-slate-600 text-sm md:text-xl font-light leading-relaxed">
-                As a Digital Product Designer for 5+ years, I specialize in
-                UI/UX, branding, and interactive media, crafting innovative
-                solutions.
-              </p> */}
               <p className="text-slate-600 text-sm md:text-xl font-light leading-relaxed">
                 I am a multi-disciplinary creative{" "}
                 <span className="font-semibold text-slate-800">Digital Product Designer</span> and solution provider,
@@ -155,7 +150,7 @@ const HeroBanner = () => {
         priority={false}
       /> */}
 
-      <HeaderCircle className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-0 z-0" />
+      {/* <HeaderCircle className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-0 z-0" /> */}
       {/* Circle BG Shape */}
 
       <div className="mouse-pointer absolute top-[164px] md:top-40 md:left-1/2 z-10 pl-48 md:pl-44 pt-2">

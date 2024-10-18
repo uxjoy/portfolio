@@ -7,6 +7,7 @@ import { Metadata } from "next";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Providers from "./providers";
 
 const font = Sora({ subsets: ["latin"] });
 
@@ -94,9 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body className={font.className}>
-        {/* <img src="/assets/Meta_Image.jpg" alt="sd" className="w-full  bg-gray-100" /> */}
-
-        {children}
+        <Providers>{children}</Providers>
 
         <Analytics />
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { menuItem, resumeURL } from "../../src/utils/data/navbarData";
 import ButtonLink from "../Button";
+import ThemeToggle from "../ThemeToggle";
 import { Logo } from "../svg/Logo";
 
 const Navabar = () => {
@@ -55,6 +56,10 @@ const Navabar = () => {
           {/* Resume Button */}
           <div className="hidden md:block">
             <ButtonLink name="My Resume" url={resumeURL} isIcon />
+          </div>
+
+          <div className="">
+            <ThemeToggle />
           </div>
 
           <div className="md:hidden">
