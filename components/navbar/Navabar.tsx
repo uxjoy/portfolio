@@ -34,7 +34,7 @@ const Navabar = () => {
 
           <div className="uppercase font-bold text-xl">
             <p className="leading-none">Sohanur</p>
-            <p className="leading-none text-slate-400 dark:text-slate-500">🇧🇩 Rahman</p>
+            <p className="leading-none text-slate-400 dark:text-zinc-500">🇧🇩 Rahman</p>
           </div>
         </Link>
 
