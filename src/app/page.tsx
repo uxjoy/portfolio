@@ -11,7 +11,7 @@ import SelectedWork from "../../components/selectedWork/SelectedWork";
 
 const Home = () => {
   return (
-    <main className="wrapper">
+    <main className="wrapper dark:bg-zinc-950">
       <Navabar />
 
       <HeroBanner />

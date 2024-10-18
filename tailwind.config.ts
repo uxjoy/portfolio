@@ -9,6 +9,16 @@ const config: Config = {
   darkMode: "selector",
   theme: {
     extend: {
+      colors: {
+        facebook: "#316ff6",
+        dribbble: "#d85888",
+        linkedin: "#0a66c2",
+        behance: "#053eff",
+        twitter: "#1d9bf0",
+        github: "#2b3137",
+        whatsapp: "#25d366",
+      },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

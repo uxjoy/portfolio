@@ -1,12 +1,9 @@
 "use client";
 
-import { RiArrowRightUpLine } from "@remixicon/react";
+import { RiArrowRightUpLine, RiDribbbleFill, RiLinkedinFill, RiTwitterFill } from "@remixicon/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { menuItem, resumeURL } from "../../src/utils/data/navbarData";
-import ButtonLink from "../Button";
-import ThemeToggle from "../ThemeSwitch";
-import { Logo } from "../svg/Logo";
+import { resumeURL } from "../../src/utils/data/navbarData";
 import ThemeSwitch from "../ThemeSwitch";
 
 const Navabar = () => {
@@ -14,26 +11,80 @@ const Navabar = () => {
 
   useEffect(() => {
     const scrollHandler = () => {
-      window.scrollY > 10 ? setTop(false) : setTop(true);
+      window.scrollY > 40 ? setTop(false) : setTop(true);
     };
+
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", scrollHandler);
   }, [top]);
 
   return (
     <div
-      className={`navbar-wrapper py-3 md:px-8 sticky top-0 bg-white bg-opacity-80 backdrop-blur  z-50  drop-shadow-sm md:drop-shadow-none ease-in-out duration-300 ${
-        !top ? `md:drop-shadow-sm  md:py-4` : "md:bg-transaprent md:py-6"
+      className={`navbar-wrapper py-10 md:px-8 sticky top-0 z-50 ease-in-out duration-300 border-b border-transparent ${
+        !top &&
+        `bg-white/50 dark:bg-white/5 border-gray-950/5 dark:border-white/5 md:py-6 backdrop-blur-lg drop-shadow-sm`
       }`}
+      // className={`navbar-wrapper py-4 md:px-8 sticky top-0 backdrop-blur dark:backdrop-blur-lg z-50 drop-shadow-sm md:drop-shadow-none ease-in-out duration-300 ${
+      //   top ? `md:bg-transaprent md:py-10` : "md:drop-shadow-sm md:py-6"
+      // }`}
     >
       <div className="container flex items-center justify-between">
         <Link href={"/"} aria-label="author-logo">
-          <Logo className="h-10 md:h-11 px-0 w-auto" />
+          {/* <Logo className="h-10 md:h-11 px-0 w-auto dark:bg-white" /> */}
+
+          <div className="uppercase font-bold text-xl">
+            <p className="leading-none">Sohanur</p>
+            <p className="leading-none">🇧🇩 Rahman</p>
+          </div>
         </Link>
 
-        <div className="flex items-center gap-3">
-          <div className="hidden md:block">
-            <ul className="flex flex-col items-center font-medium p-4 md:p-0 mt-4 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0">
+        <div className="flex items-center gap-5">
+          {/* Available for work */}
+          <div className="available-for-work flex items-center gap-2 text-green-500 pr-2">
+            <span className="relative flex items-center justify-center h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex w-full h-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            <span className="text-sm font-medium">Available for Work</span>
+          </div>
+
+          <ul className="flex items-center gap-2.5 text-white">
+            <li>
+              <Link
+                href={"https://www.linkedin.com/in/uxjoy"}
+                target="_blank"
+                className="p-2 block rounded-full bg-linkedin group"
+              >
+                <RiLinkedinFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"https://dribbble.com/uxjoy_"}
+                target="_blank"
+                className="p-2 block rounded-full bg-dribbble group"
+              >
+                <RiDribbbleFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
+              </Link>
+            </li>
+            <li>
+              <Link href={"https://x.com/uxjoy_"} target="_blank" className="p-2 block rounded-full bg-twitter group">
+                <RiTwitterFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
+              </Link>
+            </li>
+            {/* <li>
+              <Link
+                href={"https://www.linkedin.com/in/uxjoy"}
+                target="_blank"
+                className="p-2 block rounded-full bg-behance group"
+              >
+                <RiBehanceFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
+              </Link>
+            </li> */}
+          </ul>
+
+          {/* <div className="hidden md:block">
+            <ul className="flex flex-col items-center font-normal p-4 md:p-0 mt-4 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0">
               {menuItem.map(({ name, url }, i) => {
                 return (
                   <li
@@ -43,7 +94,7 @@ const Navabar = () => {
                     <Link
                       href={url}
                       target="_blank"
-                      className="flex items-center justify-center py-2 px-3 text-slate-600 hover:text-indigo-500"
+                      className="flex items-center justify-center p-2 text-gray-700 dark:text-white/70 hover:text-indigo-500"
                     >
                       {name}
                       <RiArrowRightUpLine size={22} />
@@ -52,14 +103,16 @@ const Navabar = () => {
                 );
               })}
             </ul>
-          </div>
+          </div> */}
 
           {/* Resume Button */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <ButtonLink name="My Resume" url={resumeURL} isIcon />
-          </div>
+          </div> */}
 
-          <div className="">
+          <div className="divider w-0.5 h-5 bg-slate-950/5 dark:bg-white/5"></div>
+
+          <div className="switch-button">
             <ThemeSwitch />
           </div>
 
