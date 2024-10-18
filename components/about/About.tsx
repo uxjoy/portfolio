@@ -14,13 +14,13 @@ import Spline from "../svg/Spline";
 
 const About = () => {
   return (
-    <div className="bg-slate-950 py-12 md:py-120">
+    <div className="bg-gray-50 dark:bg-zinc-900/40 py-12 md:py-120">
       <div className="container space-y-8 md:space-y-14">
         <Heading text1="info." text2="about me" bgDark />
 
         <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-          <div className="w-full p-5 md:p-6 bg-gray-900 border border-gray-800 rounded-2xl">
-            <p className="text-slate-500 text-sm md:text-lg leading-normal mb-0">
+          <div className="w-full p-5 md:p-6 bg-white border dark:bg-zinc-900 border-gray-100 dark:border-zinc-800 rounded-2xl">
+            <p className="text-gray-500 dark:text-zinc-500 text-sm md:text-lg leading-normal mb-0">
               {highlightedText(`✨ Strong commitment to collaboration and solutions-oriented
               problem-solving ✨`)}
               Use various web design software to develop
@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="order-first md:order-none row-span-2 w-full h-[340px] md:h-[480px] p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl relative">
+          <div className="order-first md:order-none row-span-2 w-full h-[340px] md:h-[480px] p-6 text-gray-500 text-lg bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl relative">
             <Image
               className="w-full h-full object-cover"
               src={"/assets/author_lg.webp"}
@@ -42,25 +42,25 @@ const About = () => {
             />
 
             <div className="text-white absolute bottom-6 space-y-2">
-              <p className="bg-slate-950 inline-block text-sm px-3.5 py-2 rounded-lg bg bg-opacity-40 backdrop-blur-md">
+              <p className="bg-gray-950 inline-block text-sm px-3.5 py-2 rounded-lg bg bg-opacity-40 backdrop-blur-md">
                 Hi 👋
               </p>
-              <p className="bg-slate-950 text-sm px-3.5 py-2 rounded-lg bg bg-opacity-40 backdrop-blur-md">
+              <p className="bg-gray-950 text-sm px-3.5 py-2 rounded-lg bg bg-opacity-40 backdrop-blur-md">
                 My name is Md. Sohanur Rahman
               </p>
             </div>
           </div>
 
-          <div className="w-full p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl space-y-8 md:space-y-6">
-            <div className="text-base text-white font-semi flex justify-between items-center">
-              <span className="uppercase">Experience</span>
-              <span className="text-xs py-1 px-2.5 leading-base bg-indigo-500 rounded-full">5+ yrs</span>
+          <div className="w-full p-6 text-gray-500 text-lg bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl space-y-8 md:space-y-6">
+            <div className="text-base flex justify-between items-center">
+              <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">Experience</span>
+              <span className="text-xs py-1 px-2.5 leading-base bg-indigo-500 text-white rounded-full">5+ yrs</span>
             </div>
 
             <div className="list [&>*:first-child]:pt-0 [&>*:last-child]:pb-0  [&>*:last-child]:border-b-0 j">
               {workHistoryList.map(({ designation, company, url, duration }, i) => (
                 <LinkComponent
-                  className={"py-5 border-b border-white border-opacity-5"}
+                  className={"py-5 border-b border-gray-100 dark:border-opacity-5"}
                   key={i}
                   title={designation}
                   organization={company}
@@ -72,8 +72,10 @@ const About = () => {
           </div>
 
           {/* Eucation Card Start */}
-          <div className="w-full p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl space-y-6 hidden md:block">
-            <div className="text-base text-white uppercase font-semi">Education</div>
+          <div className="w-full p-6 text-gray-500 text-lg bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl space-y-6 hidden md:block">
+            <div className="text-base text-gray-900 dark:text-white uppercase font-bold dark:font-medium">
+              Education
+            </div>
 
             <LinkComponent
               title={educationHistory.title}
@@ -85,8 +87,10 @@ const About = () => {
 
           {/* ================== */}
 
-          <div className="w-full p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl space-y-6 md:hidden">
-            <div className="text-base text-white uppercase font-semi">Education</div>
+          <div className="w-full p-6 text-gray-500 text-lg bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl space-y-6 md:hidden">
+            <div className="text-base text-gray-900 dark:text-white uppercase font-bold dark:font-medium">
+              Education
+            </div>
 
             <LinkComponent
               title={educationHistory.title}
@@ -98,8 +102,10 @@ const About = () => {
           </div>
           {/* Eucation Card Start */}
 
-          <div className="w-full p-6 text-slate-500 text-lg bg-gray-900 border border-gray-800 rounded-xl space-y-6">
-            <div className="text-base text-white uppercase font-semi">Design Tools</div>
+          <div className="w-full p-6 text-gray-500 text-lg bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl space-y-6">
+            <div className="text-base text-gray-900 dark:text-white uppercase font-bold dark:font-medium">
+              Design Tools
+            </div>
 
             <div className="flex gap-3">
               <Figma />
@@ -121,7 +127,7 @@ export default About;
 
 // Highlighted Text
 export const highlightedText = (text: string) => {
-  return <span className="text-white"> {text} </span>;
+  return <span className="text-gray-900 dark:text-white dark:font-light"> {text} </span>;
 };
 
 type LinkComponentProps = {
@@ -144,24 +150,32 @@ const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, 
           className={`block group ease-in-out ${className} ${isEducation ? "space-y-3" : "space-y-1"}`}
         >
           <div className={`flex ${isEducation ? "flex-col justify-start gap-1" : "items-center justify-between"}`}>
-            <h4 className="text-sm text-slate-300 group-hover:text-white duration-300">{title}</h4>
+            <h4 className="text-sm text-gray-900 dark:text-white/80 font-semibold dark:font-medium dark:group-hover:text-white duration-300">
+              {title}
+            </h4>
 
-            <p className="text-xs flex items-center gap-0.5 group-hover:text-indigo-400 group-hover:translate-x-1 duration-300">
+            <p className="text-xs flex items-center gap-0.5 group-hover:text-indigo-400 group-hover:trangray-x-1 duration-300">
               <span className="group-hover:underline">{organization}</span>
               <RiArrowRightUpLine size={16} />
             </p>
           </div>
 
-          <p className="text-[10px] md:text-[11px] leading-none text-slate-400 font-light">{duration}</p>
+          <p className="text-[10px] md:text-[11px] leading-none text-gray-600 dark:text-zinc-500 font-light">
+            {duration}
+          </p>
         </Link>
       ) : (
         <Link href={url} target="_blank" className={`block space-y-1 group ease-in-out ${className}`}>
           <div className="flex items-center justify-between">
-            <h4 className="text-sm text-slate-300 group-hover:text-white duration-300">{title}</h4>
-            <span className="text-[10px] md:text-[11px] leading-none text-slate-400 font-light">{duration}</span>
+            <h4 className="text-sm text-gray-900 dark:text-white/80 font-semibold dark:font-medium dark:group-hover:text-white duration-300">
+              {title}
+            </h4>
+            <span className="text-[10px] md:text-[11px] leading-none text-gray-600 dark:text-zinc-500 font-light">
+              {duration}
+            </span>
           </div>
 
-          <p className="text-xs flex items-center gap-0.5 group-hover:text-indigo-400 group-hover:translate-x-1 duration-300">
+          <p className="text-xs flex items-center text-gray-600 dark:text-zinc-500 gap-0.5 group-hover:text-indigo-400 group-hover:trangray-x-1 duration-300">
             <span className="group-hover:underline">{organization}</span>
             <RiArrowRightUpLine size={16} />
           </p>

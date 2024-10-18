@@ -8,7 +8,7 @@ const SelectedWork = () => {
       <div className="container space-y-8 md:space-y-0">
         <Heading text1="Selected" text2="work" bgDark />
 
-        <div className="md:px-28 text-white">
+        <div className="md:px-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 md:[&>*:first-child]:pt-24">
             {projectList.map(({ url, title, tag, imageURL }, i) => (
               <ProjectCard key={i} url={url} title={title} tag={tag} imageURL={imageURL} />
