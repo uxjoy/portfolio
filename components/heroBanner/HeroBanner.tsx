@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { calendlyLink, whatsappLink } from "../../src/utils/data/heroBannerData";
 import MousePointer from "../MousePointer";
-import HeaderCircle from "../svg/HeaderCircle";
 
 const HeroBanner = () => {
   return (
@@ -154,7 +153,7 @@ const HeroBanner = () => {
       {/* Circle BG Shape */}
 
       <div className="mouse-pointer absolute top-[164px] md:top-40 md:left-1/2 z-10 pl-48 md:pl-44 pt-2">
-        <MousePointer fill="#F43F5E" textColor="text-white" textBgColor="bg-rose-500" text="Product Designer" />
+        <MousePointer fill="#F43F5E" textColor="text-white" text="Product Designer" />
       </div>
     </div>
   );

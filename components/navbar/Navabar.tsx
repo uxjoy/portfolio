@@ -34,7 +34,7 @@ const Navabar = () => {
 
           <div className="uppercase font-bold text-xl">
             <p className="leading-none">Sohanur</p>
-            <p className="leading-none">🇧🇩 Rahman</p>
+            <p className="leading-none text-slate-400 dark:text-slate-500">🇧🇩 Rahman</p>
           </div>
         </Link>
 
@@ -48,7 +48,7 @@ const Navabar = () => {
             <span className="text-sm font-medium">Available for Work</span>
           </div>
 
-          <ul className="flex items-center gap-2.5 text-white">
+          <ul className="flex items-center gap-2.5 text-white pr-0.5">
             <li>
               <Link
                 href={"https://www.linkedin.com/in/uxjoy"}
