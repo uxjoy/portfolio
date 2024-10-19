@@ -32,7 +32,7 @@ const Navabar = () => {
         <Link href={"/"} aria-label="author-logo">
           {/* <Logo className="h-10 md:h-11 px-0 w-auto dark:bg-white" /> */}
 
-          <div className="uppercase font-bold md:text-xl">
+          <div className="uppercase font-bold text-lg md:text-xl">
             <p className="leading-none">Sohanur</p>
             <p className="leading-none text-gray-400 dark:text-stone-400">🇧🇩 Rahman</p>
           </div>
