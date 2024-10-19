@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <div className="pt-14 pb-24 relative">
       <div className="container text-center space-y-4">
-        <div className="flex flex-col text-[100px] leading-[110%] uppercase font-bold mx-auto dark:text-stone-600">
+        <div className="flex flex-col md:text-[100px] leading-[110%] uppercase font-bold mx-auto dark:text-stone-600">
           <p>Hi 👋, I’m Joy ✨</p>
           <p className="flex items-center justify-center gap-4 mx-auto">
             <span>creative</span>
@@ -28,7 +28,7 @@ const HeroSection = () => {
         </div>
 
         <div className="space-y-8">
-          <p className="w-10/12 mx-auto text-xl font-light text-gray-600 dark:text-white/60 leading-[160%]">
+          <p className="md:w-10/12 mx-auto md:text-xl font-light text-gray-600 dark:text-white/60 leading-[160%]">
             With over{" "}
             <span className="font-semibold text-gray-900 dark:text-amber-400 dark:font-medium">
               5 years of Product Design
