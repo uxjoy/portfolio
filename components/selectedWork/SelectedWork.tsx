@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 const SelectedWork = () => {
   return (
-    <div className=" py-12 md:py-120 relative">
+    <div className=" py-12 md:py-120 relative" id="work">
       <div className="container space-y-8 md:space-y-0">
         <Heading text1="Selected" text2="work" bgDark />
 

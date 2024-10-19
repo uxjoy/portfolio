@@ -1,8 +1,7 @@
 // Navbar menu items
 
 // ("https://drive.google.com/file/d/1W2_HCbalyu-ygi-HOvcWk49JHq2B7eVV/view?usp=sharing");
-export const resumeURL =
-  "https://drive.google.com/file/d/1FySzcNzUQZYdPdW0_WBInGV62N4QVf_J/view";
+export const resumeURL = "https://drive.google.com/file/d/1FySzcNzUQZYdPdW0_WBInGV62N4QVf_J/view";
 
 // Menu item data
 export const menuItem = [
@@ -17,5 +16,9 @@ export const menuItem = [
   {
     name: "Linkedin",
     url: "https://www.linkedin.com/in/uxjoy",
+  },
+  {
+    name: "Twitter",
+    url: "https://x.com/uxjoy_",
   },
 ];

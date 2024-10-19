@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --bg_primary: @apply bg-indigo-500;
     --facebook: #316ff6;
     --dribbble: #d85888;
     --linkedin: #0a66c2;
@@ -14,17 +15,18 @@
   }
 }
 
+html,
 body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-
-  /* font-size: 14px; */
   scroll-behavior: smooth;
+}
+
+::selection {
+  color: white;
+  background: rgb(99, 102, 241, 0.9);
+}
+::-moz-selection {
+  color: white;
+  background: rgb(99, 102, 241, 0.9);
 }
 
 .lh-120 {

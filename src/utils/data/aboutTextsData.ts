@@ -1,7 +1,7 @@
 // Working Experience Data
 export const workHistoryList = [
   {
-    designation: "Product Designer",
+    designation: "Senior Product Designer",
     company: "ShareTrip",
     url: "https://sharetrip.net",
     duration: "Jul 2023 - Now",

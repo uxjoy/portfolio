@@ -1,6 +1,6 @@
 "use client";
 
-import { RiArrowRightUpLine, RiDribbbleFill, RiLinkedinFill, RiTwitterFill } from "@remixicon/react";
+import { RiArrowRightUpLine, RiDribbbleFill, RiLinkedinFill, RiMailOpenLine, RiTwitterFill } from "@remixicon/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { resumeURL } from "../../src/utils/data/navbarData";
@@ -34,7 +34,7 @@ const Navabar = () => {
 
           <div className="uppercase font-bold text-xl">
             <p className="leading-none">Sohanur</p>
-            <p className="leading-none text-slate-400 dark:text-zinc-500">🇧🇩 Rahman</p>
+            <p className="leading-none text-gray-400 dark:text-stone-400">🇧🇩 Rahman</p>
           </div>
         </Link>
 
@@ -49,28 +49,53 @@ const Navabar = () => {
           </div>
 
           <ul className="flex items-center gap-2.5 text-white pr-0.5">
-            <li>
+            <li className="relative group">
               <Link
                 href={"https://www.linkedin.com/in/uxjoy"}
                 target="_blank"
                 className="p-2 block rounded-full bg-linkedin group"
               >
-                <RiLinkedinFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
+                <RiLinkedinFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
               </Link>
+
+              <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">
+                Linkedin
+              </span>
             </li>
-            <li>
+            <li className="relative group">
               <Link
                 href={"https://dribbble.com/uxjoy_"}
                 target="_blank"
                 className="p-2 block rounded-full bg-dribbble group"
               >
-                <RiDribbbleFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
+                <RiDribbbleFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
               </Link>
+
+              <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">
+                Dribbble
+              </span>
             </li>
-            <li>
+            <li className="relative group">
               <Link href={"https://x.com/uxjoy_"} target="_blank" className="p-2 block rounded-full bg-twitter group">
-                <RiTwitterFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
+                <RiTwitterFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
               </Link>
+
+              <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">
+                Twitter
+              </span>
+            </li>
+            <li className="relative group">
+              <Link
+                href={"mailto:sohanur.ux@gmail.com"}
+                target="_blank"
+                className="p-2 block rounded-full bg-gray-900 group"
+              >
+                <RiMailOpenLine size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
+              </Link>
+
+              <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">
+                Copy Email
+              </span>
             </li>
             {/* <li>
               <Link

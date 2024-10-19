@@ -20,7 +20,7 @@ const About = () => {
 
         <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
           <div className="w-full p-5 md:p-6 bg-white border dark:bg-zinc-900 border-gray-100 dark:border-zinc-800 rounded-2xl">
-            <p className="text-gray-500 dark:text-zinc-500 text-sm md:text-lg leading-normal mb-0">
+            <p className="text-gray-500 dark:text-stone-500 dark:font-light text-sm md:text-lg leading-normal mb-0">
               {highlightedText(`✨ Strong commitment to collaboration and solutions-oriented
               problem-solving ✨`)}
               Use various web design software to develop
@@ -42,10 +42,10 @@ const About = () => {
             />
 
             <div className="text-white absolute bottom-6 space-y-2">
-              <p className="bg-gray-950 inline-block text-sm px-3.5 py-2 rounded-lg bg bg-opacity-40 backdrop-blur-md">
+              <p className="bg-gray-950 inline-block text-sm px-3.5 py-2 rounded-lg bg bg-opacity-40 backdrop-blur-md border border-white/10">
                 Hi 👋
               </p>
-              <p className="bg-gray-950 text-sm px-3.5 py-2 rounded-lg bg bg-opacity-40 backdrop-blur-md">
+              <p className="bg-gray-950 text-sm px-3.5 py-2 rounded-lg bg bg-opacity-40 backdrop-blur-md border border-white/10">
                 My name is Md. Sohanur Rahman
               </p>
             </div>
@@ -160,22 +160,22 @@ const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, 
             </p>
           </div>
 
-          <p className="text-[10px] md:text-[11px] leading-none text-gray-600 dark:text-zinc-500 font-light">
+          <p className="text-[10px] md:text-[11px] leading-none text-gray-600 dark:text-stone-500 font-light">
             {duration}
           </p>
         </Link>
       ) : (
-        <Link href={url} target="_blank" className={`block space-y-1 group ease-in-out ${className}`}>
+        <Link href={url} target="_blank" className={`block space-y-1 group ease-in-out duration-200 ${className}`}>
           <div className="flex items-center justify-between">
-            <h4 className="text-sm text-gray-900 dark:text-white/80 font-semibold dark:font-medium dark:group-hover:text-white duration-300">
+            <h4 className="text-sm text-gray-900 dark:text-white/80 font-semibold dark:font-normal dark:group-hover:text-white duration-300">
               {title}
             </h4>
-            <span className="text-[10px] md:text-[11px] leading-none text-gray-600 dark:text-zinc-500 font-light">
+            <span className="text-[10px] md:text-[12px] leading-none text-gray-600 dark:text-stone-500 dark:group-hover:text-green-500 scale-100 group-hover:scale-105 font-light duration-300">
               {duration}
             </span>
           </div>
 
-          <p className="text-xs flex items-center text-gray-600 dark:text-zinc-500 gap-0.5 group-hover:text-indigo-400 group-hover:trangray-x-1 duration-300">
+          <p className="text-xs flex items-center text-gray-600 dark:text-stone-500 dark:font-light gap-0.5 group-hover:text-stone-400 group-hover:trangray-x-1 duration-300">
             <span className="group-hover:underline">{organization}</span>
             <RiArrowRightUpLine size={16} />
           </p>

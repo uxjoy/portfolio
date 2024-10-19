@@ -1,3 +1,4 @@
+import BackToTop from "../../components/BackToTop";
 import Contact from "../../components/Contact";
 import About from "../../components/about/About";
 import ClientsFeedback from "../../components/clientFeedback/ClientsFeedback";
@@ -11,7 +12,7 @@ import SelectedWork from "../../components/selectedWork/SelectedWork";
 
 const Home = () => {
   return (
-    <main className="wrapper dark:bg-zinc-950">
+    <main className="wrapper dark:bg-zinc-950" id="back_to_top">
       <Navabar />
 
       <HeroSection />
@@ -33,6 +34,9 @@ const Home = () => {
       <RecentExploration />
 
       <Contact />
+
+      {/* CTA */}
+      <BackToTop />
     </main>
   );
 };

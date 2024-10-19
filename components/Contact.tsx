@@ -17,7 +17,15 @@ const Contact = () => {
               <span className="text-gray-900 dark:text-stone-300">your project. </span>
             </div>
 
-            <p className="text-base md:text-32 font-semibold text-gray-900 dark:text-green-500">sohanur.ux@gmail.com</p>
+            <span className="flex items-center justify-center gap-1 w-full relative group">
+              <p className="text-base md:text-32 font-semibold text-gray-900 dark:text-green-500">
+                sohanur.ux@gmail.com
+              </p>
+
+              {/* <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-sm absolute left-1/2 -translate-x-1/2 -top-0 opacity-0 group-hover:opacity-100 group-hover:-top-10 ease-in-out duration-300">
+                Copy Email
+              </span> */}
+            </span>
 
             <div className="hidden md:block">
               {/* <ButtonLink name="Book a Call" url={calendlyLink} isIcon={true} isLarge /> */}
@@ -51,14 +59,13 @@ const Contact = () => {
           </div>
 
           {/* Copyright section start */}
-          <div className="copyright flex items-center justify-between text-xs md:text-base text-gray-600 dark:text-white">
-            <div className="flex items-center text-gray-60 mx-auto md:mx-0">
-              <RiCopyrightLine size={18} />
-              2024 Portfolio by Sohanur Rahman
+          <div className="copyright flex items-center justify-between text-xs md:text-base text-gray-600 dark:text-white/70 font-medium dark:font-light ">
+            <div className="flex gap-1 items-center text-gray-60 mx-auto md:mx-0">
+              <RiCopyrightLine size={18} /> 2024 Portfolio by ✨ Sohanur Rahman ✨
             </div>
 
             <div className="hidden md:block">
-              <ul className="font-medium flex items-center space-x-6">
+              <ul className="flex items-center space-x-6">
                 {menuItem.map(({ name, url }, i) => {
                   return (
                     <li key={i} className="transform trangray-y-0 hover:-trangray-y-0.5 ease-in-out duration-200">
@@ -81,30 +88,53 @@ const Contact = () => {
 
         {/* Plane SVG Start */}
         <div className="absolute top-0 right-0 hidden md:block">
-          <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.1">
-              <path
-                d="M137.5 12.5L68.75 81.25"
-                stroke="#6366F1"
-                strokeWidth="4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M137.5 12.5L93.75 137.5L68.75 81.25L12.5 56.25L137.5 12.5Z"
-                stroke="#6366F1"
-                strokeWidth="4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </g>
-          </svg>
+          <span className="dark:hidden">
+            <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.1">
+                <path
+                  d="M137.5 12.5L68.75 81.25"
+                  stroke="#6366F1"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M137.5 12.5L93.75 137.5L68.75 81.25L12.5 56.25L137.5 12.5Z"
+                  stroke="#6366F1"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </g>
+            </svg>
+          </span>
+
+          <span className="hidden dark:block opacity-[3%]">
+            <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path
+                  d="M137.5 12.5L68.75 81.25"
+                  stroke="#ffffff"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M137.5 12.5L93.75 137.5L68.75 81.25L12.5 56.25L137.5 12.5Z"
+                  stroke="#ffffff"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </g>
+            </svg>
+          </span>
         </div>
         {/* Plane SVG End */}
       </div>
 
       <div
-        className="watermark uppercase text-[66px] md:text-264 font-extrabold text-gray-100 dark:opacity-[4%]  absolute z-0 -bottom-2 md:-bottom-10
+        className="watermark uppercase text-[66px] md:text-264 font-extrabold text-gray-100 dark:opacity-[2%]  absolute z-0 -bottom-2 md:-bottom-10
        m-auto left-0 right-0 leading-none"
       >
         contact
