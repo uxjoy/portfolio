@@ -12,7 +12,7 @@ import SelectedWork from "../../components/selectedWork/SelectedWork";
 
 const Home = () => {
   return (
-    <main className="wrapper dark:bg-zinc-950" id="back_to_top">
+    <main className="wrapper" id="back_to_top">
       <Navabar />
 
       <HeroSection />

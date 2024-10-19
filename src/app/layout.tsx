@@ -94,7 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
       </head>
 
-      <body className={font.className}>
+      <body className={`dark:bg-zinc-950 ${font.className}`}>
         <Providers>{children}</Providers>
 
         <Analytics />
