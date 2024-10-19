@@ -6,8 +6,19 @@ import MousePointer from "../MousePointer";
 
 const HeroSection = () => {
   return (
-    <div className="pt-14 pb-20 md:pb-24 relative">
+    <div className="py-24 md:pt-14 md:pb-24 relative">
       <div className="container text-center space-y-4">
+        {/* <span className="w-full flex items-center justify-center">
+          <Image
+            src="/assets/joy_header.png"
+            loading="lazy"
+            alt="author-image"
+            width={100}
+            height={72}
+            className="rounded-full object-contain"
+          />
+        </span> */}
+
         <div className="flex flex-col justify-center text-[32px] md:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-auto dark:text-stone-500 dark:md:text-stone-600">
           <p className="flex items-center justify-center w-full">
             Hi 👋, I’m Joy <span className="hidden md:block">✨</span>
@@ -30,7 +41,7 @@ const HeroSection = () => {
         </div>
 
         <div className="space-y-8">
-          <p className="md:w-10/12 mx-auto md:text-xl font-light text-gray-600 dark:text-white/60 md:leading-[160%]">
+          <p className="md:w-10/12 mx-auto md:text-xl font-light text-gray-600 dark:text-stone-500 leading-tight md:leading-[160%]">
             With over{" "}
             <span className="font-semibold text-gray-900 dark:text-amber-400 dark:font-medium">
               5 years of Product Design

@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="order-first md:order-none row-span-2 w-full h-[340px] md:h-[480px] p-6 text-gray-500 text-lg bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl relative">
+          <div className="order-first md:order-none row-span-2 w-full h-[380px] md:h-[480px] p-6 text-gray-500 text-lg bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl relative">
             <Image
               className="w-full h-full object-cover"
               src={"/assets/author_lg.webp"}
@@ -154,7 +154,7 @@ const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, 
               {title}
             </h4>
 
-            <p className="text-xs flex items-center gap-0.5 group-hover:text-indigo-400 group-hover:trangray-x-1 duration-300">
+            <p className="text-xs flex items-center text-gray-600 dark:text-stone-500 dark:font-light gap-0.5 group-hover:text-stone-400 group-hover:trangray-x-1 duration-300">
               <span className="group-hover:underline">{organization}</span>
               <RiArrowRightUpLine size={16} />
             </p>

@@ -16,7 +16,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, tag, imageURL }) => {
       // target="_blank"
       className="space-y-4 md:space-y-6 group ease-in-out duration-300 w-full"
     >
-      <div className="relative w-full h-[380px] md:h-[560px] bg-slate-50 rounded-3xl overflow-hidden">
+      <div className="relative w-full h-[380px] md:h-[560px] bg-slate-50 rounded-2xl md:rounded-3xl overflow-hidden">
         <Image
           className="object-cover w-full h-full group-hover:scale-110 duration-300"
           src={imageURL}

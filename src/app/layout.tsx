@@ -7,6 +7,7 @@ import { Metadata } from "next";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import BackToTop from "../../components/BackToTop";
 import Providers from "./providers";
 
 const font = Sora({ subsets: ["latin"] });
@@ -96,6 +97,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       <body className={`dark:bg-zinc-950 ${font.className}`}>
         <Providers>{children}</Providers>
+
+        {/* CTA */}
+        <BackToTop />
 
         <Analytics />
 

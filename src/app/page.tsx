@@ -34,9 +34,6 @@ const Home = () => {
       <RecentExploration />
 
       <Contact />
-
-      {/* CTA */}
-      <BackToTop />
     </main>
   );
 };

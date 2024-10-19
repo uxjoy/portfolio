@@ -8,14 +8,14 @@ const Contact = () => {
     <div className="contact-wrapper text-center pt-12 pb-[88px] md:pt-120 md:pb-100 relative overflow-hidden">
       <div className="container relative z-10">
         <div className="inner-content space-y-10 md:space-y-120">
-          <div className="content space-y-6 md:space-y-14">
-            <div className="h2 text-gray-300 dark:text-stone-600 font-bold lh-12 leading-none">
+          <div className="content space-y-7 md:space-y-14">
+            <h1 className="text-3xl md:text-7xl text-gray-300 dark:text-stone-600 leading-tight md:leading-none font-bold space-y-4">
               Write a <span className="text-gray-900 dark:text-stone-300"> message, </span>
               <br />
               and <span className="text-indigo-500"> let’s discuss </span> with
               <br />
               <span className="text-gray-900 dark:text-stone-300">your project. </span>
-            </div>
+            </h1>
 
             <span className="flex items-center justify-center gap-1 w-full relative group">
               <p className="text-base md:text-32 font-semibold text-gray-900 dark:text-green-500">
@@ -32,12 +32,11 @@ const Contact = () => {
 
               <Link
                 href={calendlyLink}
-                className="flex items-center space-x-reverse gap-2.5 justify-center h-14 pl-7 pr-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-800 hover:bg-indigo-500 dark:hover:text-white dark:font-semibold ease-in-out duration-300 group w-[180px] mx-auto"
+                className="inline-flex items-center space-x-reverse gap-2.5 justify-center h-12 md:h-14 pl-6 md:pl-7 pr-1.5 md:pr-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-800 hover:bg-indigo-500 dark:hover:text-white ease-in-out duration-300 text-sm md:text-base text-nowrap group"
               >
                 Book a Call
                 <span className="w-9 h-9 grid items-center justify-center rounded-full bg-white dark:bg-zinc-950 text-slate-900 dark:text-white ease-in-out duration-300">
                   <RiArrowRightUpLine size={24} />
-                  {/* <RiDriveFill size={20} className="hidden group-hover:block" /> */}
                 </span>
               </Link>
             </div>
@@ -47,12 +46,11 @@ const Contact = () => {
 
               <Link
                 href={calendlyLink}
-                className="flex items-center space-x-reverse gap-2.5 justify-center h-14 pl-7 pr-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-800 hover:bg-indigo-500 dark:hover:text-white ease-in-out duration-300 group"
+                className="inline-flex items-center space-x-reverse gap-2.5 justify-center h-12 md:h-14 pl-6 md:pl-7 pr-1.5 md:pr-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-800 hover:bg-indigo-500 dark:hover:text-white ease-in-out duration-300 text-sm md:text-base text-nowrap group"
               >
                 Book a Call
                 <span className="w-9 h-9 grid items-center justify-center rounded-full bg-white dark:bg-zinc-950 text-slate-900 dark:text-white ease-in-out duration-300">
                   <RiArrowRightUpLine size={24} />
-                  {/* <RiDriveFill size={20} className="hidden group-hover:block" /> */}
                 </span>
               </Link>
             </div>
