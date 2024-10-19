@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <div className="pt-14 pb-20 md:pb-24 relative">
       <div className="container text-center space-y-4">
-        <div className="flex flex-col justify-center text-[32px] md:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-auto dark:text-stone-600">
+        <div className="flex flex-col justify-center text-[32px] md:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-auto dark:text-stone-500 dark:md:text-stone-600">
           <p className="flex items-center justify-center w-full">
             Hi 👋, I’m Joy <span className="hidden md:block">✨</span>
           </p>
