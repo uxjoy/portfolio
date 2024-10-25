@@ -14,7 +14,7 @@ import Spline from "../svg/Spline";
 
 const About = () => {
   return (
-    <div className="bg-gray-50 dark:bg-zinc-900/40 py-12 md:py-120">
+    <div className="bg-slate-400/5 dark:bg-zinc-900/40 py-12 md:py-120">
       <div className="container space-y-8 md:space-y-14">
         <Heading text1="info." text2="about me" bgDark />
 

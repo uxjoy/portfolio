@@ -96,6 +96,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body className={`dark:bg-zinc-950 ${font.className}`}>
+        <div className="grain"></div>
+
         <Providers>{children}</Providers>
 
         {/* CTA */}

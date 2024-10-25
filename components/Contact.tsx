@@ -86,19 +86,19 @@ const Contact = () => {
 
         {/* Plane SVG Start */}
         <div className="absolute top-0 right-0 hidden md:block">
-          <span className="dark:hidden">
+          <span className="dark:hidden opacity-25">
             <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.1">
                 <path
                   d="M137.5 12.5L68.75 81.25"
-                  stroke="#6366F1"
+                  stroke="#000000"
                   strokeWidth="4"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M137.5 12.5L93.75 137.5L68.75 81.25L12.5 56.25L137.5 12.5Z"
-                  stroke="#6366F1"
+                  stroke="#000000"
                   strokeWidth="4"
                   strokeLinecap="round"
                   strokeLinejoin="round"

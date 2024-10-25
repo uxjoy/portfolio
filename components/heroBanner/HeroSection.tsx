@@ -25,17 +25,17 @@ const HeroSection = () => {
           </p> */}
 
           <p className="flex items-center justify-center w-full">
-            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-stone-900 dark:inline-block dark:text-transparent dark:bg-clip-text">
+            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-black/0 dark:inline-block dark:text-transparent dark:bg-clip-text">
               Hi
             </span>
             <span className="ml-1 md:ml-4"> 👋 </span>
-            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-stone-900 dark:inline-block dark:text-transparent dark:bg-clip-text">
+            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-black/0 dark:inline-block dark:text-transparent dark:bg-clip-text">
               , I’m Joy
             </span>
             <span className="hidden md:block">✨</span>
           </p>
           <p className="flex items-center justify-center gap-2 md:gap-4 mx-auto">
-            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-stone-900 dark:inline-block dark:text-transparent dark:bg-clip-text">
+            <span className="dark:bg-gradient-to-b dark:from-stone-500 dark:to-black/0 dark:inline-block dark:text-transparent dark:bg-clip-text">
               creative
             </span>
             <span className="hidden md:block">
@@ -66,7 +66,7 @@ const HeroSection = () => {
           <div className="actions flex items-center justify-center gap-3 w-full font-medium">
             <Link
               href={"#work"}
-              className="flex items-center justify-center h-12 md:h-14 min-w-[152px] md:min-w-[174px] px-2 md:px-3 space-x-3 rounded-full bg-slate-100 dark:bg-zinc-900 hover:bg-slate-200 dark:hover:bg-zinc-800 dark:border dark:border-zinc-800 ease-in-out duration-300 text-sm md:text-base text-nowrap"
+              className="flex items-center justify-center h-12 md:h-14 min-w-[152px] md:min-w-[174px] px-2 md:px-3 space-x-3 rounded-full bg-gray-100 dark:bg-zinc-900 hover:bg-gray-200 dark:font-light dark:hover:bg-zinc-800 border border-slate-200/80 dark:border-zinc-800 ease-in-out duration-300 text-sm md:text-base text-nowrap"
             >
               See my Work
             </Link>

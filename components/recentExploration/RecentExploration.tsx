@@ -3,7 +3,7 @@ import ImageSlider from "./ImageSlider";
 
 const RecentExploration = () => {
   return (
-    <div className="bg-gray-50 dark:bg-zinc-900/40 pb-12 md:pb-120 relative space-y-9 md:space-y-24">
+    <div className="bg-slate-400/5 dark:bg-zinc-900/40 pb-12 md:pb-120 relative space-y-9 md:space-y-24">
       {/* <div className="container">
         <div className="md:px-20 text-center">
           <div className="h2 text-slate-800 font-extrabold leading-tight">
