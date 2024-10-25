@@ -19,12 +19,25 @@ const HeroSection = () => {
           />
         </span> */}
 
-        <div className="flex flex-col justify-center text-[32px] md:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-auto dark:text-stone-500 dark:md:text-stone-600">
-          <p className="flex items-center justify-center w-full">
+        <div className="flex flex-col justify-center text-[32px] md:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-auto">
+          {/* <p className="flex items-center justify-center w-full">
             Hi 👋, I’m Joy <span className="hidden md:block">✨</span>
+          </p> */}
+
+          <p className="flex items-center justify-center w-full">
+            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-stone-900 dark:inline-block dark:text-transparent dark:bg-clip-text">
+              Hi
+            </span>
+            <span className="ml-1 md:ml-4"> 👋 </span>
+            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-stone-900 dark:inline-block dark:text-transparent dark:bg-clip-text">
+              , I’m Joy
+            </span>
+            <span className="hidden md:block">✨</span>
           </p>
           <p className="flex items-center justify-center gap-2 md:gap-4 mx-auto">
-            <span>creative</span>
+            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-stone-900 dark:inline-block dark:text-transparent dark:bg-clip-text">
+              creative
+            </span>
             <span className="hidden md:block">
               <Image
                 src="/assets/joy_header.png"
