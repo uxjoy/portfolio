@@ -78,6 +78,19 @@ h6 {
   /* h3 {
     @apply text-[28px];
   } */
+
+  .lights-container {
+    grid-column-gap: 40px !important;
+    grid-row-gap: 40px !important;
+  }
+
+  .light-container.left,
+  .light-container.center,
+  .light-container.right,
+  .light-container.last {
+    opacity: 0.4 !important;
+    filter: blur(20px) !important;
+  }
 }
 
 /* md */
