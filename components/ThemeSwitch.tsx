@@ -22,6 +22,7 @@ export default function ThemeSwitch() {
       <button
         className="p-2 rounded-full hover:bg-zinc-900 outline-none border-none ease-in-out duration-200"
         onClick={() => setTheme("light")}
+        aria-label="Theme-Switch"
       >
         <RiSunFill size={20} className="text-amber-400" />
       </button>
@@ -33,6 +34,7 @@ export default function ThemeSwitch() {
       <button
         className="p-2 rounded-full hover:bg-slate-100 outline-none border-none ease-in-out duration-200"
         onClick={() => setTheme("dark")}
+        aria-label="Theme-Switch"
       >
         <RiMoonClearFill size={20} className="text-gray-800" />
       </button>

@@ -4,7 +4,7 @@ import { RiCheckLine, RiCloseLine } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
 import Contact from "../../../../components/Contact";
-import Navabar from "../../../../components/navbar/Navabar";
+import MainLayout from "../../../../components/MainLayout";
 import branding from "../../../../public/assets/case-study/branding.png";
 import imgLandscape from "../../../../public/assets/case-study/ebl-overview.png";
 import img_6 from "../../../../public/assets/case-study/img_6.png";
@@ -21,9 +21,7 @@ const CaseStudyDetails = ({ params }: any) => {
   // const [isToggle, isSetToggle] = useState(true);
 
   return (
-    <>
-      <Navabar />
-
+    <MainLayout>
       <div className="py-12 md:pt-100 md:pb-16" id="top">
         <div className="container relative space-y-6 md:space-y-2">
           <div className="top-content md:w-3/4">
@@ -540,7 +538,7 @@ const CaseStudyDetails = ({ params }: any) => {
       </button> */}
 
       <Contact />
-    </>
+    </MainLayout>
   );
 };
 

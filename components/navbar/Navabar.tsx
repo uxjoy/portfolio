@@ -2,7 +2,7 @@
 
 import { RiDribbbleFill, RiLinkedinFill, RiMailOpenLine, RiTwitterFill } from "@remixicon/react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import ThemeSwitch from "../ThemeSwitch";
 
 const Navabar = () => {
@@ -56,13 +56,12 @@ const Navabar = () => {
                 href={"https://www.linkedin.com/in/uxjoy"}
                 target="_blank"
                 className="p-2 block rounded-full bg-linkedin group"
+                aria-label="Linkedin link for more information"
               >
                 <RiLinkedinFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
               </Link>
 
-              <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">
-                Linkedin
-              </span>
+              <SocialTooltip text="Linkedin" />
             </li>
 
             <li className="relative group">
@@ -70,23 +69,25 @@ const Navabar = () => {
                 href={"https://dribbble.com/uxjoy_"}
                 target="_blank"
                 className="p-2 block rounded-full bg-dribbble group"
+                aria-label="Dribbble link for more information"
               >
                 <RiDribbbleFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
               </Link>
 
-              <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">
-                Dribbble
-              </span>
+              <SocialTooltip text="Dribbble" />
             </li>
 
             <li className="relative group hidden md:block">
-              <Link href={"https://x.com/uxjoy_"} target="_blank" className="p-2 block rounded-full bg-twitter group">
+              <Link
+                href={"https://x.com/uxjoy_"}
+                target="_blank"
+                className="p-2 block rounded-full bg-twitter group"
+                aria-label="Twitter link for more information"
+              >
                 <RiTwitterFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
               </Link>
 
-              <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">
-                Twitter
-              </span>
+              <SocialTooltip text="Twitter" />
             </li>
 
             <li className="relative group hidden">
@@ -163,3 +164,15 @@ const Navabar = () => {
 };
 
 export default Navabar;
+
+type Props = {
+  text: string;
+};
+
+const SocialTooltip: FC<Props> = ({ text }) => {
+  return (
+    <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-medium uppercase bg-gray-900 dark:bg-white/10 px-1.5 py-0.5 rounded opacity-0 dark:border-[0.5px] dark:border-white/15 invisible group-hover:opacity-100 group-hover:-top-[22px] group-hover:visible ease-in-out duration-300 z-0">
+      {text}
+    </span>
+  );
+};

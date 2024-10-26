@@ -7,8 +7,8 @@ import { Metadata } from "next";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import BackToTop from "../../components/BackToTop";
 import Providers from "./providers";
+import BackToTop from "../../components/BackToTop";
 
 const font = Sora({ subsets: ["latin"] });
 
