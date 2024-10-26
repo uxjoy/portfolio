@@ -5,14 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Contact from "../../../../components/Contact";
 import MainLayout from "../../../../components/MainLayout";
-import branding from "../../../../public/assets/case-study/branding.png";
-import imgLandscape from "../../../../public/assets/case-study/ebl-overview.png";
-import img_6 from "../../../../public/assets/case-study/img_6.png";
-import explanation_img_1 from "../../../../public/assets/case-study/new/img_1.jpg";
-import explanation_img_2 from "../../../../public/assets/case-study/new/img_2.jpg";
-import explanation_img_3 from "../../../../public/assets/case-study/new/img_3.jpg";
-import explanation_img_4 from "../../../../public/assets/case-study/new/img_4.jpg";
-import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.jpg";
+import branding from "../../../../public/assets/case-study/branding.webp";
+import imgLandscape from "../../../../public/assets/case-study/ebl-overview.webp";
+import img_6 from "../../../../public/assets/case-study/img_6.webp";
+import explanation_img_1 from "../../../../public/assets/case-study/new/img_1.webp";
+import explanation_img_2 from "../../../../public/assets/case-study/new/img_2.webp";
+import explanation_img_3 from "../../../../public/assets/case-study/new/img_3.webp";
+import explanation_img_4 from "../../../../public/assets/case-study/new/img_4.webp";
+import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.webp";
 import { designProcess, overviewData, problemsData, solutionsData } from "./data";
 
 const CaseStudyDetails = ({ params }: any) => {
