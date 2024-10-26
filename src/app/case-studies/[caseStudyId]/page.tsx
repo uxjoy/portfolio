@@ -135,7 +135,7 @@ const CaseStudyDetails = ({ params }: any) => {
         </div>
       </div>
 
-      <div className="problems-and-solutions md:mt-16 bg-gray-50 dark:bg-zinc-900/40 text-gray-900 dark:text-white/80 py-16 md:py-[160px]">
+      <div className="problems-and-solutions md:mt-16 bg-slate-400/5 dark:bg-zinc-900/40 text-gray-900 dark:text-white/80 py-16 md:py-[160px]">
         <div className="container space-y-24 md:space-y-32">
           <div className="flex flex-col md:flex-row gap-8 md:gap-40">
             <div className="flex-initial md:w-6/12 text-3xl font-semibold dark:font-medium">
@@ -146,7 +146,7 @@ const CaseStudyDetails = ({ params }: any) => {
             <div className="right w-full space-y-4 text-md md:text-xl font-light text-gray-700 dark:text-stone-500">
               {problemsData?.map((item, i) => (
                 <div className="flex gap-4" key={i}>
-                  <span>
+                  <span className="text-rose-500">
                     <RiCloseLine size={24} />
                   </span>
 
@@ -164,8 +164,8 @@ const CaseStudyDetails = ({ params }: any) => {
             <div className="right w-full space-y-4 text-md md:text-xl font-light text-gray-700 dark:text-stone-500">
               {solutionsData?.map((item, i) => (
                 <div className="flex gap-4" key={i}>
-                  <span>
-                    <RiCloseLine size={24} />
+                  <span className="text-emerald-500">
+                    <RiCheckLine size={24} />
                   </span>
 
                   <span>{item.text}</span>
@@ -405,7 +405,7 @@ const CaseStudyDetails = ({ params }: any) => {
         </div>
       </div>
 
-      <div className="design-process py-16 md:py-120 bg-gray-50 dark:bg-zinc-900/40 text-gray-900 dark:text-white/80">
+      <div className="design-process py-16 md:py-120 bg-slate-400/5 dark:bg-zinc-900/40 text-gray-900 dark:text-white/80">
         <div className="container space-y-[120px]">
           <div className="flex flex-col md:flex-row gap-8 md:gap-40">
             <div className="flex-initial w-6/12 text-3xl font-semibold dark:font-medium dark:text-white/80">
@@ -515,7 +515,7 @@ const CaseStudyDetails = ({ params }: any) => {
         />
       </div>
 
-      <div className="py-16 md:py-120 bg-gray-50 dark:bg-zinc-900/40">
+      <div className="py-16 md:py-120 bg-slate-400/5 dark:bg-zinc-900/40">
         <div className="container space-y-[120px]">
           <div className="flex flex-col md:flex-row gap-4 md:gap-40">
             <div className="flex-initial w-6/12 text-3xl font-semibold dark:font-medium dark:text-white/80">
