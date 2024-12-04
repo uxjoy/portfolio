@@ -59,8 +59,8 @@ const HeroSection = () => {
             <span className="font-semibold text-gray-900 dark:text-amber-400 dark:font-medium">
               5 years of Product Design
             </span>{" "}
-            expertise, I specialize in creating seamless and impactful user journeys. My focus is to craft designs that
-            not only look stunning
+            expertise, I specialize in creating seamless and impactful user
+            journeys. My focus is to craft designs that not only look stunning
           </p>
 
           <div className="actions flex items-center justify-center gap-3 w-full font-medium">
@@ -73,6 +73,7 @@ const HeroSection = () => {
 
             <Link
               href={resumeURL}
+              target="_blank"
               className="flex items-center space-x-reverse gap-2.5 justify-center h-12 md:h-14 pl-6 md:pl-7 pr-1.5 md:pr-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-800 hover:bg-indigo-500 dark:hover:text-white ease-in-out duration-300 text-sm md:text-base text-nowrap group"
             >
               My Resume
@@ -90,7 +91,11 @@ const HeroSection = () => {
       </div>
 
       <div className="mouse-pointer absolute top-[164px] md:top-72 md:right-1/2 z-10 mr-40 md:mr-72 pt-2 hidden md:block">
-        <MousePointer fill="#10B981" text="Sohanur Rahman (Joy)" positionRight />
+        <MousePointer
+          fill="#10B981"
+          text="Sohanur Rahman (Joy)"
+          positionRight
+        />
       </div>
     </div>
   );
