@@ -1,3 +1,4 @@
+import BottomNav from "./navbar/BottomNav";
 import Navabar from "./navbar/Navabar";
 
 const MainLayout = ({ children }: any) => {
@@ -14,6 +15,10 @@ const MainLayout = ({ children }: any) => {
       </div>
 
       <Navabar />
+
+      <div className="bottom-nav fixed bottom-0 p-3 z-50 w-full">
+        <BottomNav />
+      </div>
 
       {children}
     </main>

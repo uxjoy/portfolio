@@ -19,7 +19,7 @@ const HeroSection = () => {
           />
         </span> */}
 
-        <div className="flex flex-col justify-center text-[32px] md:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-auto">
+        <div className="flex flex-col justify-center text-[32px] md:text-[64px] lg:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-auto">
           {/* <p className="flex items-center justify-center w-full">
             Hi 👋, I’m Joy <span className="hidden md:block">✨</span>
           </p> */}
@@ -54,7 +54,7 @@ const HeroSection = () => {
         </div>
 
         <div className="space-y-8">
-          <p className="md:w-10/12 mx-auto md:text-xl font-light text-gray-600 dark:text-stone-500 leading-tight md:leading-[160%]">
+          <p className="md:w-10/12 mx-auto lg:text-xl font-light text-gray-600 dark:text-stone-500 leading-tight md:leading-[160%]">
             With over{" "}
             <span className="font-semibold text-gray-900 dark:text-amber-400 dark:font-medium">
               5 years of Product Design

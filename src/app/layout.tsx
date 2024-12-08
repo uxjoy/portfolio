@@ -8,7 +8,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Providers from "./providers";
-import BackToTop from "../../components/BackToTop";
 
 const font = Sora({ subsets: ["latin"] });
 
@@ -18,7 +17,11 @@ export const metadata: Metadata = {
     "Delivering modern, user-friendly, and innovative design solutions with precision and passion, focused on creating user-centric experiences that prioritize functionality.",
   // description:
   //   "Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work.",
-  metadataBase: new URL(process.env.NODE_ENV === "development" ? "http://localhost:3000/" : `https://uxjoy.info/`),
+  metadataBase: new URL(
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000/"
+      : `https://uxjoy.info/`
+  ),
 
   openGraph: {
     url: "https://www.uxjoy.info",
@@ -84,7 +87,11 @@ const person = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
@@ -92,7 +99,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:locale" content="en_US" />
 
         <link rel="icon" href="/favicon.svg" sizes="any" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
+        />
       </head>
 
       <body className={`dark:bg-zinc-950 ${font.className}`}>
@@ -101,13 +111,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>{children}</Providers>
 
         {/* CTA */}
-        <BackToTop />
+        {/* <BackToTop /> */}
 
         <Analytics />
 
         {/* //////////// SEO /////////////// */}
         <div className="seo social-links hidden">
-          <div className="h1">Welcome to the Portfolio of Sohanur Rahman Joy</div>
+          <div className="h1">
+            Welcome to the Portfolio of Sohanur Rahman Joy
+          </div>
 
           <a href="https://dribbble.com/joy210" id="dribbble">
             Dribbble: https://dribbble.com/joy210

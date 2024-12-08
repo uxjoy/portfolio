@@ -1,6 +1,11 @@
 "use client";
 
-import { RiDribbbleFill, RiLinkedinFill, RiMailOpenLine, RiTwitterFill } from "@remixicon/react";
+import {
+  RiDribbbleFill,
+  RiLinkedinFill,
+  RiMailOpenLine,
+  RiTwitterFill,
+} from "@remixicon/react";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 import ThemeSwitch from "../ThemeSwitch";
@@ -34,76 +39,93 @@ const Navabar = () => {
 
           <div className="uppercase font-bold text-lg md:text-xl">
             <p className="leading-none">Sohanur</p>
-            <p className="leading-none text-gray-400 dark:text-stone-400">🇧🇩 Rahman</p>
+            <p className="leading-none text-gray-400 dark:text-stone-400">
+              🇧🇩 Rahman
+            </p>
           </div>
         </Link>
 
         <div className="flex items-center gap-2 md:gap-5">
           {/* Available for work */}
-          <span className="hidden md:block">
-            <div className="available-for-work flex items-center gap-2 text-green-500 pr-2">
-              <span className="relative flex items-center justify-center h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex w-full h-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              <span className="text-sm font-medium">Available for Work</span>
-            </div>
-          </span>
+          {/* <span className=""> */}
+          <div className="available-for-work flex items-center gap-2 text-green-500 md:bg-transparent bg-green-500/10 py-2 pl-2.5 pr-3 border border-white/15 rounded-full">
+            <span className="relative flex items-center justify-center h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex w-full h-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            <span className="md:text-sm text-xs font-medium">
+              Available for Work
+            </span>
+          </div>
+          {/* </span> */}
 
-          <ul className="flex items-center gap-2 md:gap-2.5 text-white pr-0.5">
-            <li className="relative group">
-              <Link
-                href={"https://www.linkedin.com/in/uxjoy"}
-                target="_blank"
-                className="p-2 block rounded-full bg-linkedin group"
-                aria-label="Linkedin link for more information"
-              >
-                <RiLinkedinFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
-              </Link>
+          <div className=" md:block hidden">
+            <ul className="flex items-center gap-2 md:gap-2.5 text-white pr-0.5">
+              <li className="relative group">
+                <Link
+                  href={"https://www.linkedin.com/in/uxjoy"}
+                  target="_blank"
+                  className="p-2 block rounded-full bg-linkedin group"
+                  aria-label="Linkedin link for more information"
+                >
+                  <RiLinkedinFill
+                    size={18}
+                    className="scale-100 group-hover:scale-90 ease-in-out duration-200"
+                  />
+                </Link>
 
-              <SocialTooltip text="Linkedin" />
-            </li>
+                <SocialTooltip text="Linkedin" />
+              </li>
 
-            <li className="relative group">
-              <Link
-                href={"https://dribbble.com/uxjoy_"}
-                target="_blank"
-                className="p-2 block rounded-full bg-dribbble group"
-                aria-label="Dribbble link for more information"
-              >
-                <RiDribbbleFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
-              </Link>
+              <li className="relative group">
+                <Link
+                  href={"https://dribbble.com/uxjoy_"}
+                  target="_blank"
+                  className="p-2 block rounded-full bg-dribbble group"
+                  aria-label="Dribbble link for more information"
+                >
+                  <RiDribbbleFill
+                    size={18}
+                    className="scale-100 group-hover:scale-90 ease-in-out duration-200"
+                  />
+                </Link>
 
-              <SocialTooltip text="Dribbble" />
-            </li>
+                <SocialTooltip text="Dribbble" />
+              </li>
 
-            <li className="relative group hidden md:block">
-              <Link
-                href={"https://x.com/uxjoy_"}
-                target="_blank"
-                className="p-2 block rounded-full bg-twitter group"
-                aria-label="Twitter link for more information"
-              >
-                <RiTwitterFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
-              </Link>
+              <li className="relative group hidden md:block">
+                <Link
+                  href={"https://x.com/uxjoy_"}
+                  target="_blank"
+                  className="p-2 block rounded-full bg-twitter group"
+                  aria-label="Twitter link for more information"
+                >
+                  <RiTwitterFill
+                    size={18}
+                    className="scale-100 group-hover:scale-90 ease-in-out duration-200"
+                  />
+                </Link>
 
-              <SocialTooltip text="Twitter" />
-            </li>
+                <SocialTooltip text="Twitter" />
+              </li>
 
-            <li className="relative group hidden">
-              <Link
-                href={"mailto:sohanur.ux@gmail.com"}
-                target="_blank"
-                className="p-2 block rounded-full bg-gray-900 group"
-              >
-                <RiMailOpenLine size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
-              </Link>
+              <li className="relative group hidden">
+                <Link
+                  href={"mailto:sohanur.ux@gmail.com"}
+                  target="_blank"
+                  className="p-2 block rounded-full bg-gray-900 group"
+                >
+                  <RiMailOpenLine
+                    size={18}
+                    className="scale-100 group-hover:scale-90 ease-in-out duration-200"
+                  />
+                </Link>
 
-              <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">
-                Copy Email
-              </span>
-            </li>
-            {/* <li>
+                <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">
+                  Copy Email
+                </span>
+              </li>
+              {/* <li>
               <Link
                 href={"https://www.linkedin.com/in/uxjoy"}
                 target="_blank"
@@ -112,7 +134,8 @@ const Navabar = () => {
                 <RiBehanceFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
               </Link>
             </li> */}
-          </ul>
+            </ul>
+          </div>
 
           {/* <div className="hidden md:block">
             <ul className="flex flex-col items-center font-normal p-4 md:p-0 mt-4 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0">

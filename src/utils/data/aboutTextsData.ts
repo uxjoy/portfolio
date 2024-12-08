@@ -4,7 +4,7 @@ export const workHistoryList = [
     designation: "Senior Product Designer",
     company: "ShareTrip",
     url: "https://sharetrip.net",
-    duration: "Jul 2023 - Now",
+    duration: "Jul 2022 - Now",
   },
   {
     designation: "UX/UI Designer",
