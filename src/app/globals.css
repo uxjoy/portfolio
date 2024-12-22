@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --bg_primary: @apply bg-indigo-500;
+    --bg_primary: @apply bg-primary-300;
     --facebook: #316ff6;
     --dribbble: #d85888;
     --linkedin: #0a66c2;

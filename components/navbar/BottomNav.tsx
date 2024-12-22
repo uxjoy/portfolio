@@ -34,7 +34,7 @@ const BottomNav = () => {
           <Link
             href={resumeURL}
             target="_blank"
-            className="flex items-center space-x-reverse gap-2.5 justify-center h-11 md:h-14 pl-4 md:pl-7 pr-1.5 md:pr-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-800 hover:bg-indigo-500 dark:hover:text-white ease-in-out duration-300 text-sm md:text-base text-nowrap group border border-white/25"
+            className="flex items-center space-x-reverse gap-2.5 justify-center h-11 md:h-14 pl-4 md:pl-7 pr-1.5 md:pr-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-800 hover:bg-primary-300 dark:hover:text-white ease-in-out duration-300 text-sm md:text-base text-nowrap group border border-white/25"
           >
             My Resume
             <span className="w-8 h-8 md:w-9 md:h-9 grid items-center justify-center rounded-full bg-white dark:bg-zinc-950 text-slate-900 dark:text-white ease-in-out duration-300">

@@ -1,5 +1,8 @@
 import Image from "next/image";
-import { cityCount, destinationData } from "../../src/utils/data/destinationData";
+import {
+  cityCount,
+  destinationData,
+} from "../../src/utils/data/destinationData";
 
 const GlobalWork = () => {
   return (
@@ -12,7 +15,7 @@ const GlobalWork = () => {
             {destinationData.map((cities, i) => (
               <li
                 key={i}
-                className="transform translate-x-0 hover:translate-x-2 ease-in-out duration-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+                className="transform translate-x-0 hover:translate-x-2 ease-in-out duration-300 hover:text-primary-300 dark:hover:text-indigo-400"
               >
                 {cities}
               </li>
@@ -54,7 +57,11 @@ const GlobalWork = () => {
         <div className="text-gray-400/80 dark:text-stone-700 mx-auto text-center text-[28px] md:text-[56px] font-extrabold leading-tight uppercase">
           <h4> Collaborating </h4>
           <h4>
-            Across <span className="text-gray-900 dark:text-white"> {cityCount}+ Global </span>
+            Across{" "}
+            <span className="text-gray-900 dark:text-white">
+              {" "}
+              {cityCount}+ Global{" "}
+            </span>
           </h4>
           <h4 className="text-gray-900 dark:text-white"> Destinations </h4>
         </div>

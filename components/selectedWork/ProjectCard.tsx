@@ -29,8 +29,12 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, tag, imageURL }) => {
       </div>
 
       <div className="space-y-1 leading-tight group-hover:pl-4 duration-300">
-        <div className="text-xl md:text-2xl font-semi group-hover:text-indigo-500">{title}</div>
-        <p className="text-sm md:text-base text-gray-600 dark:text-stone-500 dark:font-light">{tag}</p>
+        <div className="text-xl md:text-2xl font-semi group-hover:text-primary-300">
+          {title}
+        </div>
+        <p className="text-sm md:text-base text-gray-600 dark:text-stone-500 dark:font-light">
+          {tag}
+        </p>
       </div>
     </Link>
   );

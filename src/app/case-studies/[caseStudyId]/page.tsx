@@ -13,7 +13,12 @@ import explanation_img_2 from "../../../../public/assets/case-study/new/img_2.we
 import explanation_img_3 from "../../../../public/assets/case-study/new/img_3.webp";
 import explanation_img_4 from "../../../../public/assets/case-study/new/img_4.webp";
 import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.webp";
-import { designProcess, overviewData, problemsData, solutionsData } from "./data";
+import {
+  designProcess,
+  overviewData,
+  problemsData,
+  solutionsData,
+} from "./data";
 
 const CaseStudyDetails = ({ params }: any) => {
   const caseStudyId = params.caseStudyId;
@@ -25,12 +30,17 @@ const CaseStudyDetails = ({ params }: any) => {
       <div className="py-12 md:pt-100 md:pb-16" id="top">
         <div className="container relative space-y-6 md:space-y-2">
           <div className="top-content md:w-3/4">
-            <div className="uppercase text-lg text-gray-400 dark:text-stone-500">case study</div>
+            <div className="uppercase text-lg text-gray-400 dark:text-stone-500">
+              case study
+            </div>
             <h1
               className="text-4xl md:text-6xl capitalize font-bold text-gray-400/80 dark:text-stone-600 w-full mt-4"
               style={{ lineHeight: 1.3 }}
             >
-              <span className="text-gray-900 dark:text-white">EBL Fund Transfer</span> redesign for mobile app
+              <span className="text-gray-900 dark:text-white">
+                EBL Fund Transfer
+              </span>{" "}
+              redesign for mobile app
             </h1>
           </div>
         </div>
@@ -53,7 +63,9 @@ const CaseStudyDetails = ({ params }: any) => {
           <div className="overview grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
             {overviewData.map((item, i) => (
               <div className="space-y-1 md:space-y-2 w-full" key={i}>
-                <label className="text-gray-500 dark:text-stone-500 md:text-md">{item.label}</label>
+                <label className="text-gray-500 dark:text-stone-500 md:text-md">
+                  {item.label}
+                </label>
 
                 {item.url.length === 0 ? (
                   <p className="font-semibold dark:font-medium text-md md:text-xl text-gray-700 dark:text-white/80">
@@ -62,7 +74,7 @@ const CaseStudyDetails = ({ params }: any) => {
                 ) : (
                   <Link
                     href={item.url}
-                    className="font-semibold text-md md:text-xl block underline underline-offset-4 text-indigo-500 hover:underline-offset-8 ease-in-out duration-300 "
+                    className="font-semibold text-md md:text-xl block underline underline-offset-4 text-primary-300 hover:underline-offset-8 ease-in-out duration-300 "
                   >
                     {item.text}
                   </Link>
@@ -97,7 +109,7 @@ const CaseStudyDetails = ({ params }: any) => {
                 href={
                   "https://www.figma.com/design/ujYWr8iLm1RuZYI1jku0LH/EBL-%3A-Fund-Transfer?node-id=158-4817"
                 }
-                className="font-semibold text-md md:text-xl block underline underline-offset-4 text-indigo-500 hover:underline-offset-8 ease-in-out duration-300"
+                className="font-semibold text-md md:text-xl block underline underline-offset-4 text-primary-300 hover:underline-offset-8 ease-in-out duration-300"
               >
                 Design Link
               </Link>
@@ -120,11 +132,16 @@ const CaseStudyDetails = ({ params }: any) => {
                 Overview
               </div>
               <p className="w-full text-md md:text-xl font-normal dark:font-light text-gray-700 dark:text-stone-500 leading-relaxed">
-                <span className="font-medium text-gray-900 dark:text-white"> The EBL Fund Transfer feature </span>
-                required a significant redesign to address usability issues and improve the overall user experience. The
-                existing feature was cluttered and lacked clear instructions, causing confusion and errors during the
-                transfer process. The redesign aimed to create an intuitive, modern, and user-friendly interface,
-                focusing on fund transfer UX design and mobile banking optimization.
+                <span className="font-medium text-gray-900 dark:text-white">
+                  {" "}
+                  The EBL Fund Transfer feature{" "}
+                </span>
+                required a significant redesign to address usability issues and
+                improve the overall user experience. The existing feature was
+                cluttered and lacked clear instructions, causing confusion and
+                errors during the transfer process. The redesign aimed to create
+                an intuitive, modern, and user-friendly interface, focusing on
+                fund transfer UX design and mobile banking optimization.
               </p>
             </div>
           </div>
@@ -222,13 +239,13 @@ const CaseStudyDetails = ({ params }: any) => {
 
                 {/* <div className="toggle p-1 flex gap-1 bg-white absolute bottom-0 left-1/2 transform -trangray-x-1/2 trangray-y-6 rounded-full">
                   <button
-                    className={`py-2 px-4 rounded-full ${isToggle === true && " bg-indigo-500 text-white"}`}
+                    className={`py-2 px-4 rounded-full ${isToggle === true && " bg-primary-300 text-white"}`}
                     onClick={() => isSetToggle(isToggle === false)}
                   >
                     New Design
                   </button>
                   <button
-                    className={`py-2 px-4 rounded-full ${isToggle === true && " bg-indigo-500 text-white"}`}
+                    className={`py-2 px-4 rounded-full ${isToggle === true && " bg-primary-300 text-white"}`}
                     onClick={() => isSetToggle(isToggle === false)}
                   >
                     Old Design
@@ -247,17 +264,20 @@ const CaseStudyDetails = ({ params }: any) => {
                       <span className="font-semibold dark:font-medium text-gray-900 dark:text-white">
                         Fund Transfer:{" "}
                       </span>{" "}
-                      More options visible and ensuring a consistent design throughout. This results in a clearer and
-                      more cohesive user experience.
+                      More options visible and ensuring a consistent design
+                      throughout. This results in a clearer and more cohesive
+                      user experience.
                     </p>
                     <p>
                       <span className="font-semibold dark:font-medium text-gray-900 dark:text-white">
                         Transfer Mode:{" "}
                       </span>{" "}
-                      There are three options—BEFTN, NPSB, and RTGS—but the borders made it look like six options.
-                      Additionally, the old design didn’t provide explanations for these transfer modes. The new UI
-                      resolves these issues by clearly displaying the three options and offering explanations for each
-                      mode, enhancing clarity and usability.
+                      There are three options—BEFTN, NPSB, and RTGS—but the
+                      borders made it look like six options. Additionally, the
+                      old design didn’t provide explanations for these transfer
+                      modes. The new UI resolves these issues by clearly
+                      displaying the three options and offering explanations for
+                      each mode, enhancing clarity and usability.
                     </p>
                   </div>
                 </div>
@@ -287,13 +307,17 @@ const CaseStudyDetails = ({ params }: any) => {
 
                   <div className="content w-full text-md md:text-xl font-normal dark:font-light text-gray-700 dark:text-stone-500 leading-relaxed space-y-4">
                     <p>
-                      In the old UI, the input field for transferring funds to a new account was misleadingly styled
-                      like a search field and wasn’t listed under beneficiaries. Additionally, there was no validation
-                      to ensure the new account number was exactly 13 digits.
+                      In the old UI, the input field for transferring funds to a
+                      new account was misleadingly styled like a search field
+                      and wasn’t listed under beneficiaries. Additionally, there
+                      was no validation to ensure the new account number was
+                      exactly 13 digits.
                     </p>
                     <p>
-                      In the new UI, I’ve clearly separated the options for transferring to a beneficiary and a new
-                      account, and added validation to enforce a 13-digit account number requirement.
+                      In the new UI, I’ve clearly separated the options for
+                      transferring to a beneficiary and a new account, and added
+                      validation to enforce a 13-digit account number
+                      requirement.
                     </p>
                   </div>
                 </div>
@@ -323,10 +347,12 @@ const CaseStudyDetails = ({ params }: any) => {
 
                   <div className="content w-full text-md md:text-xl font-normal dark:font-light text-gray-700 dark:text-stone-500 leading-relaxed space-y-4">
                     <p>
-                      In the existing design, the close button in the top right corner is unnecessary. The updated
-                      design removes this button for better consistency and now includes the available balance on this
-                      screen. A hide/show button has been added for privacy, allowing users to toggle the visibility of
-                      their balance.
+                      In the existing design, the close button in the top right
+                      corner is unnecessary. The updated design removes this
+                      button for better consistency and now includes the
+                      available balance on this screen. A hide/show button has
+                      been added for privacy, allowing users to toggle the
+                      visibility of their balance.
                     </p>
                   </div>
                 </div>
@@ -356,9 +382,11 @@ const CaseStudyDetails = ({ params }: any) => {
 
                   <div className="content w-full text-md md:text-xl font-normal dark:font-light text-gray-700 dark:text-stone-500 leading-relaxed space-y-4">
                     <p>
-                      In the updated design, the transfer overview has been cleaned up to enhance visual appeal and
-                      maintain consistency throughout the interface. The new design ensures a more streamlined and
-                      attractive presentation, improving the overall user experience.
+                      In the updated design, the transfer overview has been
+                      cleaned up to enhance visual appeal and maintain
+                      consistency throughout the interface. The new design
+                      ensures a more streamlined and attractive presentation,
+                      improving the overall user experience.
                     </p>
                   </div>
                 </div>
@@ -388,12 +416,15 @@ const CaseStudyDetails = ({ params }: any) => {
 
                   <div className="content w-full text-md md:text-xl font-normal dark:font-light text-gray-700 dark:text-stone-500 leading-relaxed space-y-4">
                     <p>
-                      The transfer successful screen has been cleaned up with more meaningful text for clearer user
-                      guidance. Additionally, "Another Transfer" and "Go to Home" buttons are now available at the
-                      bottom of the screen, but they will not appear if the transfer was to a new account. For new
-                      account transfers, a save beneficiary modal will appear within 2-3 seconds. Once the beneficiary
-                      modal is saved or closed, the "Another Transfer" and "Go to Home" buttons will then be visible on
-                      the success screen.
+                      The transfer successful screen has been cleaned up with
+                      more meaningful text for clearer user guidance.
+                      Additionally, "Another Transfer" and "Go to Home" buttons
+                      are now available at the bottom of the screen, but they
+                      will not appear if the transfer was to a new account. For
+                      new account transfers, a save beneficiary modal will
+                      appear within 2-3 seconds. Once the beneficiary modal is
+                      saved or closed, the "Another Transfer" and "Go to Home"
+                      buttons will then be visible on the success screen.
                     </p>
                   </div>
                 </div>
@@ -417,8 +448,12 @@ const CaseStudyDetails = ({ params }: any) => {
                     <RiCheckLine size={26} />
                   </span>
 
-                  <h4 className="text-lg md:text-xl font-medium mb-2 dark:font-normal">{item.title}</h4>
-                  <p className="text-gray-700 dark:text-stone-500 font-light text-md md:text-lg">{item.text}</p>
+                  <h4 className="text-lg md:text-xl font-medium mb-2 dark:font-normal">
+                    {item.title}
+                  </h4>
+                  <p className="text-gray-700 dark:text-stone-500 font-light text-md md:text-lg">
+                    {item.text}
+                  </p>
                 </div>
               ))}
             </div>
@@ -520,11 +555,14 @@ const CaseStudyDetails = ({ params }: any) => {
               Outcome
             </div>
             <p className="w-full text-md md:text-xl font-normal dark:font-light text-gray-700 dark:text-stone-500 leading-relaxed">
-              The redesigned EBL Fund Transfer feature now offers a significantly enhanced user experience, with
-              improved navigation, clearer instructions, and better error handling. The modernized interface aligns with
-              contemporary mobile banking standards and addresses key usability issues, resulting in a more efficient
-              and user-friendly fund transfer process. This redesign not only modernized the interface but also ensured
-              it met user needs and expectations, boosting user satisfaction and reducing errors.
+              The redesigned EBL Fund Transfer feature now offers a
+              significantly enhanced user experience, with improved navigation,
+              clearer instructions, and better error handling. The modernized
+              interface aligns with contemporary mobile banking standards and
+              addresses key usability issues, resulting in a more efficient and
+              user-friendly fund transfer process. This redesign not only
+              modernized the interface but also ensured it met user needs and
+              expectations, boosting user satisfaction and reducing errors.
             </p>
           </div>
         </div>
@@ -532,7 +570,7 @@ const CaseStudyDetails = ({ params }: any) => {
 
       {/* <button
         onClick={scrollToTop}
-        className="w-12 h-12 bg-indigo-500 hover:bg-indigo-600 hover:-trangray-y-1.5 ease-in-out duration-300 cursor-pointer text-white fixed right-5 bottom-5 rounded-full flex items-center justify-center"
+        className="w-12 h-12 bg-primary-300 hover:bg-indigo-600 hover:-trangray-y-1.5 ease-in-out duration-300 cursor-pointer text-white fixed right-5 bottom-5 rounded-full flex items-center justify-center"
       >
         <RiArrowUpLine size={24} />
       </button> */}

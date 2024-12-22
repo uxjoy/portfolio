@@ -2,7 +2,10 @@ import { RiArrowRightUpLine } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { educationHistory, workHistoryList } from "../../src/utils/data/aboutTextsData";
+import {
+  educationHistory,
+  workHistoryList,
+} from "../../src/utils/data/aboutTextsData";
 import Heading from "../Heading";
 import AdobeXD from "../svg/AdobeXD";
 import Figma from "../svg/Figma";
@@ -24,9 +27,10 @@ const About = () => {
               {highlightedText(`✨ Strong commitment to collaboration and solutions-oriented
               problem-solving ✨`)}
               Use various web design software to develop
-              {highlightedText(`customer-focused`)} websites and designs. Committed to{" "}
-              {highlightedText(`high standards`)} of web design, user experience, usability and speed for multiple types
-              of end-users.
+              {highlightedText(`customer-focused`)} websites and designs.
+              Committed to {highlightedText(`high standards`)} of web design,
+              user experience, usability and speed for multiple types of
+              end-users.
             </p>
           </div>
 
@@ -53,21 +57,29 @@ const About = () => {
 
           <div className="w-full p-6 text-gray-500 text-lg bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl space-y-8 md:space-y-6">
             <div className="text-base flex justify-between items-center">
-              <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">Experience</span>
-              <span className="text-xs py-1 px-2.5 leading-base bg-indigo-500 text-white rounded-full">5+ yrs</span>
+              <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">
+                Experience
+              </span>
+              <span className="text-xs py-1 px-2.5 leading-base bg-primary-300 dark:font-semibold text-primary-950 rounded-full">
+                5+ yrs
+              </span>
             </div>
 
             <div className="list [&>*:first-child]:pt-0 [&>*:last-child]:pb-0  [&>*:last-child]:border-b-0 j">
-              {workHistoryList.map(({ designation, company, url, duration }, i) => (
-                <LinkComponent
-                  className={"py-5 border-b border-gray-100 dark:border-opacity-5"}
-                  key={i}
-                  title={designation}
-                  organization={company}
-                  duration={duration}
-                  url={url}
-                />
-              ))}
+              {workHistoryList.map(
+                ({ designation, company, url, duration }, i) => (
+                  <LinkComponent
+                    className={
+                      "py-5 border-b border-gray-100 dark:border-opacity-5"
+                    }
+                    key={i}
+                    title={designation}
+                    organization={company}
+                    duration={duration}
+                    url={url}
+                  />
+                )
+              )}
             </div>
           </div>
 
@@ -127,7 +139,12 @@ export default About;
 
 // Highlighted Text
 export const highlightedText = (text: string) => {
-  return <span className="text-gray-900 dark:text-white dark:font-light"> {text} </span>;
+  return (
+    <span className="text-gray-900 dark:text-white dark:font-light">
+      {" "}
+      {text}{" "}
+    </span>
+  );
 };
 
 type LinkComponentProps = {
@@ -140,16 +157,31 @@ type LinkComponentProps = {
 };
 
 // Link Component
-const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, url, className, isEducation }) => {
+const LinkComponent: FC<LinkComponentProps> = ({
+  title,
+  organization,
+  duration,
+  url,
+  className,
+  isEducation,
+}) => {
   return (
     <>
       {isEducation ? (
         <Link
           href={url}
           target="_blank"
-          className={`block group ease-in-out ${className} ${isEducation ? "space-y-3" : "space-y-1"}`}
+          className={`block group ease-in-out ${className} ${
+            isEducation ? "space-y-3" : "space-y-1"
+          }`}
         >
-          <div className={`flex ${isEducation ? "flex-col justify-start gap-1" : "items-center justify-between"}`}>
+          <div
+            className={`flex ${
+              isEducation
+                ? "flex-col justify-start gap-1"
+                : "items-center justify-between"
+            }`}
+          >
             <h4 className="text-sm text-gray-900 dark:text-white/80 font-semibold dark:font-medium dark:group-hover:text-white duration-300">
               {title}
             </h4>
@@ -165,12 +197,16 @@ const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, 
           </p>
         </Link>
       ) : (
-        <Link href={url} target="_blank" className={`block space-y-1 group ease-in-out duration-200 ${className}`}>
+        <Link
+          href={url}
+          target="_blank"
+          className={`block space-y-1 group ease-in-out duration-200 ${className}`}
+        >
           <div className="flex items-center justify-between">
             <h4 className="text-sm text-gray-900 dark:text-white/80 font-semibold dark:font-normal dark:group-hover:text-white duration-300">
               {title}
             </h4>
-            <span className="text-[10px] md:text-[12px] leading-none text-gray-600 dark:text-stone-500 dark:group-hover:text-green-500 scale-100 group-hover:scale-105 font-light duration-300">
+            <span className="text-[10px] md:text-[12px] leading-none text-gray-600 dark:text-stone-500 dark:group-hover:text-primary-300 scale-100 group-hover:scale-105 font-light duration-300">
               {duration}
             </span>
           </div>

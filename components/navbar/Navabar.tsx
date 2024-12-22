@@ -148,7 +148,7 @@ const Navabar = () => {
                     <Link
                       href={url}
                       target="_blank"
-                      className="flex items-center justify-center p-2 text-gray-700 dark:text-white/70 hover:text-indigo-500"
+                      className="flex items-center justify-center p-2 text-gray-700 dark:text-white/70 hover:text-primary-300"
                     >
                       {name}
                       <RiArrowRightUpLine size={22} />
@@ -174,7 +174,7 @@ const Navabar = () => {
             <Link
               href={resumeURL}
               target="_blank"
-              className={`group ml-2 h-10 pl-[16px] pr-[12px] gap-1 font-medium bg-slate-900 text-white rounded-full inline-flex items-center hover:bg-indigo-500 ease-in-out duration-300 text-xs`}
+              className={`group ml-2 h-10 pl-[16px] pr-[12px] gap-1 font-medium bg-slate-900 text-white rounded-full inline-flex items-center hover:bg-primary-300 ease-in-out duration-300 text-xs`}
             >
               My Resume
               <RiArrowRightUpLine size={18} />

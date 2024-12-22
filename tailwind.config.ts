@@ -17,11 +17,26 @@ const config: Config = {
         twitter: "#1d9bf0",
         github: "#2b3137",
         whatsapp: "#25d366",
+
+        primary: {
+          "50": "#f2fce9",
+          "100": "#e1f8cf",
+          "200": "#c5f1a5",
+          "300": "#9ee66e",
+          "400": "#7dd744",
+          "500": "#5dbd25",
+          "600": "#469719",
+          "700": "#377318",
+          "800": "#2f5b19",
+          "900": "#2a4e19",
+          "950": "#122b08",
+        },
       },
 
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
 
       container: {

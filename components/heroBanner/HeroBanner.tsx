@@ -1,7 +1,14 @@
-import { RiArrowRightUpLine, RiCalendar2Fill, RiWhatsappFill } from "@remixicon/react";
+import {
+  RiArrowRightUpLine,
+  RiCalendar2Fill,
+  RiWhatsappFill,
+} from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
-import { calendlyLink, whatsappLink } from "../../src/utils/data/heroBannerData";
+import {
+  calendlyLink,
+  whatsappLink,
+} from "../../src/utils/data/heroBannerData";
 import MousePointer from "../MousePointer";
 
 const HeroBanner = () => {
@@ -14,7 +21,7 @@ const HeroBanner = () => {
             <div className="h1 flex items-center pl-28 space-x-6">
               <span> Hi 👋, I’m </span>
 
-              <span className="text-indigo-500"> Joy </span>
+              <span className="text-primary-400"> Joy </span>
               <span>
                 <Image
                   src="/assets/joy_header.png"
@@ -44,7 +51,7 @@ const HeroBanner = () => {
 
             <div className="h1 text-slate-900 text-[64px]">
               <span> I&apos;m </span>
-              <span className="text-indigo-500"> Joy </span>
+              <span className="text-primary-400"> Joy </span>
             </div>
 
             <div className="-space-y-[2.4px] m-0">
@@ -82,9 +89,12 @@ const HeroBanner = () => {
             <div className="md:col-span-4 md:px-1 md:space-y-10 space-y-6">
               <p className="text-slate-600 text-sm md:text-xl font-light leading-relaxed">
                 I am a multi-disciplinary creative{" "}
-                <span className="font-semibold text-slate-800">Digital Product Designer</span> and solution provider,
-                boasting nearly <span className="font-semibold text-slate-800">5+ years</span> of extensive experience
-                in the creative industry.
+                <span className="font-semibold text-slate-800">
+                  Digital Product Designer
+                </span>{" "}
+                and solution provider, boasting nearly{" "}
+                <span className="font-semibold text-slate-800">5+ years</span>{" "}
+                of extensive experience in the creative industry.
               </p>
 
               <div className="flex flex-col md:flex-row gap-6 md:gap-10">
@@ -102,14 +112,18 @@ const HeroBanner = () => {
                       Whatsapp
                       <RiArrowRightUpLine size={22} />
                     </p>
-                    <p className="text-sm leading-normal font-light">Chat Real-Time</p>
+                    <p className="text-sm leading-normal font-light">
+                      Chat Real-Time
+                    </p>
                   </div>
                 </Link>
 
                 <div className="hidden md:block h-12">
                   <div className="flex flex-col items-center gap-1 py-0.5 h-full">
                     <span className="grow w-0.5 bg-slate-200"></span>
-                    <span className="uppercase text-[10px] font-semibold text-slate-400 leading-none">or</span>
+                    <span className="uppercase text-[10px] font-semibold text-slate-400 leading-none">
+                      or
+                    </span>
                     <span className="grow w-0.5 bg-slate-200"></span>
                   </div>
                 </div>
@@ -119,16 +133,18 @@ const HeroBanner = () => {
                   target="_blank"
                   className="flex items-center gap-4 transform translate-y-0 hover:-translate-y-2 ease-in-out duration-300 group"
                 >
-                  <div className="w-12 h-12 bg-indigo-100 text-indigo-500 rounded-xl flex items-center justify-center text-2xl border border-indigo-200 group-hover:bg-indigo-500 group-hover:text-white group-hover:border-indigo-500 duration-300 ease-in-out">
+                  <div className="w-12 h-12 bg-indigo-100 text-primary-400 rounded-xl flex items-center justify-center text-2xl border border-indigo-200 group-hover:bg-primary-400 group-hover:text-white group-hover:border-primary-400 duration-300 ease-in-out">
                     <RiCalendar2Fill size={22} />
                   </div>
 
                   <div className="content text-slate-500 pt-0.5">
-                    <p className="flex items-center text-indigo-500 font-semi">
+                    <p className="flex items-center text-primary-400 font-semi">
                       Book a Call
                       <RiArrowRightUpLine size={22} />
                     </p>
-                    <p className="text-sm leading-normal font-light">Schedule a metting</p>
+                    <p className="text-sm leading-normal font-light">
+                      Schedule a metting
+                    </p>
                   </div>
                 </Link>
               </div>
@@ -153,7 +169,11 @@ const HeroBanner = () => {
       {/* Circle BG Shape */}
 
       <div className="mouse-pointer absolute top-[164px] md:top-40 md:left-1/2 z-10 pl-48 md:pl-44 pt-2">
-        <MousePointer fill="#F43F5E" textColor="text-white" text="Product Designer" />
+        <MousePointer
+          fill="#F43F5E"
+          textColor="text-white"
+          text="Product Designer"
+        />
       </div>
     </div>
   );

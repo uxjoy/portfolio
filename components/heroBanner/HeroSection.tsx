@@ -19,23 +19,23 @@ const HeroSection = () => {
           />
         </span> */}
 
-        <div className="flex flex-col justify-center text-[32px] md:text-[64px] lg:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-auto">
+        <div className="flex flex-col justify-center text-[32px] md:text-[64px] lg:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-aut">
           {/* <p className="flex items-center justify-center w-full">
             Hi 👋, I’m Joy <span className="hidden md:block">✨</span>
           </p> */}
 
-          <p className="flex items-center justify-center w-full">
-            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-black/0 dark:inline-block dark:text-transparent dark:bg-clip-text">
+          <p className="flex items-center justify-center w-full ">
+            <span className="bg-gradient-to-b from-primary-950/60 dark:from-stone-400 to-black/0 inline-block text-transparent bg-clip-text">
               Hi
             </span>
             <span className="ml-1 md:ml-4"> 👋 </span>
-            <span className="dark:bg-gradient-to-b dark:from-stone-400 dark:to-black/0 dark:inline-block dark:text-transparent dark:bg-clip-text">
+            <span className="bg-gradient-to-b from-primary-950/60 dark:from-stone-400 to-black/0 inline-block text-transparent bg-clip-text">
               , I’m Joy
             </span>
             <span className="hidden md:block">✨</span>
           </p>
           <p className="flex items-center justify-center gap-2 md:gap-4 mx-auto">
-            <span className="dark:bg-gradient-to-b dark:from-stone-500 dark:to-black/0 dark:inline-block dark:text-transparent dark:bg-clip-text">
+            <span className="bg-gradient-to-b from-primary-950/60 dark:from-stone-400 to-black/0 inline-block text-transparent bg-clip-text">
               creative
             </span>
             <span className="hidden md:block">
@@ -48,15 +48,15 @@ const HeroSection = () => {
                 className="rounded-full object-contain"
               />
             </span>
-            <span className="text-indigo-500 dark:text-white">product</span>
+            <span className="text-primary-950 dark:text-white">product</span>
           </p>
-          <p className="text-indigo-500 dark:text-white">designer</p>
+          <p className="text-primary-950 dark:text-white">designer</p>
         </div>
 
         <div className="space-y-8">
-          <p className="md:w-10/12 mx-auto lg:text-xl font-light text-gray-600 dark:text-stone-500 leading-tight md:leading-[160%]">
+          <p className="md:w-10/12 mx-auto lg:text-xl font-light text-gray-600 dark:text-stone-400 leading-tight md:leading-[160%]">
             With over{" "}
-            <span className="font-semibold text-gray-900 dark:text-amber-400 dark:font-medium">
+            <span className="font-semibold text-primary-950 dark:font-medium dark:bg-gradient-to-r dark:from-primary-300  dark:to-sky-300 inline-block dark:text-transparent dark:bg-clip-text">
               5 years of Product Design
             </span>{" "}
             expertise, I specialize in creating seamless and impactful user
@@ -74,12 +74,15 @@ const HeroSection = () => {
             <Link
               href={resumeURL}
               target="_blank"
-              className="flex items-center space-x-reverse gap-2.5 justify-center h-12 md:h-14 pl-6 md:pl-7 pr-1.5 md:pr-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-800 hover:bg-indigo-500 dark:hover:text-white ease-in-out duration-300 text-sm md:text-base text-nowrap group"
+              className="flex items-center space-x-reverse gap-2.5 justify-center h-12 md:h-14 pl-6 md:pl-7 pr-1.5 md:pr-2.5 rounded-full bg-primary-950 dark:bg-white text-white hover:text-primary-950 dark:text-primary-950 hover:bg-primary-300 dark:hover:text-primary-950 ease-in-out duration-300 text-sm md:text-base text-nowrap group"
             >
               My Resume
-              <span className="w-8 h-8 md:w-9 md:h-9 grid items-center justify-center rounded-full bg-white dark:bg-zinc-950 text-slate-900 dark:text-white ease-in-out duration-300">
-                <RiArrowRightUpLine size={24} className="group-hover:hidden" />
-                <RiDriveFill size={20} className="hidden group-hover:block" />
+              <span className="w-8 h-8 md:w-9 md:h-9 grid items-center justify-center rounded-full bg-white dark:bg-primary-950 text-primary-950 dark:text-white ease-in-out duration-300">
+                <RiArrowRightUpLine
+                  size={24}
+                  className="hidden group-hover:block"
+                />
+                <RiDriveFill size={20} className=" group-hover:hidden" />
               </span>
             </Link>
           </div>

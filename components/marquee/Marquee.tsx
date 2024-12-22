@@ -3,7 +3,7 @@ import { marqueeTexts } from "../../src/utils/data/marqueeTextData";
 
 const Marquee = () => {
   return (
-    <div className="relative flex overflow-x-hidden text-base uppercase font-semibold dark:font-medium space-x-4 bg-indigo-500 text-white">
+    <div className="relative flex overflow-x-hidden text-base uppercase font-semibold dark:font-medium space-x-4 bg-gradient-to-r from-sky-300  via-primary-300 to-sky-300 text-primary-950">
       <div className="py-4 md:py-6 animate-marquee whitespace-nowrap flex items-center gap-4">
         {marqueeTexts.map((text, i) => {
           return (

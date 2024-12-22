@@ -10,13 +10,19 @@ type ButtonProps = {
   className?: string;
 };
 
-const ButtonLink: FC<ButtonProps> = ({ url, name, isIcon, isLarge, className }) => {
+const ButtonLink: FC<ButtonProps> = ({
+  url,
+  name,
+  isIcon,
+  isLarge,
+  className,
+}) => {
   return (
     <Link
       href={url}
       target="_blank"
       className={
-        `group ml-2 bg-slate-900 text-white rounded-full inline-flex items-center hover:bg-indigo-500 ease-in-out duration-300 transform translate-y-0 hover:-translate-y-1 ${
+        `group ml-2 bg-slate-900 text-white rounded-full inline-flex items-center hover:bg-primary-300 ease-in-out duration-300 transform translate-y-0 hover:-translate-y-1 ${
           isIcon === true
             ? isLarge === true
               ? buttonProperty.lg
@@ -32,14 +38,18 @@ const ButtonLink: FC<ButtonProps> = ({ url, name, isIcon, isLarge, className }) 
       <span> {name} </span>
 
       {isIcon === true && (
-        <span className="p-1 rounded-full bg-white text-slate-900 flex item-center justify-center group-hover:text-indigo-500 ease-in-out duration-300">
-          {isLarge ? <RiArrowRightUpLine size={24} /> : <RiArrowRightUpLine size={22} />}
+        <span className="p-1 rounded-full bg-white text-slate-900 flex item-center justify-center group-hover:text-primary-300 ease-in-out duration-300">
+          {isLarge ? (
+            <RiArrowRightUpLine size={24} />
+          ) : (
+            <RiArrowRightUpLine size={22} />
+          )}
         </span>
       )}
 
       {/* {isIcon === true && (
         <span
-          className={`rounded-full bg-white flex item-center justify-center font-semibold text-slate-900 group-hover:text-indigo-500 ease-in-out duration-300 ${
+          className={`rounded-full bg-white flex item-center justify-center font-semibold text-slate-900 group-hover:text-primary-300 ease-in-out duration-300 ${
             isLarge === true ? iconSize.lg : iconSize.md
           }`}
         >
