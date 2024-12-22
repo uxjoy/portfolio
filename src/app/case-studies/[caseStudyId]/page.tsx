@@ -74,9 +74,10 @@ const CaseStudyDetails = ({ params }: any) => {
                 ) : (
                   <Link
                     href={item.url}
-                    className="font-semibold text-md md:text-xl block underline underline-offset-4 text-primary-300 hover:underline-offset-8 ease-in-out duration-300 "
+                    className="font-semibold text-md md:text-xl block underline underline-offset-4 bg-gradient-to-r from-primary-300 to-sky-400 text-transparent bg-clip-text hover:underline-offset-8 ease-in-out duration-300 relative group"
                   >
                     {item.text}
+                    <span className="divider absolute w-28 h-0.5 bg-gradient-to-r from-primary-300 to-sky-400 bottom-0 left-0 group-hover:w-24 ease-in-out duration-300"></span>
                   </Link>
                 )}
               </div>
