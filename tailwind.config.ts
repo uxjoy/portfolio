@@ -19,24 +19,23 @@ const config: Config = {
         whatsapp: "#25d366",
 
         primary: {
-          "50": "#f2fce9",
-          "100": "#e1f8cf",
-          "200": "#c5f1a5",
-          "300": "#9ee66e",
-          "400": "#7dd744",
-          "500": "#5dbd25",
-          "600": "#469719",
-          "700": "#377318",
-          "800": "#2f5b19",
-          "900": "#2a4e19",
-          "950": "#122b08",
+          "50": "#F0FCE9",
+          "100": "#DEF8CF",
+          "200": "#C1F1A5",
+          "300": "#9AE66E",
+          "400": "#7AD744",
+          "500": "#5DBD25",
+          "600": "#479719",
+          "700": "#397318",
+          "800": "#315B19",
+          "900": "#2C4E19",
+          "950": "#19300B",
         },
       },
 
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
 
       container: {
