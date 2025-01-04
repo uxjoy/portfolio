@@ -26,7 +26,7 @@ const RecentExploration = () => {
         <ImageSlider duration="80" fromRight />
 
         {/* slide to left */}
-        <ImageSlider duration="120" fromLeft />
+        {/* <ImageSlider duration="120" fromLeft /> */}
       </div>
     </div>
   );

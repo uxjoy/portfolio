@@ -24,10 +24,7 @@ export interface DribbbleShot {
 }
 
 export const getDribbbleShots = async (): Promise<DribbbleShot[]> => {
-  const res = await fetch(
-    "https://api.dribbble.com/v2/user/shots?access_token=" +
-      process.env.ACCESS_TOKEN
-  );
+  const res = await fetch("https://api.dribbble.com/v2/user/shots?access_token=" + process.env.ACCESS_TOKEN);
   const data = await res.json();
 
   return data;

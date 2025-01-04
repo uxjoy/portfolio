@@ -12,6 +12,8 @@
     --twitter: #1d9bf0;
     --github: #2b3137;
     --whatsapp: #25d366;
+    --primary: #9ae66e;
+    --text_color: #19300b;
   }
 }
 
@@ -40,12 +42,12 @@ body {
 }
 
 ::selection {
-  color: white;
-  background: rgb(99, 102, 241, 0.9);
+  color: var(--text_color);
+  background: var(--primary);
 }
 ::-moz-selection {
-  color: white;
-  background: rgb(99, 102, 241, 0.9);
+  color: var(--text_color);
+  background: var(--primary);
 }
 
 .lh-120 {
