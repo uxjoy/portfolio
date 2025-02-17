@@ -25,7 +25,7 @@ const BookCallButton = ({ className }: any) => (
 
 const Contact = () => {
   return (
-    <div className="contact-wrapper text-center pt-12 pb-[88px] md:pt-120 md:pb-100 relative overflow-hidden">
+    <div className="contact-wrapper text-center pt-12 pb-[88px] md:pt-16 md:pb-100 relative overflow-hidden">
       <div className="container relative z-10">
         <div className="inner-content space-y-10 md:space-y-120">
           <div className="content space-y-7 md:space-y-14">
