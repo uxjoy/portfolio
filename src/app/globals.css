@@ -77,6 +77,9 @@ h6 {
   @apply leading-tight;
 } */
 
+/* .seciont-header h1 {
+} */
+
 .h1 {
   font-size: 6rem; /* equivalent to text-8xl */
   font-weight: 700; /* equivalent to font-bold */
@@ -285,11 +288,7 @@ h6 {
 
 /* ============== */
 .bgGradientBlur {
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #fff 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 255, 255, 0) 100%);
   filter: blur(75px);
 }
 
