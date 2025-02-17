@@ -14,8 +14,6 @@ const Home = () => {
     <MainLayout>
       <HeroSection />
 
-      {/* <HeroBanner /> */}
-
       <Marquee />
 
       <SelectedWork />

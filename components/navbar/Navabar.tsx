@@ -8,6 +8,7 @@ import dribbble from "react-useanimations/lib/dribbble";
 import linkedin from "react-useanimations/lib/linkedin";
 import twitter from "react-useanimations/lib/twitter";
 import ThemeSwitch from "../ThemeSwitch";
+import { Logo } from "../svg/Logo";
 
 const Navabar = () => {
   const [top, setTop] = useState(true);
@@ -34,12 +35,12 @@ const Navabar = () => {
     >
       <div className="container flex items-center justify-between">
         <Link href={"/"} aria-label="author-logo">
-          {/* <Logo className="h-10 md:h-11 px-0 w-auto dark:bg-white" /> */}
+          <Logo className="h-10 md:h-11 px-0 w-auto dark:bg-white" />
 
-          <div className="uppercase font-bold text-lg md:text-xl">
+          {/* <div className="uppercase font-bold text-lg md:text-xl">
             <p className="leading-none">Sohanur</p>
             <p className="leading-none text-gray-400 dark:text-stone-400">🇧🇩 Rahman</p>
-          </div>
+          </div> */}
         </Link>
 
         <div className="flex items-center gap-2 md:gap-5">
@@ -50,7 +51,9 @@ const Navabar = () => {
               <span className="animate-ping absolute inline-flex w-full h-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
             </span>
-            <span className="md:text-sm text-xs font-medium">Available for Work</span>
+            <span className="md:text-sm text-xs font-medium">
+              Available for Work
+            </span>
           </div>
           {/* </span> */}
 
@@ -65,7 +68,13 @@ const Navabar = () => {
                 >
                   {/* <RiLinkedinFill size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" /> */}
 
-                  <UseAnimations animation={linkedin} size={20} strokeColor="white" autoplay={true} loop={true} />
+                  <UseAnimations
+                    animation={linkedin}
+                    size={20}
+                    strokeColor="white"
+                    autoplay={true}
+                    loop={true}
+                  />
                 </Link>
 
                 <SocialTooltip text="Linkedin" />
@@ -80,7 +89,13 @@ const Navabar = () => {
                 >
                   {/* <RiDribbbleFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" /> */}
 
-                  <UseAnimations animation={dribbble} size={20} strokeColor="white" autoplay={true} loop={true} />
+                  <UseAnimations
+                    animation={dribbble}
+                    size={20}
+                    strokeColor="white"
+                    autoplay={true}
+                    loop={true}
+                  />
                 </Link>
 
                 <SocialTooltip text="Dribbble" />
@@ -95,7 +110,13 @@ const Navabar = () => {
                 >
                   {/* <RiTwitterFill size={20} className="scale-100 group-hover:scale-90 ease-in-out duration-200" /> */}
 
-                  <UseAnimations animation={twitter} size={20} strokeColor="white" autoplay={true} loop={true} />
+                  <UseAnimations
+                    animation={twitter}
+                    size={20}
+                    strokeColor="white"
+                    autoplay={true}
+                    loop={true}
+                  />
                 </Link>
 
                 <SocialTooltip text="Twitter" />
@@ -107,7 +128,10 @@ const Navabar = () => {
                   target="_blank"
                   className="p-2 block rounded-full bg-gray-900 group"
                 >
-                  <RiMailOpenLine size={18} className="scale-100 group-hover:scale-90 ease-in-out duration-200" />
+                  <RiMailOpenLine
+                    size={18}
+                    className="scale-100 group-hover:scale-90 ease-in-out duration-200"
+                  />
                 </Link>
 
                 <span className="absolute left-1/2 -translate-x-1/2 top-0 text-white text-[9px] text-nowrap font-semibold uppercase bg-gray-900 px-1.5 py-0.5 rounded opacity-0 invisible group-hover:opacity-100 group-hover:-top-5 group-hover:visible ease-in-out duration-300 z-0">

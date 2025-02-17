@@ -17,8 +17,17 @@ const config: Config = {
         twitter: "#1d9bf0",
         github: "#2b3137",
         whatsapp: "#25d366",
+        bgColor: "#0D1D17",
+
+        brand0: "#874BF6",
+        brand1: "#5DBD25",
+        brand2: "#1882FF",
+        brand3: "#FFC60A ",
+        brand4: "#38BDF8",
 
         primary: {
+          default: "#9AE66E",
+
           "50": "#F0FCE9",
           "100": "#DEF8CF",
           "200": "#C1F1A5",
@@ -31,11 +40,28 @@ const config: Config = {
           "900": "#2C4E19",
           "950": "#19300B",
         },
+
+        secondary: {
+          default: "#0ea5e9",
+
+          "50": "#f0f9ff",
+          "100": "#e0f2fe",
+          "200": "#bae6fd",
+          "300": "#7dd3fc",
+          "400": "#38bdf8",
+          "500": "#0ea5e9",
+          "600": "#0284c7",
+          "700": "#0369a1",
+          "800": "#075985",
+          "900": "#0c4a6e",
+          "950": "#082f49",
+        },
       },
 
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
 
       container: {
@@ -45,11 +71,11 @@ const config: Config = {
         // or have default horizontal padding
         padding: "1rem",
 
-        // screens: {
-        //   mobile: "600px",
-        //   tablet: "900px",
-        //   desktop: "1300px",
-        // },
+        screens: {
+          // mobile: "600px",
+          // tablet: "900px",
+          desktop: "1300px",
+        },
       },
 
       fontSize: {

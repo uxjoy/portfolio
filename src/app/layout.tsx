@@ -17,10 +17,14 @@ export const metadata: Metadata = {
     "Delivering modern, user-friendly, and innovative design solutions with precision and passion, focused on creating user-centric experiences that prioritize functionality.",
   // description:
   //   "Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work.",
-  metadataBase: new URL(process.env.NODE_ENV === "development" ? "http://localhost:3000/" : `https://uxjoy.info/`),
+  metadataBase: new URL(
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000/"
+      : `https://uxjoy.dev/`
+  ),
 
   openGraph: {
-    url: "https://www.uxjoy.info",
+    url: "https://www.uxjoy.dev",
     siteName: "Sohanur Rahman (Joy) | Product Designer",
     type: "website",
     images: [
@@ -28,7 +32,7 @@ export const metadata: Metadata = {
         url: new URL(
           process.env.NODE_ENV === "development"
             ? "http://localhost:3000/assets/Meta_Image.jpg"
-            : `https://uxjoy.info/assets/Meta_Image.jpg`
+            : `https://uxjoy.dev/assets/Meta_Image.jpg`
         ),
       },
     ],
@@ -70,7 +74,7 @@ const person = {
   jobTitle: "Senior Product Designer",
   description:
     "I am a multi-disciplinary creative Digital Product Designer and solution provider, boasting nearly 5+ years of extensive experience in the creative industry",
-  url: "https://www.uxjoy.info",
+  url: "https://www.uxjoy.dev",
   sameAs: [
     "https://www.linkedin.com/in/uxjoy",
     "https://dribbble.com/joy210",
@@ -83,7 +87,11 @@ const person = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
@@ -91,10 +99,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:locale" content="en_US" />
 
         <link rel="icon" href="/favicon.svg" sizes="any" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
+        />
       </head>
 
-      <body className={`dark:bg-zinc-950 ${font.className}`} suppressHydrationWarning={true}>
+      <body
+        className={`dark:bg-bgColor ${font.className}`}
+        suppressHydrationWarning={true}
+      >
         <div className="grain"></div>
 
         <Providers>{children}</Providers>
@@ -106,7 +120,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* //////////// SEO /////////////// */}
         <div className="seo social-links hidden">
-          <div className="h1">Welcome to the Portfolio of Sohanur Rahman Joy</div>
+          <div className="h1">
+            Welcome to the Portfolio of Sohanur Rahman Joy
+          </div>
 
           <a href="https://dribbble.com/joy210" id="dribbble">
             Dribbble: https://dribbble.com/joy210
@@ -117,8 +133,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <a href="https://www.behance.net/_joy" id="behance">
             Behance: https://www.behance.net/_joy
           </a>
-          <a href="https://www.uxjoy.info" id="uxjoy">
-            Website: https://www.uxjoy.info
+          <a href="https://www.uxjoy.dev" id="uxjoy">
+            Website: https://www.uxjoy.dev
           </a>
         </div>
         {/* //////////// SEO /////////////// */}

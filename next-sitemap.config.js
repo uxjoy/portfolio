@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: 'https://uxjoy.info',
+  siteUrl: "https://uxjoy.dev",
   generateRobotsTxt: true, // (optional)
   // ...other options
 };

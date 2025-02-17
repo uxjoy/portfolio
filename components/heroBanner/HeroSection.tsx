@@ -2,55 +2,42 @@ import { resumeURL } from "@/utils/data/navbarData";
 import { RiArrowRightUpLine, RiDriveFill } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
-import MousePointer from "../MousePointer";
 
 const HeroSection = () => {
   return (
     <div className="py-24 md:pt-14 md:pb-24 relative">
       <div className="container text-center space-y-4">
-        {/* <span className="w-full flex items-center justify-center">
-          <Image
-            src="/assets/joy_header.png"
-            loading="lazy"
-            alt="author-image"
-            width={100}
-            height={72}
-            className="rounded-full object-contain"
-          />
-        </span> */}
+        <div className="flex flex-col justify-center text-[32px] md:text-[64px] lg:text-[72px] leading-tight md:leading-[120%] font-semibold">
+          <h1 className="flex gap-4 items-center justify-center w-full">
+            <span>Hi 👋,</span>
 
-        <div className="flex flex-col justify-center text-[32px] md:text-[64px] lg:text-[100px] leading-tight md:leading-[110%] uppercase font-extrabold md:font-bold mx-aut">
-          {/* <p className="flex items-center justify-center w-full">
-            Hi 👋, I’m Joy <span className="hidden md:block">✨</span>
-          </p> */}
-
-          <p className="flex items-center justify-center w-full ">
-            <span className="bg-gradient-to-b from-primary-950/60 dark:from-stone-400 to-black/0 inline-block text-transparent bg-clip-text">
-              Hi
-            </span>
-            <span className="ml-1 md:ml-4"> 👋 </span>
-            <span className="bg-gradient-to-b from-primary-950/60 dark:from-stone-400 to-black/0 inline-block text-transparent bg-clip-text">
-              , I’m Joy
-            </span>
-            <span className="hidden md:block">✨</span>
-          </p>
-          <p className="flex items-center justify-center gap-2 md:gap-4 mx-auto">
-            <span className="bg-gradient-to-b from-primary-950/60 dark:from-stone-400 to-black/0 inline-block text-transparent bg-clip-text">
-              creative
-            </span>
-            <span className="hidden md:block">
+            <span className="hidden md:block relative">
               <Image
                 src="/assets/joy_header.png"
                 loading="lazy"
-                alt="author-image"
-                width={120}
-                height={88}
-                className="rounded-full object-contain"
+                width={110}
+                height={80}
+                className="object-contain rounded-full border-4 border-bgColor"
+                alt={"author image"}
               />
+
+              <div className="shape absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full -z-10 w-[116px] h-[56px] bg-gradient-to-b from-sky-500 via-primary-300 to-sky-500"></div>
             </span>
-            <span className="text-primary-950 dark:text-white">product</span>
-          </p>
-          <p className="text-primary-950 dark:text-white">designer</p>
+
+            <span className="">I’m Joy</span>
+          </h1>
+
+          <h1 className="flex items-center justify-center gap-2 md:gap-4 mx-auto">
+            a
+            <span className="capitalize text-primary-default">
+              product designer
+            </span>
+            who loves to
+          </h1>
+
+          <h1 className="text-primary-950 dark:text-white">
+            create meaningful design
+          </h1>
         </div>
 
         <div className="space-y-8">
@@ -89,7 +76,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="mouse-pointer absolute top-[164px] md:top-64 md:left-1/2 z-10 ml-40 md:ml-64 pl-4 pt-2 hidden md:block">
+      {/* <div className="mouse-pointer absolute top-[164px] md:top-64 md:left-1/2 z-10 ml-40 md:ml-64 pl-4 pt-2 hidden md:block">
         <MousePointer fill="#F43F5E" text="sohanur.ux@gmail.com" />
       </div>
 
@@ -99,7 +86,7 @@ const HeroSection = () => {
           text="Sohanur Rahman (Joy)"
           positionRight
         />
-      </div>
+      </div> */}
     </div>
   );
 };

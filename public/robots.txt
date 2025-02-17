@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://uxjoy.info
+Host: https://uxjoy.dev
 
 # Sitemaps
-Sitemap: https://uxjoy.info/sitemap.xml
+Sitemap: https://uxjoy.dev/sitemap.xml
