@@ -41,7 +41,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
       </div>
 
-      <div className="relative w-full h-[380px]  2xl:h-[460px] bg-slate-50 rounded-2xl md:rounded-[20px] overflow-hidden">
+      <div className="relative w-full h-[300px] lg:h-[460px] bg-slate-50 rounded-2xl md:rounded-[20px] overflow-hidden">
         <Image
           className="object-cover w-full h-full group-hover:scale-110 duration-300"
           src={imageURL}
