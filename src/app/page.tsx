@@ -15,7 +15,7 @@ const Home = () => {
     <MainLayout>
       <HeroSection />
 
-      <FeaturedProjects />
+      {/* <FeaturedProjects /> */}
 
       <Marquee />
 
