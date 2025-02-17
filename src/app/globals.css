@@ -293,6 +293,12 @@ h6 {
   );
   filter: blur(75px);
 }
+
+.bgGradientBlur2 {
+  /* border-radius: 56px; */
+  /* background: #9ae66e; */
+  /* filter: blur(60px); */
+}
 /* ============== */
 
 /* .projects_list {

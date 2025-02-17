@@ -1,47 +1,24 @@
 "use client";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { useSwiper } from "swiper/react";
 import { clientFeedbackList } from "../../src/utils/data/clientData";
 import Heading from "../Heading";
-import Quote from "../svg/Quote";
 import ClientCard from "./ClientCard";
-import SwiperNavigationBtn from "./SwiperNavigationBtn";
 
 const ClientsFeedback = () => {
   const swiperNavigation = useSwiper();
 
   return (
-    <div className="py-12 md:py-120 relative">
+    <div className="py-12 md:py-120">
       <div className="container space-y-8 md:space-y-20">
         <Heading text1="Clients" text2="Feedback" />
 
-        <div className="md:w-[960px] mx-auto relativ space-y-4 md:space-y-10">
-          <Quote className="h-8 w-8 md:h-16 md:w-16" color="#9EE66E" />
-
-          <Swiper
-            spaceBetween={56}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            slidesPerView={1}
-            // navigation={true}
-            // pagination={true}
-            loop={true}
-            modules={[Autoplay, Pagination, Navigation]}
-          >
-            {clientFeedbackList &&
-              clientFeedbackList.map((data, i) => (
-                <SwiperSlide key={i}>
-                  <ClientCard data={data} />
-                </SwiperSlide>
-              ))}
-
-            {/* Custom Navigation Button Component */}
-            <SwiperNavigationBtn />
-            {/* Custom Navigation Button Component */}
-          </Swiper>
+        <div className="columns-3 gap-6 space-y-6 w-full">
+          {clientFeedbackList &&
+            clientFeedbackList.map((data, i) => (
+              <div className="w-full break-inside-avoid" key={i}>
+                <ClientCard data={data} />
+              </div>
+            ))}
         </div>
       </div>
     </div>
