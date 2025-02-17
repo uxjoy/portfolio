@@ -42,14 +42,14 @@ const GlobalWork = () => {
             </span>
           </div>
 
-          <div className="p-6 bg-white shadow-2xl dark:bg-neutral-950 border border-gray-100 dark:border-transparent rounded-2xl text-gray-900 dark:text-white w-[288px] md:w-[340px] space-y-3 md:absolute z-10 top-20 right-0 md:mr-16 animate-mousePointer hover:animate-none mx-auto">
+          <div className="p-5 bg-white shadow-2xl dark:bg-neutral-950 border border-gray-100 dark:border-transparent rounded-2xl text-gray-900 dark:text-white w-[288px] md:w-[340px] space-y-3 md:absolute z-10 top-20 right-0 md:mr-16 animate-mousePointer hover:animate-none mx-auto">
             <h4 className="text-lg font-semi">Global Work Network</h4>
 
-            <ul className="grid grid-cols-2 text-gray-700 dark:text-whiteAlpha-56 text-sm leading-normal md:leading-loose font-light cursor-default">
+            <ul className="grid grid-cols-2 gap-1.5 text-gray-700 dark:text-whiteAlpha-56 text-sm font-light cursor-default">
               {destinationData.map((cities, i) => (
                 <li
                   key={i}
-                  className="transform translate-x-0 hover:translate-x-2 ease-in-out duration-300 hover:text-primary-300 dark:hover:text-indigo-400"
+                  className="transform translate-x-0 hover:translate-x-2 ease-in-out duration-300 hover:text-primary-300 dark:hover:text-primary-default"
                 >
                   {cities}
                 </li>
