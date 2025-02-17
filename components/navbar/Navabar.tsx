@@ -24,7 +24,7 @@ const Navabar = () => {
 
   return (
     <div
-      className={`navbar-wrapper md:px-8 sticky top-0 z-50 ease-in-out duration-300 border-b border-transparent ${
+      className={`navbar-wrapper md:px-8 stick__ top-0 z-50 ease-in-out duration-300 border-b border-transparent ${
         !top
           ? "bg-white/50 dark:bg-white/5 border-gray-950/5 dark:border-white/5 py-4 md:py-6 backdrop-blur-lg drop-shadow-sm"
           : "py-6 md:py-10"

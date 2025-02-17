@@ -1,7 +1,8 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
+import { useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useRef } from "react";
 
 type ProjectCardProps = {
   url: string;
@@ -28,7 +29,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <RiArrowRightUpLine size={28} />
 
         <div className="space-y-2">
-          <div className="text-xl md:text-2xl font-medium group-hover:underline pt-6">
+          <div className="text-xl md:text-xl font-medium group-hover:underline pt-5">
             {title}
           </div>
 
@@ -40,7 +41,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
       </div>
 
-      <div className="relative w-full h-[380px] md:h-[460px] bg-slate-50 rounded-2xl md:rounded-[20px] overflow-hidden">
+      <div className="relative w-full h-[380px]  2xl:h-[460px] bg-slate-50 rounded-2xl md:rounded-[20px] overflow-hidden">
         <Image
           className="object-cover w-full h-full group-hover:scale-110 duration-300"
           src={imageURL}

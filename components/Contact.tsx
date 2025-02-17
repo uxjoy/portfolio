@@ -44,7 +44,7 @@ const Contact = () => {
             </h1>
             <Email />
             <div className="hidden md:block">
-              <BookCallButton className="bg-primary-950 text-white dark:bg-white dark:text-primary-950 hover:bg-primary-300 hover:text-primary-950 " />
+              <BookCallButton className="bg-primary-950 text-white dark:bg-white dark:text-primary-950 hover:bg-primary-300 hover:text-primary-950" />
             </div>
             <div className="sm:hidden">
               <BookCallButton className="bg-primary-900 dark:bg-white text-white dark:text-primary-950 hover:bg-primary-300" />

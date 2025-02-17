@@ -294,3 +294,19 @@ h6 {
   filter: blur(75px);
 }
 /* ============== */
+
+/* .projects_list {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+  gap: 20px;
+} */
+
+.horizontalScroll {
+  padding: 0 5rem;
+}
+
+@media screen and (min-width: 1900px) {
+  .horizontalScroll {
+    padding-left: 20rem;
+  }
+}
