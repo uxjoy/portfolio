@@ -18,11 +18,13 @@ const Home = () => {
 
       <SelectedWork />
 
-      <ClientsFeedback />
-
-      <BigTextMarquee />
+      <div className="pt-20">
+        <BigTextMarquee />
+      </div>
 
       <GlobalWork />
+
+      <ClientsFeedback />
 
       <About />
 
