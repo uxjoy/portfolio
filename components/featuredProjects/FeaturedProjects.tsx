@@ -1,11 +1,9 @@
 /* eslint-disable react/jsx-no-undef */
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import Image from "next/image";
 
 const FeaturedProjects = () => {
   return (
     <div className="py-24 md:pt-14 md:pb-24 relative">
-      <Splide aria-label="My Favorite Images">
+      {/* <Splide aria-label="My Favorite Images">
         <SplideSlide>
           <div className="relative w-[900px h-[600px] rounded-2xl md:rounded-[20px] overflow-hidden bg-black">
             <Image
@@ -32,7 +30,7 @@ const FeaturedProjects = () => {
             />
           </div>
         </SplideSlide>
-      </Splide>
+      </Splide> */}
 
       {/* <div className="relative w-[900px h-[600px] rounded-2xl md:rounded-[20px] overflow-hidden bg-black">
           <Image
