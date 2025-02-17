@@ -28,32 +28,27 @@ const HeroSection = () => {
           </h1>
 
           <h1 className="flex items-center justify-center gap-2 md:gap-4 mx-auto">
-            a
-            <span className="capitalize text-primary-default">
-              product designer
-            </span>
+            a<span className="capitalize text-primary-default">product designer</span>
             who loves to
           </h1>
 
-          <h1 className="text-primary-950 dark:text-white">
-            create meaningful design
-          </h1>
+          <h1 className="text-primary-950 dark:text-white">create meaningful design</h1>
         </div>
 
         <div className="space-y-8">
-          <p className="md:w-10/12 mx-auto lg:text-xl font-light text-gray-600 dark:text-stone-400 leading-tight md:leading-[160%]">
+          <p className="md:w-10/12 mx-auto lg:text-xl font-light text-gray-600 dark:text-whiteAlpha-64 leading-normal">
             With over{" "}
             <span className="font-semibold text-primary-950 dark:font-medium dark:bg-gradient-to-r dark:from-primary-300  dark:to-sky-300 inline-block dark:text-transparent dark:bg-clip-text">
               5 years of Product Design
             </span>{" "}
-            expertise, I specialize in creating seamless and impactful user
-            journeys. My focus is to craft designs that not only look stunning
+            expertise, I specialize in creating seamless and impactful user journeys. My focus is to craft designs that
+            not only look stunning
           </p>
 
           <div className="actions flex items-center justify-center gap-3 w-full font-medium">
             <Link
               href={"#work"}
-              className="flex items-center justify-center h-12 md:h-14 min-w-[152px] md:min-w-[174px] px-2 md:px-3 space-x-3 rounded-full bg-gray-100 dark:bg-zinc-900 hover:bg-gray-200 dark:font-light dark:hover:bg-zinc-800 border border-slate-200/80 dark:border-zinc-800 ease-in-out duration-300 text-sm md:text-base text-nowrap"
+              className="flex items-center justify-center h-12 md:h-14 min-w-[152px] md:min-w-[174px] px-2 md:px-3 space-x-3 rounded-full bg-gray-100 dark:bg-whiteAlpha-6 hover:bg-gray-200 dark:font-light dark:hover:bg-whiteAlpha-8 dark:hover:text-primary-default border border-slate-200/80 dark:border-whiteAlpha-4 ease-in-out duration-300 text-sm md:text-base text-nowrap"
             >
               See my Work
             </Link>
@@ -61,14 +56,11 @@ const HeroSection = () => {
             <Link
               href={resumeURL}
               target="_blank"
-              className="flex items-center space-x-reverse gap-2.5 justify-center h-12 md:h-14 pl-6 md:pl-7 pr-1.5 md:pr-2.5 rounded-full bg-primary-950 dark:bg-white text-white hover:text-primary-950 dark:text-primary-950 hover:bg-primary-300 dark:hover:text-primary-950 ease-in-out duration-300 text-sm md:text-base text-nowrap group"
+              className="flex items-center space-x-reverse gap-2.5 justify-center h-12 md:h-14 pl-6 md:pl-7 pr-1.5 md:pr-2.5 rounded-full bg-primary-950 dark:bg-primary-default text-white hover:text-primary-950 dark:text-primary-950 hover:bg-primary-300 dark:hover:text-primary-950 ease-in-out duration-300 text-sm md:text-base text-nowrap group font-semibold"
             >
               My Resume
-              <span className="w-8 h-8 md:w-9 md:h-9 grid items-center justify-center rounded-full bg-white dark:bg-primary-950 text-primary-950 dark:text-white ease-in-out duration-300">
-                <RiArrowRightUpLine
-                  size={24}
-                  className="hidden group-hover:block"
-                />
+              <span className="w-8 h-8 md:w-9 md:h-9 grid items-center justify-center rounded-full bg-white dark:bg-primary-950 text-primary-950 dark:text-primary-default ease-in-out duration-300">
+                <RiArrowRightUpLine size={24} className="hidden group-hover:block" />
                 <RiDriveFill size={20} className=" group-hover:hidden" />
               </span>
             </Link>
