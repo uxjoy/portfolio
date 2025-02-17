@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { educationHistory, workHistoryList } from "../../src/utils/data/aboutTextsData";
-import Heading from "../Heading";
 import AdobeXD from "../svg/AdobeXD";
 import Figma from "../svg/Figma";
 import Framer from "../svg/Framer";
@@ -16,7 +15,17 @@ const About = () => {
   return (
     <div className="bg-slate-400/ dark:bg-transparent py-12 md:py-120">
       <div className="container space-y-8 md:space-y-14">
-        <Heading text1="info." text2="about me" bgDark />
+        {/* <Heading text1="info." text2="about me" bgDark /> */}
+
+        <div className="section-header text-center space-y-3">
+          <h1 className="text-[56px] font-bold flex flex-col leading-tight">About Me</h1>
+          <p className="text-lg font-light text-whiteAlpha-72">
+            It’s not that hard to find my contact just search{" "}
+            <Link href={"https://uxjoy.dev"} target="_blank" className="text-primary-default hover:underline">
+              uxjoy.info
+            </Link>
+          </p>
+        </div>
 
         <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           <div className="w-full p-5 md:p-6 bg-white border dark:bg-whiteAlpha-4 border-gray-100 dark:border-whiteAlpha-4 rounded-2xl flex items-center">
@@ -156,7 +165,7 @@ const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, 
               {title}
             </h4>
 
-            <p className="text-xs flex items-center text-gray-600 dark:text-whiteAlpha-64 dark:font-light gap-0.5 group-hover:text-stone-400 group-hover:trangray-x-1 duration-300">
+            <p className="text-xs flex items-center text-gray-600 dark:text-whiteAlpha-64 dark:font-light gap-0.5 group-hover:text-primary-default group-hover:trangray-x-1 duration-300">
               <span className="group-hover:underline">{organization}</span>
               <RiArrowRightUpLine size={16} />
             </p>
@@ -177,7 +186,7 @@ const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, 
             </span>
           </div>
 
-          <p className="text-xs flex items-center text-gray-600 dark:text-whiteAlpha-64 dark:font-light gap-0.5 group-hover:text-stone-400 group-hover:trangray-x-1 duration-300">
+          <p className="text-xs flex items-center text-gray-600 dark:text-whiteAlpha-64 dark:font-light gap-0.5 group-hover:text-primary-default group-hover:trangray-x-1 duration-300">
             <span className="group-hover:underline">{organization}</span>
             <RiArrowRightUpLine size={16} />
           </p>
