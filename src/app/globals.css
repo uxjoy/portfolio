@@ -292,6 +292,10 @@ h6 {
   @apply text-[26px] md:text-[56px] font-semibold md:font-bold flex flex-col leading-tight;
 }
 
+.subText {
+  @apply text-base md:text-lg font-light text-whiteAlpha-72;
+}
+
 .bgGradientBlur {
   background: radial-gradient(
     50% 50% at 50% 50%,

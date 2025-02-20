@@ -22,7 +22,7 @@ const About = () => {
 
         <div className="section-header text-center space-y-3">
           <h1 className="mainTitle">About Me</h1>
-          <p className="text-lg font-light text-whiteAlpha-72">
+          <p className="subText">
             It’s not that hard to find my contact just search{" "}
             <Link
               href={"https://uxjoy.dev"}
