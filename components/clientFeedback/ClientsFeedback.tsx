@@ -32,7 +32,7 @@ const ClientsFeedback = () => {
           </h1>
         </div>
 
-        <div className="sm:columns-2 lg:columns-3 space-y-4 md:space-y-6 w-full pt-10">
+        <div className="sm:columns-2 lg:columns-3 space-y-4 md:space-y-5 lg:space-y-6 gap-4 md:gap-5 lg:gap-6 w-full pt-10">
           {clientFeedbackList &&
             clientFeedbackList.map((data, i) => (
               <div className="w-full break-inside-avoid" key={i}>
