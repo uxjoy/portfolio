@@ -46,7 +46,7 @@ const Navabar = () => {
         <div className="flex items-center gap-2 md:gap-5">
           {/* Available for work */}
           {/* <span className=""> */}
-          <div className="available-for-work flex items-center gap-2 text-green-500 md:bg-transparent bg-green-500/10 py-2 pl-2.5 pr-3 border border-white/15 rounded-full">
+          <div className="available-for-work flex items-center gap-2 text-green-500 md:bg-transparent bg-green-500/10 py-2 pl-2.5 pr-3 border border-white/5 rounded-full">
             <span className="relative flex items-center justify-center h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex w-full h-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
@@ -179,7 +179,7 @@ const Navabar = () => {
 
           <div className="divider w-0.5 h-5 bg-slate-950/5 dark:bg-white/5 hidden md:block"></div>
 
-          <div className="switch-button">
+          <div className="switch-button hidden">
             <ThemeSwitch />
           </div>
 
