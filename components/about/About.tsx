@@ -2,7 +2,10 @@ import { RiArrowRightUpLine } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { educationHistory, workHistoryList } from "../../src/utils/data/aboutTextsData";
+import {
+  educationHistory,
+  workHistoryList,
+} from "../../src/utils/data/aboutTextsData";
 import AdobeXD from "../svg/AdobeXD";
 import Figma from "../svg/Figma";
 import Framer from "../svg/Framer";
@@ -18,10 +21,14 @@ const About = () => {
         {/* <Heading text1="info." text2="about me" bgDark /> */}
 
         <div className="section-header text-center space-y-3">
-          <h1 className="text-[56px] font-bold flex flex-col leading-tight">About Me</h1>
+          <h1 className="mainTitle">About Me</h1>
           <p className="text-lg font-light text-whiteAlpha-72">
             It’s not that hard to find my contact just search{" "}
-            <Link href={"https://uxjoy.dev"} target="_blank" className="text-primary-default hover:underline">
+            <Link
+              href={"https://uxjoy.dev"}
+              target="_blank"
+              className="text-primary-default hover:underline"
+            >
               uxjoy.info
             </Link>
           </p>
@@ -33,9 +40,10 @@ const About = () => {
               {highlightedText(`✨ Strong commitment to collaboration and solutions-oriented
               problem-solving ✨`)}
               Use various web design software to develop
-              {highlightedText(`customer-focused`)} websites and designs. Committed to{" "}
-              {highlightedText(`high standards`)} of web design, user experience, usability and speed for multiple types
-              of end-users.
+              {highlightedText(`customer-focused`)} websites and designs.
+              Committed to {highlightedText(`high standards`)} of web design,
+              user experience, usability and speed for multiple types of
+              end-users.
             </p>
           </div>
 
@@ -62,23 +70,29 @@ const About = () => {
 
           <div className="w-full p-6 text-gray-500 text-lg bg-white dark:bg-whiteAlpha-4 border border-gray-100 dark:border-whiteAlpha-4 rounded-2xl space-y-8 md:space-y-6">
             <div className="text-base flex justify-between items-center">
-              <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">Experience</span>
+              <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">
+                Experience
+              </span>
               <span className="text-xs py-1 px-2.5 leading-base bg-primary-300 dark:font-semibold text-primary-950 rounded-full">
                 5+ yrs
               </span>
             </div>
 
             <div className="list [&>*:first-child]:pt-0 [&>*:last-child]:pb-0  [&>*:last-child]:border-b-0 j">
-              {workHistoryList.map(({ designation, company, url, duration }, i) => (
-                <LinkComponent
-                  className={"py-5 border-b border-gray-100 dark:border-opacity-5"}
-                  key={i}
-                  title={designation}
-                  organization={company}
-                  duration={duration}
-                  url={url}
-                />
-              ))}
+              {workHistoryList.map(
+                ({ designation, company, url, duration }, i) => (
+                  <LinkComponent
+                    className={
+                      "py-5 border-b border-gray-100 dark:border-opacity-5"
+                    }
+                    key={i}
+                    title={designation}
+                    organization={company}
+                    duration={duration}
+                    url={url}
+                  />
+                )
+              )}
             </div>
           </div>
 
@@ -138,7 +152,12 @@ export default About;
 
 // Highlighted Text
 export const highlightedText = (text: string) => {
-  return <span className="text-gray-900 dark:text-white dark:font-light"> {text} </span>;
+  return (
+    <span className="text-gray-900 dark:text-white dark:font-light">
+      {" "}
+      {text}{" "}
+    </span>
+  );
 };
 
 type LinkComponentProps = {
@@ -151,16 +170,31 @@ type LinkComponentProps = {
 };
 
 // Link Component
-const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, url, className, isEducation }) => {
+const LinkComponent: FC<LinkComponentProps> = ({
+  title,
+  organization,
+  duration,
+  url,
+  className,
+  isEducation,
+}) => {
   return (
     <>
       {isEducation ? (
         <Link
           href={url}
           target="_blank"
-          className={`block group ease-in-out ${className} ${isEducation ? "space-y-3" : "space-y-1"}`}
+          className={`block group ease-in-out ${className} ${
+            isEducation ? "space-y-3" : "space-y-1"
+          }`}
         >
-          <div className={`flex ${isEducation ? "flex-col justify-start gap-1" : "items-center justify-between"}`}>
+          <div
+            className={`flex ${
+              isEducation
+                ? "flex-col justify-start gap-1"
+                : "items-center justify-between"
+            }`}
+          >
             <h4 className="text-sm text-gray-900 dark:text-white/80 font-semibold dark:font-medium dark:group-hover:text-white duration-300">
               {title}
             </h4>
@@ -176,7 +210,11 @@ const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, 
           </p>
         </Link>
       ) : (
-        <Link href={url} target="_blank" className={`block space-y-1 group ease-in-out duration-200 ${className}`}>
+        <Link
+          href={url}
+          target="_blank"
+          className={`block space-y-1 group ease-in-out duration-200 ${className}`}
+        >
           <div className="flex items-center justify-between">
             <h4 className="text-sm text-gray-900 dark:text-white/80 font-semibold dark:font-normal dark:group-hover:text-white duration-300">
               {title}

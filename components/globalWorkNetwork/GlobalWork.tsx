@@ -6,9 +6,12 @@ const GlobalWork = () => {
     <div className="py-12 md:pt-120">
       <div className="container space-y-6 md:space-y-14">
         <div className="section-header text-center">
-          <h1 className="text-[56px] font-bold flex flex-col leading-tight">
+          <h1 className="mainTitle">
             <span> Collaborating Across </span>
-            <span className="text-primary-default"> 20+ Global Destinations </span>
+            <span className="text-primary-default">
+              {" "}
+              20+ Global Destinations{" "}
+            </span>
           </h1>
         </div>
 

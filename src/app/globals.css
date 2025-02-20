@@ -286,9 +286,18 @@ h6 {
   height: 1140px;
 }
 
-/* ============== */
+/* ==============  Version 2. - Start ============== */
+
+.mainTitle {
+  @apply text-[26px] md:text-[56px] font-semibold md:font-bold flex flex-col leading-tight;
+}
+
 .bgGradientBlur {
-  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   filter: blur(75px);
 }
 
@@ -309,3 +318,5 @@ h6 {
     padding-left: 20rem;
   }
 }
+
+/* ==============  Version 2. - End ============== */
