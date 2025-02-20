@@ -8,13 +8,12 @@ import Image from "next/image";
 const FeaturedProjects = () => {
   const settings = {
     rewind: true,
-    gap: "1.5rem",
+
     perMove: 1,
     type: "loop",
     infinite: true,
     focus: "center",
     pagination: true,
-    padding: "20%",
     pauseOnHover: true,
     autoplay: true,
     keyboard: true,
@@ -23,9 +22,9 @@ const FeaturedProjects = () => {
     slidefocus: true,
 
     width: "100%",
-    height: "600px",
-    snap: true,
-    slideFocus: true,
+    // snap: true,
+    // slideFocus: true,
+    // height: "600px",
     // trimSpace: false,
     // rewindByDrag: true,
     // loading: "lazy",
@@ -42,21 +41,41 @@ const FeaturedProjects = () => {
     // fixedwidth: 900,
     // fixedheight: 600,
     breakpoints: {
+      425: {
+        gap: "0.5rem",
+        height: "300px",
+        // padding: "5%",
+        arrows: false,
+      },
       640: {
-        // width: 1640,
-        height: "1200px",
+        gap: "1rem",
+        height: "380px",
+        padding: "10%",
       },
       768: {
-        // width: 768,
-        height: "1200px",
+        gap: "1.5rem",
+        height: "320px",
+        padding: "10%",
       },
       1024: {
-        // width: 1024,
-        height: "1200px",
+        gap: "1.5rem",
+        height: "400px",
+        padding: "10%",
       },
-      1400: {
-        // width: 1024,
-        height: "1200px",
+      1280: {
+        gap: "1.5rem",
+        height: "500px",
+        padding: "10%",
+      },
+      1440: {
+        gap: "1.5rem",
+        height: "580px",
+        padding: "20%",
+      },
+      1920: {
+        gap: "1.5rem",
+        height: "720px",
+        padding: "20%",
       },
     },
   };

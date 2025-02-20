@@ -10,12 +10,12 @@ const ClientCard: FC<FeedbackDataProps> = ({ data }) => {
     <div className="relative space-y-4 text-gray-600 dark:text-whiteAlpha-72 bg-whiteAlpha-4 border border-whiteAlpha-4 p-6 rounded-2xl overflow-hidden cursor-default group transform translate-y-0 hover:-translate-y-1.5  ease-in-out duration-300">
       <RiDoubleQuotesR size={32} color="#9AE66E" />
 
-      <p className="font-light text-base leading-normal group-hover:text-primary-default">
+      <p className="font-light text-sm md:text-base leading-normal group-hover:text-primary-default">
         {data.quote}
       </p>
 
       <div className="space-y-1 md:space-y-1 pt-2">
-        <p className="text-base font-semibold text-gray-900 dark:text-white dark:font-medium">
+        <p className="text-sm md:text-base font-semibold text-gray-900 dark:text-white dark:font-medium">
           {data.name}
         </p>
         <p className="text-sm dark:text-whiteAlpha-56"> {data.location} </p>
