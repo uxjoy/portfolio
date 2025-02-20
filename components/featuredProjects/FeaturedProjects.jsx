@@ -2,7 +2,6 @@
 "use client";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
 import Image from "next/image";
 
 const FeaturedProjects = () => {
@@ -15,7 +14,7 @@ const FeaturedProjects = () => {
     focus: "center",
     pagination: true,
     pauseOnHover: true,
-    autoplay: true,
+    autoplay: false,
     keyboard: true,
     isActive: true,
     pauseOnFocus: true,
@@ -59,7 +58,7 @@ const FeaturedProjects = () => {
       },
       1024: {
         gap: "1.5rem",
-        height: "400px",
+        height: "500px",
         padding: "10%",
       },
       1280: {
@@ -84,37 +83,43 @@ const FeaturedProjects = () => {
     <div className="py-24 md:pt-0 md:pb-24 relative">
       <Splide options={settings} tag="div" aria-label="React Splide Example">
         <SplideSlide className="relative h-[600p] rounded-2xl md:rounded-[20px] overflow-hidden">
-          <Image
-            className="object-cover w-full h-full group-hover:scale-110 duration-300"
-            src={"/assets/featured/ShareTrip_1.jpg"}
-            alt={"title"}
-            fill
-            priority={false}
-            quality={80}
-            loading="lazy"
-          />
+          <div className="image-card w-full h-full">
+            <Image
+              className="object-cover my-wh group-hover:scale-110 duration-300"
+              src={"/assets/featured/ShareTrip_2.jpg"}
+              alt={"title"}
+              fill
+              priority={false}
+              quality={100}
+              loading="lazy"
+            />
+          </div>
         </SplideSlide>
         <SplideSlide className="relative h-[600p] rounded-2xl md:rounded-[20px] overflow-hidden">
-          <Image
-            className="object-cover w-full h-full group-hover:scale-110 duration-300"
-            src={"/assets/featured/ShareTrip_2.jpg"}
-            alt={"title"}
-            fill
-            priority={false}
-            quality={80}
-            loading="lazy"
-          />
+          <div className="image-card w-full h-full">
+            <Image
+              className="object-cover my-wh group-hover:scale-110 duration-300"
+              src={"/assets/featured/ShareTrip_1.jpg"}
+              alt={"title"}
+              fill
+              priority={false}
+              quality={100}
+              loading="lazy"
+            />
+          </div>
         </SplideSlide>
         <SplideSlide className="relative h-[600p] rounded-2xl md:rounded-[20px] overflow-hidden">
-          <Image
-            className="object-cover w-full h-full group-hover:scale-110 duration-300"
-            src={"/assets/featured/ShareTrip_3.jpg"}
-            alt={"title"}
-            fill
-            priority={false}
-            quality={80}
-            loading="lazy"
-          />
+          <div className="image-card w-full h-full">
+            <Image
+              className="object-cover my-wh group-hover:scale-110 duration-300"
+              src={"/assets/featured/ShareTrip_3.jpg"}
+              alt={"title"}
+              fill
+              priority={false}
+              quality={100}
+              loading="lazy"
+            />
+          </div>
         </SplideSlide>
       </Splide>
 

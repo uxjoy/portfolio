@@ -305,6 +305,14 @@ h6 {
   filter: blur(75px);
 }
 
+/* .splide .splide__slide {
+  @apply p-0.5;
+}
+
+.splide .is-active {
+  @apply border border-primary-default;
+} */
+
 /* ============== */
 
 /* .projects_list {
@@ -313,8 +321,19 @@ h6 {
   gap: 20px;
 } */
 
+/* .splide .splide__slide .image-card .my-wh {
+  @apply !top-1/2 !left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[20px];
+
+  width: calc(100% - 4px) !important;
+  height: calc(100% - 4px) !important;
+}
+
+.splide .splide__slide.is-active .image-card {
+  @apply bg-gradient-to-tr from-sky-500 via-primary-default to-sky-300;
+} */
+
 .horizontalScroll {
-  padding: 0 5rem;
+  @apply px-4 md:px-20;
 }
 
 @media screen and (min-width: 1900px) {

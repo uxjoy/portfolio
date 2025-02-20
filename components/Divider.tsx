@@ -9,7 +9,7 @@ interface DividerProps {
 const Divider = ({ starText, centerText, endText }: DividerProps) => {
   return (
     <>
-      <div className="divider hidden justify-center gap-5 px-1 text-xs md:text-base w-full">
+      <div className="divider flex items-center justify-center gap-5 px-1 text-xs md:text-base w-full">
         <span className="uppercase min-w-[152px] text-white/60 text-nowrap">
           {starText}
         </span>

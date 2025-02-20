@@ -1,4 +1,5 @@
 import Contact from "../../components/Contact";
+import Divider from "../../components/Divider";
 import MainLayout from "../../components/MainLayout";
 import About from "../../components/about/About";
 import ClientsFeedback from "../../components/clientFeedback/ClientsFeedback";
@@ -17,6 +18,9 @@ const Home = () => {
       <FeaturedProjects />
 
       {/* <Marquee /> */}
+      <div className="container mb-20 hidden md:block">
+        <Divider starText="case studies" endText="design process" />
+      </div>
 
       <SelectedWork />
 
