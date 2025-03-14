@@ -7,6 +7,8 @@ interface DividerProps {
 }
 
 const Divider = ({ starText, centerText, endText }: DividerProps) => {
+  const portfolioLink =
+    "https://www.figma.com/design/zyZ85JTfEGwQWydcvuoF0J/Joy's-Portfolio?node-id=21-21968&t=tmsdPCar96Cu0vos-1";
   return (
     <>
       <div className="divider flex items-center justify-center gap-5 px-1 text-xs md:text-base w-full">
@@ -17,7 +19,7 @@ const Divider = ({ starText, centerText, endText }: DividerProps) => {
           <span className="uppercase text-center text-white/60 text-nowrap px-2">{centerText}</span>
         ) : (
           <Link
-            href={"http://figma.com"}
+            href={portfolioLink}
             target="_blank"
             className="relative flex items-center py-1.5 pl-2.5 pr-3 bg-white/5 border border-white/5 rounded-full group"
           >

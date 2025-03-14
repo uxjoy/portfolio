@@ -1,15 +1,14 @@
+/* eslint-disable react/jsx-no-undef */
 "use client";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 import { projectList } from "../../src/utils/data/projectListData";
 import ProjectCard from "./ProjectCard";
 
 const SelectedWork = () => {
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({ target: targetRef });
-  const x = useTransform(scrollYProgress, [0.05, 1], ["0%", "-40%"]);
+  // const targetRef = useRef(null);
+  // const { scrollYProgress } = useScroll({ target: targetRef });
+  // const x = useTransform(scrollYProgress, [0.05, 1], ["0%", "-40%"]);
 
   const settings = {
     rewind: true,
@@ -91,7 +90,8 @@ const SelectedWork = () => {
   };
 
   return (
-    <div className="h-[400v]" id="work" ref={targetRef}>
+    <div className="h-[400v]" id="work">
+      {/* <div className="h-[400v]" id="work" ref={targetRef}> */}
       <div className="horizontalScrol h-[100v] sticky top-0 flex items-center justify-start overflow-hidden">
         {/* <motion.div
           className="projects_list grid grid-cols-[3fr_3fr_3fr_3fr_3fr] gap-3 md:gap-6"
@@ -111,20 +111,10 @@ const SelectedWork = () => {
         </motion.div> */}
 
         <div className="container">
-          <Splide
-            options={settings}
-            tag="div"
-            aria-label="React Splide Example"
-          >
+          <Splide options={settings} tag="div" aria-label="React Splide Example">
             {projectList.map(({ url, title, tag, imageURL, brandColor }, i) => (
               <SplideSlide className="project w-[320px] md:w-[409px]" key={i}>
-                <ProjectCard
-                  url={url}
-                  title={title}
-                  tag={tag}
-                  imageURL={imageURL}
-                  bgColor={brandColor}
-                />
+                <ProjectCard url={url} title={title} tag={tag} imageURL={imageURL} bgColor={brandColor} />
               </SplideSlide>
             ))}
           </Splide>

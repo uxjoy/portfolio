@@ -28,6 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/featuredProjects/FeaturedProjects.jsx"
-  ],
+, "components/selectedWork/SelectedWork.jsx"  ],
   "exclude": ["node_modules"]
 }

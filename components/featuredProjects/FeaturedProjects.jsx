@@ -20,7 +20,7 @@ const FeaturedProjects = () => {
     pauseOnFocus: true,
     slidefocus: true,
 
-    width: "100%",
+    // width: "100%",
     // snap: true,
     // slideFocus: true,
     // height: "600px",
@@ -43,7 +43,6 @@ const FeaturedProjects = () => {
       425: {
         gap: "0.5rem",
         height: "300px",
-        // padding: "5%",
         arrows: false,
       },
       640: {
@@ -53,7 +52,7 @@ const FeaturedProjects = () => {
       },
       768: {
         gap: "1.5rem",
-        height: "320px",
+        height: "400px",
         padding: "10%",
       },
       1024: {
@@ -73,7 +72,12 @@ const FeaturedProjects = () => {
       },
       1920: {
         gap: "1.5rem",
-        height: "720px",
+        height: "620px",
+        padding: "20%",
+      },
+      2560: {
+        gap: "2rem",
+        height: "1000px",
         padding: "20%",
       },
     },
@@ -82,7 +86,7 @@ const FeaturedProjects = () => {
   return (
     <div className="py-24 md:pt-0 md:pb-24 relative">
       <Splide options={settings} tag="div" aria-label="React Splide Example">
-        <SplideSlide className="relative h-[600p] rounded-2xl md:rounded-[20px] overflow-hidden">
+        <SplideSlide className="relative h-[500px] rounded-2xl md:rounded-[20px] overflow-hidden">
           <div className="image-card w-full h-full">
             <Image
               className="object-cover my-wh group-hover:scale-110 duration-300"
@@ -95,7 +99,7 @@ const FeaturedProjects = () => {
             />
           </div>
         </SplideSlide>
-        <SplideSlide className="relative h-[600p] rounded-2xl md:rounded-[20px] overflow-hidden">
+        <SplideSlide className="relative h-[500px] rounded-2xl md:rounded-[20px] overflow-hidden">
           <div className="image-card w-full h-full">
             <Image
               className="object-cover my-wh group-hover:scale-110 duration-300"
@@ -108,7 +112,7 @@ const FeaturedProjects = () => {
             />
           </div>
         </SplideSlide>
-        <SplideSlide className="relative h-[600p] rounded-2xl md:rounded-[20px] overflow-hidden">
+        <SplideSlide className="relative h-[500px] rounded-2xl md:rounded-[20px] overflow-hidden">
           <div className="image-card w-full h-full">
             <Image
               className="object-cover my-wh group-hover:scale-110 duration-300"
