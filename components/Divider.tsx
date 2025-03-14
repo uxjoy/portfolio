@@ -10,28 +10,18 @@ const Divider = ({ starText, centerText, endText }: DividerProps) => {
   return (
     <>
       <div className="divider flex items-center justify-center gap-5 px-1 text-xs md:text-base w-full">
-        <span className="uppercase min-w-[152px] text-white/60 text-nowrap">
-          {starText}
-        </span>
+        <span className="uppercase min-w-[152px] text-white/60 text-nowrap">{starText}</span>
         <span className="divider-line h-[1px] w-full bg-white/5"></span>
 
         {centerText ? (
-          <span className="uppercase text-center text-white/60 text-nowrap px-2">
-            {centerText}
-          </span>
+          <span className="uppercase text-center text-white/60 text-nowrap px-2">{centerText}</span>
         ) : (
           <Link
             href={"http://figma.com"}
             target="_blank"
             className="relative flex items-center py-1.5 pl-2.5 pr-3 bg-white/5 border border-white/5 rounded-full group"
           >
-            <svg
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M4.94446 4.4444C4.94446 2.91107 6.1889 1.66663 7.72224 1.66663H10.5V7.22218H7.72224C6.1889 7.22218 4.94446 5.97774 4.94446 4.4444Z"
                 fill="#F24E1E"
@@ -58,13 +48,7 @@ const Divider = ({ starText, centerText, endText }: DividerProps) => {
               figma.portfolio.uxjoy
             </span>
 
-            <svg
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16.5037 9.41421L7.89712 18.0208L6.48291 16.6066L15.0895 8H7.50373V6H18.5037V17H16.5037V9.41421Z"
                 fill="white"
@@ -82,10 +66,10 @@ const Divider = ({ starText, centerText, endText }: DividerProps) => {
                   y2="12.0104"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#0EA5E9" />
-                  <stop offset="0.5" stop-color="#9AE66E" />
-                  <stop offset="0.58" stop-color="#84DC82" />
-                  <stop offset="1" stop-color="#0EA5E9" />
+                  <stop stopColor="#0EA5E9" />
+                  <stop offset="0.5" stopColor="#9AE66E" />
+                  <stop offset="0.58" stopColor="#84DC82" />
+                  <stop offset="1" stopColor="#0EA5E9" />
                 </linearGradient>
               </defs>
             </svg>
@@ -96,9 +80,7 @@ const Divider = ({ starText, centerText, endText }: DividerProps) => {
 
         <span className="divider-line h-[1px] w-full bg-white/5"></span>
 
-        <span className="uppercase min-w-[152px] text-white/60 text-nowrap text-right">
-          {endText}
-        </span>
+        <span className="uppercase min-w-[152px] text-white/60 text-nowrap text-right">{endText}</span>
       </div>
     </>
   );
