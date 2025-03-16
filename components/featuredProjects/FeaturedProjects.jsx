@@ -108,7 +108,7 @@ const FeaturedProjects = () => {
                 src={imageURL}
                 alt={title}
                 fill
-                priority={false}
+                priority={true}
                 quality={100}
                 loading="lazy"
               />
