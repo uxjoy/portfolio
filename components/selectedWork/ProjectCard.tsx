@@ -22,10 +22,10 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, description, tag, image
     >
       <div className="leading-tight px-4 md:px-5 group-hover:pl-4 duration-300 relative z-10">
         <div className="flex items-center justify-between">
-          <RiArrowRightUpLine size={28} />
-
-          {commingSoon && (
+          {commingSoon === true ? (
             <div className="bg-neutral-950 text-white p-1.5 px-2.5 rounded-full text-xs">Comming Soon</div>
+          ) : (
+            <RiArrowRightUpLine size={28} />
           )}
         </div>
 
