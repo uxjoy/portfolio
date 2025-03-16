@@ -35,7 +35,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, description, tag, image
           src={imageURL}
           alt={title}
           fill
-          priority={true}
+          priority={false}
           quality={80}
           loading="lazy"
         />
