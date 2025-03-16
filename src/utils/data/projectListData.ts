@@ -54,7 +54,7 @@ export const selectedWorks = [
     tag: "Website Design, Responsive Design",
     imageURL: "/assets/selectedwork/hiresphere.webp",
     brandColor: "#1882FF",
-    commingSoon: true,
+    commingSoon: false,
   },
   // {
   //   url: "case-studies/ebl-fund-transfer-redesign",

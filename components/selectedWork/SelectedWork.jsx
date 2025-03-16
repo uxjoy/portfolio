@@ -112,7 +112,7 @@ const SelectedWork = () => {
 
         <div className="container">
           <Splide options={settings} tag="div" aria-label="React Splide Example">
-            {selectedWorks.map(({ url, title, description, tag, imageURL, brandColor }, i) => (
+            {selectedWorks.map(({ url, title, description, tag, imageURL, brandColor, commingSoon }, i) => (
               <SplideSlide className="project w-[320px] md:w-[409px]" key={i}>
                 <ProjectCard
                   url={url}
@@ -120,6 +120,7 @@ const SelectedWork = () => {
                   description={description}
                   tag={tag}
                   imageURL={imageURL}
+                  commingSoon={commingSoon}
                   bgColor={brandColor}
                 />
               </SplideSlide>

@@ -10,9 +10,10 @@ type ProjectCardProps = {
   tag: string;
   imageURL: string;
   bgColor?: string;
+  commingSoon?: boolean;
 };
 
-const ProjectCard: FC<ProjectCardProps> = ({ url, title, description, tag, imageURL, bgColor }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ url, title, description, tag, imageURL, bgColor, commingSoon }) => {
   return (
     <Link
       href={url}
@@ -20,7 +21,13 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, description, tag, image
       style={{ background: bgColor }}
     >
       <div className="leading-tight px-4 md:px-5 group-hover:pl-4 duration-300 relative z-10">
-        <RiArrowRightUpLine size={28} />
+        <div className="flex items-center justify-between">
+          <RiArrowRightUpLine size={28} />
+
+          {commingSoon && (
+            <div className="bg-neutral-950 text-white p-1.5 px-2.5 rounded-full text-xs">Comming Soon</div>
+          )}
+        </div>
 
         <div className="space-y-2">
           <div className="text-xl md:text-xl font-medium group-hover:underline pt-5">{title}</div>
@@ -30,6 +37,12 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, description, tag, image
       </div>
 
       <div className="relative w-full h-[320px] lg:h-[460px] bg-slate-50 rounded-[20px] overflow-hidden">
+        {/* {commingSoon && (
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-950 text-white p-3 px-4 rounded-full z-50 border-[2px] border-white shadow-2xl">
+            Comming Soon
+          </div>
+        )} */}
+
         <Image
           className="object-cover w-full h-full group-hover:scale-110 duration-300"
           src={imageURL}
