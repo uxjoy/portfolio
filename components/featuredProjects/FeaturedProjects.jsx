@@ -5,7 +5,7 @@ import { featuredProjects } from "@/utils/data/projectListData";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Image from "next/image";
 
-import "photoswipe/dist/photoswipe.css";
+// import "photoswipe/dist/photoswipe.css";
 
 const FeaturedProjects = () => {
   const settings = {
