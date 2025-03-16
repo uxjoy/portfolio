@@ -90,7 +90,7 @@ const FeaturedProjects = () => {
           <div className="image-card w-full h-full">
             <Image
               className="object-cover my-wh group-hover:scale-110 duration-300"
-              src={"/assets/featured/ShareTrip_2.jpg"}
+              src={"/assets/featured/st_flight.webp"}
               alt={"title"}
               fill
               priority={false}
@@ -103,7 +103,7 @@ const FeaturedProjects = () => {
           <div className="image-card w-full h-full">
             <Image
               className="object-cover my-wh group-hover:scale-110 duration-300"
-              src={"/assets/featured/ShareTrip_1.jpg"}
+              src={"/assets/featured/st_hotel.webp"}
               alt={"title"}
               fill
               priority={false}
@@ -116,7 +116,7 @@ const FeaturedProjects = () => {
           <div className="image-card w-full h-full">
             <Image
               className="object-cover my-wh group-hover:scale-110 duration-300"
-              src={"/assets/featured/ShareTrip_3.jpg"}
+              src={"/assets/featured/st_shop.webp"}
               alt={"title"}
               fill
               priority={false}

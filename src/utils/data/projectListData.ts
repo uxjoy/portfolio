@@ -24,7 +24,7 @@ export const projectList = [
     url: "case-studies/ebl-fund-transfer-redesign",
     title: "EBL Fund Transfer Redesign",
     description:
-      "The redesign focused on creating an intuitive, modern, user-friendly interface, optimizing fund transfer UX and mobile banking for seamless experiences.",
+      "The redesign created an intuitive, modern, user-friendly interface, optimizing transfer UX and banking for a seamless experience.",
     tag: "Mobile App",
     imageURL: "/assets/selectedwork/ebl.jpg",
     brandColor: "#FFC60A",
