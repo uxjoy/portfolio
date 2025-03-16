@@ -60,13 +60,14 @@ const HeroSection = () => {
         </div>
 
         <div className="space-y-8">
-          <p className="md:w-10/12 mx-auto lg:text-xl font-light text-gray-600 dark:text-whiteAlpha-64 leading-normal">
+          <p className="md:w-10/12 mx-auto lg:text-xl font-light text-gray-600 dark:text-whiteAlpha-64 lg:leading-relaxed">
             With over{" "}
             <span className="font-semibold text-primary-950 dark:font-medium dark:bg-gradient-to-r dark:from-primary-300  dark:to-sky-300 inline-block dark:text-transparent dark:bg-clip-text">
-              5 years of Product Design
+              5+ years of Product Design
             </span>{" "}
-            expertise, I specialize in creating seamless and impactful user
-            journeys. My focus is to craft designs that not only look stunning
+            expertise, I craft user-centric experiences that blend aesthetics
+            and functionality. Driven by research, I create designs that enhance
+            usability and impact.
           </p>
 
           <div className="actions flex items-center justify-center gap-3 w-full font-medium">

@@ -111,12 +111,25 @@ const SelectedWork = () => {
         </motion.div> */}
 
         <div className="container">
-          <Splide options={settings} tag="div" aria-label="React Splide Example">
-            {projectList.map(({ url, title, tag, imageURL, brandColor }, i) => (
-              <SplideSlide className="project w-[320px] md:w-[409px]" key={i}>
-                <ProjectCard url={url} title={title} tag={tag} imageURL={imageURL} bgColor={brandColor} />
-              </SplideSlide>
-            ))}
+          <Splide
+            options={settings}
+            tag="div"
+            aria-label="React Splide Example"
+          >
+            {projectList.map(
+              ({ url, title, description, tag, imageURL, brandColor }, i) => (
+                <SplideSlide className="project w-[320px] md:w-[409px]" key={i}>
+                  <ProjectCard
+                    url={url}
+                    title={title}
+                    description={description}
+                    tag={tag}
+                    imageURL={imageURL}
+                    bgColor={brandColor}
+                  />
+                </SplideSlide>
+              )
+            )}
           </Splide>
         </div>
       </div>

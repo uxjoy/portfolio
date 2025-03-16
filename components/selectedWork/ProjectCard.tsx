@@ -1,12 +1,12 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
-import { useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { FC, useRef } from "react";
+import { FC } from "react";
 
 type ProjectCardProps = {
   url: string;
   title: string;
+  description: string;
   tag: string;
   imageURL: string;
   bgColor?: string;
@@ -15,6 +15,7 @@ type ProjectCardProps = {
 const ProjectCard: FC<ProjectCardProps> = ({
   url,
   title,
+  description,
   tag,
   imageURL,
   bgColor,
@@ -33,10 +34,8 @@ const ProjectCard: FC<ProjectCardProps> = ({
             {title}
           </div>
 
-          <p className="text-sm text-gray-600 dark:text-white font-light leading-normal">
-            A device that assists young adults in managing stress by teaching
-            them effective...
-            {/* {tag} */}
+          <p className="text-sm text-gray-600 dark:text-white font-light leading-snug">
+            {description}
           </p>
         </div>
       </div>

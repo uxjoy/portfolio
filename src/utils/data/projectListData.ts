@@ -3,6 +3,8 @@ export const projectList = [
   {
     url: "http://uxjoy.dev",
     title: "PiUI (Design System)",
+    description:
+      "A collaborative approach to defining components and features, aligning designers, developers, and maintainers around a component's purpose.",
     tag: "Icon Design, Website Design",
     imageURL: "/assets/selectedwork/piui.jpg",
     brandColor: "#874BF6",
@@ -11,6 +13,8 @@ export const projectList = [
   {
     url: "https://www.figma.com/design/QyKriVUKdMNF6VAEwNsLRK/PiUI--%3E-Icons?node-id=1-2",
     title: "PiUI (Icons)",
+    description:
+      "A set of open-source, neutral style system symbols crafted for designers and developers to enhance consistency and efficiency.",
     tag: "Icon Design",
     imageURL: "/assets/selectedwork/icon.jpg",
     brandColor: "#5DBD25",
@@ -19,6 +23,8 @@ export const projectList = [
   {
     url: "case-studies/ebl-fund-transfer-redesign",
     title: "EBL Fund Transfer Redesign",
+    description:
+      "The redesign focused on creating an intuitive, modern, user-friendly interface, optimizing fund transfer UX and mobile banking for seamless experiences.",
     tag: "Mobile App",
     imageURL: "/assets/selectedwork/ebl.jpg",
     brandColor: "#FFC60A",
@@ -27,6 +33,8 @@ export const projectList = [
   {
     url: "https://www.figma.com/design/nODI2TrKqzw4L9Jb1dIFW8/HireSphere?node-id=1-16",
     title: "Outsourcing Portal",
+    description:
+      "Outsourcing portals streamline the process, helping businesses connect with and manage outsourcing partners more efficiently.",
     tag: "Website Design, Responsive Design",
     imageURL: "/assets/selectedwork/hiresphere.jpg",
     brandColor: "#1882FF",
