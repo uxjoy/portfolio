@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <div className="py-8 pb-0 md:pt-14 md:pb-24 relative">
       <div className="container text-center space-y-4">
-        <div className="hidden md:flex flex-col justify-center text-[32px] md:text-[64px] lg:text-[72px] leading-tight md:leading-[120%] font-semibold">
+        <div className="hidden md:flex flex-col justify-center text-[32px] md:text-[40px] lg:text-[56px] xl:text-[72px] leading-tight md:leading-[120%] font-semibold">
           <h1 className="flex gap-4 items-center justify-center w-full">
             <span>Hi 👋,</span>
 
