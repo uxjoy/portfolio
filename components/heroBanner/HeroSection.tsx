@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="py-24 md:pt-14 md:pb-24 relative">
+    <div className="py-8 pb-0 md:pt-14 md:pb-24 relative">
       <div className="container text-center space-y-4">
         <div className="hidden md:flex flex-col justify-center text-[32px] md:text-[64px] lg:text-[72px] leading-tight md:leading-[120%] font-semibold">
           <h1 className="flex gap-4 items-center justify-center w-full">
@@ -28,16 +28,11 @@ const HeroSection = () => {
           </h1>
 
           <h1 className="flex items-center justify-center gap-2 md:gap-4 mx-auto">
-            a
-            <span className="capitalize text-primary-default">
-              product designer
-            </span>
+            a<span className="capitalize text-primary-default">product designer</span>
             who loves to
           </h1>
 
-          <h1 className="text-primary-950 dark:text-white">
-            create meaningful design
-          </h1>
+          <h1 className="text-primary-950 dark:text-white">create meaningful design</h1>
         </div>
 
         <div className="mobile-view text-4xl leading-tight font-semibold flex flex-col items-center justify-center space-y-6 md:hidden">
@@ -51,11 +46,8 @@ const HeroSection = () => {
           />
 
           <h1>
-            Hi 👋, I’m Joy{" "}
-            <span className="capitalize text-primary-default">
-              product designer
-            </span>{" "}
-            create meaningful design
+            Hi 👋, I’m Joy <span className="capitalize text-primary-default">product designer</span> create meaningful
+            design
           </h1>
         </div>
 
@@ -65,9 +57,8 @@ const HeroSection = () => {
             <span className="font-semibold text-primary-950 dark:font-medium dark:bg-gradient-to-r dark:from-primary-300  dark:to-sky-300 inline-block dark:text-transparent dark:bg-clip-text">
               5+ years of Product Design
             </span>{" "}
-            expertise, I craft user-centric experiences that blend aesthetics
-            and functionality. Driven by research, I create designs that enhance
-            usability and impact.
+            expertise, I craft user-centric experiences that blend aesthetics and functionality. Driven by research, I
+            create designs that enhance usability and impact.
           </p>
 
           <div className="actions flex items-center justify-center gap-3 w-full font-medium">
@@ -85,10 +76,7 @@ const HeroSection = () => {
             >
               My Resume
               <span className="w-8 h-8 md:w-9 md:h-9 grid items-center justify-center rounded-full bg-white dark:bg-primary-950 text-primary-950 dark:text-primary-default ease-in-out duration-300">
-                <RiArrowRightUpLine
-                  size={24}
-                  className="hidden group-hover:block"
-                />
+                <RiArrowRightUpLine size={24} className="hidden group-hover:block" />
                 <RiDriveFill size={20} className=" group-hover:hidden" />
               </span>
             </Link>

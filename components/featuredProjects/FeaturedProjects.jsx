@@ -5,6 +5,9 @@ import { featuredProjects } from "@/utils/data/projectListData";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Image from "next/image";
 
+import "photoswipe/dist/photoswipe.css";
+import { Gallery, Item } from "react-photoswipe-gallery";
+
 const FeaturedProjects = () => {
   const settings = {
     rewind: true,
@@ -100,7 +103,7 @@ const FeaturedProjects = () => {
               {title}
             </div>
 
-            <div className="image-card w-full h-full">
+            <div className="image-card w-full h-full relative">
               <Image
                 className="object-cover my-wh group-hover:scale-110 duration-300"
                 src={imageURL}
@@ -114,6 +117,25 @@ const FeaturedProjects = () => {
           </SplideSlide>
         ))}
       </Splide>
+
+      {/* <Gallery>
+        <Item
+          original="https://picsum.photos/1024/768?image=2"
+          thumbnail="https://picsum.photos/200/300?image=2"
+          width="1024"
+          height="768"
+        >
+          {({ ref, open }) => <img ref={ref} onClick={open} src="https://picsum.photos/200/300?image=2" />}
+        </Item>
+        <Item
+          original="https://picsum.photos/1024/768?image=3"
+          thumbnail="https://picsum.photos/200/300?image=3"
+          width="1024"
+          height="768"
+        >
+          {({ ref, open }) => <img ref={ref} onClick={open} src="https://picsum.photos/200/300?image=3" />}
+        </Item>
+      </Gallery> */}
 
       {/* <div className="relative w-[900px h-[600px] rounded-2xl md:rounded-[20px] overflow-hidden bg-black">
           <Image

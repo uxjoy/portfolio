@@ -20,7 +20,7 @@ export const selectedWorks = [
     url: "http://uxjoy.dev",
     title: "PiUI (Design System)",
     description:
-      "A collaborative approach to defining components and features, aligning designers, developers, and maintainers around a component's purpose.",
+      "A collaborative approach to defining components and features, aligning designers, developers, and maintainers around a purpose.",
     tag: "Icon Design, Website Design",
     imageURL: "/assets/selectedwork/piui.webp",
     brandColor: "#874BF6",

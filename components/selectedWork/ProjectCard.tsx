@@ -12,35 +12,24 @@ type ProjectCardProps = {
   bgColor?: string;
 };
 
-const ProjectCard: FC<ProjectCardProps> = ({
-  url,
-  title,
-  description,
-  tag,
-  imageURL,
-  bgColor,
-}) => {
+const ProjectCard: FC<ProjectCardProps> = ({ url, title, description, tag, imageURL, bgColor }) => {
   return (
     <Link
       href={url}
       className={`relative space-y-6 group ease-in-out duration-300 p-1 pt-7 rounded-3xl overflow-hidden w-full block`}
       style={{ background: bgColor }}
     >
-      <div className="leading-tight px-5 group-hover:pl-4 duration-300 relative z-10">
+      <div className="leading-tight px-4 md:px-5 group-hover:pl-4 duration-300 relative z-10">
         <RiArrowRightUpLine size={28} />
 
         <div className="space-y-2">
-          <div className="text-xl md:text-xl font-medium group-hover:underline pt-5">
-            {title}
-          </div>
+          <div className="text-xl md:text-xl font-medium group-hover:underline pt-5">{title}</div>
 
-          <p className="text-sm text-gray-600 dark:text-white font-light leading-snug">
-            {description}
-          </p>
+          <p className="text-sm text-gray-600 dark:text-white font-light leading-snug">{description}</p>
         </div>
       </div>
 
-      <div className="relative w-full h-[300px] lg:h-[460px] bg-slate-50 rounded-2xl md:rounded-[20px] overflow-hidden">
+      <div className="relative w-full h-[320px] lg:h-[460px] bg-slate-50 rounded-[20px] overflow-hidden">
         <Image
           className="object-cover w-full h-full group-hover:scale-110 duration-300"
           src={imageURL}

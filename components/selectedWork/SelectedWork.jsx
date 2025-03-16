@@ -18,7 +18,7 @@ const SelectedWork = () => {
     type: "loop",
     infinite: true,
     focus: "left",
-    pagination: true,
+    pagination: false,
     // pauseOnHover: true,
     autoplay: true,
     // keyboard: true,
