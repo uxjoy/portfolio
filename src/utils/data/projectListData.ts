@@ -1,12 +1,28 @@
 // Project list data
-export const projectList = [
+
+export const featuredProjects = [
+  {
+    title: "Hotel App Redesign",
+    imageURL: "/assets/featured/st_hotel.webp",
+  },
+  {
+    title: "Flight App Redesign",
+    imageURL: "/assets/featured/st_flight.webp",
+  },
+  {
+    title: "Shop App Redesign",
+    imageURL: "/assets/featured/st_shop.webp",
+  },
+];
+
+export const selectedWorks = [
   {
     url: "http://uxjoy.dev",
     title: "PiUI (Design System)",
     description:
       "A collaborative approach to defining components and features, aligning designers, developers, and maintainers around a component's purpose.",
     tag: "Icon Design, Website Design",
-    imageURL: "/assets/selectedwork/piui.jpg",
+    imageURL: "/assets/selectedwork/piui.webp",
     brandColor: "#874BF6",
     commingSoon: true,
   },
@@ -16,7 +32,7 @@ export const projectList = [
     description:
       "A set of open-source, neutral style system symbols crafted for designers and developers to enhance consistency and efficiency.",
     tag: "Icon Design",
-    imageURL: "/assets/selectedwork/icon.jpg",
+    imageURL: "/assets/selectedwork/icon.webp",
     brandColor: "#5DBD25",
     commingSoon: false,
   },
@@ -26,7 +42,7 @@ export const projectList = [
     description:
       "The redesign created an intuitive, modern, user-friendly interface, optimizing transfer UX and banking for a seamless experience.",
     tag: "Mobile App",
-    imageURL: "/assets/selectedwork/ebl.jpg",
+    imageURL: "/assets/selectedwork/ebl.webp",
     brandColor: "#FFC60A",
     commingSoon: false,
   },
@@ -36,7 +52,7 @@ export const projectList = [
     description:
       "Outsourcing portals streamline the process, helping businesses connect with and manage outsourcing partners more efficiently.",
     tag: "Website Design, Responsive Design",
-    imageURL: "/assets/selectedwork/hiresphere.jpg",
+    imageURL: "/assets/selectedwork/hiresphere.webp",
     brandColor: "#1882FF",
     commingSoon: true,
   },
