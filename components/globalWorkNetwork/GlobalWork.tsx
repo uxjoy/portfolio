@@ -8,15 +8,12 @@ const GlobalWork = () => {
         <div className="section-header text-center">
           <h1 className="mainTitle">
             <span> Collaborating Across </span>
-            <span className="text-primary-default">
-              {" "}
-              20+ Global Destinations{" "}
-            </span>
+            <span className="text-primary-default"> 20+ Global Destinations </span>
           </h1>
         </div>
 
-        <div className="relative">
-          <div className="flex justify-center">
+        <div className="relative flex flex-col">
+          <div className="flex justify-center mt-8 md:mt-0">
             <span className="dark:hidden">
               <Image
                 className="w-full md:w-11/12 h-auto dark:opacity-10"
@@ -45,8 +42,8 @@ const GlobalWork = () => {
             </span>
           </div>
 
-          <div className="p-5 bg-white shadow-2xl dark:bg-neutral-950 border border-gray-100 dark:border-transparent rounded-2xl text-gray-900 dark:text-white w-[288px] md:w-[340px] space-y-3 md:absolute z-10 top-20 right-0 md:mr-16 animate-mousePointer hover:animate-none mx-auto">
-            <h4 className="text-lg font-semi">Global Work Network</h4>
+          <div className="-order-1 md:order-none p-5 bg-white shadow-2xl dark:bg-neutral-950 border border-gray-100 dark:border-transparent rounded-2xl text-gray-900 dark:text-white w-[288px] md:w-[340px] space-y-3 md:absolute z-10 top-20 right-0 md:mr-16 animate-mousePointer hover:animate-none mx-auto">
+            <h4 className="md:text-lg font-semi">Global Work Network</h4>
 
             <ul className="grid grid-cols-2 gap-1.5 text-gray-700 dark:text-whiteAlpha-56 text-xs md:text-sm font-light cursor-default">
               {destinationData.map((cities, i) => (
