@@ -129,7 +129,7 @@ const BentoGrid = () => {
             </div>
 
             <div className="bg-black/20 w-full h-full border border-whiteAlpha-8 rounded-2xl shadow-lg">
-              <div className="header flex items-center justify-between p-4 border-b border-whiteAlpha-8">
+              <div className="header flex items-center justify-between p-4 px-5 border-b border-whiteAlpha-8">
                 <span className="flex items-center gap-3">
                   <Google />
                   <p>
@@ -140,50 +140,62 @@ const BentoGrid = () => {
                 <RiCloseLine size={24} className="opacity-[16%]" />
               </div>
 
-              <div className="list py-2 text-sm">
+              <div className="list p-2 text-sm">
                 <Link
                   href={"/"}
                   target="_blank"
-                  className="flex items-center gap-2.5 px-3.5 py-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300"
+                  className="flex items-center gap-2.5 p-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300 rounded-lg "
                 >
-                  <RiEarthLine size={22} className="opacity-[48%]" />
-                  <p className="text-whiteAlpha-72 font-extralight"> uxjoy.dev | Sohanur Rahman (Joy) </p>
+                  <RiEarthLine size={22} className="text-white/50" />
+                  <p className="text-whiteAlpha-72 font-extralight group-hover:text-primary-default">
+                    {" "}
+                    uxjoy.dev | Sohanur Rahman (Joy){" "}
+                  </p>
                 </Link>
 
                 <Link
                   href={figmaPortfolioLink}
                   target="_blank"
-                  className="flex items-center gap-2.5 px-3.5 py-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300"
+                  className="flex items-center gap-2.5 p-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300 rounded-lg "
                 >
                   <FigmaLine />
-                  <p className="text-whiteAlpha-72 font-extralight"> figma.portfolio.uxjoy </p>
+                  <p className="text-whiteAlpha-72 font-extralight group-hover:text-primary-default">
+                    {" "}
+                    figma.portfolio.uxjoy{" "}
+                  </p>
                 </Link>
 
                 <Link
                   href={linkedinLink}
                   target="_blank"
-                  className="flex items-center gap-2.5 px-3.5 py-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300"
+                  className="flex items-center gap-2.5 p-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300 rounded-lg "
                 >
-                  <RiLinkedinFill size={22} className="opacity-[48%]" />
-                  <p className="text-whiteAlpha-72 font-extralight"> linkedin.com/in/uxjoy </p>
+                  <RiLinkedinFill size={22} className="text-white/50" />
+                  <p className="text-whiteAlpha-72 font-extralight group-hover:text-primary-default">
+                    {" "}
+                    linkedin.com/in/uxjoy{" "}
+                  </p>
                 </Link>
 
                 <Link
                   href={dribbbleLink}
                   target="_blank"
-                  className="flex items-center gap-2.5 px-3.5 py-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300"
+                  className="flex items-center gap-2.5 p-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300 rounded-lg "
                 >
-                  <RiDribbbleLine size={22} className="opacity-[48%]" />
-                  <p className="text-whiteAlpha-72 font-extralight"> dribbble.com/uxjoy_ </p>
+                  <RiDribbbleLine size={22} className="text-white/50" />
+                  <p className="text-whiteAlpha-72 font-extralight group-hover:text-primary-default">
+                    {" "}
+                    dribbble.com/uxjoy_{" "}
+                  </p>
                 </Link>
 
                 <Link
                   href={twitterLink}
                   target="_blank"
-                  className="flex items-center gap-2.5 px-3.5 py-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300"
+                  className="flex items-center gap-2.5 p-2.5 group hover:gap-3.5 hover:bg-whiteAlpha-2 ease-in-out duration-300 rounded-lg "
                 >
-                  <RiTwitterLine size={22} className="opacity-[48%]" />
-                  <p className="text-whiteAlpha-72 font-extralight"> x.com/uxjoy_ </p>
+                  <RiTwitterLine size={22} className="text-white/50" />
+                  <p className="text-whiteAlpha-72 font-extralight group-hover:text-primary-default"> x.com/uxjoy_ </p>
                 </Link>
               </div>
             </div>
