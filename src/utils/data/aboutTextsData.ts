@@ -27,3 +27,9 @@ export const educationHistory = {
   duration: "2015 - 2019",
   url: "https://www.sub.ac.bd",
 };
+
+export const figmaPortfolioLink =
+  "https://www.figma.com/design/zyZ85JTfEGwQWydcvuoF0J/Joy's-Portfolio?node-id=21-21968&t=tmsdPCar96Cu0vos-1";
+export const linkedinLink = "https://linkedin.com/in/uxjoy";
+export const dribbbleLink = "https://dribbble.com/uxjoy_";
+export const twitterLink = "https://x.com/uxjoy_";

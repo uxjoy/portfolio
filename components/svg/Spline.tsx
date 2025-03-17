@@ -1,6 +1,7 @@
-const Spline = () => {
+const Spline = ({ className }: any) => {
   return (
     <svg
+      className={className}
       width="40"
       height="40"
       viewBox="0 0 40 40"
@@ -9,23 +10,10 @@ const Spline = () => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <rect width="40" height="40" rx="10" fill="#1E293B" />
-      <rect
-        x="0.5"
-        y="0.5"
-        width="39"
-        height="39"
-        rx="9.5"
-        stroke="white"
-        strokeOpacity="0.08"
-      />
+      <rect x="0.5" y="0.5" width="39" height="39" rx="9.5" stroke="white" strokeOpacity="0.08" />
       <rect x="8" y="8" width="24" height="24" fill="url(#pattern0)" />
       <defs>
-        <pattern
-          id="pattern0"
-          patternContentUnits="objectBoundingBox"
-          width="1"
-          height="1"
-        >
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
           <use xlinkHref="#image0_1332_2053" transform="scale(0.0078125)" />
         </pattern>
         <image

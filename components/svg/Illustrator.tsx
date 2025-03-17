@@ -1,6 +1,7 @@
-const Illustrator = () => {
+const Illustrator = ({ className }: any) => {
   return (
     <svg
+      className={className}
       width="40"
       height="40"
       viewBox="0 0 40 40"
@@ -8,15 +9,7 @@ const Illustrator = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect width="40" height="40" rx="10" fill="#330000" />
-      <rect
-        x="0.5"
-        y="0.5"
-        width="39"
-        height="39"
-        rx="9.5"
-        stroke="white"
-        strokeOpacity="0.08"
-      />
+      <rect x="0.5" y="0.5" width="39" height="39" rx="9.5" stroke="white" strokeOpacity="0.08" />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
