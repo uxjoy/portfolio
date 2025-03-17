@@ -2,6 +2,7 @@ import Contact from "../../components/Contact";
 import Divider from "../../components/Divider";
 import MainLayout from "../../components/MainLayout";
 import About from "../../components/about/About";
+import BentoGrid from "../../components/bento/page";
 import ClientsFeedback from "../../components/clientFeedback/ClientsFeedback";
 import FeaturedProjects from "../../components/featuredProjects/FeaturedProjects";
 import GlobalWork from "../../components/globalWorkNetwork/GlobalWork";
@@ -29,6 +30,8 @@ const Home = () => {
       </div>
 
       <GlobalWork />
+
+      <BentoGrid />
 
       <ClientsFeedback />
 
