@@ -31,11 +31,11 @@ import ProcessCard from "./ProcessCard";
 
 const BentoGrid = () => {
   return (
-    <div className="">
+    <div className="pb-12 md:pb-20">
       <div className="container">
         <div className="flex flex-col md:grid grid-cols-12 grid-rows-3 gap-3 md:gap-5">
           {/* Process */}
-          <div className="rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-6 col-span-4 space-y-4">
+          <div className="rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-4 space-y-4">
             <div>My Process</div>
 
             <div className="grid grid-cols-3 gap-2">
@@ -47,7 +47,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Experience */}
-          <div className="flex flex-col items-center justify-center rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-6 col-span-3">
+          <div className="flex flex-col items-center justify-center rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-3">
             <p>
               <span className="text-[72px] font-bold leading-tight">5</span> years{" "}
               <span className="text-primary-default font-semibold"> + </span>
@@ -56,7 +56,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Upwork */}
-          <div className="flex flex-col justify-between sm:gap-4 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-6 col-span-5">
+          <div className="flex flex-col justify-between gap-4 md:gap-0 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-5">
             <Rating />
 
             <div className="content space-y-1">
@@ -72,7 +72,7 @@ const BentoGrid = () => {
           </div>
 
           {/* About */}
-          <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-6 col-span-3">
+          <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-3">
             <Image
               src={"/assets/author.jpg"}
               alt="UXJOY"
@@ -92,7 +92,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Design */}
-          <div className="flex flex-col gap-5 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-6 col-span-4">
+          <div className="flex flex-col gap-5 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-4">
             <div className="inline-block">
               <Pill text="Design Tools" />
             </div>
@@ -116,7 +116,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Social Presence */}
-          <div className="flex flex-col gap-5 relative rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-6 col-span-5 row-span-2">
+          <div className="flex flex-col gap-5 relative rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-5 row-span-2">
             <div className="inline-block">
               <Pill text="UXJoy" />
             </div>
@@ -190,7 +190,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Development */}
-          <div className="flex flex-col gap-5 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-6 col-span-4">
+          <div className="flex flex-col gap-5 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-4">
             <div className="inline-block">
               <Pill text="Development" />
             </div>
@@ -214,7 +214,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Location */}
-          <div className="relative min-h-[226px] rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-6 col-span-3 overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-bgColor/80 before:z-10 before:bg-blend-multiply">
+          <div className="relative min-h-[226px] rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-3 overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-bgColor/80 before:z-10 before:bg-blend-multiply">
             <Image src={"/assets/location.jpg"} alt="UXJOY" layout="fill" objectFit="cover" />
 
             <div className="flex flex-col items-center justify-center gap-8 pt-12 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-full h-full">

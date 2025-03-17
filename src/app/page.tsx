@@ -1,7 +1,7 @@
 import Contact from "../../components/Contact";
 import Divider from "../../components/Divider";
 import MainLayout from "../../components/MainLayout";
-import About from "../../components/about/About";
+import AboutNew from "../../components/about/AboutNew";
 import BentoGrid from "../../components/bento/page";
 import ClientsFeedback from "../../components/clientFeedback/ClientsFeedback";
 import FeaturedProjects from "../../components/featuredProjects/FeaturedProjects";
@@ -35,7 +35,7 @@ const Home = () => {
 
       <ClientsFeedback />
 
-      <About />
+      <AboutNew />
 
       <RecentExploration />
 
