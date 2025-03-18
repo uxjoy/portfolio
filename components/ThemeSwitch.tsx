@@ -13,7 +13,10 @@ export default function ThemeSwitch() {
   if (!mounted)
     return (
       <div className="p-2 rounded-full">
-        <RiComputerLine size={20} className="text-slate-800 dark:text-white/80" />
+        <RiComputerLine
+          size={20}
+          className="text-slate-800 dark:text-white/80"
+        />
       </div>
     );
 
