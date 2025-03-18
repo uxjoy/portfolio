@@ -1,15 +1,13 @@
 "use client";
 
 import { resumeURL } from "@/utils/data/navbarData";
-import {
-  RiArrowRightUpLine,
-  RiDribbbleFill,
-  RiDriveFill,
-  RiLinkedinFill,
-  RiTwitterFill,
-} from "@remixicon/react";
+import { RiArrowRightUpLine, RiDriveFill } from "@remixicon/react";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
+import UseAnimations from "react-useanimations";
+import dribbble from "react-useanimations/lib/dribbble";
+import linkedin from "react-useanimations/lib/linkedin";
+import twitter from "react-useanimations/lib/twitter";
 
 const BottomNav = () => {
   const [top, setTop] = useState(true);
@@ -47,12 +45,19 @@ const BottomNav = () => {
           <Link
             href={"https://www.linkedin.com/in/uxjoy"}
             target="_blank"
-            className="p-3 block rounded-full bg-linkedin group border border-white/25"
+            className="p-2 block rounded-full bg-linkedin group border border-white/25"
             aria-label="Linkedin link for more information"
           >
-            <RiLinkedinFill
+            {/* <RiLinkedinFill
               size={20}
               className="scale-100 group-hover:scale-90 ease-in-out duration-200"
+            /> */}
+            <UseAnimations
+              animation={linkedin}
+              size={24}
+              strokeColor="white"
+              autoplay={true}
+              loop={true}
             />
           </Link>
 
@@ -63,12 +68,20 @@ const BottomNav = () => {
           <Link
             href={"https://dribbble.com/uxjoy_"}
             target="_blank"
-            className="p-3 block rounded-full bg-dribbble group border border-white/25"
+            className="p-2 block rounded-full bg-dribbble group border border-white/25"
             aria-label="Dribbble link for more information"
           >
-            <RiDribbbleFill
+            {/* <RiDribbbleFill
               size={20}
               className="scale-100 group-hover:scale-90 ease-in-out duration-200"
+            /> */}
+
+            <UseAnimations
+              animation={dribbble}
+              size={24}
+              strokeColor="white"
+              autoplay={true}
+              loop={true}
             />
           </Link>
 
@@ -79,12 +92,20 @@ const BottomNav = () => {
           <Link
             href={"https://x.com/uxjoy_"}
             target="_blank"
-            className="p-3 block rounded-full bg-twitter group border border-white/25"
+            className="p-2 block rounded-full bg-twitter group border border-white/25"
             aria-label="Twitter link for more information"
           >
-            <RiTwitterFill
+            {/* <RiTwitterFill
               size={20}
               className="scale-100 group-hover:scale-90 ease-in-out duration-200"
+            /> */}
+
+            <UseAnimations
+              animation={twitter}
+              size={24}
+              strokeColor="white"
+              autoplay={true}
+              loop={true}
             />
           </Link>
 

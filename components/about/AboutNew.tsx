@@ -7,7 +7,7 @@ import { highlightedText } from "./About";
 
 const AboutNew = () => {
   return (
-    <div className="bg-slate-400/ dark:bg-transparent py-12 md:py-120">
+    <div className="py-12 md:py-120">
       <div className="container space-y-8 md:space-y-14">
         <div className="section-header text-center space-y-3">
           <h1 className="mainTitle">About Me</h1>
