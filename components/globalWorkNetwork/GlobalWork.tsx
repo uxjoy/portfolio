@@ -1,4 +1,5 @@
 import { destinationData } from "@/utils/data/destinationData";
+import * as motion from "motion/react-client";
 import Image from "next/image";
 
 const GlobalWork = () => {
@@ -6,14 +7,35 @@ const GlobalWork = () => {
     <div className="py-12 md:pt-120">
       <div className="container space-y-6 md:space-y-14">
         <div className="section-header text-center">
-          <h1 className="mainTitle">
+          <motion.h1
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
+            className="mainTitle"
+          >
             <span> Collaborating Across </span>
-            <span className="text-primary-default"> 20+ Global Destinations </span>
-          </h1>
+            <span className="text-primary-default">
+              {" "}
+              20+ Global Destinations{" "}
+            </span>
+          </motion.h1>
         </div>
 
         <div className="relative flex flex-col">
-          <div className="flex justify-center mt-8 md:mt-0">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
+            className="flex justify-center mt-8 md:mt-0"
+          >
             <span className="dark:hidden">
               <Image
                 className="w-full md:w-11/12 h-auto dark:opacity-10"
@@ -40,9 +62,18 @@ const GlobalWork = () => {
                 height={0}
               />
             </span>
-          </div>
+          </motion.div>
 
-          <div className="-order-1 md:order-none p-5 bg-white shadow-2xl dark:bg-neutral-950 border border-gray-100 dark:border-transparent rounded-2xl text-gray-900 dark:text-white w-[288px] md:w-[340px] space-y-3 md:absolute z-10 top-20 right-0 md:mr-16 animate-mousePointer hover:animate-none mx-auto">
+          <motion.div
+            initial={{ opacity: 0, x: 120 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.6,
+              delay: 0.4,
+            }}
+            className="-order-1 md:order-none p-5 bg-white shadow-2xl dark:bg-neutral-950 border border-gray-100 dark:border-transparent rounded-2xl text-gray-900 dark:text-white w-[288px] md:w-[340px] space-y-3 md:absolute z-10 top-20 right-0 md:mr-16 animate-mousePointer hover:animate-none mx-auto"
+          >
             <h4 className="md:text-lg font-semi">Global Work Network</h4>
 
             <ul className="grid grid-cols-2 gap-1.5 text-gray-700 dark:text-whiteAlpha-56 text-xs md:text-sm font-light cursor-default">
@@ -57,7 +88,7 @@ const GlobalWork = () => {
             </ul>
 
             <span className="w-5 h-5 bg-white dark:bg-neutral-950 border border-transparent border-b-gray-100 dark:border-b-transparent border-r-gray-100 dark:border-r-transparent absolute rotate-45 -bottom-2.5 left-1/2 md:left-6 transform -translate-x-1/2 md:translate-x-0 rounded-br"></span>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

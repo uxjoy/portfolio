@@ -2,10 +2,21 @@ import { resumeURL } from "@/utils/data/navbarData";
 import { RiArrowRightUpLine, RiDriveFill } from "@remixicon/react";
 import Image from "next/image";
 import Link from "next/link";
+import * as motion from "motion/react-client";
 
 const HeroSection = () => {
   return (
-    <div className="py-8 pb-0 md:pt-14 md:pb-24 relative">
+    <motion.div
+      initial={{ opacity: 0, y: 60 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        ease: "easeInOut",
+        duration: 0.75,
+        // delay: 0.1,
+        // scale: { type: "spring", visualDuration: 0.4, bounce: 0.2 },
+      }}
+      className="py-8 pb-0 md:pt-14 md:pb-24 relative"
+    >
       <div className="container text-center space-y-4">
         <div className="hidden md:flex flex-col justify-center text-[32px] md:text-[40px] lg:text-[56px] xl:text-[72px] leading-tight md:leading-[120%] font-semibold">
           <h1 className="flex gap-4 items-center justify-center w-full">
@@ -107,7 +118,7 @@ const HeroSection = () => {
           positionRight
         />
       </div> */}
-    </div>
+    </motion.div>
   );
 };
 

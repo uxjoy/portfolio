@@ -3,6 +3,7 @@
 
 import { selectedWorks } from "@/utils/data/projectListData";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import * as motion from "motion/react-client";
 import ProjectCard from "./ProjectCard";
 
 const SelectedWork = () => {
@@ -90,7 +91,17 @@ const SelectedWork = () => {
   };
 
   return (
-    <div className="h-[400v]" id="work">
+    <div
+      // initial={{ opacity: 0, x: 0 }}
+      // whileInView={{ opacity: 1, x: 0 }}
+      // transition={{
+      //   ease: "easeInOut",
+      //   duration: 0.75,
+      //   delay: 0.2,
+      // }}
+      className="h-[400v]"
+      id="work"
+    >
       {/* <div className="h-[400v]" id="work" ref={targetRef}> */}
       <div className="horizontalScrol h-[100v] sticky top-0 flex items-center justify-start overflow-hidden">
         {/* <motion.div
@@ -111,21 +122,51 @@ const SelectedWork = () => {
         </motion.div> */}
 
         <div className="container">
-          <Splide options={settings} tag="div" aria-label="React Splide Example">
-            {selectedWorks.map(({ url, title, description, tag, imageURL, brandColor, commingSoon }, i) => (
-              <SplideSlide className="project w-[320px] md:w-[409px]" key={i}>
-                <ProjectCard
-                  url={url}
-                  title={title}
-                  description={description}
-                  tag={tag}
-                  imageURL={imageURL}
-                  commingSoon={commingSoon}
-                  bgColor={brandColor}
-                />
-              </SplideSlide>
-            ))}
-          </Splide>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.75,
+              delay: 0.2,
+            }}
+          >
+            <Splide
+              options={settings}
+              tag="div"
+              aria-label="React Splide Example"
+            >
+              {selectedWorks.map(
+                (
+                  {
+                    url,
+                    title,
+                    description,
+                    tag,
+                    imageURL,
+                    brandColor,
+                    commingSoon,
+                  },
+                  i
+                ) => (
+                  <SplideSlide
+                    className="project w-[320px] md:w-[409px]"
+                    key={i}
+                  >
+                    <ProjectCard
+                      url={url}
+                      title={title}
+                      description={description}
+                      tag={tag}
+                      imageURL={imageURL}
+                      commingSoon={commingSoon}
+                      bgColor={brandColor}
+                    />
+                  </SplideSlide>
+                )
+              )}
+            </Splide>
+          </motion.div>
         </div>
       </div>
     </div>
