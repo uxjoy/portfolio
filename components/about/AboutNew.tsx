@@ -1,5 +1,7 @@
 import { educationHistory, workHistoryList } from "@/utils/data/aboutTextsData";
 import { RiArrowRightUpLine } from "@remixicon/react";
+import * as motion from "motion/react-client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
@@ -7,9 +9,18 @@ import { highlightedText } from "./About";
 
 const AboutNew = () => {
   return (
-    <div className="py-12 md:py-120">
+    <div className="py-12 md:py-120 overflow-hidden">
       <div className="container space-y-8 md:space-y-14">
-        <div className="section-header text-center space-y-3">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.5,
+            delay: 0.5,
+          }}
+          className="section-header text-center space-y-3"
+        >
           <h1 className="mainTitle">About Me</h1>
           <p className="subText">
             It’s not that hard to find my contact just search{" "}
@@ -21,11 +32,20 @@ const AboutNew = () => {
               uxjoy.dev
             </Link>
           </p>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col md:grid grid-cols-3 grid-rows-3 gap-3 md:gap-5">
           {/* About Me */}
-          <div className="row-span-2 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl flex items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.75,
+              delay: 0.5,
+            }}
+            className="row-span-2 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl flex items-center"
+          >
             <p className="text-gray-500 dark:text-whiteAlpha-64 dark:font-light text-sm md:text-lg leading-normal mb-0">
               {highlightedText(`✨ Strong commitment to collaboration and solutions-oriented
                         problem-solving ✨`)}
@@ -35,10 +55,19 @@ const AboutNew = () => {
               user experience, usability and speed for multiple types of
               end-users.
             </p>
-          </div>
+          </motion.div>
 
           {/* Author Image */}
-          <div className="-order-1 md:order-none relative min-h-[350px] row-span-3 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl space-y-4  ">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.75,
+              delay: 0.5,
+            }}
+            className="-order-1 md:order-none relative min-h-[350px] row-span-3 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl space-y-4  "
+          >
             <Image
               className="w-full h-full object-cover"
               src={"/assets/author_lg.webp"}
@@ -57,10 +86,19 @@ const AboutNew = () => {
                 My name is Md. Sohanur Rahman
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Experience */}
-          <div className="row-span-3 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl space-y-8">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.75,
+              delay: 0.5,
+            }}
+            className="row-span-3 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl space-y-8"
+          >
             <div className="text-base flex justify-between items-center">
               <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">
                 Experience
@@ -70,26 +108,45 @@ const AboutNew = () => {
               </span>
             </div>
 
-            <div className="list [&>*:first-child]:pt-0 [&>*:last-child]:pb-0  [&>*:last-child]:border-b-0 j">
+            <div className="list">
               {workHistoryList.map(
                 ({ designation, company, url, duration }, i) => (
-                  <LinkComponent
-                    className={
-                      "py-5 border-b border-gray-100 dark:border-opacity-5"
-                    }
+                  <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{
+                      ease: "easeInOut",
+                      duration: 0.5,
+                      delay: 0.75,
+                    }}
                     key={i}
-                    title={designation}
-                    organization={company}
-                    duration={duration}
-                    url={url}
-                  />
+                  >
+                    <LinkComponent
+                      className={
+                        "py-5 border-b border-gray-100 dark:border-opacity-5 last-child:border-0"
+                      }
+                      title={designation}
+                      organization={company}
+                      duration={duration}
+                      url={url}
+                    />
+                  </motion.div>
                 )
               )}
             </div>
-          </div>
+          </motion.div>
 
           {/* Education */}
-          <div className="p-5 md:p-6 border bg-whiteAlpha-4  border-whiteAlpha-4 rounded-2xl space-y-4">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.75,
+              delay: 0.5,
+            }}
+            className="p-5 md:p-6 border bg-whiteAlpha-4  border-whiteAlpha-4 rounded-2xl space-y-4"
+          >
             <div className="text-base text-gray-900 dark:text-white uppercase font-bold dark:font-medium">
               Education
             </div>
@@ -100,7 +157,7 @@ const AboutNew = () => {
               duration={educationHistory.duration}
               url={educationHistory.url}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

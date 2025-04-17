@@ -49,14 +49,18 @@ const BentoGrid = () => {
     },
   };
   return (
-    <div className="pb-12 md:pb-20">
+    <div className="pb-12 md:pb-20 overflow-hidden">
       <div className="container">
         <div className="flex flex-col md:grid grid-cols-12 grid-rows-3 gap-3 md:gap-5">
           {/* Process */}
           <motion.div
-            variants={containerVariants}
-            initial="initial"
-            animate="whileInView"
+            initial={{ opacity: 0, y: -80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
             className="rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-4 space-y-4"
           >
             <div>My Process</div>
@@ -71,9 +75,13 @@ const BentoGrid = () => {
 
           {/* Experience */}
           <motion.div
-            variants={containerVariants}
-            initial="initial"
-            animate="whileInView"
+            initial={{ opacity: 0, y: -80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
             className="flex flex-col items-center justify-center rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-3"
           >
             <p>
@@ -86,9 +94,13 @@ const BentoGrid = () => {
 
           {/* Upwork */}
           <motion.div
-            variants={containerVariants}
-            initial="initial"
-            animate="whileInView"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
             className="flex flex-col justify-between gap-4 md:gap-0 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-5"
           >
             <Rating />
@@ -112,9 +124,13 @@ const BentoGrid = () => {
 
           {/* About */}
           <motion.div
-            variants={containerVariants}
-            initial="initial"
-            animate="whileInView"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
             className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-3"
           >
             <Image
@@ -139,9 +155,13 @@ const BentoGrid = () => {
 
           {/* Design */}
           <motion.div
-            variants={containerVariants}
-            initial="initial"
-            animate="whileInView"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
             className="flex flex-col gap-5 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-4"
           >
             <div className="inline-block">
@@ -169,9 +189,13 @@ const BentoGrid = () => {
 
           {/* Social Presence */}
           <motion.div
-            variants={containerVariants}
-            initial="initial"
-            animate="whileInView"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
             className="flex flex-col gap-5 relative rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-5 row-span-2"
           >
             <div className="inline-block">
@@ -265,9 +289,13 @@ const BentoGrid = () => {
 
           {/* Development */}
           <motion.div
-            variants={containerVariants}
-            initial="initial"
-            animate="whileInView"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
             className="flex flex-col gap-5 rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-4"
           >
             <div className="inline-block">
@@ -295,9 +323,13 @@ const BentoGrid = () => {
 
           {/* Location */}
           <motion.div
-            variants={containerVariants}
-            initial="initial"
-            animate="whileInView"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 0.5,
+              delay: 0.5,
+            }}
             className="relative min-h-[226px] rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-3 overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-bgColor/80 before:z-10 before:bg-blend-multiply"
           >
             <Image
