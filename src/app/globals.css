@@ -343,3 +343,52 @@ h6 {
 }
 
 /* ==============  Version 2. - End ============== */
+@property --border-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+
+.btn-glowing-border::before {
+  background: conic-gradient(
+    #5dbd25 5%,
+    #6366f1 0%,
+
+    /* #5dbd25 5%,
+    #6366f1 10%,
+    #5dbd25 20%, */ transparent 80deg
+  );
+
+  position: absolute;
+  height: 400%;
+  width: 150%;
+  top: -150%;
+  left: -25%;
+  /* transform: translateX(-50%) translateY(-50%); */
+  content: "";
+  animation: borderSpin 4s linear infinite;
+}
+
+@keyframes borderSpin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.figma-border::before {
+  background: conic-gradient(
+    rgb(93, 189, 37, 1) 5%,
+    rgb(99, 102, 241, 0.8) 0%,
+
+    transparent 80deg
+  );
+
+  position: absolute;
+  height: 800%;
+  width: 100%;
+  top: -350%;
+  left: 0;
+  content: "";
+  z-index: -1;
+  animation: borderSpin 4s linear infinite;
+}

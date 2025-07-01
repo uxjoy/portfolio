@@ -9,7 +9,11 @@ type ImageSliderProps = {
   duration?: string;
 };
 
-const ImageSlider: FC<ImageSliderProps> = async ({ fromLeft, fromRight, duration }) => {
+const ImageSlider: FC<ImageSliderProps> = async ({
+  fromLeft,
+  fromRight,
+  duration,
+}) => {
   const shots = await getDribbbleShots();
 
   const halfLength = Math.ceil(shots.length / 2);
@@ -28,14 +32,24 @@ const ImageSlider: FC<ImageSliderProps> = async ({ fromLeft, fromRight, duration
       <Marquee speed={50} pauseOnHover={true} play={true} direction="left">
         {shotsRow1 &&
           shotsRow1.map((shot) => (
-            <ShotsCard key={shot.id} title={shot.title} imgURL={shot.images.two_x} url={shot.html_url} />
+            <ShotsCard
+              key={shot.id}
+              title={shot.title}
+              imgURL={shot.images.two_x}
+              url={shot.html_url}
+            />
           ))}
       </Marquee>
 
       <Marquee speed={60} pauseOnHover={true} play={true} direction="right">
         {shotsRow2 &&
           shotsRow2.map((shot) => (
-            <ShotsCard key={shot.id} title={shot.title} imgURL={shot.images.two_x} url={shot.html_url} />
+            <ShotsCard
+              key={shot.id}
+              title={shot.title}
+              imgURL={shot.images.two_x}
+              url={shot.html_url}
+            />
           ))}
       </Marquee>
 
