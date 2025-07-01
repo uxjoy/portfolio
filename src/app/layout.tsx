@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import BackToTop from "../../components/BackToTop";
 import Providers from "./providers";
 
 const font = Sora({ subsets: ["latin"] });
@@ -116,7 +117,7 @@ export default function RootLayout({
         <Providers>{children}</Providers>
 
         {/* CTA */}
-        {/* <BackToTop /> */}
+        <BackToTop />
 
         <Analytics />
 

@@ -390,5 +390,5 @@ h6 {
   left: 0;
   content: "";
   z-index: -1;
-  animation: borderSpin 4s linear infinite;
+  animation: borderSpin 3s linear infinite;
 }

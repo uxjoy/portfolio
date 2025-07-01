@@ -1,6 +1,5 @@
 import Contact from "../../components/Contact";
 import Divider from "../../components/Divider";
-import MainLayout from "../../components/MainLayout";
 import AboutNew from "../../components/about/AboutNew";
 import AppScreen from "../../components/appScreen/appScreen";
 import BentoGrid from "../../components/bento/page";
@@ -8,14 +7,25 @@ import ClientsFeedback from "../../components/clientFeedback/ClientsFeedback";
 import GlobalWork from "../../components/globalWorkNetwork/GlobalWork";
 import HeroSection from "../../components/heroBanner/HeroSection";
 import BigTextMarquee from "../../components/marquee/BigTextMarquee";
+import Header from "../../components/navbar/Header";
 import RecentExploration from "../../components/recentExploration/RecentExploration";
 import SelectedWork from "../../components/selectedWork/SelectedWork";
 
 const Home = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-
   return (
-    <MainLayout>
+    <main className="wrapper">
+      <div className="main-lights-wrapper">
+        <div className="lights-container">
+          <div className="light-container left"></div>
+          <div className="light-container left"></div>
+          <div className="light-container center"></div>
+          <div className="light-container right"></div>
+          <div className="light-container last"></div>
+        </div>
+      </div>
+
+      <Header />
+
       <HeroSection />
 
       {/* <FeaturedProjects /> */}
@@ -44,7 +54,7 @@ const Home = async () => {
       <RecentExploration />
 
       <Contact />
-    </MainLayout>
+    </main>
   );
 };
 

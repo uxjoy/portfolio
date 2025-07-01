@@ -14,11 +14,11 @@ const MainLayout = ({ children }: any) => {
         </div>
       </div>
 
-      <Navabar />
+      {/* <Navabar /> */}
 
-      <div className="bottom-nav fixed bottom-0 p-3 z-50 w-screen">
+      {/* <div className="bottom-nav fixed bottom-0 p-3 z-50 w-screen">
         <BottomNav />
-      </div>
+      </div> */}
 
       {children}
     </main>

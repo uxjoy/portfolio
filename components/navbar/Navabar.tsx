@@ -2,7 +2,7 @@
 
 import { RiMailOpenLine } from "@remixicon/react";
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import UseAnimations from "react-useanimations";
 import dribbble from "react-useanimations/lib/dribbble";
 import linkedin from "react-useanimations/lib/linkedin";
@@ -10,24 +10,25 @@ import twitter from "react-useanimations/lib/twitter";
 import { Logo } from "../svg/Logo";
 
 const Navabar = () => {
-  const [top, setTop] = useState(true);
+  // const [top, setTop] = useState(true);
 
-  useEffect(() => {
-    const scrollHandler = () => {
-      window.scrollY > 40 ? setTop(false) : setTop(true);
-    };
+  // useEffect(() => {
+  //   const scrollHandler = () => {
+  //     window.scrollY > 40 ? setTop(false) : setTop(true);
+  //   };
 
-    window.addEventListener("scroll", scrollHandler);
-    return () => window.removeEventListener("scroll", scrollHandler);
-  }, [top]);
+  //   window.addEventListener("scroll", scrollHandler);
+  //   return () => window.removeEventListener("scroll", scrollHandler);
+  // }, [top]);
 
   return (
     <div
-      className={`navbar-wrapper md:px-8 stick__ top-0 z-50 ease-in-out duration-300 border-b border-transparent ${
-        !top
-          ? "bg-white/50 dark:bg-white/5 border-gray-950/5 dark:border-white/5 py-4 md:py-6 backdrop-blur-lg drop-shadow-sm"
-          : "py-6 md:py-10"
-      }`}
+      className={`navbar-wrapper md:px-8 stick__ top-0 z-50 ease-in-out duration-300 border-b border-transparent `}
+      // className={`navbar-wrapper md:px-8 stick__ top-0 z-50 ease-in-out duration-300 border-b border-transparent ${
+      //   !top
+      //     ? "bg-white/50 dark:bg-white/5 border-gray-950/5 dark:border-white/5 py-4 md:py-6 backdrop-blur-lg drop-shadow-sm"
+      //     : "py-6 md:py-10"
+      // }`}
       // className={`navbar-wrapper py-4 md:px-8 sticky top-0 backdrop-blur dark:backdrop-blur-lg z-50 drop-shadow-sm md:drop-shadow-none ease-in-out duration-300 ${
       //   top ? `md:bg-transaprent md:py-10` : "md:drop-shadow-sm md:py-6"
       // }`}

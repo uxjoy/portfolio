@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 const AppScreen = () => {
   return (
-    <div className="pb-12 md:pb-120 relative space-y-9 md:space-y-24">
+    <div className="py-20 md:pt-0 md:pb-120 relative space-y-9 md:space-y-24">
       {/* <div className="flex justify-center">
         <div className="inline-block card-wrapper mx-auto rounded-full relative glowing-border overflow-hidden p-[1px]">
           <div className="card p-6 bg-slate-900 relative z-10 rounded-full py-4 px-5 h-full">
@@ -21,8 +21,8 @@ const AppScreen = () => {
         direction="left"
       >
         {appScreenData.map((item, index) => (
-          <div key={index} className="text-center space-y-5 ml-6">
-            <p className="text-base font-light text-whiteAlpha-72">
+          <div key={index} className="text-center space-y-5 ml-4 md:ml-6">
+            <p className="text-sm font-light text-whiteAlpha-80">
               {item.title}
             </p>
 
