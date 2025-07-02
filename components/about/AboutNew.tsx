@@ -104,7 +104,7 @@ const AboutNew = () => {
                 Experience
               </span>
               <span className="text-xs py-1 px-2.5 leading-base bg-primary-300 dark:font-semibold text-primary-950 rounded-full">
-                5+ yrs
+                6+ yrs
               </span>
             </div>
 

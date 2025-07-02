@@ -1,8 +1,8 @@
 import { resumeURL } from "@/utils/data/navbarData";
 import { RiArrowRightUpLine, RiDriveFill } from "@remixicon/react";
+import * as motion from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
-import * as motion from "motion/react-client";
 
 const HeroSection = () => {
   return (
@@ -74,7 +74,7 @@ const HeroSection = () => {
           <p className="md:w-10/12 mx-auto lg:text-xl font-light text-gray-600 dark:text-whiteAlpha-64 lg:leading-relaxed">
             With over{" "}
             <span className="font-semibold text-primary-950 dark:font-medium dark:bg-gradient-to-r dark:from-primary-300  dark:to-sky-300 inline-block dark:text-transparent dark:bg-clip-text">
-              5+ years of Product Design
+              6+ years of Product Design
             </span>{" "}
             expertise, I craft user-centric experiences that blend aesthetics
             and functionality. Driven by research, I create designs that enhance
