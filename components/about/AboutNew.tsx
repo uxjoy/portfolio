@@ -61,11 +61,11 @@ const AboutNew = () => {
               duration: 0.75,
               delay: 0.5,
             }}
-            className="-order-1 md:order-none relative min-h-[350px] row-span-3 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl space-y-4  "
+            className="-order-1 md:order-none relative min-h-[350px] row-span-3 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl space-y-4 overflow-hidden"
           >
             <Image
               className="w-full h-full object-cover"
-              src={"/assets/author_lg.png"}
+              src={"/assets/author_lg_1.png"}
               alt="Author Image"
               fill
               priority={false}
