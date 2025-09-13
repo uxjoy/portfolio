@@ -1,16 +1,9 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
+import * as motion from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { educationHistory, workHistoryList } from "../../src/utils/data/aboutTextsData";
-import AdobeXD from "../svg/AdobeXD";
-import Figma from "../svg/Figma";
-import Framer from "../svg/Framer";
-import Illustrator from "../svg/Illustrator";
-import Miro from "../svg/Miro";
-import Photoshop from "../svg/Photoshop";
-import Spline from "../svg/Spline";
-import * as motion from "motion/react-client";
 
 const About = () => {
   return (
@@ -52,7 +45,7 @@ const About = () => {
           <div className="order-first md:order-none row-span-2 w-full h-[380px] md:h-[480px] p-6 text-gray-500 text-lg bg-white dark:bg-whiteAlpha-4 border border-gray-100 dark:border-whiteAlpha-4 rounded-2xl relative">
             <Image
               className="w-full h-full object-cover"
-              src={"/assets/author_lg.webp"}
+              src={"/assets/author_lg.png"}
               alt="Author Image"
               fill
               priority={false}
