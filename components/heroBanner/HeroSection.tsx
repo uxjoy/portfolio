@@ -1,8 +1,8 @@
 import { resumeURL } from "@/utils/data/navbarData";
 import { RiArrowRightUpLine, RiDriveFill } from "@remixicon/react";
-import Image from "next/image";
-import Link from "next/link";
 import * as motion from "motion/react-client";
+import Image from "next/legacy/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -22,15 +22,10 @@ const HeroSection = () => {
           <h1 className="flex gap-4 items-center justify-center w-full">
             <span>Hi 👋,</span>
 
-            <span className="hidden md:block relative">
-              <Image
-                src="/assets/joy_header.png"
-                loading="lazy"
-                width={110}
-                height={80}
-                className="object-contain rounded-full border-4 border-bgColor"
-                alt={"author image"}
-              />
+            <span className="hidden md:block relative h-[80px]">
+              <div className="w-[110px] h-[80px] rounded-full overflow-hidden border-4 border-bgColor relative">
+                <Image src="/assets/joy_header.png" loading="lazy" layout="fill" alt={"author image"} />
+              </div>
 
               <div className="shape absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full -z-10 w-[116px] h-[56px] bg-gradient-to-b from-sky-500 via-primary-300 to-sky-500"></div>
             </span>
@@ -39,16 +34,11 @@ const HeroSection = () => {
           </h1>
 
           <h1 className="flex items-center justify-center gap-2 md:gap-4 mx-auto">
-            a
-            <span className="capitalize text-primary-default">
-              product designer
-            </span>
+            a<span className="capitalize text-primary-default">product designer</span>
             who loves to
           </h1>
 
-          <h1 className="text-primary-950 dark:text-white">
-            create meaningful design
-          </h1>
+          <h1 className="text-primary-950 dark:text-white">create meaningful design</h1>
         </div>
 
         <div className="mobile-view text-4xl leading-tight font-semibold flex flex-col items-center justify-center space-y-6 md:hidden">
@@ -62,11 +52,8 @@ const HeroSection = () => {
           />
 
           <h1>
-            Hi 👋, I’m Joy{" "}
-            <span className="capitalize text-primary-default">
-              product designer
-            </span>{" "}
-            create meaningful design
+            Hi 👋, I’m Joy <span className="capitalize text-primary-default">product designer</span> create meaningful
+            design
           </h1>
         </div>
 
@@ -76,9 +63,8 @@ const HeroSection = () => {
             <span className="font-semibold text-primary-950 dark:font-medium dark:bg-gradient-to-r dark:from-primary-300  dark:to-sky-300 inline-block dark:text-transparent dark:bg-clip-text">
               5+ years of Product Design
             </span>{" "}
-            expertise, I craft user-centric experiences that blend aesthetics
-            and functionality. Driven by research, I create designs that enhance
-            usability and impact.
+            expertise, I craft user-centric experiences that blend aesthetics and functionality. Driven by research, I
+            create designs that enhance usability and impact.
           </p>
 
           <div className="actions flex items-center justify-center gap-3 w-full font-medium">
@@ -96,10 +82,7 @@ const HeroSection = () => {
             >
               My Resume
               <span className="w-8 h-8 md:w-9 md:h-9 grid items-center justify-center rounded-full bg-white dark:bg-primary-950 text-primary-950 dark:text-primary-default ease-in-out duration-300">
-                <RiArrowRightUpLine
-                  size={24}
-                  className="hidden group-hover:block"
-                />
+                <RiArrowRightUpLine size={24} className="hidden group-hover:block" />
                 <RiDriveFill size={20} className=" group-hover:hidden" />
               </span>
             </Link>

@@ -4,7 +4,7 @@
 import { featuredProjects } from "@/utils/data/projectListData";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import * as motion from "motion/react-client";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 // import "photoswipe/dist/photoswipe.css";
 

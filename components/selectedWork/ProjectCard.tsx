@@ -47,10 +47,11 @@ const ProjectCard: FC<ProjectCardProps> = ({ url, title, description, tag, image
           className="object-cover w-full h-full group-hover:scale-110 duration-300"
           src={imageURL}
           alt={title}
-          fill
+          fill={true}
           priority={false}
           quality={80}
           loading="lazy"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
 

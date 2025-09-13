@@ -2,7 +2,7 @@ import { educationHistory, workHistoryList } from "@/utils/data/aboutTextsData";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import * as motion from "motion/react-client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { FC } from "react";
 import { highlightedText } from "./About";
@@ -65,9 +65,9 @@ const AboutNew = () => {
           >
             <Image
               className="w-full h-full object-cover"
-              src={"/assets/author_lg_1.png"}
+              src={"/assets/author_lg_1.webp"}
               alt="Author Image"
-              fill
+              layout="fill"
               priority={false}
               quality={100}
               loading="lazy"
