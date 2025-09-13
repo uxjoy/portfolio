@@ -15,8 +15,9 @@ import explanation_img_4 from "../../../../public/assets/case-study/new/img_4.we
 import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.webp";
 import { designProcess, overviewData, problemsData, solutionsData } from "./data";
 
-const CaseStudyDetails = async ({ params }: any) => {
-  const caseStudyId = await params.caseStudyId;
+const CaseStudyDetails = async (props: any) => {
+  const params = await props.params;
+  const caseStudyId = await props.params.caseStudyId;
 
   // const [isToggle, isSetToggle] = useState(true);
 
