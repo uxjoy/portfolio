@@ -97,7 +97,7 @@ const AboutNew = () => {
             <div className="text-base flex justify-between items-center">
               <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">Experience</span>
               <span className="text-xs py-1 px-2.5 leading-base bg-primary-300 dark:font-semibold text-primary-950 rounded-full">
-                5+ yrs
+                6+ yrs
               </span>
             </div>
 
