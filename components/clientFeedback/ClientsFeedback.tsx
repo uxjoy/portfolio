@@ -36,8 +36,7 @@ const ClientsFeedback = () => {
         >
           <div className="flex items-center justify-center font-light gap-3">
             <p className="text-yellow-500 flex items-center gap-2">
-              <RiStarFill size={18} />{" "}
-              <span className="text-white mt-0.5 font-medium">5.0</span>
+              <RiStarFill size={18} /> <span className="text-white mt-0.5 font-medium">5.0</span>
             </p>
             <div className="line w-0.5 h-4 bg-whiteAlpha-8"></div>
             <p className="mt-0.5 text-whiteAlpha-72 font-extralight text-sm md:text-base">
@@ -48,9 +47,7 @@ const ClientsFeedback = () => {
           <div className="section-header text-center">
             <h1 className="mainTitle">
               <span>Look at some of the </span>
-              <span className="text-primary-default">
-                impact I've made for others
-              </span>
+              <span className="text-primary-default">impact I've made for others</span>
             </h1>
           </div>
         </motion.div>
@@ -59,9 +56,17 @@ const ClientsFeedback = () => {
           {clientFeedbackList &&
             clientFeedbackList.map((data, i) => (
               <motion.div
-                variants={containerVariants}
-                initial="initial"
-                whileInView="whileInView"
+                // variants={containerVariants}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    ease: "easeInOut",
+                    duration: 0.4,
+                    delay: 0.3,
+                  },
+                }}
                 className="w-full break-inside-avoid"
                 key={i}
               >
