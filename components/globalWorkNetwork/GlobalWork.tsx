@@ -1,6 +1,6 @@
 import { destinationData } from "@/utils/data/destinationData";
 import * as motion from "motion/react-client";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const GlobalWork = () => {
   return (
@@ -18,10 +18,7 @@ const GlobalWork = () => {
             className="mainTitle"
           >
             <span> Collaborating Across </span>
-            <span className="text-primary-default">
-              {" "}
-              20+ Global Destinations{" "}
-            </span>
+            <span className="text-primary-default"> 20+ Global Destinations </span>
           </motion.h1>
         </div>
 
@@ -36,19 +33,22 @@ const GlobalWork = () => {
             }}
             className="flex justify-center mt-8 md:mt-0"
           >
-            <span className="dark:hidden">
+            <Image
+              src="/assets/Map_Dark.svg"
+              alt="map"
+              className="w-full md:w-11/12 h-auto"
+              width={1200}
+              height={600}
+              priority
+            />
+            {/* <span className="dark:hidden">
               <Image
                 className="w-full md:w-11/12 h-auto dark:opacity-10"
                 src={"/assets/Map.svg"}
                 alt="map"
                 loading="lazy"
-                // layout="fill"
-                // objectFit="contain"
-                // sizes="100vw"
-                // width={328}
-                // height={164}
-                width={0}
-                height={0}
+                sizes="100vw"
+                layout="fill"
               />
             </span>
 
@@ -58,10 +58,10 @@ const GlobalWork = () => {
                 src={"/assets/Map_Dark.svg"}
                 alt="map"
                 loading="lazy"
-                width={0}
-                height={0}
+                sizes="100vw"
+                layout="fill"
               />
-            </span>
+            </span> */}
           </motion.div>
 
           <motion.div

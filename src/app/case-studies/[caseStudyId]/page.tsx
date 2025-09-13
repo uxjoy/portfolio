@@ -1,7 +1,7 @@
 // "use client";
 
 import { RiCheckLine, RiCloseLine } from "@remixicon/react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import Contact from "../../../../components/Contact";
 import MainLayout from "../../../../components/MainLayout";
@@ -15,8 +15,9 @@ import explanation_img_4 from "../../../../public/assets/case-study/new/img_4.we
 import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.webp";
 import { designProcess, overviewData, problemsData, solutionsData } from "./data";
 
-const CaseStudyDetails = ({ params }: any) => {
-  const caseStudyId = params.caseStudyId;
+const CaseStudyDetails = async (props: any) => {
+  const params = await props.params;
+  const caseStudyId = await props.params.caseStudyId;
 
   // const [isToggle, isSetToggle] = useState(true);
 
@@ -41,7 +42,7 @@ const CaseStudyDetails = ({ params }: any) => {
           className="object-contain h-full group-hover:scale-110 duration-300"
           src={imgLandscape}
           alt={"title"}
-          fill
+          layout="fill"
           priority={false}
           quality={100}
           loading="lazy"
@@ -195,7 +196,7 @@ const CaseStudyDetails = ({ params }: any) => {
           className="object-cover w-full h-full group-hover:scale-110 duration-300"
           src={branding}
           alt={"title"}
-          fill
+          layout="fill"
           priority={false}
           quality={100}
           loading="lazy"
@@ -212,7 +213,7 @@ const CaseStudyDetails = ({ params }: any) => {
                     className="object-cover w-full h-full"
                     src={explanation_img_1}
                     alt={"title"}
-                    fill
+                    layout="fill"
                     priority={false}
                     quality={100}
                     loading="lazy"
@@ -266,7 +267,7 @@ const CaseStudyDetails = ({ params }: any) => {
                     className="object-cover w-full h-full"
                     src={explanation_img_2}
                     alt={"title"}
-                    fill
+                    layout="fill"
                     priority={false}
                     quality={100}
                     loading="lazy"
@@ -300,7 +301,7 @@ const CaseStudyDetails = ({ params }: any) => {
                     className="object-cover w-full h-full"
                     src={explanation_img_3}
                     alt={"title"}
-                    fill
+                    layout="fill"
                     priority={false}
                     quality={100}
                     loading="lazy"
@@ -333,7 +334,7 @@ const CaseStudyDetails = ({ params }: any) => {
                     className="object-cover w-full h-full"
                     src={explanation_img_4}
                     alt={"title"}
-                    fill
+                    layout="fill"
                     priority={false}
                     quality={100}
                     loading="lazy"
@@ -365,7 +366,7 @@ const CaseStudyDetails = ({ params }: any) => {
                     className="object-cover w-full h-full"
                     src={explanation_img_5}
                     alt={"title"}
-                    fill
+                    layout="fill"
                     priority={false}
                     quality={100}
                     loading="lazy"
@@ -499,7 +500,7 @@ const CaseStudyDetails = ({ params }: any) => {
           className="object-cover h-full group-hover:scale-110 duration-300"
           src={img_6}
           alt={"title"}
-          fill
+          layout="fill"
           priority={false}
           quality={100}
           loading="lazy"

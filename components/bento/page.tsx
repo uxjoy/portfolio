@@ -19,7 +19,7 @@ import {
   RiTwitterLine,
 } from "@remixicon/react";
 import * as motion from "motion/react-client";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import Pill from "../Pill";
 import AdobeXD from "../svg/AdobeXD";

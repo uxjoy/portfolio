@@ -2,7 +2,7 @@ import { educationHistory, workHistoryList } from "@/utils/data/aboutTextsData";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import * as motion from "motion/react-client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { FC } from "react";
 import { highlightedText } from "./About";
@@ -24,11 +24,7 @@ const AboutNew = () => {
           <h1 className="mainTitle">About Me</h1>
           <p className="subText">
             It’s not that hard to find my contact just search{" "}
-            <Link
-              href={"https://uxjoy.dev"}
-              target="_blank"
-              className="text-primary-default hover:underline"
-            >
+            <Link href={"https://uxjoy.dev"} target="_blank" className="text-primary-default hover:underline">
               uxjoy.dev
             </Link>
           </p>
@@ -50,10 +46,9 @@ const AboutNew = () => {
               {highlightedText(`✨ Strong commitment to collaboration and solutions-oriented
                         problem-solving ✨`)}
               Use various web design software to develop
-              {highlightedText(`customer-focused`)} websites and designs.
-              Committed to {highlightedText(`high standards`)} of web design,
-              user experience, usability and speed for multiple types of
-              end-users.
+              {highlightedText(`customer-focused`)} websites and designs. Committed to{" "}
+              {highlightedText(`high standards`)} of web design, user experience, usability and speed for multiple types
+              of end-users.
             </p>
           </motion.div>
 
@@ -66,13 +61,13 @@ const AboutNew = () => {
               duration: 0.75,
               delay: 0.5,
             }}
-            className="-order-1 md:order-none relative min-h-[350px] row-span-3 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl space-y-4  "
+            className="-order-1 md:order-none relative min-h-[350px] row-span-3 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl space-y-4 overflow-hidden"
           >
             <Image
               className="w-full h-full object-cover"
-              src={"/assets/author_lg.webp"}
+              src={"/assets/author_lg_1.webp"}
               alt="Author Image"
-              fill
+              layout="fill"
               priority={false}
               quality={100}
               loading="lazy"
@@ -100,39 +95,33 @@ const AboutNew = () => {
             className="row-span-3 p-5 md:p-6 border bg-whiteAlpha-4 border-whiteAlpha-4 rounded-2xl space-y-8"
           >
             <div className="text-base flex justify-between items-center">
-              <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">
-                Experience
-              </span>
+              <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">Experience</span>
               <span className="text-xs py-1 px-2.5 leading-base bg-primary-300 dark:font-semibold text-primary-950 rounded-full">
                 6+ yrs
               </span>
             </div>
 
             <div className="list">
-              {workHistoryList.map(
-                ({ designation, company, url, duration }, i) => (
-                  <motion.div
-                    initial={{ opacity: 0, x: 30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{
-                      ease: "easeInOut",
-                      duration: 0.5,
-                      delay: 0.75,
-                    }}
-                    key={i}
-                  >
-                    <LinkComponent
-                      className={
-                        "py-5 border-b border-gray-100 dark:border-opacity-5 last-child:border-0"
-                      }
-                      title={designation}
-                      organization={company}
-                      duration={duration}
-                      url={url}
-                    />
-                  </motion.div>
-                )
-              )}
+              {workHistoryList.map(({ designation, company, url, duration }, i) => (
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: 0.5,
+                    delay: 0.75,
+                  }}
+                  key={i}
+                >
+                  <LinkComponent
+                    className={"py-5 border-b border-gray-100 dark:border-opacity-5 last-child:border-0"}
+                    title={designation}
+                    organization={company}
+                    duration={duration}
+                    url={url}
+                  />
+                </motion.div>
+              ))}
             </div>
           </motion.div>
 
@@ -176,31 +165,16 @@ type LinkComponentProps = {
 };
 
 // Link Component
-const LinkComponent: FC<LinkComponentProps> = ({
-  title,
-  organization,
-  duration,
-  url,
-  className,
-  isEducation,
-}) => {
+const LinkComponent: FC<LinkComponentProps> = ({ title, organization, duration, url, className, isEducation }) => {
   return (
     <>
       {isEducation ? (
         <Link
           href={url}
           target="_blank"
-          className={`block group ease-in-out ${className} ${
-            isEducation ? "space-y-3" : "space-y-1"
-          }`}
+          className={`block group ease-in-out ${className} ${isEducation ? "space-y-3" : "space-y-1"}`}
         >
-          <div
-            className={`flex ${
-              isEducation
-                ? "flex-col justify-start gap-1"
-                : "items-center justify-between"
-            }`}
-          >
+          <div className={`flex ${isEducation ? "flex-col justify-start gap-1" : "items-center justify-between"}`}>
             <h4 className="text-sm text-gray-900 dark:text-white/80 font-semibold dark:font-medium dark:group-hover:text-white duration-300">
               {title}
             </h4>
@@ -216,11 +190,7 @@ const LinkComponent: FC<LinkComponentProps> = ({
           </p>
         </Link>
       ) : (
-        <Link
-          href={url}
-          target="_blank"
-          className={`block space-y-1 group ease-in-out duration-200 ${className}`}
-        >
+        <Link href={url} target="_blank" className={`block space-y-1 group ease-in-out duration-200 ${className}`}>
           <div className="flex md:items-center justify-between">
             <h4 className="text-base text-gray-900 dark:text-white/80 font-semibold dark:font-normal dark:group-hover:text-white duration-300">
               {title}
