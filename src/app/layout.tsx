@@ -15,7 +15,7 @@ import Providers from "./providers";
 const font = Sora({ subsets: ["latin"] });
 
 // Make sure to add your actual project id instead of "yourProjectId".
-const projectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || "";
+const projectId = "v058hsuwuu";
 Clarity.init(projectId);
 
 export const metadata: Metadata = {
