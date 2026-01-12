@@ -4,6 +4,7 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 
 // Import Swiper styles
+import Clarity from "@microsoft/clarity";
 import { Metadata } from "next";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,13 +14,21 @@ import Providers from "./providers";
 
 const font = Sora({ subsets: ["latin"] });
 
+// Make sure to add your actual project id instead of "yourProjectId".
+const projectId = "yourProjectId";
+Clarity.init(projectId);
+
 export const metadata: Metadata = {
   title: "Sohanur Rahman (Joy) | Product Designer",
   description:
     "Delivering modern, user-friendly, and innovative design solutions with precision and passion, focused on creating user-centric experiences that prioritize functionality.",
   // description:
   //   "Crafting modern, user-friendly designs with seamless precision, driven by an unwavering passion for my craft, I am dedicated to delivering contemporary, user-centric design while maintaining a profound enthusiasm for my work.",
-  metadataBase: new URL(process.env.NODE_ENV === "development" ? "http://localhost:3000/" : `https://uxjoy.dev/`),
+  metadataBase: new URL(
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000/"
+      : `https://uxjoy.dev/`
+  ),
 
   openGraph: {
     url: "https://www.uxjoy.dev",
@@ -85,19 +94,33 @@ const person = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" suppressHydrationWarning={true} data-scroll-behavior="smooth">
+    <html
+      lang="en"
+      suppressHydrationWarning={true}
+      data-scroll-behavior="smooth"
+    >
       <head>
         <meta name="next-size-adjust" />
         <meta property="og:locale" content="en_US" />
 
         <link rel="icon" href="/favicon.svg" sizes="any" />
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
+        />
       </head>
 
-      <body className={`dark:bg-bgColor ${font.className}`} suppressHydrationWarning={true}>
+      <body
+        className={`dark:bg-bgColor ${font.className}`}
+        suppressHydrationWarning={true}
+      >
         <div className="grain"></div>
 
         <Providers>{children}</Providers>
@@ -109,7 +132,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* //////////// SEO /////////////// */}
         <div className="seo social-links hidden">
-          <div className="h1">Welcome to the Portfolio of Sohanur Rahman Joy</div>
+          <div className="h1">
+            Welcome to the Portfolio of Sohanur Rahman Joy
+          </div>
 
           <a href="https://dribbble.com/joy210" id="dribbble">
             Dribbble: https://dribbble.com/joy210
