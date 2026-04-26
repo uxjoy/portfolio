@@ -1,18 +1,20 @@
 import "@splidejs/react-splide/css";
 import { Analytics } from "@vercel/analytics/react";
-import { Sora } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
 // Import Swiper styles
 import Clarity from "@microsoft/clarity";
 import { Metadata } from "next";
+import Script from "next/script";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import BackToTop from "../../components/BackToTop";
+import ClarityProvider from "../../components/ClarityProvider";
 import Providers from "./providers";
 
-const font = Sora({ subsets: ["latin"] });
+const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
 // Make sure to add your actual project id instead of "yourProjectId".
 const projectId = "v058hsuwuu";
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000/"
-      : `https://uxjoy.dev/`
+      : `https://uxjoy.dev/`,
   ),
 
   openGraph: {
@@ -39,7 +41,7 @@ export const metadata: Metadata = {
         url: new URL(
           process.env.NODE_ENV === "development"
             ? "http://localhost:3000/assets/Meta_Image.jpg"
-            : `https://uxjoy.dev/assets/Meta_Image.jpg`
+            : `https://uxjoy.dev/assets/Meta_Image.jpg`,
         ),
       },
     ],
@@ -100,77 +102,43 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning={true}
-      data-scroll-behavior="smooth"
-    >
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="next-size-adjust" />
-        <meta property="og:locale" content="en_US" />
-
-        <link rel="icon" href="/favicon.svg" sizes="any" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
-        />
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-55RHZQ55');`,
-          }}
-        />
+        <link rel="icon" href="/favicon.svg" />
       </head>
 
       <body
         className={`dark:bg-bgColor ${font.className}`}
-        suppressHydrationWarning={true}
+        suppressHydrationWarning
       >
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-55RHZQ55"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-        {/* End Google Tag Manager (noscript) */}
+        <Providers>
+          <ClarityProvider />
+          {children}
+        </Providers>
 
-        <div className="grain"></div>
+        <Script
+          id="person-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
+        >
+          {JSON.stringify(person)}
+        </Script>
 
-        <Providers>{children}</Providers>
+        <Script id="gtm" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-55RHZQ55');
+          `}
+        </Script>
 
-        {/* CTA */}
         <BackToTop />
-
         <Analytics />
-
-        {/* //////////// SEO /////////////// */}
-        <div className="seo social-links hidden">
-          <div className="h1">
-            Welcome to the Portfolio of Sohanur Rahman Joy
-          </div>
-
-          <a href="https://dribbble.com/joy210" id="dribbble">
-            Dribbble: https://dribbble.com/joy210
-          </a>
-          <a href="https://www.linkedin.com/in/sohanoor/" id="linkedin">
-            LinkedIn: https://www.linkedin.com/in/uxjoy
-          </a>
-          <a href="https://www.behance.net/_joy" id="behance">
-            Behance: https://www.behance.net/_joy
-          </a>
-          <a href="https://www.uxjoy.dev" id="uxjoy">
-            Website: https://www.uxjoy.dev
-          </a>
-        </div>
-        {/* //////////// SEO /////////////// */}
       </body>
     </html>
   );
