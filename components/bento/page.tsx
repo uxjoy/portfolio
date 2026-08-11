@@ -34,6 +34,7 @@ import Rating from "../svg/rating";
 import Spline from "../svg/Spline";
 import Upwork from "../svg/Upwork";
 import ProcessCard from "./ProcessCard";
+import ExperienceYears from "../ExperienceYears";
 
 const BentoGrid = () => {
   const containerVariants = {
@@ -85,7 +86,9 @@ const BentoGrid = () => {
             className="flex flex-col items-center justify-center rounded-2xl bg-whiteAlpha-4 border border-whiteAlpha-4 p-4 md:p-6 col-span-3"
           >
             <p>
-              <span className="text-[72px] font-bold leading-tight">6</span>{" "}
+              <span className="text-[72px] font-bold leading-tight" suppressHydrationWarning>
+                <ExperienceYears />
+              </span>{" "}
               years{" "}
               <span className="text-primary-default font-semibold"> + </span>
             </p>

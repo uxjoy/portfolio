@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { educationHistory, workHistoryList } from "../../src/utils/data/aboutTextsData";
+import ExperienceYears from "../ExperienceYears";
 
 const About = () => {
   return (
@@ -66,8 +67,8 @@ const About = () => {
           <div className="w-full p-6 text-gray-500 text-lg bg-white dark:bg-whiteAlpha-4 border border-gray-100 dark:border-whiteAlpha-4 rounded-2xl space-y-8 md:space-y-6">
             <div className="text-base flex justify-between items-center">
               <span className="uppercase text-gray-900 dark:text-white font-bold dark:font-medium">Experience</span>
-              <span className="text-xs py-1 px-2.5 leading-base bg-primary-300 dark:font-semibold text-primary-950 rounded-full">
-                5+ yrs
+              <span className="text-xs py-1 px-2.5 leading-base bg-primary-300 dark:font-semibold text-primary-950 rounded-full" suppressHydrationWarning>
+                <ExperienceYears />+ yrs
               </span>
             </div>
 

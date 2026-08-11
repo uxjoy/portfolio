@@ -26,6 +26,34 @@ export const workHistoryList = [
   },
 ];
 
+// Map month abbreviations used in duration strings to 0-indexed month
+const MONTHS: Record<string, number> = {
+  Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
+  Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11,
+};
+
+// Parse the start date from a duration string like "May 2019 - Apr 2020" or "Jul 2023 - Now"
+const parseStartDate = (duration: string): Date => {
+  const match = duration.match(/([A-Z][a-z]{2})\s(\d{4})/);
+  if (!match) return new Date();
+  return new Date(Number(match[2]), MONTHS[match[1]] ?? 0);
+};
+
+// Total years of experience, derived from the earliest role in workHistoryList
+// up to `until` (defaults to now). Exported as a function (not a constant) so it
+// can be called on the client for a live "current date" value instead of freezing
+// at build time. Single source of truth for every "experience" badge across the site.
+export const getExperienceYears = (until: Date = new Date()): number => {
+  const earliest = workHistoryList
+    .map(({ duration }) => parseStartDate(duration).getTime())
+    .reduce((min, time) => Math.min(min, time), Infinity);
+
+  const start = new Date(earliest);
+  let years = until.getFullYear() - start.getFullYear();
+  if (until.getMonth() < start.getMonth()) years--;
+  return Math.max(0, years);
+};
+
 // Education
 export const educationHistory = {
   title: "Computer Science & Engineering",
