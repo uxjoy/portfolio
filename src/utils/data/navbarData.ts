@@ -1,7 +1,8 @@
 // Navbar menu items
 
 // ("https://drive.google.com/file/d/1W2_HCbalyu-ygi-HOvcWk49JHq2B7eVV/view?usp=sharing");
-export const resumeURL = "https://drive.google.com/file/d/1o72-9ujEB8bXQBaNak6dgKMxh7Uq6QDs/view?usp=sharing";
+export const resumeURL =
+  "https://drive.google.com/file/d/13sPzcBxxXQpgaGTI9YkcOcmzLrHtB868/view?usp=sharing";
 
 // Menu item data
 export const menuItem = [

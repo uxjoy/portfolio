@@ -10,7 +10,6 @@ import Script from "next/script";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import BackToTop from "../../components/BackToTop";
 import ClarityProvider from "../../components/ClarityProvider";
 import Providers from "./providers";
 
@@ -121,9 +120,7 @@ export default function RootLayout({
           type="application/ld+json"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
-        >
-          {JSON.stringify(person)}
-        </Script>
+        />
 
         <Script id="gtm" strategy="afterInteractive">
           {`
@@ -137,7 +134,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <BackToTop />
+        {/* <BackToTop /> */}
         <Analytics />
       </body>
     </html>

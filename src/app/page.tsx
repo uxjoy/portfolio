@@ -10,10 +10,11 @@ import BigTextMarquee from "../../components/marquee/BigTextMarquee";
 import Header from "../../components/navbar/Header";
 import RecentExploration from "../../components/recentExploration/RecentExploration";
 import SelectedWork from "../../components/selectedWork/SelectedWork";
+import BottomNav from "../../components/navbar/BottomNav";
 
 const Home = async () => {
   return (
-    <main className="wrapper">
+    <main className="wrapper pb-28 sm:pb-0">
       <div className="main-lights-wrapper">
         <div className="lights-container">
           <div className="light-container left"></div>
@@ -37,7 +38,9 @@ const Home = async () => {
         <Divider starText="case studies" endText="design process" />
       </div>
 
-      <SelectedWork />
+      <div id="work" className="scroll-mt-20">
+        <SelectedWork />
+      </div>
 
       <div className="pt-20">
         <BigTextMarquee />
@@ -54,6 +57,8 @@ const Home = async () => {
       <RecentExploration />
 
       <Contact />
+
+      <BottomNav />
     </main>
   );
 };
