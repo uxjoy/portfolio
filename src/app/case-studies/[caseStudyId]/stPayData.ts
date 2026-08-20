@@ -1,80 +1,102 @@
-export const stPayOverviewData = [
+export const meta = [
   {
-    label: "Start Date",
-    text: "March 2025",
-    url: "",
+    label: "Industry",
+    value: "Fintech",
   },
   {
-    label: "Completion Date",
-    text: "June 2025",
-    url: "",
+    label: "Location",
+    value: "Bangladesh",
   },
   {
-    label: "Role",
-    text: "Product Designer",
-    url: "",
-  },
-  {
-    label: "Category",
-    text: "Fintech, Mobile App",
-    url: "",
-  },
-  {
-    label: "Platform",
-    text: "iOS & Android",
-    url: "",
+    label: "Website",
+    value: "www.example.com",
   },
 ];
 
-export const stPayProblemsData = [
+export const problems = [
   {
-    text: "Top-up flow required too many steps, causing users to abandon before adding funds.",
+    title: "Cluttered interface",
+    text: "Poor spacing and weak visual hierarchy made it hard to scan and focus.",
   },
   {
-    text: "Transaction history was dense and hard to scan, reducing trust in the wallet.",
+    title: "Unclear guidance",
+    text: "Lack of instructions, especially for top-ups, created uncertainty.",
   },
   {
-    text: "Checkout for flights and hotels redirected users out of the app, breaking the journey.",
+    title: "Weak input validation",
+    text: "Users could enter incorrect payment details without immediate feedback.",
   },
   {
-    text: "Unclear fees and exchange rates created hesitation at the payment moment.",
-  },
-];
-
-export const stPaySolutionsData = [
-  {
-    text: "Redesigned top-up with saved cards and quick-amount presets to cut the flow to a few taps.",
+    title: "Too many actions",
+    text: "Redundant call-to-actions added noise and slowed down decision-making.",
   },
   {
-    text: "Rebuilt transaction history with clear grouping, statuses, and searchable filters.",
-  },
-  {
-    text: "Introduced an in-app checkout so payments complete without leaving the wallet.",
-  },
-  {
-    text: "Surfaced fees and conversion rates upfront with plain-language summaries before confirmation.",
+    title: "Confusing payment options",
+    text: "Fees and exchange rates were not clearly explained, causing hesitation and mistakes.",
   },
 ];
 
-export const stPayDesignProcess = [
+export const solutions = [
   {
-    title: "Research & Analysis:",
-    text: "Reviewed support tickets, drop-off analytics, and competitor wallets to pinpoint where trust and activation were breaking down.",
+    title: "Simplified interface",
+    text: "Cleaner layout with improved spacing and visual hierarchy for better focus.",
   },
   {
-    title: "Information Architecture:",
-    text: "Reorganized the wallet around three core jobs — top up, pay, and track — so each task has a clear, short path.",
+    title: "Clearer guidance",
+    text: "Separated payment options and added helpful tooltips for better understanding.",
   },
   {
-    title: "Wireframing & Prototyping:",
-    text: "Explored multiple top-up and checkout patterns in low fidelity, then validated the strongest direction with interactive prototypes.",
+    title: "Stronger validation",
+    text: "Real-time validation for payment details with clear error feedback.",
   },
   {
-    title: "User Testing & Iteration:",
-    text: "Ran moderated sessions with frequent travelers to refine copy, fee disclosure, and edge cases like partial refunds.",
+    title: "Reduced clutter",
+    text: "Removed unnecessary actions to streamline navigation and decision-making.",
   },
   {
-    title: "Final Implementation:",
-    text: "Delivered a complete design system with components, states, and handoff specs for the engineering team.",
+    title: "Improved checkout flow",
+    text: "Redesigned in-app checkout with clear options and upfront fee disclosure.",
+  },
+];
+
+export const processSteps = [
+  {
+    title: "01 — Discovery & Research",
+    text: "Understanding the travel payment landscape, user needs, and key product gaps. Market research, wallet workflow analysis, identifying user drop-offs, and key user pain points.",
+  },
+  {
+    title: "02 — Structure & Wireframing",
+    text: "Mapping the core jobs of the wallet — top up, pay, and track — into clear information architecture and low-fidelity wireframes.",
+  },
+  {
+    title: "03 — UX & Visual Design",
+    text: "Crafting a clean, trustworthy visual language with reusable components, consistent patterns, and accessible states.",
+  },
+  {
+    title: "04 — Testing & Handoff",
+    text: "Validating with moderated usability sessions, refining edge cases, and delivering specs and prototypes to engineering.",
+  },
+];
+
+export const researchInsights = [
+  {
+    title: "Users struggled with clarity",
+    text: "Payment options and labels were confusing, especially for first-time users.",
+  },
+  {
+    title: "High cognitive load",
+    text: "Too many actions and unclear hierarchy made tasks feel complex.",
+  },
+  {
+    title: "Frequent input errors",
+    text: "Lack of validation led to incorrect payment details.",
+  },
+  {
+    title: "Unclear next steps",
+    text: "Users often hesitated because they didn't know what to do next.",
+  },
+  {
+    title: "Trust issues",
+    text: "Poor feedback and unclear messaging reduced confidence during transactions.",
   },
 ];
