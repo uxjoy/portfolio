@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CaseStudyShell from "./CaseStudyShell";
+import CaseStudyShell from "../../components/CaseStudyShell";
 
 const meta = [
   { label: "Industry", value: "Fintech" },
