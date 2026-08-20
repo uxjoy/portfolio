@@ -4,20 +4,14 @@ import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
 // Import Swiper styles
-import Clarity from "@microsoft/clarity";
 import { Metadata } from "next";
 import Script from "next/script";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import ClarityProvider from "../../components/ClarityProvider";
 import Providers from "./providers";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
-
-// Make sure to add your actual project id instead of "yourProjectId".
-const projectId = "v058hsuwuu";
-Clarity.init(projectId);
 
 export const metadata: Metadata = {
   title: "Sohanur Rahman (Joy) | Product Designer",
@@ -111,7 +105,6 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <Providers>
-          <ClarityProvider />
           {children}
         </Providers>
 
