@@ -8,7 +8,7 @@ import InternalManagementContent, {
 } from "./studies/internal-management.mdx";
 import ShopDesignContent, { meta as shopDesignMeta } from "./studies/shop-design.mdx";
 import EblCaseStudy from "./studies/ebl/EblCaseStudy";
-import StPayContent, { meta as stPayMeta } from "./studies/st-pay/st-pay.mdx";
+import StPayContent, { meta as stPayMeta } from "./studies/st-pay.mdx";
 
 const mdxCaseStudies: Record<
   string,
