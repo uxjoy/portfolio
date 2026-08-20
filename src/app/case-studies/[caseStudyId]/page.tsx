@@ -14,10 +14,15 @@ import explanation_img_3 from "../../../../public/assets/case-study/new/img_3.we
 import explanation_img_4 from "../../../../public/assets/case-study/new/img_4.webp";
 import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.webp";
 import { designProcess, overviewData, problemsData, solutionsData } from "./data";
+import StPayCaseStudy from "./StPayCaseStudy";
 
 const CaseStudyDetails = async (props: any) => {
   const params = await props.params;
   const caseStudyId = await props.params.caseStudyId;
+
+  if (caseStudyId === "st-pay") {
+    return <StPayCaseStudy />;
+  }
 
   // const [isToggle, isSetToggle] = useState(true);
 
