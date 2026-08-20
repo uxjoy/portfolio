@@ -8,12 +8,13 @@ import InternalManagementContent, {
 } from "./studies/internal-management.mdx";
 import ShopDesignContent, { meta as shopDesignMeta } from "./studies/shop-design.mdx";
 import EblCaseStudy from "./studies/ebl/EblCaseStudy";
-import StPayCaseStudy from "./studies/st-pay/StPayCaseStudy";
+import StPayContent, { meta as stPayMeta } from "./studies/st-pay/st-pay.mdx";
 
 const mdxCaseStudies: Record<
   string,
   { label: string; title: string; Content: React.ComponentType }
 > = {
+  "st-pay": { ...stPayMeta, Content: StPayContent },
   "shop-design": { ...shopDesignMeta, Content: ShopDesignContent },
   "flight-booking": { ...flightBookingMeta, Content: FlightBookingContent },
   "internal-management": {
@@ -25,10 +26,6 @@ const mdxCaseStudies: Record<
 
 const CaseStudyDetails = async (props: any) => {
   const caseStudyId = await props.params.caseStudyId;
-
-  if (caseStudyId === "st-pay") {
-    return <StPayCaseStudy />;
-  }
 
   const mdxCase = mdxCaseStudies[caseStudyId];
   if (mdxCase) {
