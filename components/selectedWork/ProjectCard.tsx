@@ -10,6 +10,7 @@ type ProjectCardProps = {
   tag: string;
   imageURL: string;
   featured?: boolean;
+  commingSoon?: boolean;
 };
 
 const ProjectCard: FC<ProjectCardProps> = ({
@@ -19,10 +20,12 @@ const ProjectCard: FC<ProjectCardProps> = ({
   tag,
   imageURL,
   featured = false,
+  commingSoon = false,
 }) => {
   return (
     <Link
       href={url}
+      aria-disabled={commingSoon}
       className="group block w-full rounded-[24px] duration-300 ease-in-out"
     >
       <div
@@ -68,11 +71,19 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
 
         <div className="flex items-center gap-0.5 text-lg font-medium text-white">
-          View Details
-          <RiArrowRightUpLine
-            size={24}
-            className="duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-          />
+          {commingSoon ? (
+            <span className="rounded-full bg-neutral-950 px-3 py-1.5 text-xs text-white">
+              Coming Soon
+            </span>
+          ) : (
+            <>
+              View Details
+              <RiArrowRightUpLine
+                size={24}
+                className="duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
+            </>
+          )}
         </div>
       </div>
     </Link>

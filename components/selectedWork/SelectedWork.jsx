@@ -1,5 +1,7 @@
 "use client";
 
+import { RiArrowRightUpLine } from "@remixicon/react";
+import Link from "next/link";
 import * as motion from "motion/react-client";
 import ProjectCard from "./ProjectCard";
 
@@ -103,6 +105,17 @@ const SelectedWork = () => {
               )
             )}
           </div>
+
+          <Link
+            href="/case-studies"
+            className="group flex items-center gap-2 text-lg font-medium text-white/80 transition-colors hover:text-white"
+          >
+            View all case studies
+            <RiArrowRightUpLine
+              size={22}
+              className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+            />
+          </Link>
         </div>
       </div>
     </section>
