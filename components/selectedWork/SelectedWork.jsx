@@ -16,7 +16,7 @@ const works = [
     featured: true,
   },
   {
-    url: "#",
+    url: "/case-studies/shop-design",
     tag: "E-commerce",
     title: "Shop Design",
     description:
@@ -24,7 +24,7 @@ const works = [
     imageURL: "/assets/selectedwork/shop.png",
   },
   {
-    url: "#",
+    url: "/case-studies/flight-booking",
     tag: "Travel Platform",
     title: "Flight Booking Experience",
     description:
@@ -32,7 +32,7 @@ const works = [
     imageURL: "/assets/selectedwork/flight.png",
   },
   {
-    url: "#",
+    url: "/case-studies/internal-management",
     tag: "SaaS Platform",
     title: "Internal Management System",
     description:
@@ -40,7 +40,7 @@ const works = [
     imageURL: "/assets/selectedwork/saas.png",
   },
   {
-    url: "#",
+    url: "/case-studies/car-rental",
     tag: "Mobility Service",
     title: "Car Rental Experience",
     description:

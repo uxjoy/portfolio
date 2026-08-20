@@ -26,40 +26,36 @@ const caseStudies = [
     imageURL: "/assets/selectedwork/ebl.webp",
   },
   {
-    url: "#",
+    url: "/case-studies/shop-design",
     tag: "E-commerce",
     title: "Shop Design",
     description:
       "Optimized product discovery and checkout flow to improve conversions and create a smooth shopping experience.",
     imageURL: "/assets/selectedwork/shop.png",
-    commingSoon: true,
   },
   {
-    url: "#",
+    url: "/case-studies/flight-booking",
     tag: "Travel Platform",
     title: "Flight Booking Experience",
     description:
       "Streamlined flight and hotel search, comparison, and checkout to reduce friction and increase booking completion.",
     imageURL: "/assets/selectedwork/flight.png",
-    commingSoon: true,
   },
   {
-    url: "#",
+    url: "/case-studies/internal-management",
     tag: "SaaS Platform",
     title: "Internal Management System",
     description:
       "Built a scalable system for mobile and web with reusable components and consistent UX patterns.",
     imageURL: "/assets/selectedwork/saas.png",
-    commingSoon: true,
   },
   {
-    url: "#",
+    url: "/case-studies/car-rental",
     tag: "Mobility Service",
     title: "Car Rental Experience",
     description:
       "Designed a smooth car booking journey with clear pricing and easy child seat selection for families.",
     imageURL: "/assets/selectedwork/car.png",
-    commingSoon: true,
   },
 ];
 

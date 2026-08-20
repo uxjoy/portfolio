@@ -14,7 +14,29 @@ import explanation_img_3 from "../../../../public/assets/case-study/new/img_3.we
 import explanation_img_4 from "../../../../public/assets/case-study/new/img_4.webp";
 import explanation_img_5 from "../../../../public/assets/case-study/new/img_5.webp";
 import { designProcess, overviewData, problemsData, solutionsData } from "./data";
+import CarRentalContent, { meta as carRentalMeta } from "./car-rental.mdx";
+import FlightBookingContent, {
+  meta as flightBookingMeta,
+} from "./flight-booking.mdx";
+import InternalManagementContent, {
+  meta as internalManagementMeta,
+} from "./internal-management.mdx";
+import ShopDesignContent, { meta as shopDesignMeta } from "./shop-design.mdx";
+import CaseStudyShell from "./CaseStudyShell";
 import StPayCaseStudy from "./StPayCaseStudy";
+
+const mdxCaseStudies: Record<
+  string,
+  { label: string; title: string; Content: React.ComponentType }
+> = {
+  "shop-design": { ...shopDesignMeta, Content: ShopDesignContent },
+  "flight-booking": { ...flightBookingMeta, Content: FlightBookingContent },
+  "internal-management": {
+    ...internalManagementMeta,
+    Content: InternalManagementContent,
+  },
+  "car-rental": { ...carRentalMeta, Content: CarRentalContent },
+};
 
 const CaseStudyDetails = async (props: any) => {
   const params = await props.params;
@@ -22,6 +44,16 @@ const CaseStudyDetails = async (props: any) => {
 
   if (caseStudyId === "st-pay") {
     return <StPayCaseStudy />;
+  }
+
+  const mdxCase = mdxCaseStudies[caseStudyId];
+  if (mdxCase) {
+    const { label, title, Content } = mdxCase;
+    return (
+      <CaseStudyShell label={label} title={title}>
+        <Content />
+      </CaseStudyShell>
+    );
   }
 
   // const [isToggle, isSetToggle] = useState(true);

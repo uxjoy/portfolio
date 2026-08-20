@@ -1,0 +1,159 @@
+export const meta = {
+  label: "mobility_service",
+  title: "Car Rental Experience",
+};
+
+import {
+  FullImage,
+  Lede,
+  MetaRow,
+  NumberedList,
+  ProcessGrid,
+  Section,
+  SectionTitle,
+} from "./CaseStudyComponents";
+
+export const overviewMeta = [
+  { label: "Industry", value: "Mobility" },
+  { label: "Location", value: "Bangladesh" },
+  { label: "Platform", value: "Mobile App" },
+];
+
+export const problems = [
+  {
+    title: "Confusing pricing",
+    text: "Daily rates, extras, and deposits were scattered across screens, making totals unpredictable.",
+  },
+  {
+    title: "Hidden requirements",
+    text: "Documents and eligibility rules surfaced late, blocking users mid-booking.",
+  },
+  {
+    title: "Difficult car comparison",
+    text: "Similar cars were hard to tell apart without clear specs, photos, and features.",
+  },
+  {
+    title: "Painful extras selection",
+    text: "Adding a child seat or GPS meant digging through dense forms with no clear pricing impact.",
+  },
+];
+
+export const solutions = [
+  {
+    title: "Upfront total pricing",
+    text: "One clear price card showing rate, extras, and fees updating live as options change.",
+  },
+  {
+    title: "Early requirements check",
+    text: "License and document needs shown at the start, not discovered at checkout.",
+  },
+  {
+    title: "Comparable car cards",
+    text: "Standardized specs, photos, and feature chips so families can compare at a glance.",
+  },
+  {
+    title: "Simple extras flow",
+    text: "Child seats, GPS, and insurance as one-tap add-ons with instant price feedback.",
+  },
+];
+
+export const processSteps = [
+  {
+    title: "01 — Discovery & Research",
+    text: "Journey mapping with families and business renters to find where trust and clarity broke down.",
+  },
+  {
+    title: "02 — Structure & Wireframing",
+    text: "Rebuilding the flow around a transparent price-first mental model.",
+  },
+  {
+    title: "03 — UX & Visual Design",
+    text: "Spec-driven car cards, live price summaries, and friendly add-on selection patterns.",
+  },
+  {
+    title: "04 — Testing & Handoff",
+    text: "Usability tests focused on family scenarios like child seats, then polished handoff specs.",
+  },
+];
+
+export const researchInsights = [
+  {
+    title: "Families plan around constraints",
+    text: "Child seats and space needs came first — the app needed to respect that order.",
+  },
+  {
+    title: "Price surprise kills trust",
+    text: "Any fee revealed late was perceived as hidden, even when legitimate.",
+  },
+  {
+    title: "Comparison fatigue",
+    text: "Users gave up when comparing cars required opening multiple screens.",
+  },
+  {
+    title: "Reassurance matters",
+    text: "Clear insurance and support information strongly influenced which car users chose.",
+  },
+];
+
+<FullImage src="/assets/case-study/placeholder.svg" alt="Car Rental hero" />
+
+<Section label="Project Overview">
+  <Lede>
+    A smooth car booking journey with clear pricing and easy child seat
+    selection — designed so families can book the right car with confidence and
+    no surprises.
+  </Lede>
+  <MetaRow items={overviewMeta} />
+</Section>
+
+<Section label="Problem Identification">
+  <SectionTitle>Where renters lost confidence</SectionTitle>
+  <Lede>
+    Renters could find cars but hesitated to book — unclear totals and late
+    surprises made every step feel risky.
+  </Lede>
+  <div className="mt-4">
+    <NumberedList items={problems} />
+  </div>
+</Section>
+
+<Section label="Solutions">
+  <SectionTitle>Design Improvements</SectionTitle>
+  <Lede>
+    We redesigned booking around transparency — a clear price from the start and
+    extras that are easy to add and understand.
+  </Lede>
+  <div className="mt-4">
+    <NumberedList items={solutions} />
+  </div>
+</Section>
+
+<Section label="Process">
+  <SectionTitle>The UX design process behind the scene</SectionTitle>
+  <Lede>
+    A research-led process centered on the family renter's decision journey.
+  </Lede>
+  <ProcessGrid steps={processSteps} />
+</Section>
+
+<Section label="Research">
+  <SectionTitle>User Research &amp; Insights</SectionTitle>
+  <Lede>
+    Conversations with families and frequent renters shaped every design
+    decision.
+  </Lede>
+  <div className="mt-4">
+    <NumberedList items={researchInsights} />
+  </div>
+</Section>
+
+<Section label="Results & Outcomes">
+  <SectionTitle>Outcomes that moved the needle</SectionTitle>
+  <Lede>
+    Confident bookings, fewer support questions about pricing, and an extras
+    flow families actually use.
+  </Lede>
+  <div className="mt-4">
+    <NumberedList items={solutions} />
+  </div>
+</Section>
