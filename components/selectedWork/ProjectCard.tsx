@@ -9,53 +9,72 @@ type ProjectCardProps = {
   description: string;
   tag: string;
   imageURL: string;
-  bgColor?: string;
-  commingSoon?: boolean;
+  featured?: boolean;
 };
 
-const ProjectCard: FC<ProjectCardProps> = ({ url, title, description, tag, imageURL, bgColor, commingSoon }) => {
+const ProjectCard: FC<ProjectCardProps> = ({
+  url,
+  title,
+  description,
+  tag,
+  imageURL,
+  featured = false,
+}) => {
   return (
     <Link
       href={url}
-      className={`relative space-y-6 group ease-in-out duration-300 p-1 pt-7 rounded-3xl overflow-hidden w-full block`}
-      style={{ background: bgColor }}
+      className="group block w-full rounded-[24px] duration-300 ease-in-out"
     >
-      <div className="leading-tight px-4 md:px-5 group-hover:pl-4 duration-300 relative z-10">
-        <div className="flex items-center justify-between">
-          {commingSoon === true ? (
-            <div className="bg-neutral-950 text-white p-1.5 px-2.5 rounded-full text-xs">Comming Soon</div>
-          ) : (
-            <RiArrowRightUpLine size={28} />
-          )}
-        </div>
-
-        <div className="space-y-2">
-          <div className="text-xl md:text-xl font-medium group-hover:underline pt-5">{title}</div>
-
-          <p className="text-sm text-gray-600 dark:text-white font-light leading-snug">{description}</p>
-        </div>
-      </div>
-
-      <div className="relative w-full h-[320px] lg:h-[460px] bg-slate-50 rounded-[20px] overflow-hidden">
-        {/* {commingSoon && (
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-950 text-white p-3 px-4 rounded-full z-50 border-[2px] border-white shadow-2xl">
-            Comming Soon
-          </div>
-        )} */}
-
+      <div
+        className={`relative w-full overflow-clip rounded-[24px] bg-neutral-100 shadow-[0px_0px_4px_0px_rgba(0,0,0,0.04),0px_8px_8px_-8px_rgba(0,0,0,0.04),0px_12px_16px_0px_rgba(0,0,0,0.04)] ${
+          featured ? "h-[320px] md:h-[620px]" : "h-[280px] md:h-[460px]"
+        }`}
+      >
         <Image
-          className="object-cover w-full h-full group-hover:scale-110 duration-300"
+          className="object-cover duration-300 group-hover:scale-[1.03]"
           src={imageURL}
           alt={title}
           fill={true}
           priority={false}
           quality={80}
           loading="lazy"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes={
+            featured
+              ? "100vw"
+              : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+          }
         />
       </div>
 
-      <div className=" absolute -top-[120px] -left-[120px] bgGradientBlur w-[250px] h-[250px] rounded-full z-0"></div>
+      <div
+        className={`flex w-full flex-col items-start gap-8 px-5 pb-5 pt-5 ${
+          featured ? "md:px-6" : ""
+        }`}
+      >
+        <div className="flex w-full flex-col items-start gap-2">
+          <p className="bg-gradient-to-r from-lime-500 from-20% to-indigo-500 to-70% bg-clip-text text-[20px] font-semibold leading-7 text-transparent">
+            {tag}
+          </p>
+          <h3 className="w-full text-[26px] font-bold leading-10 tracking-tight text-white md:text-[32px]">
+            {title}
+          </h3>
+          <p
+            className={`w-full font-normal leading-6 text-neutral-400 ${
+              featured ? "text-base md:text-lg md:leading-7" : "text-base"
+            }`}
+          >
+            {description}
+          </p>
+        </div>
+
+        <div className="flex items-center gap-0.5 text-lg font-medium text-white">
+          View Details
+          <RiArrowRightUpLine
+            size={24}
+            className="duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+          />
+        </div>
+      </div>
     </Link>
   );
 };

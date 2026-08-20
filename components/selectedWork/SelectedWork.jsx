@@ -1,175 +1,111 @@
-/* eslint-disable react/jsx-no-undef */
 "use client";
 
-import { selectedWorks } from "@/utils/data/projectListData";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import * as motion from "motion/react-client";
 import ProjectCard from "./ProjectCard";
 
+const works = [
+  {
+    url: "/case-studies/st-pay",
+    tag: "Fintech",
+    title: "ST Pay — Travel Wallet",
+    description:
+      "A secure in-app travel wallet designed to simplify payments for flights, hotels, and other travel services. Focused on seamless top-ups, clear transaction history, and frictionless checkout to improve trust, activation, and transaction completion.",
+    imageURL: "/assets/selectedwork/st-pay.png",
+    featured: true,
+  },
+  {
+    url: "#",
+    tag: "E-commerce",
+    title: "Shop Design",
+    description:
+      "Optimized product discovery and checkout flow to improve conversions and create a smooth shopping experience.",
+    imageURL: "/assets/selectedwork/shop.png",
+  },
+  {
+    url: "#",
+    tag: "Travel Platform",
+    title: "Flight Booking Experience",
+    description:
+      "Streamlined flight and hotel search, comparison, and checkout to reduce friction and increase booking completion.",
+    imageURL: "/assets/selectedwork/flight.png",
+  },
+  {
+    url: "#",
+    tag: "SaaS Platform",
+    title: "Internal Management System",
+    description:
+      "Built a scalable system for mobile and web with reusable components and consistent UX patterns.",
+    imageURL: "/assets/selectedwork/saas.png",
+  },
+  {
+    url: "#",
+    tag: "Mobility Service",
+    title: "Car Rental Experience",
+    description:
+      "Designed a smooth car booking journey with clear pricing and easy child seat selection for families.",
+    imageURL: "/assets/selectedwork/car.png",
+  },
+];
+
 const SelectedWork = () => {
-  // const targetRef = useRef(null);
-  // const { scrollYProgress } = useScroll({ target: targetRef });
-  // const x = useTransform(scrollYProgress, [0.05, 1], ["0%", "-40%"]);
-
-  const settings = {
-    rewind: true,
-    gap: "1.5rem",
-    perMove: 1,
-    // padding: "30%",
-    type: "loop",
-    infinite: true,
-    focus: "left",
-    pagination: false,
-    // pauseOnHover: true,
-    autoplay: true,
-    // keyboard: true,
-    // isActive: true,
-    // pauseOnFocus: true,
-    // slidefocus: true,
-    wheel: false,
-    wheelSleep: 1,
-    wheelMinThreshold: 1,
-    releaseWheel: true,
-
-    width: "100%",
-    // snap: true,
-    // slideFocus: true,
-    // height: "600px",
-    // trimSpace: false,
-    // rewindByDrag: true,
-    // loading: "lazy",
-    perPage: 3,
-    // start: 3,
-    // moveBy: 1,
-    // cover: true,
-    // overflow: "visible",
-    // interval: 5000,
-    // drag: true,
-    // isnavigation: true,
-    // isNavigation: true,
-    // arrows: true,
-    // fixedwidth: 900,
-    // fixedheight: 600,
-    breakpoints: {
-      425: {
-        gap: "0.5rem",
-        // height: "300px",
-        arrows: false,
-        perPage: 1,
-      },
-      // 640: {
-      //   gap: "1rem",
-      //   height: "380px",
-      //   padding: "10%",
-      // },
-      // 768: {
-      //   gap: "1.5rem",
-      //   height: "320px",
-      //   padding: "10%",
-      // },
-      1024: {
-        gap: "1.5rem",
-        // height: "400px",
-        perPage: 2,
-      },
-      // 1280: {
-      //   gap: "1.5rem",
-      //   height: "500px",
-      //   padding: "10%",
-      // },
-      // 1440: {
-      //   gap: "1.5rem",
-      //   height: "580px",
-      //   padding: "20%",
-      // },
-      // 1920: {
-      //   gap: "1.5rem",
-      //   height: "720px",
-      //   padding: "20%",
-      // },
-    },
-  };
-
   return (
-    <div
-      // initial={{ opacity: 0, x: 0 }}
-      // whileInView={{ opacity: 1, x: 0 }}
-      // transition={{
-      //   ease: "easeInOut",
-      //   duration: 0.75,
-      //   delay: 0.2,
-      // }}
-      className="h-[400v]"
-      id="work"
-    >
-      {/* <div className="h-[400v]" id="work" ref={targetRef}> */}
-      <div className="horizontalScrol h-[100v] sticky top-0 flex items-center justify-start overflow-hidden">
-        {/* <motion.div
-          className="projects_list grid grid-cols-[3fr_3fr_3fr_3fr_3fr] gap-3 md:gap-6"
-          style={{ x }}
-        >
-          {projectList.map(({ url, title, tag, imageURL, brandColor }, i) => (
-            <div className="project w-[320px] md:w-[409px]" key={i}>
-              <ProjectCard
-                url={url}
-                title={title}
-                tag={tag}
-                imageURL={imageURL}
-                bgColor={brandColor}
-              />
-            </div>
-          ))}
-        </motion.div> */}
+    <section id="work" className="p-2">
+      <div className="relative overflow-clip rounded-[24px] border-[3px] border-neutral-950 bg-neutral-950 py-[120px] md:rounded-[40px]">
+        {/* center guide line */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute bottom-[-1.5px] left-1/2 top-[-1.5px] w-[1200px] max-w-[1200px] -translate-x-1/2 border-x border-neutral-900"
+        />
 
-        <div className="container">
+        <div className="container relative flex flex-col items-center gap-12">
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              ease: "easeInOut",
-              duration: 0.75,
-              delay: 0.2,
-            }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ ease: "easeInOut", duration: 0.75 }}
+            className="flex max-w-[580px] flex-col items-center gap-6 text-center"
           >
-            <Splide
-              options={settings}
-              tag="div"
-              aria-label="React Splide Example"
-            >
-              {selectedWorks.map(
-                (
-                  {
-                    url,
-                    title,
-                    description,
-                    tag,
-                    imageURL,
-                    brandColor,
-                    commingSoon,
-                  },
-                  i
-                ) => (
-                  <SplideSlide
-                    className="project w-[320px] md:w-[409px]"
-                    key={i}
-                  >
-                    <ProjectCard
-                      url={url}
-                      title={title}
-                      description={description}
-                      tag={tag}
-                      imageURL={imageURL}
-                      commingSoon={commingSoon}
-                      bgColor={brandColor}
-                    />
-                  </SplideSlide>
-                )
-              )}
-            </Splide>
+            <p className="bg-gradient-to-r from-lime-500 from-20% to-indigo-500 to-70% bg-clip-text text-2xl font-medium italic text-transparent md:text-[32px]">
+              Explore some of my
+            </p>
+            <h2 className="text-4xl font-bold tracking-tight text-white md:text-[56px] md:leading-[64px]">
+              Selected Works
+            </h2>
           </motion.div>
+
+          <div className="grid w-full grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2">
+            {works.map(
+              (
+                { url, tag, title, description, imageURL, featured },
+                i
+              ) => (
+                <motion.div
+                  key={title}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: 0.75,
+                    delay: (i % 2) * 0.1,
+                  }}
+                  className={`group rounded-[24px] p-2 ${featured ? "md:col-span-2" : ""}`}
+                >
+                  <ProjectCard
+                    url={url}
+                    title={title}
+                    description={description}
+                    tag={tag}
+                    imageURL={imageURL}
+                    featured={featured}
+                  />
+                </motion.div>
+              )
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
