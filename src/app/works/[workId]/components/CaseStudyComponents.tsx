@@ -154,7 +154,7 @@ export const FullImage = ({ src, alt }: { src: string; alt: string }) => (
       src={src}
       alt={alt}
       width={1600}
-      height={900}
+      height={1200}
       priority={false}
       quality={75}
       loading="lazy"

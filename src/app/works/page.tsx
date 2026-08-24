@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ProjectCard from "../../../components/selectedWork/ProjectCard";
 
 export const metadata: Metadata = {
-  title: "Case Studies | Sohanur Rahman (Joy)",
+  title: "Works | Sohanur Rahman (Joy)",
   description:
-    "In-depth product design case studies — fintech, e-commerce, travel, and SaaS projects by Sohanur Rahman (Joy).",
+    "In-depth product design works — fintech, e-commerce, travel, and SaaS projects by Sohanur Rahman (Joy).",
 };
 
-const caseStudies = [
+const works = [
   {
-    url: "/case-studies/st-pay",
+    url: "/works/st-pay",
     tag: "Fintech",
     title: "ST Pay — Travel Wallet",
     description:
@@ -18,7 +18,7 @@ const caseStudies = [
     featured: true,
   },
   {
-    url: "/case-studies/ebl-fund-transfer-redesign",
+    url: "/works/ebl-fund-transfer-redesign",
     tag: "Mobile Banking",
     title: "EBL Fund Transfer Redesign",
     description:
@@ -26,7 +26,7 @@ const caseStudies = [
     imageURL: "/assets/selectedwork/ebl.webp",
   },
   {
-    url: "/case-studies/shop-design",
+    url: "/works/shop-design",
     tag: "E-commerce",
     title: "Shop Design",
     description:
@@ -34,7 +34,7 @@ const caseStudies = [
     imageURL: "/assets/selectedwork/shop.png",
   },
   {
-    url: "/case-studies/flight-booking",
+    url: "/works/flight-booking",
     tag: "Travel Platform",
     title: "Flight Booking Experience",
     description:
@@ -42,7 +42,7 @@ const caseStudies = [
     imageURL: "/assets/selectedwork/flight.png",
   },
   {
-    url: "/case-studies/internal-management",
+    url: "/works/internal-management",
     tag: "SaaS Platform",
     title: "Internal Management System",
     description:
@@ -50,7 +50,7 @@ const caseStudies = [
     imageURL: "/assets/selectedwork/saas.png",
   },
   {
-    url: "/case-studies/car-rental",
+    url: "/works/car-rental",
     tag: "Mobility Service",
     title: "Car Rental Experience",
     description:
@@ -59,7 +59,7 @@ const caseStudies = [
   },
 ];
 
-const CaseStudies = () => {
+const Works = () => {
   return (
     <main className="wrapper pb-28 sm:pb-0">
       <div className="main-lights-wrapper">
@@ -85,12 +85,12 @@ const CaseStudies = () => {
                 Explore some of my
               </p>
               <h1 className="text-4xl font-bold tracking-tight text-white md:text-[56px] md:leading-[64px]">
-                Case Studies
+                Works
               </h1>
             </div>
 
             <div className="grid w-full grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2">
-              {caseStudies.map((item) => (
+              {works.map((item) => (
                 <div
                   key={item.title}
                   className={`group rounded-[24px] p-2 ${item.featured ? "md:col-span-2" : ""}`}
@@ -106,4 +106,4 @@ const CaseStudies = () => {
   );
 };
 
-export default CaseStudies;
+export default Works;

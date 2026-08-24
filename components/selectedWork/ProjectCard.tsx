@@ -50,15 +50,15 @@ const ProjectCard: FC<ProjectCardProps> = ({
       </div>
 
       <div
-        className={`flex w-full flex-col items-start gap-8 px-5 pb-5 pt-5 ${
+        className={`flex w-full flex-col items-start gap-8 px-5 pb-5 pt-7 ${
           featured ? "md:px-6" : ""
         }`}
       >
         <div className="flex w-full flex-col items-start gap-2">
-          <p className="bg-gradient-to-r from-lime-500 from-20% to-indigo-500 to-70% bg-clip-text text-[20px] font-semibold leading-7 text-transparent">
+          <p className="bg-gradient-to-r from-lime-500 from-20% to-indigo-500 to-70% bg-clip-text text-[20px] leading-7 text-transparent">
             {tag}
           </p>
-          <h3 className="w-full text-[26px] font-bold leading-10 tracking-tight text-white md:text-[32px]">
+          <h3 className="w-full text-[26px] font-semibold leading-10 text-white md:text-[32px]">
             {title}
           </h3>
           <p

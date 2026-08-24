@@ -22,6 +22,21 @@ const nextConfig = {
     ],
   },
 
+  async redirects() {
+    return [
+      {
+        source: "/case-studies",
+        destination: "/works",
+        permanent: true,
+      },
+      {
+        source: "/case-studies/:slug",
+        destination: "/works/:slug",
+        permanent: true,
+      },
+    ];
+  },
+
   async rewrites() {
     return [
       {

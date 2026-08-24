@@ -1,13 +1,13 @@
 "use client";
 
 import { RiArrowRightUpLine } from "@remixicon/react";
-import Link from "next/link";
 import * as motion from "motion/react-client";
+import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    url: "/case-studies/st-pay",
+    url: "/works/st-pay",
     tag: "Fintech",
     title: "ST Pay — Travel Wallet",
     description:
@@ -16,7 +16,7 @@ const works = [
     featured: true,
   },
   {
-    url: "/case-studies/shop-design",
+    url: "/works/shop-design",
     tag: "E-commerce",
     title: "Shop Design",
     description:
@@ -24,7 +24,7 @@ const works = [
     imageURL: "/assets/selectedwork/shop.png",
   },
   {
-    url: "/case-studies/flight-booking",
+    url: "/works/flight-booking",
     tag: "Travel Platform",
     title: "Flight Booking Experience",
     description:
@@ -32,7 +32,7 @@ const works = [
     imageURL: "/assets/selectedwork/flight.png",
   },
   {
-    url: "/case-studies/internal-management",
+    url: "/works/internal-management",
     tag: "SaaS Platform",
     title: "Internal Management System",
     description:
@@ -40,12 +40,13 @@ const works = [
     imageURL: "/assets/selectedwork/saas.png",
   },
   {
-    url: "/case-studies/car-rental",
+    url: "/works/car-rental",
     tag: "Mobility Service",
     title: "Car Rental Experience",
     description:
       "Designed a smooth car booking journey with clear pricing and easy child seat selection for families.",
     imageURL: "/assets/selectedwork/car.png",
+    // imageURL: "/assets/case-study/car/cover.jpg",
   },
 ];
 
@@ -77,10 +78,7 @@ const SelectedWork = () => {
 
           <div className="grid w-full grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2">
             {works.map(
-              (
-                { url, tag, title, description, imageURL, featured },
-                i
-              ) => (
+              ({ url, tag, title, description, imageURL, featured }, i) => (
                 <motion.div
                   key={title}
                   initial={{ opacity: 0, y: 40 }}
@@ -102,15 +100,15 @@ const SelectedWork = () => {
                     featured={featured}
                   />
                 </motion.div>
-              )
+              ),
             )}
           </div>
 
           <Link
-            href="/case-studies"
+            href="/works"
             className="group flex items-center gap-2 text-lg font-medium text-white/80 transition-colors hover:text-white"
           >
-            View all case studies
+            View all works
             <RiArrowRightUpLine
               size={22}
               className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"

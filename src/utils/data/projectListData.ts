@@ -37,7 +37,7 @@ export const selectedWorks = [
     commingSoon: false,
   },
   {
-    url: "case-studies/ebl-fund-transfer-redesign",
+    url: "works/ebl-fund-transfer-redesign",
     title: "EBL Fund Transfer Redesign",
     description:
       "The redesign created an intuitive, modern, user-friendly interface, optimizing transfer UX and banking for a seamless experience.",
@@ -57,7 +57,7 @@ export const selectedWorks = [
     commingSoon: false,
   },
   // {
-  //   url: "case-studies/ebl-fund-transfer-redesign",
+  //   url: "works/ebl-fund-transfer-redesign",
   //   title: "EBL Fund Transfer Redesign",
   //   tag: "Mobile App",
   //   imageURL: "/assets/case-study/img_6.webp",

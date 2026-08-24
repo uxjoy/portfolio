@@ -25,9 +25,9 @@ const mdxCaseStudies: Record<
 };
 
 const CaseStudyDetails = async (props: any) => {
-  const caseStudyId = await props.params.caseStudyId;
+  const workId = await props.params.workId;
 
-  const mdxCase = mdxCaseStudies[caseStudyId];
+  const mdxCase = mdxCaseStudies[workId];
   if (mdxCase) {
     const { label, title, Content } = mdxCase;
     return (
