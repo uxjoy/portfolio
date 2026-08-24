@@ -89,10 +89,10 @@ h6 {
 } */
 
 .h1 {
-  font-size: 6rem; /* equivalent to text-8xl */
-  font-weight: 700; /* equivalent to font-bold */
-  color: #cbd5e1; /* equivalent to text-slate-300 */
-  line-height: 1.25; /* equivalent to leading-tight */
+  font-size: 6rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  line-height: 1.25;
 }
 
 .h2 {

@@ -1,6 +1,6 @@
 import "@splidejs/react-splide/css";
 import { Analytics } from "@vercel/analytics/react";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Bricolage_Grotesque, Satisfy } from "next/font/google";
 import "./globals.css";
 
 // Import Swiper styles
@@ -12,6 +12,12 @@ import "swiper/css/pagination";
 import Providers from "./providers";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
+
+const satisfy = Satisfy({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-satisfy",
+});
 
 export const metadata: Metadata = {
   title: "Sohanur Rahman (Joy) | Product Designer",
@@ -101,7 +107,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`dark:bg-bgColor ${font.className}`}
+        className={`dark:bg-bgColor ${font.className} ${satisfy.variable}`}
         suppressHydrationWarning
       >
         <Providers>

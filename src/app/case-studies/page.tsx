@@ -81,7 +81,7 @@ const CaseStudies = () => {
 
           <div className="container relative flex flex-col items-center gap-12">
             <div className="flex max-w-[580px] flex-col items-center gap-6 text-center">
-              <p className="bg-gradient-to-r from-lime-500 from-20% to-indigo-500 to-70% bg-clip-text text-2xl font-medium italic text-transparent md:text-[32px]">
+              <p className="bg-gradient-to-r from-lime-500 from-20% to-indigo-500 to-70% bg-clip-text font-[family-name:var(--font-satisfy)] text-2xl text-transparent md:text-[32px]">
                 Explore some of my
               </p>
               <h1 className="text-4xl font-bold tracking-tight text-white md:text-[56px] md:leading-[64px]">
