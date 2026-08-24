@@ -1,64 +1,11 @@
-import Contact from "../../components/Contact";
-import Divider from "../../components/Divider";
-import AboutNew from "../../components/about/AboutNew";
-import AppScreen from "../../components/appScreen/appScreen";
-import BentoGrid from "../../components/bento/page";
-import ClientsFeedback from "../../components/clientFeedback/ClientsFeedback";
-import GlobalWork from "../../components/globalWorkNetwork/GlobalWork";
-import HeroSection from "../../components/heroBanner/HeroSection";
-import BigTextMarquee from "../../components/marquee/BigTextMarquee";
-import Header from "../../components/navbar/Header";
-import RecentExploration from "../../components/recentExploration/RecentExploration";
-import SelectedWork from "../../components/selectedWork/SelectedWork";
-import BottomNav from "../../components/navbar/BottomNav";
-
-const Home = async () => {
+const Home = () => {
   return (
-    <main className="wrapper pb-28 sm:pb-0">
-      <div className="main-lights-wrapper">
-        <div className="lights-container">
-          <div className="light-container left"></div>
-          <div className="light-container left"></div>
-          <div className="light-container center"></div>
-          <div className="light-container right"></div>
-          <div className="light-container last"></div>
-        </div>
-      </div>
+    <main className="relative flex min-h-screen flex-col items-center justify-center gap-6 px-6 text-center">
+      <h1 className="text-4xl tracking-tight text-white md:text-[56px] md:leading-[64px] z-10">
+        Coming Soon...
+      </h1>
 
-      <Header />
-
-      <HeroSection />
-
-      {/* <FeaturedProjects /> */}
-
-      <AppScreen />
-
-      {/* <Marquee /> */}
-      <div className="container mb-20 hidden md:block">
-        <Divider starText="case studies" endText="design process" />
-      </div>
-
-      <div id="work" className="scroll-mt-20">
-        <SelectedWork />
-      </div>
-
-      <div className="pt-20">
-        <BigTextMarquee />
-      </div>
-
-      <GlobalWork />
-
-      <BentoGrid />
-
-      <ClientsFeedback />
-
-      <AboutNew />
-
-      <RecentExploration />
-
-      <Contact />
-
-      <BottomNav />
+      <div className="w-[800px] h-[400px] bg-primary-400/20 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl z-0"></div>
     </main>
   );
 };
