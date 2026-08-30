@@ -18,9 +18,9 @@ const HeroSection = () => {
     >
       <div className="container text-center space-y-10">
         <div className="max-w-3xl space-y-4 mx-auto">
-          <label className="uppercase text-lg"> Hire your next</label>
+          <label className="uppercase md:text-lg"> Hire your next</label>
 
-          <h1 className="text-4xl md:text-[72px] md:leading-[1.1]">
+          <h1 className="text-[40px] md:text-[72px] leading-[1.1]">
             Design Partner from{" "}
             <span className="font-[family-name:var(--font-instrument-serif)] font-normal italic">
               Strategy to Execution
@@ -58,7 +58,7 @@ const HeroSection = () => {
           </Link>
         </div>
 
-        <p className="font-extralight text-white/80">
+        <p className="font-extralight text-xs md:text-base text-white/80">
           🇦🇺 🇦🇹 🇧🇩 🇭🇷 🇩🇪 Designing across 10+ countries 🇮🇳 🇬🇧 🇪🇸 🇺🇸 🇬🇧
         </p>
       </div>

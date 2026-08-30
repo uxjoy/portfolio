@@ -52,7 +52,7 @@ const works = [
 
 const SelectedWork = () => {
   return (
-    <section id="work" className="p-2">
+    <section id="work" className="">
       <div className="relative">
         {/* center guide line */}
         {/* <div
@@ -106,7 +106,7 @@ const SelectedWork = () => {
 
           <Link
             href="/works"
-            className="group flex items-center gap-2 text-lg font-medium text-white/80 transition-colors hover:text-white"
+            className="group flex items-center gap-2 text-lg font-normal text-white transition-colors bg-white/5 rounded-full px-5 py-3 hover:bg-white/20 mt-4"
           >
             View all works
             <RiArrowRightUpLine
