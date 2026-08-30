@@ -20,8 +20,14 @@ const mdxWorks: Record<
 };
 
 // Works that are announced but not published yet
-const upcomingWorks: Record<string, { label: string; title: string }> = {
-  "internal-management": { ...internalManagementMeta },
+const upcomingWorks: Record<
+  string,
+  { label: string; title: string; image?: string }
+> = {
+  "internal-management": {
+    ...internalManagementMeta,
+    image: "/assets/selectedwork/saas.png",
+  },
 };
 
 const WorkDetails = async (props: any) => {
@@ -29,8 +35,8 @@ const WorkDetails = async (props: any) => {
 
   const upcomingWork = upcomingWorks[workId];
   if (upcomingWork) {
-    const { label, title } = upcomingWork;
-    return <UpcomingWork label={label} title={title} />;
+    const { label, title, image } = upcomingWork;
+    return <UpcomingWork label={label} title={title} image={image} />;
   }
 
   const mdxWork = mdxWorks[workId];

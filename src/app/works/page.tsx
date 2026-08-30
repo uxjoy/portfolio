@@ -71,7 +71,7 @@ const Works = () => {
               Explore some of my
             </p>
             <h1 className="text-4xl text-slate-900 md:text-[56px] md:leading-[64px]">
-              Works
+              My Works
             </h1>
           </div>
 

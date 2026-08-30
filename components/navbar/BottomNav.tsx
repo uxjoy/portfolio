@@ -25,7 +25,7 @@ const BottomNav = () => {
               aria-label="Go to Work section"
             >
               {/* <RiLayoutGridLine size={18} /> */}
-              Work
+              Works
             </Link>
           </li>
 
