@@ -53,12 +53,12 @@ const works = [
 const SelectedWork = () => {
   return (
     <section id="work" className="p-2">
-      <div className="relative overflow-clip rounded-[24px] border-[3px] border-neutral-950 bg-neutral-950 py-[120px] md:rounded-[40px]">
+      <div className="relative">
         {/* center guide line */}
-        <div
+        {/* <div
           aria-hidden
           className="pointer-events-none absolute bottom-[-1.5px] left-1/2 top-[-1.5px] w-[1200px] max-w-[1200px] -translate-x-1/2 border-x border-neutral-900"
-        />
+        /> */}
 
         <div className="container relative flex flex-col items-center gap-12">
           <motion.div
@@ -68,7 +68,9 @@ const SelectedWork = () => {
             transition={{ ease: "easeInOut", duration: 0.75 }}
             className="flex max-w-[580px] flex-col items-center gap-6 text-center"
           >
-            <p className="text-base text-white uppercase">Explore some of my</p>
+            <p className="text-base text-white/70 uppercase">
+              Explore some of my
+            </p>
             <h2 className="text-4xl text-white md:text-[56px] md:leading-[64px]">
               Selected Works
             </h2>

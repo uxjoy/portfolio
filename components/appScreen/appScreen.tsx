@@ -13,10 +13,19 @@ const AppScreen = () => {
         </div>
       </div> */}
 
-      <Marquee speed={50} pauseOnHover={false} play={true} autoFill={true} direction="left">
+      <Marquee
+        speed={50}
+        pauseOnHover={false}
+        play={true}
+        autoFill={true}
+        direction="left"
+      >
         {appScreenData.map((item, index) => (
-          <div key={index} className="flex flex-col gap-5 text-center ml-4 md:ml-6">
-            <p className="text-sm font-light text-whiteAlpha-80">{item.title}</p>
+          <div
+            key={index}
+            className="flex flex-col gap-5 text-center ml-4 md:ml-6"
+          >
+            {/* <p className="text-sm font-light text-whiteAlpha-80">{item.title}</p> */}
 
             <Image
               src={item.img}

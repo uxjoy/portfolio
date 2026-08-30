@@ -1,6 +1,10 @@
 import "@splidejs/react-splide/css";
 import { Analytics } from "@vercel/analytics/react";
-import { Bricolage_Grotesque, Satisfy } from "next/font/google";
+import {
+  Bricolage_Grotesque,
+  Instrument_Serif,
+  Satisfy,
+} from "next/font/google";
 import "./globals.css";
 
 // Import Swiper styles
@@ -17,6 +21,13 @@ const satisfy = Satisfy({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-satisfy",
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
 });
 
 export const metadata: Metadata = {
@@ -107,7 +118,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`dark:bg-bgColor ${font.className} ${satisfy.variable}`}
+        className={`dark:bg-bgColor ${font.className} ${satisfy.variable} ${instrumentSerif.variable}`}
         suppressHydrationWarning
       >
         <Providers>
