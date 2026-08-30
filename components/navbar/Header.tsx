@@ -5,18 +5,31 @@ import {
   RiTwitterXFill,
 } from "@remixicon/react";
 import Link from "next/link";
+import { DarkLogo } from "../svg/DarkLogo";
 import { Logo } from "../svg/Logo";
 
-const Header = () => {
+const Header = ({ light = false }: { light?: boolean }) => {
   return (
-    <div className="navbar-wrapper py-6 md:py-8">
+    <div
+      className={`navbar-wrapper py-6 md:py-8 ${light ? "bg-white" : ""}`}
+    >
       <div className="container flex items-center justify-between">
         <Link href={"/"} aria-label="author-logo">
-          <Logo className="h-10 md:h-11 px-0 w-auto dark:bg-white" />
+          {light ? (
+            <DarkLogo className="h-10 md:h-11 w-auto" />
+          ) : (
+            <Logo className="h-10 md:h-11 px-0 w-auto dark:bg-white" />
+          )}
         </Link>
 
         <div className="flex items-center gap-2 md:gap-5">
-          <div className="available-for-work flex items-center gap-2 text-green-500 md:bg-transparent bg-green-500/10 py-2 pl-2.5 pr-3 border border-white/5 rounded-full">
+          <div
+            className={`available-for-work flex items-center gap-2 ${
+              light ? "text-green-600" : "text-green-500"
+            } md:bg-transparent bg-green-500/10 py-2 pl-2.5 pr-3 ${
+              light ? "border-black/5" : "border-white/5"
+            } border rounded-full`}
+          >
             <span className="relative flex items-center justify-center h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex w-full h-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>

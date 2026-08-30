@@ -5,7 +5,7 @@ import Link from "next/link";
 const BottomNav = () => {
   return (
     <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
-      <div className="bg-white/40 border-[1.2px] border-white dark:border-white/10 p-1.5 rounded-full shadow-xl backdrop-blur-md">
+      <div className="bg-black border-[1.2px] border-white dark:border-white/10 p-1.5 rounded-full shadow-xl backdrop-blur-md">
         <ul className="flex items-center gap-1 text-white pr-0.5">
           {/* Work */}
           <li>

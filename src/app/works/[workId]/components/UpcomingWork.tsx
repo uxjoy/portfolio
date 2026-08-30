@@ -4,7 +4,7 @@ import MainLayout from "../../../../../components/MainLayout";
 
 const UpcomingWork = ({ label, title }: { label: string; title: string }) => {
   return (
-    <MainLayout>
+    <MainLayout light>
       <div className="flex min-h-[80vh] items-center bg-white text-slate-900">
         <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-6 px-6 py-24">
           <p className="text-2xl lowercase leading-[1.5] text-[#5dbd25]">{label}</p>

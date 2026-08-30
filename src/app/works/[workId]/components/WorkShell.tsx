@@ -10,7 +10,7 @@ const WorkShell = ({
   children: React.ReactNode;
 }) => {
   return (
-    <MainLayout>
+    <MainLayout light>
       <div className="bg-white text-slate-900">
         {/* Header */}
         <div className="mx-auto flex max-w-[1200px] flex-col items-start gap-4 px-6 pt-20">

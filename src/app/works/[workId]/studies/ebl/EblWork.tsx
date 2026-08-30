@@ -1,7 +1,6 @@
 import { RiCheckLine, RiCloseLine } from "@remixicon/react";
 import Image from "next/legacy/image";
 import Link from "next/link";
-import Contact from "../../../../../../components/Contact";
 import MainLayout from "../../../../../../components/MainLayout";
 import branding from "../../../../../../public/assets/case-study/branding.webp";
 import imgLandscape from "../../../../../../public/assets/case-study/ebl-overview.webp";
@@ -523,8 +522,6 @@ const EblWork = () => {
       >
         <RiArrowUpLine size={24} />
       </button> */}
-
-      <Contact />
     </MainLayout>
   );
 };

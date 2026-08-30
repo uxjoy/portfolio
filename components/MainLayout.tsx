@@ -1,7 +1,7 @@
-import BottomNav from "./navbar/BottomNav";
-import Navabar from "./navbar/Navabar";
+import Contact from "./Contact";
+import Header from "./navbar/Header";
 
-const MainLayout = ({ children }: any) => {
+const MainLayout = ({ children, light = false }: any) => {
   return (
     <main className="wrapper">
       <div className="main-lights-wrapper">
@@ -14,13 +14,11 @@ const MainLayout = ({ children }: any) => {
         </div>
       </div>
 
-      {/* <Navabar /> */}
-
-      {/* <div className="bottom-nav fixed bottom-0 p-3 z-50 w-screen">
-        <BottomNav />
-      </div> */}
+      <Header light={light} />
 
       {children}
+
+      <Contact />
     </main>
   );
 };
