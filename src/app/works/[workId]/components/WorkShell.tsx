@@ -1,6 +1,6 @@
 import MainLayout from "../../../../../components/MainLayout";
 
-const CaseStudyShell = ({
+const WorkShell = ({
   label,
   title,
   children,
@@ -28,4 +28,4 @@ const CaseStudyShell = ({
   );
 };
 
-export default CaseStudyShell;
+export default WorkShell;

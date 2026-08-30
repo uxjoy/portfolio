@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const Section = ({
   label,
   children,
@@ -102,12 +100,11 @@ export const PersonaBlock = ({
         <div className="flex flex-1 flex-col gap-9 bg-white/[0.06] p-8">
           <div className="flex items-center gap-5">
             <div className="relative size-[88px] shrink-0 overflow-hidden rounded-full border-4 border-white/10">
-              <Image
-                className="object-cover"
+              <img
+                className="h-full w-full object-cover"
                 src={avatar}
                 alt={name}
-                fill
-                sizes="88px"
+                loading="lazy"
               />
             </div>
             <div className="flex flex-col gap-2 text-white">
@@ -148,17 +145,12 @@ export const PersonaBlock = ({
 );
 
 export const FullImage = ({ src, alt }: { src: string; alt: string }) => (
-  <div className="relative w-full overflow-hidden">
-    <Image
-      className="object-cover"
+  <div className="w-full overflow-hidden">
+    <img
+      className="h-auto w-full object-cover"
       src={src}
       alt={alt}
-      width={1600}
-      height={1200}
-      priority={false}
-      quality={75}
       loading="lazy"
-      sizes="100vw"
     />
   </div>
 );

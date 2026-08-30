@@ -17,14 +17,14 @@ const works = [
     imageURL: "/assets/selectedwork/st-pay.png",
     featured: true,
   },
-  {
-    url: "/works/ebl-fund-transfer-redesign",
-    tag: "Mobile Banking",
-    title: "EBL Fund Transfer Redesign",
-    description:
-      "The redesign created an intuitive, modern, user-friendly interface, optimizing transfer UX and banking for a seamless experience.",
-    imageURL: "/assets/selectedwork/ebl.webp",
-  },
+  // {
+  //   url: "/works/ebl-fund-transfer-redesign",
+  //   tag: "Mobile Banking",
+  //   title: "EBL Fund Transfer Redesign",
+  //   description:
+  //     "The redesign created an intuitive, modern, user-friendly interface, optimizing transfer UX and banking for a seamless experience.",
+  //   imageURL: "/assets/selectedwork/ebl.webp",
+  // },
   {
     url: "/works/shop-design",
     tag: "E-commerce",
@@ -42,20 +42,21 @@ const works = [
     imageURL: "/assets/selectedwork/flight.png",
   },
   {
-    url: "/works/internal-management",
-    tag: "SaaS Platform",
-    title: "Internal Management System",
-    description:
-      "Built a scalable system for mobile and web with reusable components and consistent UX patterns.",
-    imageURL: "/assets/selectedwork/saas.png",
-  },
-  {
     url: "/works/car-rental",
     tag: "Mobility Service",
     title: "Car Rental Experience",
     description:
       "Designed a smooth car booking journey with clear pricing and easy child seat selection for families.",
     imageURL: "/assets/selectedwork/car.png",
+  },
+  {
+    url: "/works/internal-management",
+    tag: "SaaS Platform",
+    title: "Internal Management System",
+    description:
+      "Built a scalable system for mobile and web with reusable components and consistent UX patterns.",
+    imageURL: "/assets/selectedwork/saas.png",
+    commingSoon: true,
   },
 ];
 

@@ -32,14 +32,6 @@ const works = [
     imageURL: "/assets/selectedwork/flight.png",
   },
   {
-    url: "/works/internal-management",
-    tag: "SaaS Platform",
-    title: "Internal Management System",
-    description:
-      "Built a scalable system for mobile and web with reusable components and consistent UX patterns.",
-    imageURL: "/assets/selectedwork/saas.png",
-  },
-  {
     url: "/works/car-rental",
     tag: "Mobility Service",
     title: "Car Rental Experience",
@@ -47,6 +39,14 @@ const works = [
       "Designed a smooth car booking journey with clear pricing and easy child seat selection for families.",
     imageURL: "/assets/selectedwork/car.png",
     // imageURL: "/assets/case-study/car/cover.jpg",
+  },
+  {
+    url: "/works/internal-management",
+    tag: "SaaS Platform",
+    title: "Internal Management System",
+    description:
+      "Built a scalable system for mobile and web with reusable components and consistent UX patterns.",
+    imageURL: "/assets/selectedwork/saas.png",
   },
 ];
 

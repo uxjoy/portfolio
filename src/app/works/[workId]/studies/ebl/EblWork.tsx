@@ -13,7 +13,7 @@ import explanation_img_4 from "../../../../../../public/assets/case-study/new/im
 import explanation_img_5 from "../../../../../../public/assets/case-study/new/img_5.webp";
 import { designProcess, overviewData, problemsData, solutionsData } from "./data";
 
-const EblCaseStudy = () => {
+const EblWork = () => {
 // const [isToggle, isSetToggle] = useState(true);
 
   return (
@@ -21,7 +21,7 @@ const EblCaseStudy = () => {
       <div className="py-12 md:pt-100 md:pb-16" id="top">
         <div className="container relative space-y-6 md:space-y-2">
           <div className="top-content md:w-3/4">
-            <div className="uppercase text-lg text-whiteAlpha-56">case study</div>
+            <div className="uppercase text-lg text-whiteAlpha-56">work</div>
             <h1
               className="text-4xl md:text-6xl capitalize font-bold text-white/30 w-full mt-4"
               style={{ lineHeight: 1.3 }}
@@ -36,7 +36,7 @@ const EblCaseStudy = () => {
         <Image
           className="object-contain h-full group-hover:scale-110 duration-300"
           src={imgLandscape}
-          alt={"title"}
+          alt="EBL Fund Transfer overview"
           layout="fill"
           priority={false}
           quality={100}
@@ -190,7 +190,7 @@ const EblCaseStudy = () => {
         <Image
           className="object-cover w-full h-full group-hover:scale-110 duration-300"
           src={branding}
-          alt={"title"}
+          alt="EBL branding"
           layout="fill"
           priority={false}
           quality={100}
@@ -207,7 +207,7 @@ const EblCaseStudy = () => {
                   <Image
                     className="object-cover w-full h-full"
                     src={explanation_img_1}
-                    alt={"title"}
+                    alt="EBL Fund Transfer choose options"
                     layout="fill"
                     priority={false}
                     quality={100}
@@ -261,7 +261,7 @@ const EblCaseStudy = () => {
                   <Image
                     className="object-cover w-full h-full"
                     src={explanation_img_2}
-                    alt={"title"}
+                    alt="EBL Fund Transfer beneficiary"
                     layout="fill"
                     priority={false}
                     quality={100}
@@ -295,7 +295,7 @@ const EblCaseStudy = () => {
                   <Image
                     className="object-cover w-full h-full"
                     src={explanation_img_3}
-                    alt={"title"}
+                    alt="EBL Fund Transfer transfer amount"
                     layout="fill"
                     priority={false}
                     quality={100}
@@ -328,7 +328,7 @@ const EblCaseStudy = () => {
                   <Image
                     className="object-cover w-full h-full"
                     src={explanation_img_4}
-                    alt={"title"}
+                    alt="EBL Fund Transfer transfer overview"
                     layout="fill"
                     priority={false}
                     quality={100}
@@ -360,7 +360,7 @@ const EblCaseStudy = () => {
                   <Image
                     className="object-cover w-full h-full"
                     src={explanation_img_5}
-                    alt={"title"}
+                    alt="EBL Fund Transfer save beneficiary"
                     layout="fill"
                     priority={false}
                     quality={100}
@@ -494,7 +494,7 @@ const EblCaseStudy = () => {
         <Image
           className="object-cover h-full group-hover:scale-110 duration-300"
           src={img_6}
-          alt={"title"}
+          alt="EBL Fund Transfer final designs"
           layout="fill"
           priority={false}
           quality={100}
@@ -529,4 +529,4 @@ const EblCaseStudy = () => {
   );
 };
 
-export default EblCaseStudy;
+export default EblWork;
