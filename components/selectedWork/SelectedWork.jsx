@@ -68,10 +68,8 @@ const SelectedWork = () => {
             transition={{ ease: "easeInOut", duration: 0.75 }}
             className="flex max-w-[580px] flex-col items-center gap-6 text-center"
           >
-            <p className="bg-gradient-to-r from-lime-500 from-20% to-indigo-500 to-70% bg-clip-text font-[family-name:var(--font-satisfy)] text-2xl text-transparent md:text-[32px]">
-              Explore some of my
-            </p>
-            <h2 className="text-4xl font-bold tracking-tight text-white md:text-[56px] md:leading-[64px]">
+            <p className="text-base text-white uppercase">Explore some of my</p>
+            <h2 className="text-4xl text-white md:text-[56px] md:leading-[64px]">
               Selected Works
             </h2>
           </motion.div>

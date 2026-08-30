@@ -20,7 +20,7 @@ const BottomNav = () => {
           </li>
           <li>
             <Link
-              href={"#work"}
+              href={"works"}
               className="flex items-center gap-1.5 h-11 px-5 rounded-full bg-white/10 hover:bg-white/20 text-sm font-medium ease-in-out duration-300"
               aria-label="Go to Work section"
             >

@@ -11,6 +11,7 @@ type ProjectCardProps = {
   imageURL: string;
   featured?: boolean;
   commingSoon?: boolean;
+  light?: boolean;
 };
 
 const ProjectCard: FC<ProjectCardProps> = ({
@@ -21,6 +22,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
   imageURL,
   featured = false,
   commingSoon = false,
+  light = false,
 }) => {
   return (
     <Link
@@ -58,19 +60,27 @@ const ProjectCard: FC<ProjectCardProps> = ({
           <p className="bg-gradient-to-r from-lime-500 from-20% to-indigo-500 to-70% bg-clip-text text-[20px] leading-7 text-transparent">
             {tag}
           </p>
-          <h3 className="w-full text-[26px] font-semibold leading-10 text-white md:text-[32px]">
+          <h3
+            className={`w-full text-[26px] font-semibold leading-10 md:text-[32px] ${
+              light ? "text-slate-900" : "text-white"
+            }`}
+          >
             {title}
           </h3>
           <p
-            className={`w-full font-normal leading-6 text-neutral-400 ${
-              featured ? "text-base md:text-lg md:leading-7" : "text-base"
-            }`}
+            className={`w-full font-normal leading-6 ${
+              light ? "text-slate-500" : "text-neutral-400"
+            } ${featured ? "text-base md:text-lg md:leading-7" : "text-base"}`}
           >
             {description}
           </p>
         </div>
 
-        <div className="flex items-center gap-0.5 text-lg font-medium text-white">
+        <div
+          className={`flex items-center gap-0.5 text-lg font-medium ${
+            light ? "text-slate-900" : "text-white"
+          }`}
+        >
           {commingSoon ? (
             <span className="rounded-full bg-neutral-950 px-3 py-1.5 text-xs text-white">
               Coming Soon

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import MainLayout from "../../../components/MainLayout";
 import ProjectCard from "../../../components/selectedWork/ProjectCard";
 
 export const metadata: Metadata = {
@@ -62,48 +63,31 @@ const works = [
 
 const Works = () => {
   return (
-    <main className="wrapper pb-28 sm:pb-0">
-      <div className="main-lights-wrapper">
-        <div className="lights-container">
-          <div className="light-container left"></div>
-          <div className="light-container left"></div>
-          <div className="light-container center"></div>
-          <div className="light-container right"></div>
-          <div className="light-container last"></div>
-        </div>
-      </div>
-
-      <section className="p-2 pt-16 md:pt-24">
-        <div className="relative overflow-clip rounded-[24px] border-[3px] border-neutral-950 bg-neutral-950 py-[80px] md:rounded-[40px] md:py-[120px]">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute bottom-[-1.5px] left-1/2 top-[-1.5px] w-[1200px] max-w-[1200px] -translate-x-1/2 border-x border-neutral-900"
-          />
-
-          <div className="container relative flex flex-col items-center gap-12">
-            <div className="flex max-w-[580px] flex-col items-center gap-6 text-center">
-              <p className="bg-gradient-to-r from-lime-500 from-20% to-indigo-500 to-70% bg-clip-text font-[family-name:var(--font-satisfy)] text-2xl text-transparent md:text-[32px]">
-                Explore some of my
-              </p>
-              <h1 className="text-4xl font-bold tracking-tight text-white md:text-[56px] md:leading-[64px]">
-                Works
-              </h1>
-            </div>
-
-            <div className="grid w-full grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2">
-              {works.map((item) => (
-                <div
-                  key={item.title}
-                  className={`group rounded-[24px] p-2 ${item.featured ? "md:col-span-2" : ""}`}
-                >
-                  <ProjectCard {...item} />
-                </div>
-              ))}
-            </div>
+    <MainLayout light>
+      <div className="bg-white pt-16 md:pt-24">
+        <section className="container flex flex-col items-center gap-12 pb-28">
+          <div className="flex max-w-[580px] flex-col items-center gap-6 text-center">
+            <p className="text-base text-slate-900 uppercase">
+              Explore some of my
+            </p>
+            <h1 className="text-4xl text-slate-900 md:text-[56px] md:leading-[64px]">
+              Works
+            </h1>
           </div>
-        </div>
-      </section>
-    </main>
+
+          <div className="grid w-full grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2">
+            {works.map((item) => (
+              <div
+                key={item.title}
+                className={`group rounded-[24px] p-2 ${item.featured ? "md:col-span-2" : ""}`}
+              >
+                <ProjectCard {...item} light />
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    </MainLayout>
   );
 };
 

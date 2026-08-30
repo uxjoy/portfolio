@@ -4,7 +4,7 @@ import Header from "./navbar/Header";
 const MainLayout = ({ children, light = false }: any) => {
   return (
     <main className="wrapper">
-      <div className="main-lights-wrapper">
+      <div className="main-lights-wrapper pointer-events-none">
         <div className="lights-container">
           <div className="light-container left"></div>
           <div className="light-container left"></div>
