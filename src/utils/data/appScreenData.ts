@@ -39,20 +39,20 @@ export const appScreenData = [
     title: "Product Listing",
     img: "/assets/app-screens/screenshot_10.png",
   },
-  {
-    title: "Searching Products",
-    img: "/assets/app-screens/screenshot_11.png",
-  },
-  {
-    title: "Auto-Complete",
-    img: "/assets/app-screens/screenshot_12.png",
-  },
-  {
-    title: "Hotel Listing",
-    img: "/assets/app-screens/screenshot_13.png",
-  },
-  {
-    title: "Property Details",
-    img: "/assets/app-screens/screenshot_14.png",
-  },
+  // {
+  //   title: "Searching Products",
+  //   img: "/assets/app-screens/screenshot_11.png",
+  // },
+  // {
+  //   title: "Auto-Complete",
+  //   img: "/assets/app-screens/screenshot_12.png",
+  // },
+  // {
+  //   title: "Hotel Listing",
+  //   img: "/assets/app-screens/screenshot_13.png",
+  // },
+  // {
+  //   title: "Property Details",
+  //   img: "/assets/app-screens/screenshot_14.png",
+  // },
 ];

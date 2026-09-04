@@ -1,5 +1,4 @@
 import { appScreenData } from "@/utils/data/appScreenData";
-import Image from "next/legacy/image";
 import Marquee from "react-fast-marquee";
 
 const AppScreen = () => {
@@ -27,15 +26,17 @@ const AppScreen = () => {
           >
             {/* <p className="text-sm font-light text-whiteAlpha-80">{item.title}</p> */}
 
-            <Image
+            <img src={item.img} alt={item.title} className="h-[540px] rounded-lg shadow-lg" loading="lazy" />
+
+            {/* <Image
               src={item.img}
               alt={item.title}
-              className="max-w-[172px] md:max-w-[240px] h-auto rounded-lg shadow-lg"
+              className="h-[540px] rounded-lg shadow-lg"
               width={240}
               height={532}
               loading="lazy"
               priority={false}
-            />
+            /> */}
           </div>
         ))}
       </Marquee>
