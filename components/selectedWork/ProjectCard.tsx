@@ -1,5 +1,4 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
-import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -35,19 +34,24 @@ const ProjectCard: FC<ProjectCardProps> = ({
           featured ? "h-[320px] md:h-[620px]" : "h-[280px] md:h-[460px]"
         }`}
       >
-        <Image
+        {/* <Image
           className="object-cover duration-300 group-hover:scale-[1.03]"
           src={imageURL}
           alt={title}
           fill={true}
           priority={false}
-          quality={80}
+          quality={100}
           loading="lazy"
           sizes={
             featured
               ? "100vw"
               : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
           }
+        /> */}
+        <img
+          className="object-cover object-center w-full h-full duration-300 group-hover:scale-[1.03]"
+          src={imageURL}
+          alt={title}
         />
       </div>
 
@@ -61,7 +65,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             {tag}
           </p>
           <h3
-            className={`w-full text-[26px] font-semibold leading-10 md:text-[32px] ${
+            className={`w-full text-[26px] leading-10 md:text-[32px] ${
               light ? "text-slate-900" : "text-white"
             }`}
           >
