@@ -38,3 +38,4 @@ next-env.d.ts
 
 .env
 .env.localpublic/assets/case-study/st-pay/.next/
+.env*
