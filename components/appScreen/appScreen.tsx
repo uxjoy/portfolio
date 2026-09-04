@@ -1,5 +1,4 @@
 import { appScreenData } from "@/utils/data/appScreenData";
-import Image from "next/legacy/image";
 import Marquee from "react-fast-marquee";
 
 const AppScreen = () => {
@@ -13,21 +12,13 @@ const AppScreen = () => {
         </div>
       </div> */}
 
-      <Marquee
-        speed={50}
-        pauseOnHover={false}
-        play={true}
-        autoFill={true}
-        direction="left"
-      >
+      <Marquee speed={50} pauseOnHover={false} play={true} autoFill={true} direction="left">
         {appScreenData.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col gap-5 text-center ml-4 md:ml-6"
-          >
+          <div key={index} className="flex flex-col gap-5 text-center ml-4 md:ml-6">
             {/* <p className="text-sm font-light text-whiteAlpha-80">{item.title}</p> */}
 
-            <Image
+            <img src={item.img} alt={item.title} className="h-[340px] md:h-[540px] shadow-lg" />
+            {/* <Image
               src={item.img}
               alt={item.title}
               className="max-w-[172px] md:max-w-[240px] h-auto rounded-lg shadow-lg"
@@ -35,7 +26,7 @@ const AppScreen = () => {
               height={532}
               loading="lazy"
               priority={false}
-            />
+            /> */}
           </div>
         ))}
       </Marquee>
